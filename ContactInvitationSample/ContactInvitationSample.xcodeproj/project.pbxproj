@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F52A9E278BF734CE4289CD6 /* libPods-ContactInvitationSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E817663A01B1186EA6E8D85F /* libPods-ContactInvitationSample.a */; };
-		9625B91E1D1C84C500F59B20 /* libForesee.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9625B9171D1C84B900F59B20 /* libForesee.a */; };
+		9652A56B1D22EEF90061B04B /* ForeSee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9652A56A1D22EEF90061B04B /* ForeSee.framework */; };
 		967270761D04DF4F00F90E54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 967270751D04DF4F00F90E54 /* main.m */; };
 		967270791D04DF4F00F90E54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 967270781D04DF4F00F90E54 /* AppDelegate.m */; };
 		9672707C1D04DF4F00F90E54 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9672707B1D04DF4F00F90E54 /* ViewController.m */; };
@@ -47,34 +47,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9625B9161D1C84B900F59B20 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9625B90F1D1C84B900F59B20 /* Foresee.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D5F0AFCB16D6C91100263B07;
-			remoteInfo = Foresee;
-		};
-		9625B9181D1C84B900F59B20 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9625B90F1D1C84B900F59B20 /* Foresee.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D5F50820170E05890099C810;
-			remoteInfo = ForeseeTests;
-		};
-		9625B91A1D1C84B900F59B20 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9625B90F1D1C84B900F59B20 /* Foresee.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 99D222921795F5A5001D3C34;
-			remoteInfo = "Foresee INTERNAL";
-		};
-		9625B91C1D1C84B900F59B20 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9625B90F1D1C84B900F59B20 /* Foresee.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 992ECCB817CC121F008AB7F2;
-			remoteInfo = ForeseeApplicationTests;
-		};
 		9672708B1D04DF4F00F90E54 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 967270691D04DF4F00F90E54 /* Project object */;
@@ -92,7 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9625B90F1D1C84B900F59B20 /* Foresee.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Foresee.xcodeproj; path = "../../../foresee-sdk-ios/framework/Foresee.xcodeproj"; sourceTree = "<group>"; };
+		9652A56A1D22EEF90061B04B /* ForeSee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ForeSee.framework; path = ContactInvitationSample/ForeSee.framework; sourceTree = "<group>"; };
 		967270711D04DF4F00F90E54 /* ContactInvitationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactInvitationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967270751D04DF4F00F90E54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		967270771D04DF4F00F90E54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -146,13 +118,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9625B91E1D1C84C500F59B20 /* libForesee.a in Frameworks */,
 				96FF0F9C1D052DEB000A2176 /* libz.tbd in Frameworks */,
 				96FF0F9A1D052DDB000A2176 /* QuartzCore.framework in Frameworks */,
 				96FF0F951D052DD3000A2176 /* CoreGraphics.framework in Frameworks */,
 				96FF0F961D052DD3000A2176 /* CoreMedia.framework in Frameworks */,
 				96FF0F971D052DD3000A2176 /* CoreMotion.framework in Frameworks */,
 				96FF0F981D052DD3000A2176 /* CoreVideo.framework in Frameworks */,
+				9652A56B1D22EEF90061B04B /* ForeSee.framework in Frameworks */,
 				96FF0F901D052DBE000A2176 /* AVFoundation.framework in Frameworks */,
 				96FF0F8E1D052DB4000A2176 /* SystemConfiguration.framework in Frameworks */,
 				4F52A9E278BF734CE4289CD6 /* libPods-ContactInvitationSample.a in Frameworks */,
@@ -188,7 +160,7 @@
 		3F02B4B904B53DECD95EC7DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9625B90F1D1C84B900F59B20 /* Foresee.xcodeproj */,
+				9652A56A1D22EEF90061B04B /* ForeSee.framework */,
 				96FF0F9B1D052DEB000A2176 /* libz.tbd */,
 				96FF0F991D052DDB000A2176 /* QuartzCore.framework */,
 				96FF0F911D052DD3000A2176 /* CoreGraphics.framework */,
@@ -200,17 +172,6 @@
 				E817663A01B1186EA6E8D85F /* libPods-ContactInvitationSample.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9625B9101D1C84B900F59B20 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9625B9171D1C84B900F59B20 /* libForesee.a */,
-				9625B9191D1C84B900F59B20 /* ForeseeTests.xctest */,
-				9625B91B1D1C84B900F59B20 /* libForesee copy.a */,
-				9625B91D1D1C84B900F59B20 /* libForesee copy.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		967270681D04DF4F00F90E54 = {
@@ -396,12 +357,6 @@
 			mainGroup = 967270681D04DF4F00F90E54;
 			productRefGroup = 967270721D04DF4F00F90E54 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 9625B9101D1C84B900F59B20 /* Products */;
-					ProjectRef = 9625B90F1D1C84B900F59B20 /* Foresee.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				967270701D04DF4F00F90E54 /* ContactInvitationSample */,
@@ -410,37 +365,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		9625B9171D1C84B900F59B20 /* libForesee.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libForesee.a;
-			remoteRef = 9625B9161D1C84B900F59B20 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9625B9191D1C84B900F59B20 /* ForeseeTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ForeseeTests.xctest;
-			remoteRef = 9625B9181D1C84B900F59B20 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9625B91B1D1C84B900F59B20 /* libForesee copy.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libForesee copy.a";
-			remoteRef = 9625B91A1D1C84B900F59B20 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9625B91D1D1C84B900F59B20 /* libForesee copy.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libForesee copy.a";
-			remoteRef = 9625B91C1D1C84B900F59B20 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9672706F1D04DF4F00F90E54 /* Resources */ = {
