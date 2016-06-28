@@ -1,0 +1,9 @@
+platform :ios, '7.0'
+
+workspace 'CustomInvitationSample.xcworkspace'
+
+target "CustomInvitationSample" do
+    #pod 'ForeSee'
+    pod 'SSSnackbar'
+    pod 'SVProgressHUD'
+end

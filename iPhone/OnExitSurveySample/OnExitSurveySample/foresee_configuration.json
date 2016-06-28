@@ -1,0 +1,12 @@
+{
+  "clientId":"Ij6P1lfZHchO/co10lQ4BQ==",
+  "notificationType":"ON_EXIT",
+  "measures":
+  [
+    {
+      "surveyId":"app_test_1",
+      "daysSinceLaunch":0,
+      "launchCount":0
+    }
+  ]
+}

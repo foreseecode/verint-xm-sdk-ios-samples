@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  InternationalizationSample
+
+  Created by Michael Han on 12-03-05.
+  Copyright (c) 2012 ForeSee. All rights reserved.
+*/
+
+"FSLocalNotificationBody" = "Your text here!";

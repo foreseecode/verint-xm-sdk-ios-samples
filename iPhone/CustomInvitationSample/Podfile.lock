@@ -1,0 +1,15 @@
+PODS:
+  - SSSnackbar (0.1.2)
+  - SVProgressHUD (2.0.3)
+
+DEPENDENCIES:
+  - SSSnackbar
+  - SVProgressHUD
+
+SPEC CHECKSUMS:
+  SSSnackbar: 6a16cf8ab848d99a03ba21a7dab94d4478beabed
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+
+PODFILE CHECKSUM: f52b659334da7df149fd5943473944933882af47
+
+COCOAPODS: 1.0.1

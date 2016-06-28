@@ -1,0 +1,8 @@
+Internationalization Demo
+
+This sample project demonstrates how you can customize the default Invite View (FSInviteView) with text of your
+choosing.  It also demonstrates how you can localize the invitation text using standard localization techniques
+for iOS.  The demo app supports English, French, and Spanish.  Simply change the language setting of the test device
+to see the invite in another language.
+
+All strings used by the FSInviteView class are defined in the Localizable.strings file.
