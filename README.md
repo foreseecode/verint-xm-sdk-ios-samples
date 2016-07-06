@@ -12,6 +12,10 @@ you're using the latest version of the SDK, run:
 
 in the project's root directory.
 
+All projects can be found in::
+
+`ForeSeeSamples.xcworkspace`
+
 ## BasicSample
 This sample project demonstrates a basic implementation of the ForeSee trigger code in an empty iPhone app.
 It uses the provided FSInviteView to show a modal dialog to the user inviting them to take a survey when
@@ -23,10 +27,8 @@ This sample project demonstrates a basic Swift implementation of the ForeSee tri
 ## ContactInvitationSample
 This example shows how to provide a user's contact information to the SDK for use in a CONTACT mode survey.
 
-
 ## CustomInvitationSample
 This example demonstrates the use of a custom invite handler.
-
 
 ## InternationalizationSample
 This sample project demonstrates how you can customize the default Invite View (FSInviteView) with text of your
