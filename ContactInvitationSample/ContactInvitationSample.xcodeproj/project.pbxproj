@@ -64,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07485F3358C9DA0321E3C9BE /* Pods-ContactInvitationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactInvitationSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ContactInvitationSample/Pods-ContactInvitationSample.release.xcconfig"; sourceTree = "<group>"; };
 		9652A56A1D22EEF90061B04B /* ForeSee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ForeSee.framework; path = ContactInvitationSample/ForeSee.framework; sourceTree = "<group>"; };
 		967270711D04DF4F00F90E54 /* ContactInvitationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactInvitationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967270751D04DF4F00F90E54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -109,6 +110,7 @@
 		96FF0F991D052DDB000A2176 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		96FF0F9B1D052DEB000A2176 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		A45BDC04B222154EB3000923 /* Pods-ContactInvitationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactInvitationSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContactInvitationSample/Pods-ContactInvitationSample.debug.xcconfig"; sourceTree = "<group>"; };
+		BB3D2E880F9504154D0382DA /* Pods-ContactInvitationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactInvitationSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ContactInvitationSample/Pods-ContactInvitationSample.debug.xcconfig"; sourceTree = "<group>"; };
 		E817663A01B1186EA6E8D85F /* libPods-ContactInvitationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ContactInvitationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29D4DA8BAE3233876805821 /* Pods-ContactInvitationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactInvitationSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContactInvitationSample/Pods-ContactInvitationSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,6 +155,8 @@
 			children = (
 				A45BDC04B222154EB3000923 /* Pods-ContactInvitationSample.debug.xcconfig */,
 				F29D4DA8BAE3233876805821 /* Pods-ContactInvitationSample.release.xcconfig */,
+				BB3D2E880F9504154D0382DA /* Pods-ContactInvitationSample.debug.xcconfig */,
+				07485F3358C9DA0321E3C9BE /* Pods-ContactInvitationSample.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -440,7 +444,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ContactInvitationSample/Pods-ContactInvitationSample-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ContactInvitationSample/Pods-ContactInvitationSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ECE742F69B980A11432FE2B5 /* [CP] Embed Pods Frameworks */ = {
@@ -455,7 +459,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ContactInvitationSample/Pods-ContactInvitationSample-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ContactInvitationSample/Pods-ContactInvitationSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -600,7 +604,7 @@
 		};
 		9672709F1D04DF5000F90E54 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A45BDC04B222154EB3000923 /* Pods-ContactInvitationSample.debug.xcconfig */;
+			baseConfigurationReference = BB3D2E880F9504154D0382DA /* Pods-ContactInvitationSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -616,7 +620,7 @@
 		};
 		967270A01D04DF5000F90E54 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F29D4DA8BAE3233876805821 /* Pods-ContactInvitationSample.release.xcconfig */;
+			baseConfigurationReference = 07485F3358C9DA0321E3C9BE /* Pods-ContactInvitationSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (

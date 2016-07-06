@@ -38,9 +38,13 @@
 		D586FDC617383528008BD52B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D586FDC517383528008BD52B /* libz.dylib */; };
 		D586FE1B173839B4008BD52B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D586FE1A173839B4008BD52B /* Default-568h@2x.png */; };
 		D5AF5F661778BABF00EBAA63 /* ForeSee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AF5F651778BABF00EBAA63 /* ForeSee.framework */; };
+		E9CAFBE1DC7EE230BEA970A0 /* libPods-InternationalizationSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21678F83D5A08F99C42F9334 /* libPods-InternationalizationSample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0972AAB8AB71EEF58EEB1A2E /* Pods-InternationalizationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InternationalizationSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-InternationalizationSample/Pods-InternationalizationSample.debug.xcconfig"; sourceTree = "<group>"; };
+		21678F83D5A08F99C42F9334 /* libPods-InternationalizationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InternationalizationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C9616078280B3DC9C7B21CF /* Pods-InternationalizationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InternationalizationSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-InternationalizationSample/Pods-InternationalizationSample.release.xcconfig"; sourceTree = "<group>"; };
 		99AF581C1B911C3D00826506 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/foresee_configuration.json; sourceTree = "<group>"; };
 		99AF581E1B911C4400826506 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/foresee_configuration.json; sourceTree = "<group>"; };
 		99AF581F1B911C4D00826506 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = fr; path = fr.lproj/foresee_configuration.json; sourceTree = "<group>"; };
@@ -103,18 +107,29 @@
 				D51310D3150541F200619182 /* Foundation.framework in Frameworks */,
 				D51310D5150541F200619182 /* CoreGraphics.framework in Frameworks */,
 				D5AF5F661778BABF00EBAA63 /* ForeSee.framework in Frameworks */,
+				E9CAFBE1DC7EE230BEA970A0 /* libPods-InternationalizationSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF933D2F1DA1D0A5F4229182 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0972AAB8AB71EEF58EEB1A2E /* Pods-InternationalizationSample.debug.xcconfig */,
+				8C9616078280B3DC9C7B21CF /* Pods-InternationalizationSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D51310C1150541F200619182 = {
 			isa = PBXGroup;
 			children = (
 				D51310D6150541F200619182 /* InternationalizationSample */,
 				D51310CF150541F200619182 /* Frameworks */,
 				D51310CD150541F200619182 /* Products */,
+				CF933D2F1DA1D0A5F4229182 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +155,7 @@
 				D586FDBF1738351B008BD52B /* CoreMedia.framework */,
 				D586FDBD17383517008BD52B /* AVFoundation.framework */,
 				D586FDC517383528008BD52B /* libz.dylib */,
+				21678F83D5A08F99C42F9334 /* libPods-InternationalizationSample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -214,9 +230,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D51310EA150541F200619182 /* Build configuration list for PBXNativeTarget "InternationalizationSample" */;
 			buildPhases = (
+				DB14D2A1294BB57C0211D70B /* [CP] Check Pods Manifest.lock */,
 				D51310C8150541F200619182 /* Sources */,
 				D51310C9150541F200619182 /* Frameworks */,
 				D51310CA150541F200619182 /* Resources */,
+				0B7A7D960E004C3E288A752E /* [CP] Embed Pods Frameworks */,
+				DBBEB353354BB8E96D4690A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -281,6 +300,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B7A7D960E004C3E288A752E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-InternationalizationSample/Pods-InternationalizationSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB14D2A1294BB57C0211D70B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DBBEB353354BB8E96D4690A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-InternationalizationSample/Pods-InternationalizationSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D51310C8150541F200619182 /* Sources */ = {
@@ -410,6 +477,7 @@
 		};
 		D51310EB150541F200619182 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0972AAB8AB71EEF58EEB1A2E /* Pods-InternationalizationSample.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -422,7 +490,6 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/InternationalizationSample/trigger\"",
 				);
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.foresee.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -431,6 +498,7 @@
 		};
 		D51310EC150541F200619182 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C9616078280B3DC9C7B21CF /* Pods-InternationalizationSample.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -443,7 +511,6 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/InternationalizationSample/trigger\"",
 				);
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.foresee.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

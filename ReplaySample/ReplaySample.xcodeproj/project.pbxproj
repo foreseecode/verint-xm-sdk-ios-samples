@@ -43,6 +43,7 @@
 		99F1EDEC18861B11001B1A8B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F1EDEB18861B11001B1A8B /* SystemConfiguration.framework */; };
 		99F1EDF518870AD8001B1A8B /* foresee_masking.json in Resources */ = {isa = PBXBuildFile; fileRef = 99F1EDF418870AD8001B1A8B /* foresee_masking.json */; };
 		99F1EDF8188718F5001B1A8B /* ForeSee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F1EDF7188718F5001B1A8B /* ForeSee.framework */; };
+		F7A1086FA2F43958C4BABE28 /* libPods-ReplaySample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9F4D4E64E67B7CEDC6C16B /* libPods-ReplaySample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57FE72606A2715EACDCF0054 /* Pods-ReplaySample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReplaySample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ReplaySample/Pods-ReplaySample.debug.xcconfig"; sourceTree = "<group>"; };
+		89A800B48157AC922439CD4D /* Pods-ReplaySample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReplaySample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ReplaySample/Pods-ReplaySample.release.xcconfig"; sourceTree = "<group>"; };
 		961907A81BE1740400C78C26 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		99C9FDE718871B76004BE83A /* cancel_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel_button.png; sourceTree = "<group>"; };
 		99C9FDE818871B76004BE83A /* confirm_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = confirm_button.png; sourceTree = "<group>"; };
@@ -98,6 +101,7 @@
 		99F1EDEB18861B11001B1A8B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		99F1EDF418870AD8001B1A8B /* foresee_masking.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foresee_masking.json; sourceTree = "<group>"; };
 		99F1EDF7188718F5001B1A8B /* ForeSee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ForeSee.framework; path = ReplaySample/ForeSee.framework; sourceTree = "<group>"; };
+		DF9F4D4E64E67B7CEDC6C16B /* libPods-ReplaySample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReplaySample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 				99F1ED6518860C71001B1A8B /* CoreGraphics.framework in Frameworks */,
 				99F1ED6718860C71001B1A8B /* UIKit.framework in Frameworks */,
 				99F1ED6318860C71001B1A8B /* Foundation.framework in Frameworks */,
+				F7A1086FA2F43958C4BABE28 /* libPods-ReplaySample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +135,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BE3E2D6BD4F1F55502567FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57FE72606A2715EACDCF0054 /* Pods-ReplaySample.debug.xcconfig */,
+				89A800B48157AC922439CD4D /* Pods-ReplaySample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		99C9FDE518871B76004BE83A /* trigger */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +186,7 @@
 				99F1ED6818860C71001B1A8B /* ReplaySample */,
 				99F1ED6118860C71001B1A8B /* Frameworks */,
 				99F1ED6018860C71001B1A8B /* Products */,
+				4BE3E2D6BD4F1F55502567FF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,6 +212,7 @@
 				99F1ED6418860C71001B1A8B /* CoreGraphics.framework */,
 				99F1ED6618860C71001B1A8B /* UIKit.framework */,
 				99F1ED7B18860C71001B1A8B /* XCTest.framework */,
+				DF9F4D4E64E67B7CEDC6C16B /* libPods-ReplaySample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -241,9 +257,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99F1ED8B18860C71001B1A8B /* Build configuration list for PBXNativeTarget "ReplaySample" */;
 			buildPhases = (
+				64F1EBA9DE75B750926DD33B /* [CP] Check Pods Manifest.lock */,
 				99F1ED5B18860C71001B1A8B /* Sources */,
 				99F1ED5C18860C71001B1A8B /* Frameworks */,
 				99F1ED5D18860C71001B1A8B /* Resources */,
+				C009BED1AF1D47457D8948C7 /* [CP] Embed Pods Frameworks */,
+				A3DD785001E1A7D71F995635 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -339,6 +358,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64F1EBA9DE75B750926DD33B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A3DD785001E1A7D71F995635 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ReplaySample/Pods-ReplaySample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C009BED1AF1D47457D8948C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ReplaySample/Pods-ReplaySample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		99F1ED5B18860C71001B1A8B /* Sources */ = {
@@ -459,6 +526,7 @@
 		};
 		99F1ED8C18860C71001B1A8B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57FE72606A2715EACDCF0054 /* Pods-ReplaySample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -468,8 +536,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ReplaySample/ReplaySample-Prefix.pch";
 				INFOPLIST_FILE = "ReplaySample/ReplaySample-Info.plist";
-				OTHER_LDFLAGS = "-ObjC";
-				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ForeSee.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -478,6 +544,7 @@
 		};
 		99F1ED8D18860C71001B1A8B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89A800B48157AC922439CD4D /* Pods-ReplaySample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -487,7 +554,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ReplaySample/ReplaySample-Prefix.pch";
 				INFOPLIST_FILE = "ReplaySample/ReplaySample-Info.plist";
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ForeSee.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

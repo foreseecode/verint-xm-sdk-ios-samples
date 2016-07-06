@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3247E465CAF9E04CC384E1C0 /* libPods-BasicSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E2FD53D3C005EE024A5C8E /* libPods-BasicSample.a */; };
 		961907A31BE1711E00C78C26 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 961907A21BE1711E00C78C26 /* Default-568h@2x.png */; };
 		96916A361B8644E200406944 /* ForeSee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96916A351B8644E200406944 /* ForeSee.framework */; };
 		96916A451B86450300406944 /* cancel_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 96916A371B86450300406944 /* cancel_button.png */; };
@@ -45,6 +46,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11B7DF9598731FA9E9228FE7 /* Pods-BasicSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicSample/Pods-BasicSample.release.xcconfig"; sourceTree = "<group>"; };
+		43DBC987345A4FFC87867579 /* Pods-BasicSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicSample/Pods-BasicSample.debug.xcconfig"; sourceTree = "<group>"; };
 		961907A21BE1711E00C78C26 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		96916A351B8644E200406944 /* ForeSee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ForeSee.framework; path = BasicSample/ForeSee.framework; sourceTree = "<group>"; };
 		96916A371B86450300406944 /* cancel_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel_button.png; sourceTree = "<group>"; };
@@ -70,6 +73,7 @@
 		99F1EC3E18860433001B1A8B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		99F1EC401886045E001B1A8B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		99F1EC78188604E6001B1A8B /* foresee_configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foresee_configuration.json; sourceTree = "<group>"; };
+		A1E2FD53D3C005EE024A5C8E /* libPods-BasicSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BasicSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D544DF3C15068C0C0025FF43 /* BasicSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D544DF4015068C0C0025FF43 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D544DF4215068C0C0025FF43 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -85,6 +89,7 @@
 		D544DF5615068C0C0025FF43 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FSViewController.xib; sourceTree = "<group>"; };
 		D544DFB3150691AE0025FF43 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D544DFB5150691B60025FF43 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FBF5BFAD88F19395B72B786C /* Pods-BasicSample.release w- symbols.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicSample.release w- symbols.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicSample/Pods-BasicSample.release w- symbols.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +107,7 @@
 				D544DF4115068C0C0025FF43 /* UIKit.framework in Frameworks */,
 				D544DF4315068C0C0025FF43 /* Foundation.framework in Frameworks */,
 				D544DF4515068C0C0025FF43 /* CoreGraphics.framework in Frameworks */,
+				3247E465CAF9E04CC384E1C0 /* libPods-BasicSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +155,16 @@
 			path = survey;
 			sourceTree = "<group>";
 		};
+		B9712A1B285294CE3C1DE748 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43DBC987345A4FFC87867579 /* Pods-BasicSample.debug.xcconfig */,
+				11B7DF9598731FA9E9228FE7 /* Pods-BasicSample.release.xcconfig */,
+				FBF5BFAD88F19395B72B786C /* Pods-BasicSample.release w- symbols.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D544DF3115068C0C0025FF43 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +172,7 @@
 				D544DF4615068C0C0025FF43 /* BasicSample */,
 				D544DF3F15068C0C0025FF43 /* Frameworks */,
 				D544DF3D15068C0C0025FF43 /* Products */,
+				B9712A1B285294CE3C1DE748 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,6 +197,7 @@
 				D544DF4015068C0C0025FF43 /* UIKit.framework */,
 				D544DF4215068C0C0025FF43 /* Foundation.framework */,
 				D544DF4415068C0C0025FF43 /* CoreGraphics.framework */,
+				A1E2FD53D3C005EE024A5C8E /* libPods-BasicSample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -217,9 +235,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D544DF5A15068C0C0025FF43 /* Build configuration list for PBXNativeTarget "BasicSample" */;
 			buildPhases = (
+				370368C93CD07F36D1A5F1DB /* [CP] Check Pods Manifest.lock */,
 				D544DF3815068C0C0025FF43 /* Sources */,
 				D544DF3915068C0C0025FF43 /* Frameworks */,
 				D544DF3A15068C0C0025FF43 /* Resources */,
+				4CFF67C25D6A772890A8E56F /* [CP] Embed Pods Frameworks */,
+				F82FFFA46E159820101970FD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -288,6 +309,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		370368C93CD07F36D1A5F1DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4CFF67C25D6A772890A8E56F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BasicSample/Pods-BasicSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F82FFFA46E159820101970FD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BasicSample/Pods-BasicSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D544DF3815068C0C0025FF43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -345,6 +414,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				STRIP_INSTALLED_PRODUCT = NO;
 				VALIDATE_PRODUCT = YES;
@@ -353,6 +423,7 @@
 		};
 		96E815A01B20F9BF0062E50C /* Release w/ symbols */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBF5BFAD88F19395B72B786C /* Pods-BasicSample.release w- symbols.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -366,7 +437,6 @@
 					"\"$(SRCROOT)/BasicSample\"",
 					"\"$(SRCROOT)/BasicSample/trigger\"",
 				);
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.foresee.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -404,6 +474,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -431,6 +502,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -438,6 +510,7 @@
 		};
 		D544DF5B15068C0C0025FF43 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43DBC987345A4FFC87867579 /* Pods-BasicSample.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,7 +524,6 @@
 					"\"$(SRCROOT)/BasicSample\"",
 					"\"$(SRCROOT)/BasicSample/trigger\"",
 				);
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.foresee.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -460,6 +532,7 @@
 		};
 		D544DF5C15068C0C0025FF43 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11B7DF9598731FA9E9228FE7 /* Pods-BasicSample.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -473,7 +546,6 @@
 					"\"$(SRCROOT)/BasicSample\"",
 					"\"$(SRCROOT)/BasicSample/trigger\"",
 				);
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.foresee.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;

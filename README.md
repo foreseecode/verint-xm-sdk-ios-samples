@@ -1,4 +1,17 @@
 # Sample Projects
+
+These sample projects demonstrate typical usage of the ForeSee SDK.
+
+## Installation
+
+All sample projects use [Cocoapods](http://cocoapods.org/). The Pods and workspace folders are
+included, so it isn't strictly necessary to manually install anything. However, to guarantee that 
+you're using the latest version of the SDK, run:
+
+1. `$ pod update`
+
+in the project's root directory.
+
 ## BasicSample
 This sample project demonstrates a basic implementation of the ForeSee trigger code in an empty iPhone app.
 It uses the provided FSInviteView to show a modal dialog to the user inviting them to take a survey when

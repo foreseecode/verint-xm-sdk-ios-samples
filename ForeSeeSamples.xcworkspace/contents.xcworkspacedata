@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:BasicSample/BasicSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CustomInvitationSample/CustomInvitationSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BasicSwiftSample/BasicSwiftSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ContactInvitationSample/ContactInvitationSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:InternationalizationSample/InternationalizationSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LocalNotificationSample/LocalNotificationSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:OnExitSurveySample/OnExitSurveySample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ReplaySample/ReplaySample.xcodeproj">
+   </FileRef>
+</Workspace>

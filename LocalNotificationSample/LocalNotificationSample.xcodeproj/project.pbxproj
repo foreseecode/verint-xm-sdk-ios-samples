@@ -27,6 +27,7 @@
 		99F1EC8118860570001B1A8B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F1EC8018860570001B1A8B /* AVFoundation.framework */; };
 		99F1EC8318860576001B1A8B /* ForeSee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F1EC8218860576001B1A8B /* ForeSee.framework */; };
 		99F1ECA0188606A7001B1A8B /* foresee_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 99F1EC9F188606A7001B1A8B /* foresee_configuration.json */; };
+		A6525F672F80A2B7A42199A6 /* libPods-LocalNotificationSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 281C477F91892550A71628D6 /* libPods-LocalNotificationSample.a */; };
 		D5D68AEE1582A63D00730160 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D68AED1582A63D00730160 /* UIKit.framework */; };
 		D5D68AF01582A63D00730160 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D68AEF1582A63D00730160 /* Foundation.framework */; };
 		D5D68AF21582A63D00730160 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D68AF11582A63D00730160 /* CoreGraphics.framework */; };
@@ -40,6 +41,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		281C477F91892550A71628D6 /* libPods-LocalNotificationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocalNotificationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32B82C9388C4774316B5FA69 /* Pods-LocalNotificationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalNotificationSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-LocalNotificationSample/Pods-LocalNotificationSample.release.xcconfig"; sourceTree = "<group>"; };
 		961907A41BE171CB00C78C26 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		990EABCC18610D5D005BB53E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		99C9FDB118871B28004BE83A /* cancel_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel_button.png; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 		D5D68B031582A63E00730160 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FSViewController.xib; sourceTree = "<group>"; };
 		D5D68B2F1582A76700730160 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D5D68B311582A76D00730160 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E7FD1C4F1E6D2A2B6EC906D1 /* Pods-LocalNotificationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalNotificationSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-LocalNotificationSample/Pods-LocalNotificationSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 				D5D68AEE1582A63D00730160 /* UIKit.framework in Frameworks */,
 				D5D68AF01582A63D00730160 /* Foundation.framework in Frameworks */,
 				D5D68AF21582A63D00730160 /* CoreGraphics.framework in Frameworks */,
+				A6525F672F80A2B7A42199A6 /* libPods-LocalNotificationSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +138,15 @@
 			path = survey;
 			sourceTree = "<group>";
 		};
+		A93D2435FAD6A70B4A9D7B1A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7FD1C4F1E6D2A2B6EC906D1 /* Pods-LocalNotificationSample.debug.xcconfig */,
+				32B82C9388C4774316B5FA69 /* Pods-LocalNotificationSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D5D68ADE1582A63D00730160 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +154,7 @@
 				D5D68AF31582A63D00730160 /* LocalNotificationSample */,
 				D5D68AEC1582A63D00730160 /* Frameworks */,
 				D5D68AEA1582A63D00730160 /* Products */,
+				A93D2435FAD6A70B4A9D7B1A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,6 +179,7 @@
 				D5D68AED1582A63D00730160 /* UIKit.framework */,
 				D5D68AEF1582A63D00730160 /* Foundation.framework */,
 				D5D68AF11582A63D00730160 /* CoreGraphics.framework */,
+				281C477F91892550A71628D6 /* libPods-LocalNotificationSample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -202,9 +218,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5D68B071582A63E00730160 /* Build configuration list for PBXNativeTarget "LocalNotificationSample" */;
 			buildPhases = (
+				F8588C4257779EF8048FE1CB /* [CP] Check Pods Manifest.lock */,
 				D5D68AE51582A63D00730160 /* Sources */,
 				D5D68AE61582A63D00730160 /* Frameworks */,
 				D5D68AE71582A63D00730160 /* Resources */,
+				6B151F248FBCEFBAF9F178E2 /* [CP] Embed Pods Frameworks */,
+				E5CBB7B1E877147BDE2210F0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,6 +287,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B151F248FBCEFBAF9F178E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-LocalNotificationSample/Pods-LocalNotificationSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5CBB7B1E877147BDE2210F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-LocalNotificationSample/Pods-LocalNotificationSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8588C4257779EF8048FE1CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D5D68AE51582A63D00730160 /* Sources */ = {
@@ -381,6 +448,7 @@
 		};
 		D5D68B081582A63E00730160 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7FD1C4F1E6D2A2B6EC906D1 /* Pods-LocalNotificationSample.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -393,7 +461,6 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/LocalNotificationSample/trigger\"",
 				);
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.foresee.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -402,6 +469,7 @@
 		};
 		D5D68B091582A63E00730160 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32B82C9388C4774316B5FA69 /* Pods-LocalNotificationSample.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -414,7 +482,6 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/LocalNotificationSample/trigger\"",
 				);
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.foresee.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

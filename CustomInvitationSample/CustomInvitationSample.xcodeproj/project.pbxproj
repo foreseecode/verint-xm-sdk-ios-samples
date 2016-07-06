@@ -82,6 +82,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5858EF61849E87D448A2698A /* Pods-CustomInvitationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomInvitationSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample.debug.xcconfig"; sourceTree = "<group>"; };
 		7EFDFDDB91291FE56CF175FB /* libPods-CustomInvitationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CustomInvitationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9652A5671D22ED8B0061B04B /* ForeSee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ForeSee.framework; path = CustomInvitationSample/ForeSee.framework; sourceTree = "<group>"; };
 		968D2F561CFD6A6800C6066B /* CustomInviteTrackerSnackbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInviteTrackerSnackbar.h; sourceTree = "<group>"; };
@@ -156,6 +157,7 @@
 		96FF0F5A1D05192C000A2176 /* back_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_button@2x.png"; sourceTree = "<group>"; };
 		96FF0F5B1D05192C000A2176 /* forward_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward_button.png; sourceTree = "<group>"; };
 		96FF0F5C1D05192C000A2176 /* forward_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forward_button@2x.png"; sourceTree = "<group>"; };
+		9C5F51C4E3606A54BA60B910 /* Pods-CustomInvitationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomInvitationSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample.release.xcconfig"; sourceTree = "<group>"; };
 		AE3B6D560153132F0657E975 /* Pods-CustomInvitationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomInvitationSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample.release.xcconfig"; sourceTree = "<group>"; };
 		DEBBF9E174BBEC6FACEFC70E /* Pods-CustomInvitationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomInvitationSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -202,6 +204,8 @@
 			children = (
 				DEBBF9E174BBEC6FACEFC70E /* Pods-CustomInvitationSample.debug.xcconfig */,
 				AE3B6D560153132F0657E975 /* Pods-CustomInvitationSample.release.xcconfig */,
+				5858EF61849E87D448A2698A /* Pods-CustomInvitationSample.debug.xcconfig */,
+				9C5F51C4E3606A54BA60B910 /* Pods-CustomInvitationSample.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -548,7 +552,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7835E4AFD4D4BD7677A9C9DF /* [CP] Check Pods Manifest.lock */ = {
@@ -578,7 +582,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -695,6 +699,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -732,6 +737,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -740,7 +746,7 @@
 		};
 		96C3D6161CDB284A005040C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DEBBF9E174BBEC6FACEFC70E /* Pods-CustomInvitationSample.debug.xcconfig */;
+			baseConfigurationReference = 5858EF61849E87D448A2698A /* Pods-CustomInvitationSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -756,7 +762,7 @@
 		};
 		96C3D6171CDB284A005040C8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE3B6D560153132F0657E975 /* Pods-CustomInvitationSample.release.xcconfig */;
+			baseConfigurationReference = 9C5F51C4E3606A54BA60B910 /* Pods-CustomInvitationSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
