@@ -8,13 +8,10 @@
       location = "group:CustomInvitationSample/CustomInvitationSample.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Pods/Pods.xcodeproj">
+      location = "group:ContactInvitationSample/ContactInvitationSample.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:BasicSwiftSample/BasicSwiftSample.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:ContactInvitationSample/ContactInvitationSample.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:InternationalizationSample/InternationalizationSample.xcodeproj">
@@ -23,9 +20,9 @@
       location = "group:LocalNotificationSample/LocalNotificationSample.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:OnExitSurveySample/OnExitSurveySample.xcodeproj">
+      location = "group:ReplaySample/ReplaySample.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ReplaySample/ReplaySample.xcodeproj">
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
