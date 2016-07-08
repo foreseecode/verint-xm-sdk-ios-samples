@@ -43,11 +43,6 @@ target "LocalNotificationSample" do
     pod 'ForeSee'
 end
 
-target "OnExitSurveySample" do
-    project 'OnExitSurveySample/OnExitSurveySample.xcodeproj'
-    pod 'ForeSee'
-end
-
 target "ReplaySample" do
     project 'ReplaySample/ReplaySample.xcodeproj'
     pod 'ForeSee'
