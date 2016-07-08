@@ -42,10 +42,6 @@ All strings used by the FSInviteView class are defined in the Localizable.string
 This sample project demonstrates a local notification invite. Accept the invite and then close the application. 
 You will receive a local notification linking the survey.
 
-## OnExitSurveySample
-This sample project demonstrates a CONTACT mode invite. Accept the invite, enter your contact details, and then close the app.
-You will receive a text or email linking the survey.
-
 ## ReplaySample
 This sample project demonstrates cxReplay.
 
