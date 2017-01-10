@@ -1,0 +1,18 @@
+PODS:
+  - ForeSee (4.0.0)
+  - SSSnackbar (0.1.2)
+  - SVProgressHUD (2.0.3)
+
+DEPENDENCIES:
+  - ForeSee
+  - SSSnackbar (~> 0.1.2)
+  - SVProgressHUD (~> 2.0.3)
+
+SPEC CHECKSUMS:
+  ForeSee: 52731fefc4f127b0093f182cd860fdaa9279bb0e
+  SSSnackbar: 6a16cf8ab848d99a03ba21a7dab94d4478beabed
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+
+PODFILE CHECKSUM: 7eea3b4339e58bb4716bfddf5ea342e9ff793e77
+
+COCOAPODS: 1.1.1

@@ -1,0 +1,14 @@
+{
+    "webview_masking": {
+        "unmasked":
+            {
+              "__Note": "This will unmask the elemnt with id 'lst-ib' (search bar) on any page with a URL containing 'google'",
+              "google": "#lst-ib"
+            },
+        "masked":
+            {
+              "__Note": "This will mask the element with id 'hplogo' (logo)s on any page with a URL containing 'google'",
+              "google": "#hplogo"
+            }
+    }
+}

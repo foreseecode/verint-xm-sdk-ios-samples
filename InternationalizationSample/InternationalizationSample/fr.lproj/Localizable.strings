@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  InternationalizationSample
+
+  Created by Michael Han on 12-03-05.
+  Copyright (c) 2012 ForeSee. All rights reserved.
+*/
+
+"FSInviteHeader" = "Nous aimerions recevoir vos commentaires!";
+"FSInSessionInviteBody" = "Vous avez été sélectionné pour participer à une brève enquête de satisfaction client pour nous faire savoir comment nous pouvons améliorer votre expérience.";
+"FSInviteAttribution" = "Dirigé par ForeSee.";
+"FSInviteDeclineButtonText" = "Non, merci";
+"FSInviteAcceptButtonText" = "Oui, je vais aider";
+"FSSurveyNavBarTitle" = "Sondage sur la satisfaction de la clientèle";
