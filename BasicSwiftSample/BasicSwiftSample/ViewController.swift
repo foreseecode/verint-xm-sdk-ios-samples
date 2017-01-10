@@ -25,7 +25,7 @@ class ViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 
-    @IBAction func handleShowInviteButtonTouchUpInside(sender: AnyObject) {
+    @IBAction func handleShowInviteButtonTouchUpInside(_ sender: AnyObject) {
         ForeSee.resetState()
         ForeSee.checkIfEligibleForSurvey()
     }
