@@ -12,6 +12,7 @@
 @protocol FSInviteDelegate;
 
 @class TRMeasure;
+@class FSUserProfile;
 
 /** @notification ForeSee Posted when the invite was presented to the user.
  */
@@ -83,6 +84,8 @@ extern NSString *const FSLocalNotificationMeasureKey;
  */
 @interface ForeSee : NSObject
 
+#pragma mark - Start-up
+
 // ************************
 /** @name Start-up */
 // ************************
@@ -113,6 +116,8 @@ extern NSString *const FSLocalNotificationMeasureKey;
  @param json The configuration JSON to use when loading modules
  */
 + (void)startWithConfigurationJson:(NSString *)json;
+
+#pragma mark - Debug
 
 // ##############################
 /** @name Debug */
@@ -184,6 +189,8 @@ extern NSString *const FSLocalNotificationMeasureKey;
  */
 + (BOOL)shouldSkipPoolingCheck;
 
+#pragma mark - Trigger delegate
+
 // ##############################
 /** @name Trigger Delegate */
 // ##############################
@@ -206,6 +213,8 @@ extern NSString *const FSLocalNotificationMeasureKey;
  */
 + (void)setInviteHandler:(id<FSInviteHandler>)inviteHandler;
 
+#pragma mark - Customer Passed Parameters
+
 // ##############################
 /** @name CPP (Customer Passed Parameters) */
 // ##############################
@@ -217,15 +226,29 @@ extern NSString *const FSLocalNotificationMeasureKey;
  
  @param value The value to transmit
  @param key The key identifying the value
+ @see setCPPValue:forKey:
  @see removeCPPValueForKey:
  */
-+ (void)addCPPValue:(NSString *)value forKey:(NSString *)key;
++ (void)addCPPValue:(NSString *)value forKey:(NSString *)key __attribute__((deprecated("first deprecated in ForeSee SDK 4.2.0 - Use -setCPPValue:forKey:")));
+
+/** Add a CPP to be sent to the server along with a completed survey
+ 
+ CPPs are unique to their provided key. If you set a value for an
+ existing key, the old value will simply be overwritten.
+ 
+ @param value The value to transmit
+ @param key The key identifying the value
+ @see removeCPPValueForKey:
+ */
++ (void)setCPPValue:(NSString *)value forKey:(NSString *)key;
 
 /** Remove a CPP
  @param key The key of the value to remove.
  @see addCPPValue:forKey:
  */
 + (void)removeCPPValueForKey:(NSString *)key;
+
+#pragma mark - Significant events
 
 // ##############################
 /** @name Significant Events */
@@ -246,6 +269,8 @@ extern NSString *const FSLocalNotificationMeasureKey;
  */
 + (void)incrementSignificantEventCountAndCheckEligibilityWithKey:(NSString *)key;
 
+#pragma mark - Page views
+
 // ##############################
 /** @name Page Views */
 // ##############################
@@ -254,6 +279,8 @@ extern NSString *const FSLocalNotificationMeasureKey;
  for most view controllers.
  */
 + (void)incrementPageViews;
+
+#pragma mark - Manual control
 
 // ##############################
 /** @name Manual Control */
@@ -299,6 +326,8 @@ extern NSString *const FSLocalNotificationMeasureKey;
  */
 + (void)logReplayPageChange:(NSString *)pageName;
 
+#pragma mark - Masking
+
 // ##############################
 /** @name Masking */
 // ##############################
@@ -317,6 +346,17 @@ extern NSString *const FSLocalNotificationMeasureKey;
  @see maskView:
  */
 + (void)unmaskView:(UIView *)view;
+
+/** Find and mask all auto-maskable views contained within a view
+ 
+ Auto-masking is carried out in the ViewWillAppear method of all UIViewControllers.
+ This method is useful to fill any gaps where the views aren't available when the
+ ViewWillAppear method is called, eg for cells in UITableViews.
+ 
+ @param view The view to search within
+ */
++ (void)autoMaskViewsWithinView:(UIView *)view;
+
 /** Mask JavaScript alerts spawned from a web view in a recording
  
  You can use this method to mark a view as needing masking. Typically, this would
@@ -334,6 +374,8 @@ extern NSString *const FSLocalNotificationMeasureKey;
 /** Retrieve all the masked views
  */
 + (NSArray *)maskedViews;
+
+#pragma mark - Local notification
 
 // ##############################
 /** @name Local Notification */
@@ -365,6 +407,8 @@ extern NSString *const FSLocalNotificationMeasureKey;
  */
 + (BOOL)isRecording;
 
+#pragma mark - Contact details
+
 // ##############################
 /** @name Contact Details */
 // ##############################
@@ -382,6 +426,8 @@ extern NSString *const FSLocalNotificationMeasureKey;
 /** Retrieves a user's contact details.
  */
 + (NSString *)contactDetails;
+
+#pragma mark - Custom invites
 
 // ##############################
 /** @name Custom invites */
@@ -413,6 +459,19 @@ extern NSString *const FSLocalNotificationMeasureKey;
  */
 + (void)customInviteAcceptedWithContactDetails:(NSString *)contactDetails;
 
+#pragma mark - User profile
+
+// ##############################
+/** @name User profile */
+// ##############################
+
+/** Sets a user profile.
+ 
+ The provided user profile is used to associate a specific user with events during logging.
+ 
+ @param userProfile an FSUserProfile object
+ */
++ (void)setUserProfile:(FSUserProfile *)userProfile;
 
 @end
 

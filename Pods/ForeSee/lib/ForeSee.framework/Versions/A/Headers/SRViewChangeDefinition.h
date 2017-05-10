@@ -9,16 +9,31 @@
 #import <Foundation/Foundation.h>
 
 /**
- Your UIViewController subclass can adopt this protocol to disable automatic view logging.
+ Your UIViewController subclass can adopt this protocol to disable automatic view logging and counting.
 
- When SessionReplay is enabled, it logs when view controllers appear in order to
+ Most of time, the appearance of a UIViewController on screen is counted as a "page view" by the SDK. Some container
+ controllers, however, are not counted (e.g. UINavigationController). You may have your own custom controllers
+ that you don't wish to be counted (or containers that you think should be). This protocol enables an override 
+ of the default behavior.
+ 
+ In addition, when SessionReplay is enabled, it logs when view controllers appear in order to
  logically divide a recording. If you want to disable this behaviour for a given view controller,
  you must adopt this protocol.
+ 
  @see UIViewController(SRViewChangeLogging)
  */
 @protocol SRViewChangeDefinition <NSObject>
 
 @optional
+
+/** @name Page View Behaviour */
+
+/** Returns whether the SDK should count the appearance of this controller as a "page view"
+ 
+ @return YES if you want to count the current controller, otherwise NO
+ */
+- (BOOL)shouldCountPageViews;
+
 /** @name View Change Behaviour */
 
 /** Implement this method to control whether or not Session Replay records when this view
@@ -29,7 +44,6 @@
  @return YES if you want the default behaviour, NO if you want to disable.
  */
 - (BOOL)isAutoViewChangeEnabled;
-
 
 /** @name Custom Log Properties */
 
