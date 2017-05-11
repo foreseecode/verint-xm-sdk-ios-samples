@@ -15,7 +15,7 @@
 #pragma mark - FSInviteDelegate
 
 - (void)willShowInviteForMeasure:(TRMeasure *)measure {
-    NSLog(@"Showing survey for %@", measure.surveyID);
+    NSLog(@"Showing invite for %@", measure.surveyID);
     [self showStatus:NSStringFromSelector(_cmd)];
 }
 
