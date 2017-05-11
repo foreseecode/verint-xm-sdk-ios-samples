@@ -8,12 +8,14 @@
 
 #import "CustomInviteDelegate.h"
 #import "SVProgressHUD.h"
+#import <ForeSee/TRMeasure.h>
 
 @implementation CustomInviteDelegate
 
 #pragma mark - FSInviteDelegate
 
 - (void)willShowInviteForMeasure:(TRMeasure *)measure {
+    NSLog(@"Showing survey for %@", measure.surveyID);
     [self showStatus:NSStringFromSelector(_cmd)];
 }
 
