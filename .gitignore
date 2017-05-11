@@ -11,7 +11,3 @@ xcuserdata
 profile
 *.moved-aside
 DerivedData
-
-# ios-trigger specific ignore
-trigger
-Foresee.framework
