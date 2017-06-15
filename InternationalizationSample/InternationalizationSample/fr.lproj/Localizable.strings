@@ -21,8 +21,8 @@
 "FSContactDetailsEmptyInputError"="Veuillez entrer un numéro de téléphone cellulaire ou une adresse électronique";
 "FSContactDetailsInvalidInputError"="Le format doit être comme suit : nom@domaine.com ou 123-456-7890";
 "FSContactDetailsAcceptButtonText"="Écrivez-moi un courriel ou texto";
-"FSContactDetailsTextMessageNotificationButtonText"="Text me <nt>";
-"FSContactDetailsEmailNotificationButtonText"="Email me <nt>";
+"FSContactDetailsTextMessageNotificationButtonText"="Envoyez-moi un message texte";
+"FSContactDetailsEmailNotificationButtonText"="Envoyez-moi un courriel";
 
 "FSErrorDialogButtonText"="OK";
 "FSErrorDialogTitle"="Erreur";
@@ -38,14 +38,14 @@
 "FSAttributionText"="Dirigé par ForeSee.";
 
 "FSSurveyNavBarTitle"="Sondage sur l’ABC Company";
-"FSSurveyCloseButtonText"="Close <fr>";
+"FSSurveyCloseButtonText"="<NEEDS TRANSLATION>";
 "FSSurveyLoadErrorMessage"="Il est impossible de télécharger le sondage en ce moment. La connexion est peut-être en cause.";
 
 "FSCouldNotLoadSurveyTitle"="Nous sommes désolés";
 "FSCouldNotLoadSurveyMessage"="Il est impossible de télécharger le sondage en ce moment. La connexion est peut-être en cause.";
 
-"FSWebCloseButtonText"="Done <fr>";
+"FSWebCloseButtonText"="<NEEDS TRANSLATION>";
 "FSWebLoadErrorTitle"="Nous sommes désolés.";
-"FSWebLoadURLNotWhitelistedErrorMessage"="Whitelist error <fr>";
+"FSWebLoadURLNotWhitelistedErrorMessage"="<NEEDS TRANSLATION>";
 "FSWebLoadErrorMessage"="Il est impossible de télécharger le page en ce moment. La connexion est peut-être en cause.";
 "FSWebLoadErrorButtonText"="OK";
