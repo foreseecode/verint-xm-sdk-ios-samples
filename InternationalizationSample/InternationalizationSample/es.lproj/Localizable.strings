@@ -1,14 +1,54 @@
-/* 
-  Localizable.strings
-  InternationalizationSample
+/*
+ Localizable.strings
+ TriggerTestApp
+ 
+ Created by Michael Han on 12-02-28.
+ Copyright (c) 2012 ForeSee. All rights reserved.
+ */
 
-  Created by Michael Han on 12-03-05.
-  Copyright (c) 2012 ForeSee. All rights reserved.
-*/
+"FSPrivacyPolicyNavBarTitle"="Términos y condiciones";
+"FSPrivacyPolicyLinkText"="Términos y condiciones";
 
-"FSInviteHeader" = "Nos gustaría recibir sus comentarios!";
-"FSInSessionInviteBody" = "Usted ha sido seleccionado para participar en una breve encuesta de satisfacción del cliente para hacernos saber cómo podemos mejorar la experiencia como.";
-"FSInviteAttribution" = "Llevada a cabo por ForeSee.";
-"FSInviteDeclineButtonText" = "No, gracias";
-"FSInviteAcceptButtonText" = "Sí, voy a ayudar";
-"FSSurveyNavBarTitle" = "Encuesta de satisfacción del cliente";
+"FSInviteDeclineButtonText"="No, gracias";
+"FSInviteAcceptButtonText"="Sí, voy a ayudar";
+"FSInviteTitle"="Nos gustaría recibir sus comentarios!";
+
+"FSContactInviteBody"="¿Nos permite que, más adelante, le enviemos por correo electrónico o mensaje de texto una breve encuesta de satisfacción del cliente para que podamos mejorar su experiencia  móvil?";
+"FSContactDetailsTitle"="Gracias por su ayuda.";
+"FSContactDetailsBody"="Indique su dirección de correo electrónico o número de teléfono móvil (EE. UU. o Canadá únicamente). Una vez concluya su visita, le enviaremos un correo electrónico o mensaje de texto con un enlace a la encuesta.";
+"FSContactDetailsDeclineButtonText"="Cancelar";
+"FSContactDetailsHint"="Email o n°  de móvil";
+"FSContactDetailsEmptyInputError"="Introduzca su número de teléfono móvil o dirección de correo electrónico";
+"FSContactDetailsInvalidInputError"="El formato debe ser: nombre@dominio.com o 123-456-7890";
+"FSContactDetailsAcceptButtonText"="Enviarme un email/SMS";
+"FSContactDetailsTextMessageNotificationButtonText"="Enviarme un mensaje de texto";
+"FSContactDetailsEmailNotificationButtonText"="Enviarme un correo electrónico";
+
+"FSErrorDialogButtonText"="ACEPTAR";
+"FSErrorDialogTitle"="Error";
+
+"FSExitInviteNotificationTitle"="Nos gustaría conocer su opinión";
+"FSExitSurveyNotificationTitle"="Como acordamos, aquí está la encuesta de ABC Company. ¡Le agradecemos sus comentarios y opiniones!";
+
+"FSInSessionInviteBody"="Usted ha sido seleccionado para participar en una breve encuesta de satisfacción del cliente para hacernos saber cómo podemos mejorar la experiencia como.";
+
+"FSLocalNotificationSurveyLinkBody"="Como acordamos, aquí está la encuesta de ABC Company. ¡Le agradecemos sus comentarios y opiniones!";
+"FSLocalNotificationInviteBody"="¿Nos permite que, más adelante, le enviemos una breve encuesta de satisfacción del cliente para que podamos mejorar su interacción con nuestra empresa a través de dispositivos móviles?";
+
+"FSAttributionText"="Llevada a cabo por ForeSee.";
+
+"FSSurveyNavBarTitle"="Encuesta de satisfacción del cliente";
+"FSSurveyCloseButtonText"="Close <es>";
+"FSSurveyLoadErrorMessage"="Debido a un problema técnico de conexión, en este momento no hemos podido finalizar la encuesta. Le agradecemos sus comentarios y el tiempo que nos ha dedicado";
+
+"FSCouldNotLoadSurveyTitle"="Lo lamentamos";
+"FSCouldNotLoadSurveyMessage"="La encuesta no ha podido cargarse en este momento. Esto podría deberse a un problema con su conectividad.";
+
+"FSWebCloseButtonText"="Done <es>";
+"FSWebLoadErrorTitle"="Lo lamentamos";
+"FSWebLoadURLNotWhitelistedErrorMessage"="Couldn't load page. Only whitelisted domains are permitted. <es>";
+"FSWebLoadErrorMessage"="La página no ha podido cargarse en este momento. Esto podría deberse a un problema con su conectividad.";
+"FSWebLoadErrorButtonText"="OK";
+
+
+
