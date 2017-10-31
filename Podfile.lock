@@ -1,5 +1,5 @@
 PODS:
-  - ForeSee (4.2.1)
+  - ForeSee (4.2.2)
   - SSSnackbar (0.1.2)
   - SVProgressHUD (2.0.4)
 
@@ -9,7 +9,7 @@ DEPENDENCIES:
   - SVProgressHUD (~> 2.0.3)
 
 SPEC CHECKSUMS:
-  ForeSee: dffad1830912a6690275c573ad01a58e18c868be
+  ForeSee: 603d2a4781594b6dd9b5cc537e17b038e2013ed1
   SSSnackbar: 6a16cf8ab848d99a03ba21a7dab94d4478beabed
   SVProgressHUD: bfde85ed6c573ea802b9cb37894ed9b629034f1b
 
