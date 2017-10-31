@@ -25,7 +25,6 @@
 		D544DF4D15068C0C0025FF43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D544DF4C15068C0C0025FF43 /* main.m */; };
 		D544DF5115068C0C0025FF43 /* FSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D544DF5015068C0C0025FF43 /* FSAppDelegate.m */; };
 		D544DF5415068C0C0025FF43 /* FSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D544DF5315068C0C0025FF43 /* FSViewController.m */; };
-		D544DF5715068C0C0025FF43 /* FSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D544DF5515068C0C0025FF43 /* FSViewController.xib */; };
 		D544DFB4150691AE0025FF43 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D544DFB3150691AE0025FF43 /* QuartzCore.framework */; };
 		D544DFB6150691B60025FF43 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D544DFB5150691B60025FF43 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
@@ -56,7 +55,6 @@
 		D544DF5015068C0C0025FF43 /* FSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSAppDelegate.m; sourceTree = "<group>"; };
 		D544DF5215068C0C0025FF43 /* FSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSViewController.h; sourceTree = "<group>"; };
 		D544DF5315068C0C0025FF43 /* FSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSViewController.m; sourceTree = "<group>"; };
-		D544DF5615068C0C0025FF43 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FSViewController.xib; sourceTree = "<group>"; };
 		D544DFB3150691AE0025FF43 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D544DFB5150691B60025FF43 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		FBF5BFAD88F19395B72B786C /* Pods-BasicSample.release w- symbols.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicSample.release w- symbols.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicSample/Pods-BasicSample.release w- symbols.xcconfig"; sourceTree = "<group>"; };
@@ -142,7 +140,6 @@
 				D544DF5015068C0C0025FF43 /* FSAppDelegate.m */,
 				D544DF5215068C0C0025FF43 /* FSViewController.h */,
 				D544DF5315068C0C0025FF43 /* FSViewController.m */,
-				D544DF5515068C0C0025FF43 /* FSViewController.xib */,
 				D544DF4715068C0C0025FF43 /* Supporting Files */,
 			);
 			path = BasicSample;
@@ -217,7 +214,6 @@
 				966346F91FA8BE47002F322D /* Main.storyboard in Resources */,
 				D544DF4B15068C0C0025FF43 /* InfoPlist.strings in Resources */,
 				966346FB1FA8BE7C002F322D /* Assets.xcassets in Resources */,
-				D544DF5715068C0C0025FF43 /* FSViewController.xib in Resources */,
 				966346FF1FA8C060002F322D /* Default-568h@2x.png in Resources */,
 				966346FD1FA8BFDD002F322D /* Launch Screen.storyboard in Resources */,
 			);
@@ -293,14 +289,6 @@
 				D544DF4A15068C0C0025FF43 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D544DF5515068C0C0025FF43 /* FSViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D544DF5615068C0C0025FF43 /* en */,
-			);
-			name = FSViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
