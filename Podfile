@@ -1,4 +1,4 @@
-platform :ios, '10.2'
+platform :ios, '9.0'
 
 workspace 'ForeSeeSamples.xcworkspace'
 
