@@ -18,8 +18,4 @@
   [ForeSee checkIfEligibleForSurvey];
 }
 
-- (void)dealloc {
-    [_mainView release];
-    [super dealloc];
-}
 @end
