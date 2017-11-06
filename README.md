@@ -12,7 +12,7 @@ you're using the latest version of the SDK, run:
 
 in the project's root directory.
 
-All projects can be found in::
+All projects can be found in:
 
 `ForeSeeSamples.xcworkspace`
 
