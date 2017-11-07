@@ -48,7 +48,7 @@ extern NSString *const FSLocalNotificationMeasureKey;
  To use the ForeSee framework, simply call `[ForeSee start];` in your `application:didFinishLaunchingWithOptions:`
  and it will automatically parse your configuration file and start the Trigger module and SessionReplay module.
  
- (Alternatively, use ``+ (void)startWithConfiguration:(NSString *)configFileName` to specify a custom configuration
+ (Alternatively, use ``+ (void)startWithConfigurationFile:(NSString *)configFileName` to specify a custom configuration
  file name (e.g. to include a configuration for both debug and release builds).)
  
  While integrating the ForeSee framework into your app, it is suggested you enable debug logging. This will output
@@ -219,7 +219,7 @@ extern NSString *const FSLocalNotificationMeasureKey;
 /** @name CPP (Customer Passed Parameters) */
 // ##############################
 
-/** Add a CPP to be sent to the server along with a completed survey
+/** Adds a CPP to be sent to the server along with a completed survey
  
  CPPs are unique to their provided key. If you add a value for an
  existing key, the old value will simply be overwritten.
@@ -231,7 +231,7 @@ extern NSString *const FSLocalNotificationMeasureKey;
  */
 + (void)addCPPValue:(NSString *)value forKey:(NSString *)key __attribute__((deprecated("first deprecated in ForeSee SDK 4.2.0 - Use -setCPPValue:forKey:")));
 
-/** Add a CPP to be sent to the server along with a completed survey
+/** Adds a CPP to be sent to the server along with a completed survey
  
  CPPs are unique to their provided key. If you set a value for an
  existing key, the old value will simply be overwritten.
@@ -242,9 +242,35 @@ extern NSString *const FSLocalNotificationMeasureKey;
  */
 + (void)setCPPValue:(NSString *)value forKey:(NSString *)key;
 
+/** Adds a list of CPP values to be sent to the server along with a completed 
+ survey. The values will be sent as a comma-separated list.
+ 
+ CPPs are unique to their provided key. If you set a value for an
+ existing key, the old value will simply be overwritten.
+ 
+ @param value The values to transmit
+ @param key The key identifying the values
+ @see setCPPValue:forKey:
+ @see removeCPPValueForKey:
+ */
++ (void)setCPPValueFromArray:(NSArray<NSString *> *)value forKey:(NSString *)key;
+
+/** Adds a CPP value to the end of the list of values for the given key. If no such 
+ list exists, then it will be created. If the key already contains a non-array value,
+ then that value will be destroyed and a new list will be created.
+ 
+ The values in the resulting array will be sent as a comma-separated list.
+ 
+ @param value The value to add
+ @param key The key identifying the values
+ @see setCPPValue:forKey:
+ @see removeCPPValueForKey:
+ */
++ (void)appendCPPValue:(NSString *)value forKey:(NSString *)key;
+
 /** Remove a CPP
  @param key The key of the value to remove.
- @see addCPPValue:forKey:
+ @see setCPPValue:forKey:
  */
 + (void)removeCPPValueForKey:(NSString *)key;
 

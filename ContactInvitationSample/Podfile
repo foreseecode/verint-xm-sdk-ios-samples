@@ -1,7 +1,0 @@
-platform :ios, '7.0'
-
-workspace 'ContactInvitationSample.xcworkspace'
-
-target "ContactInvitationSample" do
-    #pod 'ForeSee'
-end

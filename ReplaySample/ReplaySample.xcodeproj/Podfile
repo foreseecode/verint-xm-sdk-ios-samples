@@ -1,7 +1,0 @@
-platform :ios, '7.0'
-
-workspace 'BasicSample.xcworkspace'
-
-target "BasicSample" do
-    pod 'ForeSee'
-end

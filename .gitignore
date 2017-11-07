@@ -11,3 +11,4 @@ xcuserdata
 profile
 *.moved-aside
 DerivedData
+.DS_Store
