@@ -39,7 +39,7 @@
  implement at this time.
  
  @param url The URL to load
- @param domainWhitelist A set of URLs that are legal to follow
+ @param domainWhitelist A set of URLs that are legal to follow. This parameter is ignored unless enabledWhitelist is set to true in the configuration file.
  @param title The title of the page to load
  */
 - (void)show:(NSURL *)url domainWhitelist:(NSSet *)domainWhitelist title:(NSString *)title;
