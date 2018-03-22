@@ -16,6 +16,8 @@ All projects can be found in:
 
 `ForeSeeSamples.xcworkspace`
 
+> Note: This project should be installed to the primary drive to ensure that the projects will run correctly.
+
 ## BasicSample
 This sample project demonstrates a basic implementation of the ForeSee trigger code in an empty iPhone app.
 It uses the provided FSInviteView to show a modal dialog to the user inviting them to take a survey when
