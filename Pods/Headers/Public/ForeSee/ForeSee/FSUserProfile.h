@@ -1,1 +1,1 @@
-../../../../ForeSee/lib/ForeSee.framework/Versions/A/Headers/FSUserProfile.h
+../../../../ForeSee/lib/ForeSee.framework/Headers/FSUserProfile.h

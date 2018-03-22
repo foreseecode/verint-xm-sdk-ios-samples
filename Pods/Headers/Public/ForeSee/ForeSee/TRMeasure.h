@@ -1,1 +1,1 @@
-../../../../ForeSee/lib/ForeSee.framework/Versions/A/Headers/TRMeasure.h
+../../../../ForeSee/lib/ForeSee.framework/Headers/TRMeasure.h

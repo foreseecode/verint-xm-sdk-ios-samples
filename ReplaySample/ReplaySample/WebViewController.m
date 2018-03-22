@@ -7,7 +7,8 @@
 //
 
 #import "WebViewController.h"
-#import <ForeSee/ForeSee.h>
+
+@import ForeSeeReplay;
 
 @interface WebViewController ()
 
@@ -27,7 +28,7 @@
 
   // WebViews are completely masked by default. To show the content, they must be unmasked.
   // This will leave all inpout fields masked - any further masking must be handled in masking_configuration.json
-  [ForeSee unmaskView:self.webView];
+  [ForeSeeReplay unmaskView:self.webView];
   
   NSURL *url = [NSURL URLWithString:@"http://www.google.com"];
   [self.webView loadRequest:[NSURLRequest requestWithURL:url]];

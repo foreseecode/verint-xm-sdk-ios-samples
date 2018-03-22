@@ -1,1 +1,1 @@
-../../../../ForeSee/lib/ForeSee.framework/Versions/A/Headers/FSInviteHandler.h
+../../../../ForeSee/lib/ForeSee.framework/Headers/FSInviteHandler.h
