@@ -30,8 +30,8 @@
 
 @property (nonatomic, weak) id<CustomInviteViewDelegate> delegate;
 
-- (void)showAndOnComplete:(void (^)())completion;
-- (void)hideWithAnimation:(BOOL)animate completion:(void (^)())completion;
+- (void)showAndOnComplete:(void (^)(void))completion;
+- (void)hideWithAnimation:(BOOL)animate completion:(void (^)(void))completion;
 
 @end
 

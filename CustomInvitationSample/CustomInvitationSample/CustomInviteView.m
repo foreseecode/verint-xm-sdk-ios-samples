@@ -230,7 +230,7 @@ typedef enum StyleTypes : NSUInteger {
 
 # pragma mark - Public methods
 
-- (void)showAndOnComplete:(void (^)())completion {
+- (void)showAndOnComplete:(void (^)(void))completion {
     
     // Fades in the primary view (inviteView)
     
@@ -255,7 +255,7 @@ typedef enum StyleTypes : NSUInteger {
                      }];
 }
 
-- (void)hideWithAnimation:(BOOL)animate completion:(void (^)())completion {
+- (void)hideWithAnimation:(BOOL)animate completion:(void (^)(void))completion {
     
     // Fades out the primary view (inviteView)
     
