@@ -13,7 +13,6 @@
 		99F1EC7E18860568001B1A8B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F1EC7B18860568001B1A8B /* CoreMotion.framework */; };
 		99F1EC7F18860568001B1A8B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F1EC7C18860568001B1A8B /* CoreVideo.framework */; };
 		99F1EC8118860570001B1A8B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F1EC8018860570001B1A8B /* AVFoundation.framework */; };
-		99F1EC8318860576001B1A8B /* ForeSee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F1EC8218860576001B1A8B /* ForeSee.framework */; };
 		99F1ECA0188606A7001B1A8B /* foresee_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 99F1EC9F188606A7001B1A8B /* foresee_configuration.json */; };
 		A6525F672F80A2B7A42199A6 /* libPods-LocalNotificationSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 281C477F91892550A71628D6 /* libPods-LocalNotificationSample.a */; };
 		D5D68AEE1582A63D00730160 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D68AED1582A63D00730160 /* UIKit.framework */; };
@@ -37,7 +36,6 @@
 		99F1EC7B18860568001B1A8B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		99F1EC7C18860568001B1A8B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		99F1EC8018860570001B1A8B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		99F1EC8218860576001B1A8B /* ForeSee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ForeSee.framework; path = LocalNotificationSample/ForeSee.framework; sourceTree = "<group>"; };
 		99F1EC9F188606A7001B1A8B /* foresee_configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foresee_configuration.json; sourceTree = "<group>"; };
 		D5D68AE91582A63D00730160 /* LocalNotificationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalNotificationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5D68AED1582A63D00730160 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -62,7 +60,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99F1EC8318860576001B1A8B /* ForeSee.framework in Frameworks */,
 				99F1EC8118860570001B1A8B /* AVFoundation.framework in Frameworks */,
 				99F1EC7D18860568001B1A8B /* CoreMedia.framework in Frameworks */,
 				99F1EC7E18860568001B1A8B /* CoreMotion.framework in Frameworks */,
@@ -110,7 +107,6 @@
 		D5D68AEC1582A63D00730160 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				99F1EC8218860576001B1A8B /* ForeSee.framework */,
 				99F1EC8018860570001B1A8B /* AVFoundation.framework */,
 				99F1EC7A18860568001B1A8B /* CoreMedia.framework */,
 				99F1EC7B18860568001B1A8B /* CoreMotion.framework */,

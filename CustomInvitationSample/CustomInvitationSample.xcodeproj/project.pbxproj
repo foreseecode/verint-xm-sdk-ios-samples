@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9652A5681D22ED8B0061B04B /* ForeSee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9652A5671D22ED8B0061B04B /* ForeSee.framework */; };
 		968D2F581CFD6A6800C6066B /* CustomInviteTrackerSnackbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F571CFD6A6800C6066B /* CustomInviteTrackerSnackbar.m */; };
 		968D2F5B1CFD6DCC00C6066B /* CustomInviteDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F5A1CFD6DCC00C6066B /* CustomInviteDelegate.m */; };
 		968D2F5E1CFD75A000C6066B /* CustomInviteContactView.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F5D1CFD75A000C6066B /* CustomInviteContactView.m */; };
@@ -66,7 +65,6 @@
 /* Begin PBXFileReference section */
 		5858EF61849E87D448A2698A /* Pods-CustomInvitationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomInvitationSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample.debug.xcconfig"; sourceTree = "<group>"; };
 		7EFDFDDB91291FE56CF175FB /* libPods-CustomInvitationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CustomInvitationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9652A5671D22ED8B0061B04B /* ForeSee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ForeSee.framework; path = CustomInvitationSample/ForeSee.framework; sourceTree = "<group>"; };
 		968D2F561CFD6A6800C6066B /* CustomInviteTrackerSnackbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInviteTrackerSnackbar.h; sourceTree = "<group>"; };
 		968D2F571CFD6A6800C6066B /* CustomInviteTrackerSnackbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInviteTrackerSnackbar.m; sourceTree = "<group>"; };
 		968D2F591CFD6DCC00C6066B /* CustomInviteDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInviteDelegate.h; sourceTree = "<group>"; };
@@ -133,7 +131,6 @@
 			files = (
 				96C3D6541CDB9F7C005040C8 /* SystemConfiguration.framework in Frameworks */,
 				96C3D6511CDB9F65005040C8 /* AVFoundation.framework in Frameworks */,
-				9652A5681D22ED8B0061B04B /* ForeSee.framework in Frameworks */,
 				96C3D6521CDB9F65005040C8 /* Foundation.framework in Frameworks */,
 				96C3D64E1CDB9F5A005040C8 /* UIKit.framework in Frameworks */,
 				96C3D6471CDB9F4F005040C8 /* CoreAudio.framework in Frameworks */,
@@ -177,7 +174,6 @@
 		64B4086BE7EB6372E9594240 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9652A5671D22ED8B0061B04B /* ForeSee.framework */,
 				96C3D6531CDB9F7C005040C8 /* SystemConfiguration.framework */,
 				96C3D64F1CDB9F65005040C8 /* AVFoundation.framework */,
 				96C3D6501CDB9F65005040C8 /* Foundation.framework */,

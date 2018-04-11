@@ -25,7 +25,6 @@
 		D586FDC417383524008BD52B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D586FDC317383524008BD52B /* CoreVideo.framework */; };
 		D586FDC617383528008BD52B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D586FDC517383528008BD52B /* libz.dylib */; };
 		D586FE1B173839B4008BD52B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D586FE1A173839B4008BD52B /* Default-568h@2x.png */; };
-		D5AF5F661778BABF00EBAA63 /* ForeSee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AF5F651778BABF00EBAA63 /* ForeSee.framework */; };
 		E9CAFBE1DC7EE230BEA970A0 /* libPods-InternationalizationSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21678F83D5A08F99C42F9334 /* libPods-InternationalizationSample.a */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +63,6 @@
 		D586FDC317383524008BD52B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		D586FDC517383528008BD52B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D586FE1A173839B4008BD52B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
-		D5AF5F651778BABF00EBAA63 /* ForeSee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ForeSee.framework; path = InternationalizationSample/ForeSee.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +80,6 @@
 				D51310D1150541F200619182 /* UIKit.framework in Frameworks */,
 				D51310D3150541F200619182 /* Foundation.framework in Frameworks */,
 				D51310D5150541F200619182 /* CoreGraphics.framework in Frameworks */,
-				D5AF5F661778BABF00EBAA63 /* ForeSee.framework in Frameworks */,
 				E9CAFBE1DC7EE230BEA970A0 /* libPods-InternationalizationSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,7 +117,6 @@
 		D51310CF150541F200619182 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D5AF5F651778BABF00EBAA63 /* ForeSee.framework */,
 				D5131149150542D100619182 /* SystemConfiguration.framework */,
 				D5131147150542CA00619182 /* QuartzCore.framework */,
 				D51310D0150541F200619182 /* UIKit.framework */,

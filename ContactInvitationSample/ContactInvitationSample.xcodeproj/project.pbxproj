@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4F52A9E278BF734CE4289CD6 /* libPods-ContactInvitationSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E817663A01B1186EA6E8D85F /* libPods-ContactInvitationSample.a */; };
-		9652A56B1D22EEF90061B04B /* ForeSee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9652A56A1D22EEF90061B04B /* ForeSee.framework */; };
 		967270761D04DF4F00F90E54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 967270751D04DF4F00F90E54 /* main.m */; };
 		967270791D04DF4F00F90E54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 967270781D04DF4F00F90E54 /* AppDelegate.m */; };
 		9672707C1D04DF4F00F90E54 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9672707B1D04DF4F00F90E54 /* ViewController.m */; };
@@ -47,7 +46,6 @@
 
 /* Begin PBXFileReference section */
 		07485F3358C9DA0321E3C9BE /* Pods-ContactInvitationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactInvitationSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ContactInvitationSample/Pods-ContactInvitationSample.release.xcconfig"; sourceTree = "<group>"; };
-		9652A56A1D22EEF90061B04B /* ForeSee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ForeSee.framework; path = ContactInvitationSample/ForeSee.framework; sourceTree = "<group>"; };
 		967270711D04DF4F00F90E54 /* ContactInvitationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactInvitationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967270751D04DF4F00F90E54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		967270771D04DF4F00F90E54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 				96FF0F961D052DD3000A2176 /* CoreMedia.framework in Frameworks */,
 				96FF0F971D052DD3000A2176 /* CoreMotion.framework in Frameworks */,
 				96FF0F981D052DD3000A2176 /* CoreVideo.framework in Frameworks */,
-				9652A56B1D22EEF90061B04B /* ForeSee.framework in Frameworks */,
 				96FF0F901D052DBE000A2176 /* AVFoundation.framework in Frameworks */,
 				96FF0F8E1D052DB4000A2176 /* SystemConfiguration.framework in Frameworks */,
 				4F52A9E278BF734CE4289CD6 /* libPods-ContactInvitationSample.a in Frameworks */,
@@ -128,7 +125,6 @@
 		3F02B4B904B53DECD95EC7DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9652A56A1D22EEF90061B04B /* ForeSee.framework */,
 				96FF0F9B1D052DEB000A2176 /* libz.tbd */,
 				96FF0F991D052DDB000A2176 /* QuartzCore.framework */,
 				96FF0F911D052DD3000A2176 /* CoreGraphics.framework */,
