@@ -1,11 +1,11 @@
 {
-	"clientId":"FSRTESTINGCODECID12345==",
+	"clientId":"9NNs9GIBQIVdk1LpDlJpAQ==",
 	"repeatDaysAfterDecline":60,
 	"repeatDaysAfterComplete":120,
 	"measures":
 	[
     {
-      "surveyId":"app_test_1-fc",
+      "surveyId":"mobile_app-fr",
       "daysSinceLaunch":0,
       "launchCount":0
     }
