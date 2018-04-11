@@ -1,11 +1,11 @@
 {
-  "clientId":"FSRTESTINGCODECID12345==",
+  "clientId":"9NNs9GIBQIVdk1LpDlJpAQ==",
   "notificationType":"IMMEDIATE",
   "sessionReplayEnabled": true,
   "measures":
   [
     {
-      "surveyId":"iphone_app_QA",
+      "surveyId":"mobile_app-en",
       "launchCount":0
     }
   ]

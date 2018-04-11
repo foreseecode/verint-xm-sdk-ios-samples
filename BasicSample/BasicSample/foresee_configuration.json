@@ -1,9 +1,9 @@
 {
-	"clientId":"FSRTESTINGCODECID12345==",
+	"clientId":"9NNs9GIBQIVdk1LpDlJpAQ==",
 	"measures":
 	[
 		{
-			"surveyId":"iphone_app_QA",
+			"surveyId":"mobile_app-en",
 			"daysSinceLaunch":0,
 			"launchCount":0,
 			"significantEventThresholds":
