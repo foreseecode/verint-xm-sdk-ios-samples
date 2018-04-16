@@ -1,0 +1,10 @@
+framework module ForeSeeReplay {
+    umbrella header "ForeSeeReplay.h"
+
+    export *
+
+    explicit module Replay {
+        header "UIViewController+SRViewChangeLogging.h"
+        export ForeSee
+    }
+}

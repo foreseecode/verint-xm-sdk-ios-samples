@@ -329,10 +329,12 @@
 			inputPaths = (
 				"${SRCROOT}/../Pods/Target Support Files/Pods-ReplaySample/Pods-ReplaySample-frameworks.sh",
 				"${PODS_ROOT}/ForeSee/lib/ForeSee.framework",
+				"${PODS_ROOT}/ForeSee/lib/ForeSeeReplay.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSee.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeReplay.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
