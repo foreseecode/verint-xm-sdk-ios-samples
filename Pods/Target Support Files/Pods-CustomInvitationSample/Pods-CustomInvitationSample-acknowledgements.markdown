@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## ForeSee
 
-Copyright (c) 2017 ForeSee. All rights reserved.
+Copyright (c) 2018 ForeSee. All rights reserved.
 
 ## SSSnackbar
 

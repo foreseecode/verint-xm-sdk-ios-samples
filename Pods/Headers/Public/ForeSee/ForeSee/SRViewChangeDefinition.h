@@ -1,1 +1,1 @@
-../../../../ForeSee/lib/ForeSee.framework/Versions/A/Headers/SRViewChangeDefinition.h
+../../../../ForeSee/lib/ForeSee.framework/Headers/SRViewChangeDefinition.h
