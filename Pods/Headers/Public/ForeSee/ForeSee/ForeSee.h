@@ -1,1 +1,1 @@
-../../../../ForeSee/lib/ForeSee.framework/Versions/A/Headers/ForeSee.h
+../../../../ForeSee/lib/ForeSee.framework/Headers/ForeSee.h

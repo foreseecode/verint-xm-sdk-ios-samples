@@ -1,1 +1,1 @@
-../../../../ForeSee/lib/ForeSee.framework/Versions/A/Headers/FSTriggerCriteria.h
+../../../../ForeSee/lib/ForeSee.framework/Headers/FSTriggerCriteria.h

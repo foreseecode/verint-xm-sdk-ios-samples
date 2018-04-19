@@ -46,4 +46,5 @@ end
 target "ReplaySample" do
     project 'ReplaySample/ReplaySample.xcodeproj'
     pod 'ForeSee'
+    pod 'ForeSee/Replay'
 end

@@ -7,7 +7,8 @@
 //
 
 #import "NativeViewController.h"
-#import <ForeSee/ForeSee.h>
+
+@import ForeSeeReplay;
 
 @interface NativeViewController ()
 
@@ -43,12 +44,12 @@
 
   if (self.isLabelMasked) {
     // Mask view
-    [ForeSee maskView:self.label];
+    [ForeSeeReplay maskView:self.label];
     [self.labelButton setTitle:@"Unmask Label" forState:UIControlStateNormal];
   }
   else {
     // Unmask view
-    [ForeSee unmaskView:self.label];
+    [ForeSeeReplay unmaskView:self.label];
     [self.labelButton setTitle:@"Mask Label" forState:UIControlStateNormal];
   }
 }
@@ -58,20 +59,20 @@
 
   if (self.areTextViewsMasked) {
     // Mask views
-    [ForeSee maskView:self.textField];
-    [ForeSee maskView:self.textView];
+    [ForeSeeReplay maskView:self.textField];
+    [ForeSeeReplay maskView:self.textView];
     [self.textViewButton setTitle:@"Unmask Text Views" forState:UIControlStateNormal];
   }
   else {
     // Unmask views
-    [ForeSee unmaskView:self.textField];
-    [ForeSee unmaskView:self.textView];
+    [ForeSeeReplay unmaskView:self.textField];
+    [ForeSeeReplay unmaskView:self.textView];
     [self.textViewButton setTitle:@"Mask Text Views" forState:UIControlStateNormal];
   }
 }
 
 - (IBAction)toggleDebugMasking:(id)sender {
-  [ForeSee setMaskingDebugEnabled:!(bool)[ForeSee isMaskingDebugEnabled]];
+  [ForeSeeReplay setMaskingDebugEnabled:!(bool)[ForeSeeReplay isMaskingDebugEnabled]];
 }
 
 @end

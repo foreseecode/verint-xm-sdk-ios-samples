@@ -10,7 +10,8 @@
 #import "NativeViewController.h"
 #import "WebViewController.h"
 #import "SubmissionViewController.h"
-#import <ForeSee/ForeSee.h>
+
+@import ForeSeeReplay;
 
 @implementation AppDelegate
 
@@ -37,9 +38,9 @@
   [self.window setRootViewController:tabBarController];
   
   // Start ForeSee SDK
-  [ForeSee setDebugLogEnabled:YES];
-  [ForeSee start];
-  [ForeSee setMaskingDebugEnabled:YES];
+  [ForeSeeReplay setDebugLogEnabled:YES];
+  [ForeSeeReplay start];
+  [ForeSeeReplay setMaskingDebugEnabled:YES];
   
   [self.window makeKeyAndVisible];
   return YES;
