@@ -4,6 +4,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <Foresee/Foresee.h>
+#import <ForeSee/ForeSee.h>
 
 

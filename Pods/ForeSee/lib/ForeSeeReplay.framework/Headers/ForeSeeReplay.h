@@ -9,14 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <ForeSee/ForeSee.h>
 
-@class FSSession;
-
-@interface ForeSee ()
-
-@property (nonatomic, readonly) FSSession *session;
-
-@end
-
 /**
  The ForeSeeReplay class provides the main interface to the ForeSee Replay module. This module requires the
  primary ForeSee.framework.

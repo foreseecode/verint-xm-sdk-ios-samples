@@ -1,10 +1,10 @@
 PODS:
-  - ForeSee (5.0.2):
-    - ForeSee/Core (= 5.0.2)
-  - ForeSee/Core (5.0.2):
+  - ForeSee (5.0.3):
+    - ForeSee/Core (= 5.0.3)
+  - ForeSee/Core (5.0.3):
     - ForeSee/CxMeasure
-  - ForeSee/CxMeasure (5.0.2)
-  - ForeSee/Replay (5.0.2):
+  - ForeSee/CxMeasure (5.0.3)
+  - ForeSee/Replay (5.0.3):
     - ForeSee/CxMeasure
   - SSSnackbar (0.1.2)
   - SVProgressHUD (2.0.4)
@@ -16,7 +16,7 @@ DEPENDENCIES:
   - SVProgressHUD (~> 2.0.3)
 
 SPEC CHECKSUMS:
-  ForeSee: c25f36350a53dd8c355bde819cc4f8365b037d04
+  ForeSee: 22d45c23c2c234747b23ebdf404a83ee0b72b580
   SSSnackbar: 6a16cf8ab848d99a03ba21a7dab94d4478beabed
   SVProgressHUD: bfde85ed6c573ea802b9cb37894ed9b629034f1b
 
