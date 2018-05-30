@@ -1,10 +1,10 @@
 {
-  "clientId":"Ij6P1lfZHchO/co10lQ4BQ==",
+  "clientId":"9NNs9GIBQIVdk1LpDlJpAQ==",
   "notificationType":"LOCAL",
   "measures":
   [
     {
-      "surveyId":"app_test_1",
+      "surveyId":"mobile_app-en",
       "daysSinceLaunch":0,
       "launchCount":0
     }

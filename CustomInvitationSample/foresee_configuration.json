@@ -1,10 +1,10 @@
 {
-	"clientId":"Ij6P1lfZHchO/co10lQ4BQ==",
-    "notificationType":"IN_SESSION",
+	"clientId":"9NNs9GIBQIVdk1LpDlJpAQ==",
+  "notificationType":"IN_SESSION",
 	"measures":
 	[
 		{
-			"surveyId": "app_test_1",
+			"surveyId":"mobile_app-en",
 			"launchCount": 0
 		}
 	]
