@@ -38,11 +38,20 @@
  Implementation of this method is optional. Custom surveys are not required. Return `YES` to allow the
  default behavior.
  
+ This functionality is deprecated as of ForeSee SDK 4.4.
+ 
+ @deprecated v4.4.0
  @param measure The measure for which a survey is about to be displayed.
  @param url The URL of the survey.
  @return NO to prevent the default survey from appearing, YES otherwise.
  */
-- (BOOL)willShowSurveyForMeasure:(TRMeasure *)measure URL:(NSURL *)url;
+- (BOOL)willShowSurveyForMeasure:(TRMeasure *)measure URL:(NSURL *)url __attribute__((deprecated("first deprecated in ForeSee SDK 4.4 - Use -willShowSurveyForMeasure:")));
+
+/** Tells the delegate that the ForeSee SDK is about to show a survey.
+ 
+ @param measure The measure for which a survey is about to be displayed.
+ */
+- (void)willShowSurveyForMeasure:(TRMeasure *)measure;
 
 /** @name Survey View Controller */
 
@@ -50,9 +59,10 @@
  
  Implementation of this method is optional.
  
+ @deprecated v4.4.0
  @return A custom styled `UINavigationBar`
  */
-- (UINavigationBar *)navigationBarForSurveyViewController;
+- (UINavigationBar *)navigationBarForSurveyViewController __attribute__((deprecated("first deprecated in ForeSee SDK 4.4 - Presentation may have changed from previous versions. Use with caution.")));
 
 /** @name Sampling and Eligibility Checks */
 

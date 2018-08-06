@@ -16,7 +16,7 @@
 #pragma mark - Survey ID
 
 /** The name of the survey associated with this measure. */
-@property (nonatomic, retain) NSString *surveyID;
+@property (nonatomic, copy) NSString *surveyID;
 
 #pragma mark - Criteria
 

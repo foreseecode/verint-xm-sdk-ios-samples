@@ -15,12 +15,6 @@
  controllers, however, are not counted (e.g. UINavigationController). You may have your own custom controllers
  that you don't wish to be counted (or containers that you think should be). This protocol enables an override 
  of the default behavior.
- 
- In addition, when Replay is enabled, it logs when view controllers appear in order to
- logically divide a recording. If you want to disable this behaviour for a given view controller,
- you must adopt this protocol.
- 
- @see UIViewController(SRViewChangeLogging)
  */
 @protocol SRViewChangeDefinition <NSObject>
 
@@ -41,9 +35,10 @@
 
  Implementation of this method is optional. (This method has no effect when Replay is not enabled.)
 
+ @deprecated v5.1.0
  @return YES if you want the default behaviour, NO if you want to disable.
  */
-- (BOOL)isAutoViewChangeEnabled;
+- (BOOL)isAutoViewChangeEnabled __attribute__((deprecated("first deprecated in ForeSee SDK 5.1.0 - Replay is no longer supported.")));
 
 /** @name Custom Log Properties */
 
@@ -53,8 +48,9 @@
 
  Implementation of this method is optional. (This method has no effect when Replay is not enabled.)
 
+ @deprecated v5.1.0
  @return The custom view name
  */
-- (NSString *)sessionReplayViewName;
+- (NSString *)sessionReplayViewName __attribute__((deprecated("first deprecated in ForeSee SDK 5.1.0 - Replay is no longer supported.")));
 
 @end

@@ -20,9 +20,6 @@
       location = "group:LocalNotificationSample/LocalNotificationSample.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ReplaySample/ReplaySample.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

@@ -19,11 +19,6 @@
     [self showStatus:NSStringFromSelector(_cmd)];
 }
 
-- (BOOL)willShowSurveyForMeasure:(TRMeasure *)measure URL:(NSURL *)url {
-    [self showStatus:NSStringFromSelector(_cmd)];
-    return YES;
-}
-
 - (void)willNotShowInviteWithEligibilityFailedForMeasure:(TRMeasure *)measure {
     [self showStatus:NSStringFromSelector(_cmd)];
 }

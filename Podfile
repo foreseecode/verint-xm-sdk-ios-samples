@@ -1,4 +1,4 @@
-platform :ios, '9.0'
+platform :ios, '10.0'
 
 workspace 'ForeSeeSamples.xcworkspace'
 
@@ -9,7 +9,6 @@ project 'ContactInvitationSample/ContactInvitationSample.xcodeproj'
 project 'InternationalizationSample/InternationalizationSample.xcodeproj'
 project 'LocalNotificationSample/LocalNotificationSample.xcodeproj'
 project 'OnExitSurveySample/OnExitSurveySample.xcodeproj'
-project 'ReplaySample/ReplaySample.xcodeproj'
 
 target "CustomInvitationSample" do
     project 'CustomInvitationSample/CustomInvitationSample.xcodeproj'
@@ -41,10 +40,4 @@ end
 target "LocalNotificationSample" do
     project 'LocalNotificationSample/LocalNotificationSample.xcodeproj'
     pod 'ForeSee'
-end
-
-target "ReplaySample" do
-    project 'ReplaySample/ReplaySample.xcodeproj'
-    pod 'ForeSee'
-    pod 'ForeSee/Replay'
 end
