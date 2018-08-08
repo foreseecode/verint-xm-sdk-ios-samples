@@ -62,18 +62,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		004E67A49DE60511E85598126E43F698 /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		004E67A49DE60511E85598126E43F698 /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSVProgressHUD.a; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0455ACBE5691C1AFC1E2F5F8208365F4 /* Pods-ContactInvitationSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ContactInvitationSample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		058D8C382D96C94401C3DD4507DF52E9 /* SSSnackbar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSSnackbar.xcconfig; sourceTree = "<group>"; };
-		0ACAA8B5EA3A527F4EA0916407AE82D8 /* libPods-InternationalizationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InternationalizationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ACAA8B5EA3A527F4EA0916407AE82D8 /* libPods-InternationalizationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-InternationalizationSample.a"; path = "libPods-InternationalizationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F0971E6D0EB78D06CB9A3789549E7C /* Pods-ContactInvitationSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ContactInvitationSample-resources.sh"; sourceTree = "<group>"; };
 		1497BB711D3DF360984862599C2EA781 /* Pods-InternationalizationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InternationalizationSample.debug.xcconfig"; sourceTree = "<group>"; };
 		1D5E24CA22D8B608E9442C2D9020F0EC /* Pods-ContactInvitationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ContactInvitationSample.debug.xcconfig"; sourceTree = "<group>"; };
 		269615B69C49E54850E8F95120DEB580 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
-		26CEE1F7F50FB12BC833B08C01260D15 /* libPods-BasicSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BasicSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26CEE1F7F50FB12BC833B08C01260D15 /* libPods-BasicSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-BasicSample.a"; path = "libPods-BasicSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B29BB7266BD95ABAE49C2D62200295F /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
 		2BF01AE61C37A60FCC2673E82D8BE3BA /* Pods-CustomInvitationSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CustomInvitationSample-dummy.m"; sourceTree = "<group>"; };
-		30601FA04F24567CDC94A91E958D6BE4 /* libSSSnackbar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSSSnackbar.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		30601FA04F24567CDC94A91E958D6BE4 /* libSSSnackbar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSSSnackbar.a; path = libSSSnackbar.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3133F13FA341E170C2EDFEEC2349941B /* Pods-InternationalizationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InternationalizationSample.release.xcconfig"; sourceTree = "<group>"; };
 		32826AC975D0B5AFEC7702AD551988E3 /* Pods-InternationalizationSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InternationalizationSample-acknowledgements.plist"; sourceTree = "<group>"; };
 		33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -84,7 +84,7 @@
 		3E848D658DDDC3C48FCB0C6CE98B4AF5 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
 		41278109A1D20BB501FC9DFF2086D05C /* Pods-BasicSwiftSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BasicSwiftSample-dummy.m"; sourceTree = "<group>"; };
 		416FCAA05C448E2F30AAE492BC59EDBA /* SSSnackbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSSnackbar-prefix.pch"; sourceTree = "<group>"; };
-		433E24EF7FF8087D6A971F070D5C482F /* SSSnackbar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSSnackbar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		433E24EF7FF8087D6A971F070D5C482F /* SSSnackbar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SSSnackbar.bundle; path = "SSSnackbar-SSSnackbar.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		434B684BBC4943F24E760010EA1D4FEC /* Pods-LocalNotificationSample.release w- symbols.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalNotificationSample.release w- symbols.xcconfig"; sourceTree = "<group>"; };
 		443E7297B1ABBC2E89E8F45F480DD23E /* Pods-ContactInvitationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ContactInvitationSample.release.xcconfig"; sourceTree = "<group>"; };
 		46A6EA24B18AA59C87683E1CEA8B0CA7 /* Pods-BasicSample.release w- symbols.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicSample.release w- symbols.xcconfig"; sourceTree = "<group>"; };
@@ -106,12 +106,12 @@
 		805E61CAD4128B62D5188086996DBDE0 /* Pods-ContactInvitationSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ContactInvitationSample-acknowledgements.plist"; sourceTree = "<group>"; };
 		82E050EAAACF026BD392704A036870C9 /* Pods-CustomInvitationSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CustomInvitationSample-resources.sh"; sourceTree = "<group>"; };
 		8A69A7D994CBE520BDC09B4D5358C794 /* Pods-BasicSwiftSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BasicSwiftSample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8DA3ED94B2434C95A19CD7FE39AF5A0D /* libPods-LocalNotificationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocalNotificationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DA3ED94B2434C95A19CD7FE39AF5A0D /* libPods-LocalNotificationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LocalNotificationSample.a"; path = "libPods-LocalNotificationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED96CFF02EAFF2C91549A949FC2F371 /* Pods-BasicSwiftSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BasicSwiftSample-frameworks.sh"; sourceTree = "<group>"; };
 		8F60C3C6D84CF3D832AFDC08089B9856 /* Pods-BasicSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicSample.debug.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		990609F334E91263FAFE885AED64DA94 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		9F56876EA911A688385FEC619D372FC9 /* libPods-ContactInvitationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ContactInvitationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F56876EA911A688385FEC619D372FC9 /* libPods-ContactInvitationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ContactInvitationSample.a"; path = "libPods-ContactInvitationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A061171FFD2446FDC9A14EF5B85D247A /* SSSnackbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSSnackbar.h; path = Pod/Classes/SSSnackbar.h; sourceTree = "<group>"; };
 		A0CFCB1CA75B180043299BFADB9CF448 /* Pods-BasicSwiftSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BasicSwiftSample-acknowledgements.plist"; sourceTree = "<group>"; };
 		A27462EA9675E3E51DE22D77F9BF2E4E /* Pods-LocalNotificationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalNotificationSample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 		A789C0127994197E01B3B221C7130FC0 /* Pods-LocalNotificationSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocalNotificationSample-frameworks.sh"; sourceTree = "<group>"; };
 		AC260D1B6BF9B2B4150E12755305CBE0 /* Pods-CustomInvitationSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CustomInvitationSample-acknowledgements.plist"; sourceTree = "<group>"; };
 		B877EA5A5E037331AA1F8C4F693D368F /* Pods-LocalNotificationSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocalNotificationSample-acknowledgements.plist"; sourceTree = "<group>"; };
-		C3B797D5D8614F50097B1B3933B63551 /* libPods-CustomInvitationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CustomInvitationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B797D5D8614F50097B1B3933B63551 /* libPods-CustomInvitationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CustomInvitationSample.a"; path = "libPods-CustomInvitationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4CF7BFE163D77415BBA46692D22E8AE /* Pods-CustomInvitationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomInvitationSample.release.xcconfig"; sourceTree = "<group>"; };
 		CBBEF084183E14F37E2F37E2F5E37F73 /* Pods-BasicSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BasicSample-resources.sh"; sourceTree = "<group>"; };
 		CD4E104270B589707E25B1A305A0757B /* SSSnackbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSSnackbar.m; path = Pod/Classes/SSSnackbar.m; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 		D5459DEC2D194AFBFF899444BFFE31A8 /* Pods-InternationalizationSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InternationalizationSample-dummy.m"; sourceTree = "<group>"; };
 		D6AF285AD5D4C4F4EA18AA81E220541D /* Pods-ContactInvitationSample.release w- symbols.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ContactInvitationSample.release w- symbols.xcconfig"; sourceTree = "<group>"; };
 		D6C8666182DCA7E10CFC22661B305B81 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		D8EAF3E68A32672A2C9A7B984C4A4D93 /* libPods-BasicSwiftSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BasicSwiftSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8EAF3E68A32672A2C9A7B984C4A4D93 /* libPods-BasicSwiftSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-BasicSwiftSample.a"; path = "libPods-BasicSwiftSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99EC1B874C3F64322DC7BB4E7AE57C3 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
 		DA2D402DCECEA5DDEFFA9DDBC6055656 /* SSSnackbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSSnackbar-dummy.m"; sourceTree = "<group>"; };
 		DB87B3685DD41B039DC2330AB1A44EAE /* Pods-BasicSwiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicSwiftSample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -245,6 +245,7 @@
 				D8CDAE33690F1C0EBD813BE79494E1CF /* Resources */,
 				54A4D089046B5B326BA6A0E539BB4AE1 /* Support Files */,
 			);
+			name = SVProgressHUD;
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -292,6 +293,7 @@
 				CD4E104270B589707E25B1A305A0757B /* SSSnackbar.m */,
 				7E70380D150EAA8D08A526FC084CBC88 /* Support Files */,
 			);
+			name = SSSnackbar;
 			path = SSSnackbar;
 			sourceTree = "<group>";
 		};
@@ -327,6 +329,7 @@
 			children = (
 				D88B7236368FAB6827183C6257F970AF /* CxMeasure */,
 			);
+			name = ForeSee;
 			path = ForeSee;
 			sourceTree = "<group>";
 		};
@@ -649,7 +652,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -819,7 +822,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/SSSnackbar/SSSnackbar-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -864,7 +867,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SSSnackbar";
 				INFOPLIST_FILE = "Target Support Files/SSSnackbar/ResourceBundle-SSSnackbar-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = SSSnackbar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -904,7 +907,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -928,7 +931,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/SSSnackbar/SSSnackbar-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -952,7 +955,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -1163,7 +1166,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/SSSnackbar/SSSnackbar-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -1244,13 +1247,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
-		};
-		96CD489C2118D51800F9CB4E /* Release w/ symbols */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "SSSnackbar-SSSnackbar";
-			};
-			name = "Release w/ symbols";
 		};
 		9EF7622A544ACEE5E2E26724779C02D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1418,7 +1414,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SSSnackbar";
 				INFOPLIST_FILE = "Target Support Files/SSSnackbar/ResourceBundle-SSSnackbar-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = SSSnackbar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1436,7 +1432,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -1583,7 +1579,6 @@
 			buildConfigurations = (
 				CD2B4462617B57406AF19B056E76D1F0 /* Debug */,
 				22A82C760B98CAF93AECEBD7D106CB30 /* Release */,
-				96CD489C2118D51800F9CB4E /* Release w/ symbols */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
