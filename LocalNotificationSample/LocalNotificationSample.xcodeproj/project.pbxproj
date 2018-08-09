@@ -159,6 +159,7 @@
 				D5D68AE61582A63D00730160 /* Frameworks */,
 				D5D68AE71582A63D00730160 /* Resources */,
 				6B151F248FBCEFBAF9F178E2 /* [CP] Embed Pods Frameworks */,
+				DB0EF779827401257E65E510 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,6 +229,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-LocalNotificationSample/Pods-LocalNotificationSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB0EF779827401257E65E510 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-LocalNotificationSample/Pods-LocalNotificationSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F8588C4257779EF8048FE1CB /* [CP] Check Pods Manifest.lock */ = {

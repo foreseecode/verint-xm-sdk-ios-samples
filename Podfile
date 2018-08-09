@@ -1,14 +1,5 @@
 platform :ios, '10.0'
-
 workspace 'ForeSeeSamples.xcworkspace'
-
-project 'CustomInvitationSample/CustomInvitationSample.xcodeproj'
-project 'BasicSample/BasicSample.xcodeproj'
-project 'BasicSwiftSample/BasicSwiftSample.xcodeproj'
-project 'ContactInvitationSample/ContactInvitationSample.xcodeproj'
-project 'InternationalizationSample/InternationalizationSample.xcodeproj'
-project 'LocalNotificationSample/LocalNotificationSample.xcodeproj'
-project 'OnExitSurveySample/OnExitSurveySample.xcodeproj'
 
 target "CustomInvitationSample" do
     project 'CustomInvitationSample/CustomInvitationSample.xcodeproj'
