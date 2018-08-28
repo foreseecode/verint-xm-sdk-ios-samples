@@ -8,15 +8,21 @@ PODS:
   - SVProgressHUD (2.0.4)
 
 DEPENDENCIES:
-  - ForeSee
+  - ForeSee (= 5.1.0)
   - SSSnackbar (~> 0.1.2)
   - SVProgressHUD (~> 2.0.3)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ForeSee
+    - SSSnackbar
+    - SVProgressHUD
 
 SPEC CHECKSUMS:
   ForeSee: 7d5da1c4ee91ce3d4412106c8161f8261ddfb45d
   SSSnackbar: 6a16cf8ab848d99a03ba21a7dab94d4478beabed
   SVProgressHUD: bfde85ed6c573ea802b9cb37894ed9b629034f1b
 
-PODFILE CHECKSUM: 402334f9ede3f5e26b0eaae3e4d65d8ccc943823
+PODFILE CHECKSUM: ffda8746900bd3dab54a6ad7e2d353038b5b0c70
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
