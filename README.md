@@ -5,18 +5,26 @@ These sample projects demonstrate typical usage of the ForeSee SDK.
 ## Installation
 
 All sample projects use [Cocoapods](http://cocoapods.org/). The Pods and workspace folders are
-included, so it isn't strictly necessary to manually install anything. However, to guarantee that 
-you're using the latest version of the SDK, run:
+included, so it isn't strictly necessary to manually install anything. 
 
-1. `$ pod update`
+### Known issues / Troubleshooting
 
-in the project's root directory.
+Some users have reported the following error on first run ([#12](https://github.com/foreseecode/foresee-sdk-ios-samples/issues/12)):
+
+    dyld: Library not loaded: @rpath/ForeSee.framework/ForeSee
+     Referenced from: /Users/uiwehb/Library/Developer/CoreSimulator/Devices/8FAE80C7-CE04-4F4A-BD4C-95EAB508C733/data/Containers/Bundle/Application/FBC926AF-540F-4AB1-8E2D-7FEEA3FC77E7/BasicSample.app/BasicSample
+    Reason: image not found
+
+This is fixed by re-stalling the pods from scratch with the following commands:
+
+    $ sudo rm -r Pods/
+    $ pod install
+
+## Projects
 
 All projects can be found in:
 
 `ForeSeeSamples.xcworkspace`
-
-> Note: This project should be installed to the primary drive to ensure that the projects will run correctly.
 
 ## BasicSample
 This sample project demonstrates a basic implementation of the ForeSee trigger code in an empty iPhone app.
