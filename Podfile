@@ -2,13 +2,13 @@ platform :ios, '10.0'
 workspace 'ForeSeeSamples.xcworkspace'
 
 def foresee_pods
-    #pod 'ForeSee', '5.1.0'
+    pod 'ForeSee', '5.1.0'
 end
 
 target "CustomInvitationSample" do
     project 'CustomInvitationSample/CustomInvitationSample.xcodeproj'
-    #pod 'SSSnackbar', '~> 0.1.2'
-    #pod 'SVProgressHUD', '~> 2.0.3'
+    pod 'SSSnackbar', '~> 0.1.2'
+    pod 'SVProgressHUD', '~> 2.0.3'
     foresee_pods
 end
 

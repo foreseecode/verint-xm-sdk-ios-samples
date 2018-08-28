@@ -170,6 +170,7 @@
 				D51310C8150541F200619182 /* Sources */,
 				D51310C9150541F200619182 /* Frameworks */,
 				D51310CA150541F200619182 /* Resources */,
+				8A646A37D6C6FF6176A8E9C0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -224,6 +225,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8A646A37D6C6FF6176A8E9C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-InternationalizationSample/Pods-InternationalizationSample-frameworks.sh",
+				"${PODS_ROOT}/ForeSee/lib/ForeSee.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSee.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-InternationalizationSample/Pods-InternationalizationSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DB14D2A1294BB57C0211D70B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
