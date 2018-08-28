@@ -15,10 +15,12 @@ Some users have reported the following error on first run ([#12](https://github.
      Referenced from: /Users/uiwehb/Library/Developer/CoreSimulator/Devices/8FAE80C7-CE04-4F4A-BD4C-95EAB508C733/data/Containers/Bundle/Application/FBC926AF-540F-4AB1-8E2D-7FEEA3FC77E7/BasicSample.app/BasicSample
     Reason: image not found
 
-This is fixed by re-installing pods from scratch with the following commands:
+This is fixed by re-installing the pods from scratch with the following commands:
 
     $ sudo rm -r Pods/
     $ pod install
+
+Note: this fix requires CocoaPods.
 
 ## Projects
 
