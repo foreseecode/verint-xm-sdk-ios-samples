@@ -1,34 +1,38 @@
 platform :ios, '10.0'
 workspace 'ForeSeeSamples.xcworkspace'
 
+def foresee_pods
+    #pod 'ForeSee', '5.1.0'
+end
+
 target "CustomInvitationSample" do
     project 'CustomInvitationSample/CustomInvitationSample.xcodeproj'
-    pod 'ForeSee'
-    pod 'SSSnackbar', '~> 0.1.2'
-    pod 'SVProgressHUD', '~> 2.0.3'
+    #pod 'SSSnackbar', '~> 0.1.2'
+    #pod 'SVProgressHUD', '~> 2.0.3'
+    foresee_pods
 end
 
 target "BasicSample" do
     project 'BasicSample/BasicSample.xcodeproj'
-    pod 'ForeSee'
+    foresee_pods
 end
 
 target "BasicSwiftSample" do
     project 'BasicSwiftSample/BasicSwiftSample.xcodeproj'
-    pod 'ForeSee'
+    foresee_pods
 end
 
 target "ContactInvitationSample" do
     project 'ContactInvitationSample/ContactInvitationSample.xcodeproj'
-    pod 'ForeSee'
+    foresee_pods
 end
 
 target "InternationalizationSample" do
     project 'InternationalizationSample/InternationalizationSample.xcodeproj'
-    pod 'ForeSee'
+    foresee_pods
 end
 
 target "LocalNotificationSample" do
     project 'LocalNotificationSample/LocalNotificationSample.xcodeproj'
-    pod 'ForeSee'
+    foresee_pods
 end
