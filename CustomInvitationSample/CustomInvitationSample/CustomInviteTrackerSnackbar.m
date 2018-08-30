@@ -45,7 +45,6 @@
         [self.inviteView dismiss];
         [ForeSee customInviteDeclined];
     }
-    
 }
 
 @end
