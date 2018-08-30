@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aNq-xe-4de">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aNq-xe-4de">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -49,18 +49,6 @@
                                     <segue destination="bSi-nl-Gvc" kind="show" id="avf-cB-gpd"/>
                                 </connections>
                             </button>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vut-nD-ni8" userLabel="Show Contact Invite">
-                                <rect key="frame" x="20" y="282" width="335" height="34"/>
-                                <color key="backgroundColor" red="1" green="0.20318338159999999" blue="0.26627630120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.097796724979999999" green="0.14065014889999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Default Invite">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="rAw-pr-b3e" kind="show" id="QgB-7f-jla"/>
-                                </connections>
-                            </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gb3-8G-MaM" userLabel="Show Custom Invite #2">
                                 <rect key="frame" x="20" y="228" width="335" height="34"/>
                                 <color key="backgroundColor" red="1" green="0.20318338159999999" blue="0.26627630120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -84,16 +72,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ubK-vn-88u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5n4-Is-fao"/>
-                            <constraint firstItem="Vut-nD-ni8" firstAttribute="top" secondItem="gb3-8G-MaM" secondAttribute="bottom" constant="20" id="78v-08-YlY"/>
                             <constraint firstItem="gb3-8G-MaM" firstAttribute="left" secondItem="8bC-Xf-vdC" secondAttribute="left" constant="20" id="7ZC-XK-D68"/>
-                            <constraint firstItem="Vut-nD-ni8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Al7-nv-oP2"/>
                             <constraint firstItem="gb3-8G-MaM" firstAttribute="top" secondItem="pSE-L7-day" secondAttribute="bottom" constant="20" id="CHr-br-bEg"/>
                             <constraint firstItem="pSE-L7-day" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DbA-Fz-ZdA"/>
                             <constraint firstItem="ubK-vn-88u" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="h6c-pl-cLv"/>
                             <constraint firstItem="gb3-8G-MaM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jck-Vq-3jV"/>
                             <constraint firstItem="pSE-L7-day" firstAttribute="top" secondItem="ubK-vn-88u" secondAttribute="bottom" constant="20" id="mbt-e1-MqE"/>
                             <constraint firstItem="pSE-L7-day" firstAttribute="left" secondItem="8bC-Xf-vdC" secondAttribute="left" constant="20" id="peF-UN-7ZW"/>
-                            <constraint firstItem="Vut-nD-ni8" firstAttribute="left" secondItem="8bC-Xf-vdC" secondAttribute="left" constant="20" id="skR-xU-6QE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Choose an invite" id="aL0-h6-Rg3"/>
@@ -207,56 +192,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W6b-3i-pm1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="360" y="600"/>
-        </scene>
-        <!--Default Invite Example-->
-        <scene sceneID="yos-4U-zFk">
-            <objects>
-                <viewController title="Default Invite Example" id="rAw-pr-b3e" customClass="DefaultInviteViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="suh-PU-B5g"/>
-                        <viewControllerLayoutGuide type="bottom" id="KoQ-ue-1wS"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="UT1-Bk-8pa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dx-FN-ad4" userLabel="Show Custom Invite">
-                                <rect key="frame" x="20" y="237" width="335" height="34"/>
-                                <color key="backgroundColor" red="1" green="0.20318338159999999" blue="0.26627630120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.097796724979999999" green="0.14065014889999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Show Default Invite">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="handleShowInviteTouchUpInside:" destination="rAw-pr-b3e" eventType="touchUpInside" id="tBg-zS-DVR"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wT9-Gy-wPv">
-                                <rect key="frame" x="20" y="84" width="335" height="133"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" priority="250" constant="200" id="D4L-Za-4SG"/>
-                                </constraints>
-                                <string key="text">This example shows a default IN_SESSION invite. It also shows how to set an optional FSInviteDelegate to handle/log SDK lifecycle events. These events will appear on screen as they happen. This delegate can be set for both default and custom invites. All examples in this project re-use this delegate.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="wT9-Gy-wPv" firstAttribute="top" secondItem="suh-PU-B5g" secondAttribute="bottom" constant="20" id="3QD-h0-Ehf"/>
-                            <constraint firstItem="1dx-FN-ad4" firstAttribute="top" secondItem="wT9-Gy-wPv" secondAttribute="bottom" constant="20" id="FWh-dp-dlq"/>
-                            <constraint firstItem="1dx-FN-ad4" firstAttribute="left" secondItem="UT1-Bk-8pa" secondAttribute="left" constant="20" id="adg-Se-v1X"/>
-                            <constraint firstItem="1dx-FN-ad4" firstAttribute="centerX" secondItem="UT1-Bk-8pa" secondAttribute="centerX" id="hka-Fr-YR7"/>
-                            <constraint firstItem="wT9-Gy-wPv" firstAttribute="centerX" secondItem="UT1-Bk-8pa" secondAttribute="centerX" id="jDH-jk-IKW"/>
-                            <constraint firstItem="wT9-Gy-wPv" firstAttribute="left" secondItem="UT1-Bk-8pa" secondAttribute="left" constant="20" id="mZ0-al-e2C"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hpD-oJ-g7F" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="360" y="1288"/>
         </scene>
     </scenes>
     <resources>

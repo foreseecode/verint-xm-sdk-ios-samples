@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		968D2F581CFD6A6800C6066B /* CustomInviteTrackerSnackbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F571CFD6A6800C6066B /* CustomInviteTrackerSnackbar.m */; };
 		968D2F5B1CFD6DCC00C6066B /* CustomInviteDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F5A1CFD6DCC00C6066B /* CustomInviteDelegate.m */; };
-		968D2F5E1CFD75A000C6066B /* CustomInviteContactView.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F5D1CFD75A000C6066B /* CustomInviteContactView.m */; };
-		968D2F611CFD75DD00C6066B /* CustomInviteTrackerContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F601CFD75DD00C6066B /* CustomInviteTrackerContact.m */; };
 		968D2F911CFE430700C6066B /* CustomInviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F901CFE430700C6066B /* CustomInviteViewController.m */; };
 		968D2F981CFE453000C6066B /* SnackbarInviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F971CFE453000C6066B /* SnackbarInviteViewController.m */; };
 		968D2FA31CFF4C1800C6066B /* InviteExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2FA21CFF4C1800C6066B /* InviteExampleViewController.m */; };
@@ -41,7 +39,6 @@
 		96C3D6631CDCFB12005040C8 /* header2.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C3D6621CDCFB12005040C8 /* header2.png */; };
 		96C3D6651CDCFB19005040C8 /* header3.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C3D6641CDCFB19005040C8 /* header3.png */; };
 		96CA07591CE23490000F766C /* CustomInviteViewBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CA07581CE23490000F766C /* CustomInviteViewBox.m */; };
-		96FF0F141D04F4D9000A2176 /* DefaultInviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FF0F131D04F4D9000A2176 /* DefaultInviteViewController.m */; };
 		DB43507FBD2BBE047424F896 /* libPods-CustomInvitationSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFDFDDB91291FE56CF175FB /* libPods-CustomInvitationSample.a */; };
 /* End PBXBuildFile section */
 
@@ -69,10 +66,6 @@
 		968D2F571CFD6A6800C6066B /* CustomInviteTrackerSnackbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInviteTrackerSnackbar.m; sourceTree = "<group>"; };
 		968D2F591CFD6DCC00C6066B /* CustomInviteDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInviteDelegate.h; sourceTree = "<group>"; };
 		968D2F5A1CFD6DCC00C6066B /* CustomInviteDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInviteDelegate.m; sourceTree = "<group>"; };
-		968D2F5C1CFD75A000C6066B /* CustomInviteContactView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInviteContactView.h; sourceTree = "<group>"; };
-		968D2F5D1CFD75A000C6066B /* CustomInviteContactView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInviteContactView.m; sourceTree = "<group>"; };
-		968D2F5F1CFD75DD00C6066B /* CustomInviteTrackerContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInviteTrackerContact.h; sourceTree = "<group>"; };
-		968D2F601CFD75DD00C6066B /* CustomInviteTrackerContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInviteTrackerContact.m; sourceTree = "<group>"; };
 		968D2F8F1CFE430700C6066B /* CustomInviteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInviteViewController.h; sourceTree = "<group>"; };
 		968D2F901CFE430700C6066B /* CustomInviteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInviteViewController.m; sourceTree = "<group>"; };
 		968D2F961CFE453000C6066B /* SnackbarInviteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnackbarInviteViewController.h; sourceTree = "<group>"; };
@@ -117,8 +110,6 @@
 		96C3D6641CDCFB19005040C8 /* header3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header3.png; sourceTree = "<group>"; };
 		96CA07571CE23490000F766C /* CustomInviteViewBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInviteViewBox.h; sourceTree = "<group>"; };
 		96CA07581CE23490000F766C /* CustomInviteViewBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInviteViewBox.m; sourceTree = "<group>"; };
-		96FF0F121D04F4D9000A2176 /* DefaultInviteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultInviteViewController.h; sourceTree = "<group>"; };
-		96FF0F131D04F4D9000A2176 /* DefaultInviteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultInviteViewController.m; sourceTree = "<group>"; };
 		9C5F51C4E3606A54BA60B910 /* Pods-CustomInvitationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomInvitationSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample.release.xcconfig"; sourceTree = "<group>"; };
 		AE3B6D560153132F0657E975 /* Pods-CustomInvitationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomInvitationSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample.release.xcconfig"; sourceTree = "<group>"; };
 		DEBBF9E174BBEC6FACEFC70E /* Pods-CustomInvitationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomInvitationSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -189,43 +180,52 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		968D2F621CFD760B00C6066B /* Trackers */ = {
+		9667BEF621377E0300F750DD /* Example #1 */ = {
 			isa = PBXGroup;
 			children = (
+				9667BEF821377EA600F750DD /* images */,
 				96C3D6551CDBA240005040C8 /* CustomInviteTracker.h */,
 				96C3D6561CDBA240005040C8 /* CustomInviteTracker.m */,
-				968D2F561CFD6A6800C6066B /* CustomInviteTrackerSnackbar.h */,
-				968D2F571CFD6A6800C6066B /* CustomInviteTrackerSnackbar.m */,
-				968D2F5F1CFD75DD00C6066B /* CustomInviteTrackerContact.h */,
-				968D2F601CFD75DD00C6066B /* CustomInviteTrackerContact.m */,
-			);
-			name = Trackers;
-			sourceTree = "<group>";
-		};
-		968D2F631CFD766C00C6066B /* Views */ = {
-			isa = PBXGroup;
-			children = (
 				96C3D6581CDBA26A005040C8 /* CustomInviteView.h */,
 				96C3D6591CDBA26A005040C8 /* CustomInviteView.m */,
-				968D2F5C1CFD75A000C6066B /* CustomInviteContactView.h */,
-				968D2F5D1CFD75A000C6066B /* CustomInviteContactView.m */,
 				96CA07571CE23490000F766C /* CustomInviteViewBox.h */,
 				96CA07581CE23490000F766C /* CustomInviteViewBox.m */,
+				968D2F8F1CFE430700C6066B /* CustomInviteViewController.h */,
+				968D2F901CFE430700C6066B /* CustomInviteViewController.m */,
 			);
-			name = Views;
+			name = "Example #1";
+			sourceTree = "<group>";
+		};
+		9667BEF721377E3600F750DD /* Example #2 */ = {
+			isa = PBXGroup;
+			children = (
+				968D2F561CFD6A6800C6066B /* CustomInviteTrackerSnackbar.h */,
+				968D2F571CFD6A6800C6066B /* CustomInviteTrackerSnackbar.m */,
+				968D2F961CFE453000C6066B /* SnackbarInviteViewController.h */,
+				968D2F971CFE453000C6066B /* SnackbarInviteViewController.m */,
+			);
+			name = "Example #2";
+			sourceTree = "<group>";
+		};
+		9667BEF821377EA600F750DD /* images */ = {
+			isa = PBXGroup;
+			children = (
+				96C3D6621CDCFB12005040C8 /* header2.png */,
+				96C3D6641CDCFB19005040C8 /* header3.png */,
+				96C3D65E1CDCFA6B005040C8 /* header1.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 		968D2FA81CFF4DEF00C6066B /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				9667BEF621377E0300F750DD /* Example #1 */,
+				9667BEF721377E3600F750DD /* Example #2 */,
 				968D2FA11CFF4C1800C6066B /* InviteExampleViewController.h */,
 				968D2FA21CFF4C1800C6066B /* InviteExampleViewController.m */,
-				968D2F8F1CFE430700C6066B /* CustomInviteViewController.h */,
-				968D2F901CFE430700C6066B /* CustomInviteViewController.m */,
-				968D2F961CFE453000C6066B /* SnackbarInviteViewController.h */,
-				968D2F971CFE453000C6066B /* SnackbarInviteViewController.m */,
-				96FF0F121D04F4D9000A2176 /* DefaultInviteViewController.h */,
-				96FF0F131D04F4D9000A2176 /* DefaultInviteViewController.m */,
+				968D2F591CFD6DCC00C6066B /* CustomInviteDelegate.h */,
+				968D2F5A1CFD6DCC00C6066B /* CustomInviteDelegate.m */,
 			);
 			name = Examples;
 			sourceTree = "<group>";
@@ -255,7 +255,6 @@
 		96C3D5EA1CDB284A005040C8 /* CustomInvitationSample */ = {
 			isa = PBXGroup;
 			children = (
-				96CA074F1CE23361000F766C /* CustomInvite */,
 				968D2FA81CFF4DEF00C6066B /* Examples */,
 				96C3D5F41CDB284A005040C8 /* Main.storyboard */,
 				96C3D5EE1CDB284A005040C8 /* AppDelegate.h */,
@@ -265,6 +264,7 @@
 				96C3D5F71CDB284A005040C8 /* Assets.xcassets */,
 				96C3D5F91CDB284A005040C8 /* LaunchScreen.storyboard */,
 				96C3D5FC1CDB284A005040C8 /* Info.plist */,
+				96C3D65D1CDCFA5E005040C8 /* Assets */,
 				96C3D5EB1CDB284A005040C8 /* Supporting Files */,
 			);
 			path = CustomInvitationSample;
@@ -301,24 +301,9 @@
 			children = (
 				968D2FA91CFF627800C6066B /* ForeSee_logo_1-color.png */,
 				968D2FAA1CFF627800C6066B /* ForeSee_logo_RGB.png */,
-				96C3D6621CDCFB12005040C8 /* header2.png */,
-				96C3D6641CDCFB19005040C8 /* header3.png */,
-				96C3D65E1CDCFA6B005040C8 /* header1.png */,
 				96C3D61E1CDB9958005040C8 /* foresee_configuration.json */,
 			);
 			name = Assets;
-			sourceTree = "<group>";
-		};
-		96CA074F1CE23361000F766C /* CustomInvite */ = {
-			isa = PBXGroup;
-			children = (
-				96C3D65D1CDCFA5E005040C8 /* Assets */,
-				968D2F621CFD760B00C6066B /* Trackers */,
-				968D2F631CFD766C00C6066B /* Views */,
-				968D2F591CFD6DCC00C6066B /* CustomInviteDelegate.h */,
-				968D2F5A1CFD6DCC00C6066B /* CustomInviteDelegate.m */,
-			);
-			name = CustomInvite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -524,14 +509,11 @@
 				96C3D5F01CDB284A005040C8 /* AppDelegate.m in Sources */,
 				968D2F581CFD6A6800C6066B /* CustomInviteTrackerSnackbar.m in Sources */,
 				96CA07591CE23490000F766C /* CustomInviteViewBox.m in Sources */,
-				96FF0F141D04F4D9000A2176 /* DefaultInviteViewController.m in Sources */,
 				968D2F911CFE430700C6066B /* CustomInviteViewController.m in Sources */,
 				96C3D6571CDBA240005040C8 /* CustomInviteTracker.m in Sources */,
 				968D2FA31CFF4C1800C6066B /* InviteExampleViewController.m in Sources */,
 				968D2F5B1CFD6DCC00C6066B /* CustomInviteDelegate.m in Sources */,
-				968D2F5E1CFD75A000C6066B /* CustomInviteContactView.m in Sources */,
 				96C3D5ED1CDB284A005040C8 /* main.m in Sources */,
-				968D2F611CFD75DD00C6066B /* CustomInviteTrackerContact.m in Sources */,
 				96C3D65A1CDBA26A005040C8 /* CustomInviteView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

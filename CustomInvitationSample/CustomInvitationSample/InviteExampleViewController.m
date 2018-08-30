@@ -7,7 +7,6 @@
 //
 
 #import "InviteExampleViewController.h"
-#import <ForeSee/ForeSee.h>
 
 @implementation InviteExampleViewController
 

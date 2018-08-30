@@ -8,8 +8,6 @@
 
 #import "CustomInviteViewController.h"
 #import "CustomInviteTracker.h"
-#import <ForeSee/ForeSee.h>
-#import <ForeSee/FSInviteHandler.h>
 
 @implementation CustomInviteViewController
 

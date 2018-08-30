@@ -7,10 +7,7 @@
 //
 
 #import "SnackbarInviteViewController.h"
-#import <ForeSee/ForeSee.h>
 #import "CustomInviteTrackerSnackbar.h"
-
-
 
 @implementation SnackbarInviteViewController
 
