@@ -94,7 +94,9 @@
 				D5D68AEA1582A63D00730160 /* Products */,
 				A93D2435FAD6A70B4A9D7B1A /* Pods */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		D5D68AEA1582A63D00730160 /* Products */ = {
 			isa = PBXGroup;

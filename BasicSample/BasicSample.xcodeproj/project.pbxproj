@@ -80,7 +80,9 @@
 				D544DF3D15068C0C0025FF43 /* Products */,
 				B9712A1B285294CE3C1DE748 /* Pods */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		D544DF3D15068C0C0025FF43 /* Products */ = {
 			isa = PBXGroup;

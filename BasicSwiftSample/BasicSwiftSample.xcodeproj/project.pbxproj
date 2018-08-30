@@ -79,7 +79,9 @@
 				968015551BC6CCDA001B0926 /* Bridging-Header.h */,
 				A28A157EA0BF8C29DC9BD27C /* Pods */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		9680152C1BC6C7CE001B0926 /* Products */ = {
 			isa = PBXGroup;

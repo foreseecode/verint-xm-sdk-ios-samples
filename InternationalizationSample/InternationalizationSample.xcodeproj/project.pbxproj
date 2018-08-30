@@ -104,7 +104,9 @@
 				D51310CD150541F200619182 /* Products */,
 				CF933D2F1DA1D0A5F4229182 /* Pods */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		D51310CD150541F200619182 /* Products */ = {
 			isa = PBXGroup;
