@@ -120,7 +120,31 @@
                     <view key="view" contentMode="scaleToFill" id="mst-Lg-qcw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pg4-Pf-Rhg">
+                                <rect key="frame" x="20" y="132" width="334" height="30"/>
+                                <color key="backgroundColor" red="0.92156862745098034" green="0.16862745098039217" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Accept">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cug-U4-ysJ">
+                                <rect key="frame" x="20" y="182" width="334" height="30"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Decline">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cug-U4-ysJ" firstAttribute="top" secondItem="Pg4-Pf-Rhg" secondAttribute="bottom" constant="20" id="7yA-2e-8iZ"/>
+                            <constraint firstItem="Pg4-Pf-Rhg" firstAttribute="top" secondItem="9a8-aC-Far" secondAttribute="top" constant="68" id="k0N-Rp-3jO"/>
+                            <constraint firstItem="cug-U4-ysJ" firstAttribute="width" secondItem="Pg4-Pf-Rhg" secondAttribute="width" id="mK4-Gj-9qN"/>
+                            <constraint firstItem="cug-U4-ysJ" firstAttribute="leading" secondItem="9a8-aC-Far" secondAttribute="leading" constant="20" id="nn2-4R-d6u"/>
+                            <constraint firstItem="Pg4-Pf-Rhg" firstAttribute="leading" secondItem="9a8-aC-Far" secondAttribute="leading" constant="20" id="tdE-zr-lcH"/>
+                            <constraint firstItem="Pg4-Pf-Rhg" firstAttribute="centerX" secondItem="9a8-aC-Far" secondAttribute="centerX" id="uOM-qh-5J0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9a8-aC-Far"/>
                     </view>
                 </viewController>
