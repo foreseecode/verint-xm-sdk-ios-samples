@@ -18,6 +18,7 @@
 		9672708F1D04DF4F00F90E54 /* ContactInvitationSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9672708E1D04DF4F00F90E54 /* ContactInvitationSampleTests.m */; };
 		9672709A1D04DF5000F90E54 /* ContactInvitationSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 967270991D04DF5000F90E54 /* ContactInvitationSampleUITests.m */; };
 		967270A81D04E19A00F90E54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967270A71D04E19A00F90E54 /* Main.storyboard */; };
+		967C4522213894F000C825D3 /* CustomInviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C4521213894F000C825D3 /* CustomInviteViewController.m */; };
 		96FF0F8C1D052C6C000A2176 /* foresee_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 96FF0F8B1D052C6C000A2176 /* foresee_configuration.json */; };
 		96FF0F8E1D052DB4000A2176 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FF0F8D1D052DB4000A2176 /* SystemConfiguration.framework */; };
 		96FF0F901D052DBE000A2176 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FF0F8F1D052DBE000A2176 /* AVFoundation.framework */; };
@@ -68,6 +69,8 @@
 		967270991D04DF5000F90E54 /* ContactInvitationSampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactInvitationSampleUITests.m; sourceTree = "<group>"; };
 		9672709B1D04DF5000F90E54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		967270A71D04E19A00F90E54 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		967C4520213894F000C825D3 /* CustomInviteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomInviteViewController.h; sourceTree = "<group>"; };
+		967C4521213894F000C825D3 /* CustomInviteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomInviteViewController.m; sourceTree = "<group>"; };
 		96FF0F8B1D052C6C000A2176 /* foresee_configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foresee_configuration.json; sourceTree = "<group>"; };
 		96FF0F8D1D052DB4000A2176 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		96FF0F8F1D052DBE000A2176 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -171,20 +174,19 @@
 		967270731D04DF4F00F90E54 /* ContactInvitationSample */ = {
 			isa = PBXGroup;
 			children = (
+				967C451F213894D300C825D3 /* Settings */,
 				967270771D04DF4F00F90E54 /* AppDelegate.h */,
 				967270781D04DF4F00F90E54 /* AppDelegate.m */,
 				9672707A1D04DF4F00F90E54 /* ViewController.h */,
 				9672707B1D04DF4F00F90E54 /* ViewController.m */,
-				9667BEF92138418D00F750DD /* SettingsTableViewController.h */,
-				9667BEFA2138418D00F750DD /* SettingsTableViewController.m */,
+				967C4520213894F000C825D3 /* CustomInviteViewController.h */,
+				967C4521213894F000C825D3 /* CustomInviteViewController.m */,
 				967270A71D04E19A00F90E54 /* Main.storyboard */,
 				967270801D04DF4F00F90E54 /* Assets.xcassets */,
 				967270821D04DF4F00F90E54 /* LaunchScreen.storyboard */,
 				967270851D04DF4F00F90E54 /* Info.plist */,
 				96FF0F8B1D052C6C000A2176 /* foresee_configuration.json */,
 				967270741D04DF4F00F90E54 /* Supporting Files */,
-				9667BEFC21384C4900F750DD /* TextFieldTableViewCell.h */,
-				9667BEFD21384C4900F750DD /* TextFieldTableViewCell.m */,
 			);
 			path = ContactInvitationSample;
 			sourceTree = "<group>";
@@ -213,6 +215,17 @@
 				9672709B1D04DF5000F90E54 /* Info.plist */,
 			);
 			path = ContactInvitationSampleUITests;
+			sourceTree = "<group>";
+		};
+		967C451F213894D300C825D3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9667BEF92138418D00F750DD /* SettingsTableViewController.h */,
+				9667BEFA2138418D00F750DD /* SettingsTableViewController.m */,
+				9667BEFC21384C4900F750DD /* TextFieldTableViewCell.h */,
+				9667BEFD21384C4900F750DD /* TextFieldTableViewCell.m */,
+			);
+			name = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967C4522213894F000C825D3 /* CustomInviteViewController.m in Sources */,
 				9667BEFB2138418D00F750DD /* SettingsTableViewController.m in Sources */,
 				9672707C1D04DF4F00F90E54 /* ViewController.m in Sources */,
 				967270791D04DF4F00F90E54 /* AppDelegate.m in Sources */,
