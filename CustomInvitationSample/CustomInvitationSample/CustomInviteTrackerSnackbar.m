@@ -36,8 +36,16 @@
 }
 
 - (void)hideWithAnimation:(BOOL)animate {
-    // the snackbar will dismiss itself when accepted
+    self.inviteView.dismissalBlock = nil;
     self.inviteView = nil;
+}
+
+- (void)dealloc {
+    if (self.inviteView) {
+        [self.inviteView dismiss];
+        [ForeSee customInviteDeclined];
+    }
+    
 }
 
 @end
