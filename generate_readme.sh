@@ -1,5 +1,6 @@
 cat <<static
-# Sample Projects
+## Projects
+All projects can be found in: \`ForeSeeSamples.xcworkspace\`
 static
 
 for file in `ls *`
