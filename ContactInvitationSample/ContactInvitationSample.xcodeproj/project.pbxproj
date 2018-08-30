@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4F52A9E278BF734CE4289CD6 /* libPods-ContactInvitationSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E817663A01B1186EA6E8D85F /* libPods-ContactInvitationSample.a */; };
+		9667BEFB2138418D00F750DD /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9667BEFA2138418D00F750DD /* SettingsTableViewController.m */; };
+		9667BEFE21384C4900F750DD /* TextFieldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9667BEFD21384C4900F750DD /* TextFieldTableViewCell.m */; };
 		967270761D04DF4F00F90E54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 967270751D04DF4F00F90E54 /* main.m */; };
 		967270791D04DF4F00F90E54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 967270781D04DF4F00F90E54 /* AppDelegate.m */; };
 		9672707C1D04DF4F00F90E54 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9672707B1D04DF4F00F90E54 /* ViewController.m */; };
@@ -46,6 +48,10 @@
 
 /* Begin PBXFileReference section */
 		07485F3358C9DA0321E3C9BE /* Pods-ContactInvitationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactInvitationSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ContactInvitationSample/Pods-ContactInvitationSample.release.xcconfig"; sourceTree = "<group>"; };
+		9667BEF92138418D00F750DD /* SettingsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		9667BEFA2138418D00F750DD /* SettingsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		9667BEFC21384C4900F750DD /* TextFieldTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldTableViewCell.h; sourceTree = "<group>"; };
+		9667BEFD21384C4900F750DD /* TextFieldTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldTableViewCell.m; sourceTree = "<group>"; };
 		967270711D04DF4F00F90E54 /* ContactInvitationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactInvitationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967270751D04DF4F00F90E54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		967270771D04DF4F00F90E54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -169,12 +175,16 @@
 				967270781D04DF4F00F90E54 /* AppDelegate.m */,
 				9672707A1D04DF4F00F90E54 /* ViewController.h */,
 				9672707B1D04DF4F00F90E54 /* ViewController.m */,
+				9667BEF92138418D00F750DD /* SettingsTableViewController.h */,
+				9667BEFA2138418D00F750DD /* SettingsTableViewController.m */,
 				967270A71D04E19A00F90E54 /* Main.storyboard */,
 				967270801D04DF4F00F90E54 /* Assets.xcassets */,
 				967270821D04DF4F00F90E54 /* LaunchScreen.storyboard */,
 				967270851D04DF4F00F90E54 /* Info.plist */,
 				96FF0F8B1D052C6C000A2176 /* foresee_configuration.json */,
 				967270741D04DF4F00F90E54 /* Supporting Files */,
+				9667BEFC21384C4900F750DD /* TextFieldTableViewCell.h */,
+				9667BEFD21384C4900F750DD /* TextFieldTableViewCell.m */,
 			);
 			path = ContactInvitationSample;
 			sourceTree = "<group>";
@@ -377,9 +387,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9667BEFB2138418D00F750DD /* SettingsTableViewController.m in Sources */,
 				9672707C1D04DF4F00F90E54 /* ViewController.m in Sources */,
 				967270791D04DF4F00F90E54 /* AppDelegate.m in Sources */,
 				967270761D04DF4F00F90E54 /* main.m in Sources */,
+				9667BEFE21384C4900F750DD /* TextFieldTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

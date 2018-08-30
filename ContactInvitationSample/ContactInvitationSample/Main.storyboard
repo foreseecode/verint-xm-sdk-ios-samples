@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZPz-z4-ztB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZPz-z4-ztB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -30,16 +30,29 @@
         <scene sceneID="yos-4U-zFk">
             <objects>
                 <viewController id="rAw-pr-b3e" customClass="ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="suh-PU-B5g"/>
-                        <viewControllerLayoutGuide type="bottom" id="KoQ-ue-1wS"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UT1-Bk-8pa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wT9-Gy-wPv">
+                                <rect key="frame" x="10" y="174" width="355" height="116.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="200" id="D4L-Za-4SG"/>
+                                </constraints>
+                                <string key="text">This example shows how to supply a user's contact details to the SDK before displaying the default invite. If you leave the text input blank below, then the default invite will prompt the user for their information. If you provide contact details, they will be pre-populated on the second screen.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ForeSee_logo_RGB" translatesAutoresizingMaskIntoConstraints="NO" id="9Rj-En-s6N">
+                                <rect key="frame" x="109.5" y="84" width="156" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="01u-MQ-wbl"/>
+                                    <constraint firstAttribute="width" constant="156" id="adZ-tz-yMj"/>
+                                </constraints>
+                            </imageView>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dx-FN-ad4">
-                                <rect key="frame" x="26" y="377" width="323" height="34"/>
+                                <rect key="frame" x="10" y="300" width="355" height="34"/>
                                 <color key="backgroundColor" red="0.92156862745098034" green="0.16862745098039217" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.097796724979999999" green="0.14065014889999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Show Contact Invite">
@@ -50,71 +63,68 @@
                                     <action selector="handleShowInviteTouchUpInside:" destination="rAw-pr-b3e" eventType="touchUpInside" id="F4E-69-44U"/>
                                 </connections>
                             </button>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NV5-Ng-XiQ">
-                                <rect key="frame" x="26" y="431" width="323" height="34"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBW-S8-4in">
+                                <rect key="frame" x="10" y="349.5" width="355" height="34"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.097796724979999999" green="0.14065014889999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Reset">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Set Contact Details">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="handleResetButtonTouchUpInside:" destination="rAw-pr-b3e" eventType="touchUpInside" id="Jay-3S-eVS"/>
+                                    <segue destination="CGF-1m-Qak" kind="show" id="g5c-ru-28c"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wT9-Gy-wPv">
-                                <rect key="frame" x="26" y="174" width="323" height="133"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" priority="250" constant="200" id="D4L-Za-4SG"/>
-                                </constraints>
-                                <string key="text">This example shows how to supply a user's contact details to the SDK before displaying the default invite. If you leave the text input blank below, then the default invite will prompt the user for their information. If you provide contact details, they will be pre-populated on the second screen.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number or email address..." textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="3uz-Bd-AX9">
-                                <rect key="frame" x="26" y="327" width="323" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
-                                <connections>
-                                    <outlet property="delegate" destination="rAw-pr-b3e" id="Xcn-Df-HKE"/>
-                                </connections>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ForeSee_logo_RGB" translatesAutoresizingMaskIntoConstraints="NO" id="9Rj-En-s6N">
-                                <rect key="frame" x="109.5" y="84" width="156" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="01u-MQ-wbl"/>
-                                    <constraint firstAttribute="width" constant="156" id="adZ-tz-yMj"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="3uz-Bd-AX9" firstAttribute="centerX" secondItem="UT1-Bk-8pa" secondAttribute="centerX" id="Dgg-qk-ZEM"/>
-                            <constraint firstItem="1dx-FN-ad4" firstAttribute="top" secondItem="3uz-Bd-AX9" secondAttribute="bottom" constant="20" id="GS1-du-gMb"/>
-                            <constraint firstItem="NV5-Ng-XiQ" firstAttribute="top" secondItem="1dx-FN-ad4" secondAttribute="bottom" constant="20" id="Iub-v3-rKo"/>
-                            <constraint firstItem="3uz-Bd-AX9" firstAttribute="left" secondItem="UT1-Bk-8pa" secondAttribute="leftMargin" constant="10" id="KKa-20-J08"/>
-                            <constraint firstItem="9Rj-En-s6N" firstAttribute="top" secondItem="suh-PU-B5g" secondAttribute="bottom" constant="20" id="MHd-X9-muB"/>
-                            <constraint firstItem="1dx-FN-ad4" firstAttribute="left" secondItem="UT1-Bk-8pa" secondAttribute="leftMargin" constant="10" id="adg-Se-v1X"/>
-                            <constraint firstItem="1dx-FN-ad4" firstAttribute="centerX" secondItem="UT1-Bk-8pa" secondAttribute="centerX" id="hka-Fr-YR7"/>
-                            <constraint firstItem="9Rj-En-s6N" firstAttribute="centerX" secondItem="UT1-Bk-8pa" secondAttribute="centerX" id="ix4-Ly-v9L"/>
-                            <constraint firstItem="wT9-Gy-wPv" firstAttribute="centerX" secondItem="UT1-Bk-8pa" secondAttribute="centerX" id="jDH-jk-IKW"/>
-                            <constraint firstItem="NV5-Ng-XiQ" firstAttribute="centerX" secondItem="UT1-Bk-8pa" secondAttribute="centerX" id="jDK-Uo-xk0"/>
-                            <constraint firstItem="wT9-Gy-wPv" firstAttribute="left" secondItem="UT1-Bk-8pa" secondAttribute="leftMargin" constant="10" id="mZ0-al-e2C"/>
-                            <constraint firstItem="NV5-Ng-XiQ" firstAttribute="left" secondItem="UT1-Bk-8pa" secondAttribute="leftMargin" constant="10" id="tWu-l0-4HY"/>
-                            <constraint firstItem="3uz-Bd-AX9" firstAttribute="top" secondItem="wT9-Gy-wPv" secondAttribute="bottom" constant="20" id="ttW-WV-rIJ"/>
+                            <constraint firstItem="wT9-Gy-wPv" firstAttribute="leading" secondItem="ty6-Ys-bdw" secondAttribute="leading" constant="10" id="5l6-6I-DPZ"/>
+                            <constraint firstItem="9Rj-En-s6N" firstAttribute="top" secondItem="ty6-Ys-bdw" secondAttribute="top" constant="20" id="MHd-X9-muB"/>
+                            <constraint firstItem="1dx-FN-ad4" firstAttribute="top" secondItem="wT9-Gy-wPv" secondAttribute="bottom" constant="10" id="MJM-B7-9Ic"/>
+                            <constraint firstItem="1dx-FN-ad4" firstAttribute="centerX" secondItem="ty6-Ys-bdw" secondAttribute="centerX" id="hka-Fr-YR7"/>
+                            <constraint firstItem="9Rj-En-s6N" firstAttribute="centerX" secondItem="ty6-Ys-bdw" secondAttribute="centerX" id="ix4-Ly-v9L"/>
+                            <constraint firstItem="nBW-S8-4in" firstAttribute="leading" secondItem="ty6-Ys-bdw" secondAttribute="leading" constant="10" id="jAE-gY-0yX"/>
+                            <constraint firstItem="wT9-Gy-wPv" firstAttribute="centerX" secondItem="ty6-Ys-bdw" secondAttribute="centerX" id="jDH-jk-IKW"/>
+                            <constraint firstItem="1dx-FN-ad4" firstAttribute="leading" secondItem="ty6-Ys-bdw" secondAttribute="leading" constant="10" id="mRb-sb-KYL"/>
+                            <constraint firstItem="nBW-S8-4in" firstAttribute="centerX" secondItem="ty6-Ys-bdw" secondAttribute="centerX" id="tmo-ID-FMX"/>
                             <constraint firstItem="wT9-Gy-wPv" firstAttribute="top" secondItem="9Rj-En-s6N" secondAttribute="bottom" constant="20" id="uqZ-bg-83d"/>
+                            <constraint firstItem="nBW-S8-4in" firstAttribute="top" secondItem="1dx-FN-ad4" secondAttribute="bottom" constant="15" id="zqU-Ka-dFw"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="ty6-Ys-bdw"/>
                     </view>
                     <navigationItem key="navigationItem" title="Contact Details Example" id="ht9-mw-la9"/>
-                    <connections>
-                        <outlet property="contactTextField" destination="3uz-Bd-AX9" id="4j2-KQ-RZY"/>
-                        <outlet property="resetButton" destination="NV5-Ng-XiQ" id="8K7-E4-F0P"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpD-oJ-g7F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="268" y="251"/>
+        </scene>
+        <!--Settings Table View Controller-->
+        <scene sceneID="Ggl-Tt-RIH">
+            <objects>
+                <tableViewController id="CGF-1m-Qak" customClass="SettingsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="iHk-i9-y3c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsCell" id="yD0-e5-Rka" customClass="TextFieldTableViewCell">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yD0-e5-Rka" id="aE4-hE-Vqp">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="CGF-1m-Qak" id="LKY-vO-i31"/>
+                            <outlet property="delegate" destination="CGF-1m-Qak" id="VVa-OM-yOr"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VvA-V1-G1l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="966" y="251"/>
         </scene>
     </scenes>
     <resources>
