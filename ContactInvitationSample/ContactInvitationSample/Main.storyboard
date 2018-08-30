@@ -64,7 +64,7 @@
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBW-S8-4in">
-                                <rect key="frame" x="10" y="349.5" width="355" height="34"/>
+                                <rect key="frame" x="10" y="408" width="355" height="34"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.097796724979999999" green="0.14065014889999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Set Contact Details">
@@ -75,20 +75,35 @@
                                     <segue destination="CGF-1m-Qak" kind="show" id="g5c-ru-28c"/>
                                 </connections>
                             </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AId-Pr-2RX">
+                                <rect key="frame" x="10" y="354" width="355" height="34"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.097796724979999999" green="0.14065014889999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Show &quot;Custom&quot; Invite">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="1cA-qD-uyG" kind="show" id="4Gg-Jp-2EB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="AId-Pr-2RX" firstAttribute="top" secondItem="1dx-FN-ad4" secondAttribute="bottom" constant="20" id="4b6-Me-w1G"/>
                             <constraint firstItem="wT9-Gy-wPv" firstAttribute="leading" secondItem="ty6-Ys-bdw" secondAttribute="leading" constant="10" id="5l6-6I-DPZ"/>
                             <constraint firstItem="9Rj-En-s6N" firstAttribute="top" secondItem="ty6-Ys-bdw" secondAttribute="top" constant="20" id="MHd-X9-muB"/>
                             <constraint firstItem="1dx-FN-ad4" firstAttribute="top" secondItem="wT9-Gy-wPv" secondAttribute="bottom" constant="10" id="MJM-B7-9Ic"/>
+                            <constraint firstItem="AId-Pr-2RX" firstAttribute="leading" secondItem="ty6-Ys-bdw" secondAttribute="leading" constant="10" id="S53-8p-Qtf"/>
                             <constraint firstItem="1dx-FN-ad4" firstAttribute="centerX" secondItem="ty6-Ys-bdw" secondAttribute="centerX" id="hka-Fr-YR7"/>
                             <constraint firstItem="9Rj-En-s6N" firstAttribute="centerX" secondItem="ty6-Ys-bdw" secondAttribute="centerX" id="ix4-Ly-v9L"/>
                             <constraint firstItem="nBW-S8-4in" firstAttribute="leading" secondItem="ty6-Ys-bdw" secondAttribute="leading" constant="10" id="jAE-gY-0yX"/>
                             <constraint firstItem="wT9-Gy-wPv" firstAttribute="centerX" secondItem="ty6-Ys-bdw" secondAttribute="centerX" id="jDH-jk-IKW"/>
+                            <constraint firstItem="AId-Pr-2RX" firstAttribute="centerX" secondItem="ty6-Ys-bdw" secondAttribute="centerX" id="jiV-5V-1ZZ"/>
                             <constraint firstItem="1dx-FN-ad4" firstAttribute="leading" secondItem="ty6-Ys-bdw" secondAttribute="leading" constant="10" id="mRb-sb-KYL"/>
+                            <constraint firstItem="nBW-S8-4in" firstAttribute="top" secondItem="AId-Pr-2RX" secondAttribute="bottom" constant="20" id="nck-8l-5sr"/>
                             <constraint firstItem="nBW-S8-4in" firstAttribute="centerX" secondItem="ty6-Ys-bdw" secondAttribute="centerX" id="tmo-ID-FMX"/>
                             <constraint firstItem="wT9-Gy-wPv" firstAttribute="top" secondItem="9Rj-En-s6N" secondAttribute="bottom" constant="20" id="uqZ-bg-83d"/>
-                            <constraint firstItem="nBW-S8-4in" firstAttribute="top" secondItem="1dx-FN-ad4" secondAttribute="bottom" constant="15" id="zqU-Ka-dFw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ty6-Ys-bdw"/>
                     </view>
@@ -97,6 +112,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpD-oJ-g7F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="268" y="251"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qgg-yb-1Wi">
+            <objects>
+                <viewController id="1cA-qD-uyG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mst-Lg-qcw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9a8-aC-Far"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nty-dU-5Wb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1102" y="-143"/>
         </scene>
         <!--Settings Table View Controller-->
         <scene sceneID="Ggl-Tt-RIH">
@@ -132,7 +162,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VvA-V1-G1l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="966" y="251"/>
+            <point key="canvasLocation" x="1103" y="564"/>
         </scene>
     </scenes>
     <resources>
