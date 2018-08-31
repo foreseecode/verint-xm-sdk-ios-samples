@@ -65,7 +65,7 @@
                      }];
 }
 
-// #6b The SDK will call this method when the invitation's lifecycle is complete, either because the invite was
+// #6b The SDK will call this method when the invitation's lifecycle is complete, because the invite was
 // successfully accepted or declined. Either way, we're done!
 - (void)hideWithAnimation:(BOOL)animate {
     NSLog(@"hiding");

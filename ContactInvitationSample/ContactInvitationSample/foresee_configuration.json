@@ -1,11 +1,15 @@
 {
-	"clientId":"9NNs9GIBQIVdk1LpDlJpAQ==",
-  "notificationType":"CONTACT",
-	"measures":
+    "clientId":"9NNs9GIBQIVdk1LpDlJpAQ==",
+    "notificationType":"CONTACT",
+    "measures":
 	[
 		{
 			"surveyId": "mobile_app-en",
 			"launchCount": 0
 		}
-	]
+	],
+    "appName": "Custom Invite Sample",
+    "invite": {
+        "baseColor": [235,43,61]
+    }
 }
