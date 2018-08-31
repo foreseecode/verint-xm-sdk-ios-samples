@@ -22,6 +22,8 @@
  **/
 @implementation CustomInviteViewController
 
+#pragma mark - UIViewController
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -38,6 +40,12 @@
     
     // #3 Check eligibility. If eligible (and we should be), the ForeSee SDK will call the invite handler's `show` method
     [ForeSee checkIfEligibleForSurvey];
+}
+
+- (void)dealloc {
+    if (self.isShowing) {
+        [ForeSee customInviteDeclined];
+    }
 }
 
 #pragma mark - FSInviteHandler
@@ -101,12 +109,6 @@
     [ForeSee resetState];
     [ForeSee setContactDetails:email forType:kFSEmail];
     [ForeSee setContactDetails:phoneNumber forType:kFSPhoneNumber];
-}
-
-- (void)dealloc {
-    if (self.isShowing) {
-        [ForeSee customInviteDeclined];
-    }
 }
 
 @end
