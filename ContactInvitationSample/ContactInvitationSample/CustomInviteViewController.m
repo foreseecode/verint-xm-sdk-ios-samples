@@ -65,8 +65,8 @@
                      }];
 }
 
-// #6b The SDK will call this method when the invitation's lifecycle is complete, either because a survey is finished,
-// abandoned, or declined. In any case, we're done!
+// #6b The SDK will call this method when the invitation's lifecycle is complete, either because the invite was
+// successfully accepted or declined. Either way, we're done!
 - (void)hideWithAnimation:(BOOL)animate {
     NSLog(@"hiding");
     self.showing = NO;
@@ -83,9 +83,10 @@
 #pragma mark - Invite actions
 
 - (IBAction)handleAcceptButtonTouchUpInside:(id)sender {
-    // #5a If the accept button is tapped, then we'll notify the ForeSee SDK that the invite was accepted. If the
-    // input is good (i.e. if there is a value stored for the preferred contact type), then the survey is presented. If
-    // the input is bad, then `setInvalidInput:` is called by the SDK.
+    // #5a When the accept button is tapped we'll notify the ForeSee SDK that the invite was accepted. If the
+    // input is good (i.e. if there is a value stored for the preferred contact type), then the invite's lifecycle is
+    // complete and the SDK will invoke `hideWithAnimation:`. If the input is bad (i.e. there are no valid contact
+    // details stored), then the SDK will notify us by calling `setInvalidInput:`.
     [ForeSee customInviteAccepted];
 }
 
