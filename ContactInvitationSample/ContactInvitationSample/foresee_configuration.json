@@ -1,11 +1,14 @@
 {
 	"clientId":"9NNs9GIBQIVdk1LpDlJpAQ==",
-  "notificationType":"CONTACT",
+    "notificationType":"CONTACT",
 	"measures":
 	[
 		{
 			"surveyId": "mobile_app-en",
 			"launchCount": 0
 		}
-	]
+    ],
+    "invite": {
+        "baseColor": [237, 38, 54]
+    }
 }

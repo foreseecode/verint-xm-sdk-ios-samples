@@ -4,6 +4,14 @@
       "idiom" : "universal",
       "filename" : "ForeSee_logo_1-color.png",
       "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {
