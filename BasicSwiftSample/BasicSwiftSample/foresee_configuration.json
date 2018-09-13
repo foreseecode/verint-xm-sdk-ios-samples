@@ -11,5 +11,9 @@
 	          "app_test_1": 4
 	        }
 		}
-	]
+	],
+    "invite": {
+        "logo": "ForeSee_logo",
+        "baseColor": [237, 38, 54]
+    }
 }
