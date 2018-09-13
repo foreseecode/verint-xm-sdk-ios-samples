@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FB2C649214AD9E60002E96A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB2C648214AD9E60002E96A /* Assets.xcassets */; };
 		961907A51BE171CB00C78C26 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 961907A41BE171CB00C78C26 /* Default-568h@2x.png */; };
 		990EABCD18610D5D005BB53E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 990EABCB18610D5D005BB53E /* Localizable.strings */; };
 		99F1EC7D18860568001B1A8B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F1EC7A18860568001B1A8B /* CoreMedia.framework */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FB2C648214AD9E60002E96A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		281C477F91892550A71628D6 /* libPods-LocalNotificationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocalNotificationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B82C9388C4774316B5FA69 /* Pods-LocalNotificationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalNotificationSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-LocalNotificationSample/Pods-LocalNotificationSample.release.xcconfig"; sourceTree = "<group>"; };
 		961907A41BE171CB00C78C26 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				D5D68B001582A63E00730160 /* FSViewController.m */,
 				D5D68B021582A63E00730160 /* FSViewController.xib */,
 				D5D68AF41582A63D00730160 /* Supporting Files */,
+				1FB2C648214AD9E60002E96A /* Assets.xcassets */,
 			);
 			path = LocalNotificationSample;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				961907A51BE171CB00C78C26 /* Default-568h@2x.png in Resources */,
 				99F1ECA0188606A7001B1A8B /* foresee_configuration.json in Resources */,
 				D5D68B041582A63E00730160 /* FSViewController.xib in Resources */,
+				1FB2C649214AD9E60002E96A /* Assets.xcassets in Resources */,
 				990EABCD18610D5D005BB53E /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

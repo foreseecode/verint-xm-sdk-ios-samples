@@ -13,6 +13,7 @@
 		}
 	],
     "invite": {
+        "logo": "ForeSee_logo",
         "baseColor": [237, 38, 54]
     }
 }

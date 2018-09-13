@@ -2,11 +2,13 @@
   "clientId":"9NNs9GIBQIVdk1LpDlJpAQ==",
   "notificationType":"LOCAL",
   "measures":
-  [
-    {
-      "surveyId":"mobile_app-en",
-      "daysSinceLaunch":0,
-      "launchCount":0
+    [{
+     "surveyId":"mobile_app-en",
+     "daysSinceLaunch":0,
+     "launchCount":0
+    }],
+    "invite": {
+        "logo": "ForeSee_logo",
+        "baseColor": [237, 38, 54]
     }
-  ]
 }
