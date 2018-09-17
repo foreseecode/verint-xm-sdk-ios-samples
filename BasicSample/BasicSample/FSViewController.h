@@ -12,4 +12,6 @@
 
 - (IBAction)showInvite:(id)sender;
 
+- (IBAction)resetState:(id)sender;
+
 @end
