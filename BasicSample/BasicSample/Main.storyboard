@@ -31,7 +31,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Check eligibility"/>
                                 <connections>
-                                    <action selector="showInvite:" destination="jeX-iI-dJz" eventType="touchUpInside" id="sMF-cE-Afw"/>
+                                    <action selector="checkEligibility:" destination="jeX-iI-dJz" eventType="touchUpInside" id="sMF-cE-Afw"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="zqP-dd-fc8">

@@ -10,7 +10,7 @@
 
 @interface FSViewController : UIViewController
 
-- (IBAction)showInvite:(id)sender;
+- (IBAction)checkEligibility:(id)sender;
 
 - (IBAction)resetState:(id)sender;
 

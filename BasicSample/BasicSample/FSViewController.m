@@ -13,7 +13,7 @@
 
 # pragma mark - Actions
 
-- (void)showInvite:(id)sender {
+- (void)checkEligibility:(id)sender {
   [ForeSee checkIfEligibleForSurvey];
 }
 
