@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ForeSee_logo" translatesAutoresizingMaskIntoConstraints="NO" id="SXv-ME-ahT">
-                                <rect key="frame" x="109" y="120" width="156" height="70"/>
+                                <rect key="frame" x="137" y="120" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="156" id="6kz-6u-CvU"/>
-                                    <constraint firstAttribute="height" constant="70" id="SoB-rK-qgV"/>
+                                    <constraint firstAttribute="width" constant="100" id="6kz-6u-CvU"/>
+                                    <constraint firstAttribute="height" constant="100" id="SoB-rK-qgV"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yo-5R-QGz">
-                                <rect key="frame" x="20" y="313" width="335" height="30"/>
+                                <rect key="frame" x="20" y="343" width="335" height="30"/>
                                 <color key="backgroundColor" red="0.92156862745098034" green="0.16862745098039217" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Check eligibility"/>
@@ -35,7 +35,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="zqP-dd-fc8">
-                                <rect key="frame" x="20" y="210" width="335" height="83"/>
+                                <rect key="frame" x="20" y="240" width="335" height="83"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="250" constant="200" id="5bQ-QG-2Hk"/>
@@ -45,7 +45,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibi-hY-2DJ">
-                                <rect key="frame" x="20" y="363" width="335" height="30"/>
+                                <rect key="frame" x="20" y="393" width="335" height="30"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Reset state"/>
@@ -54,7 +54,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="SKo-Y3-dcg">
-                                <rect key="frame" x="20" y="413" width="335" height="66.5"/>
+                                <rect key="frame" x="20" y="443" width="335" height="66.5"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="250" constant="200" id="MKt-k9-ecU"/>
