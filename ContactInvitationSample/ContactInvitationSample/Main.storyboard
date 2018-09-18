@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZPz-z4-ztB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZPz-z4-ztB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,6 +18,9 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5rT-tB-BcD">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="rAw-pr-b3e" kind="relationship" relationship="rootViewController" id="eKn-3A-kPC"/>
                     </connections>
@@ -52,10 +55,9 @@
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NV5-Ng-XiQ">
                                 <rect key="frame" x="26" y="431" width="323" height="34"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.097796724979999999" green="0.14065014889999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Reset">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -80,19 +82,31 @@
                                     <outlet property="delegate" destination="rAw-pr-b3e" id="Xcn-Df-HKE"/>
                                 </connections>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ForeSee_logo_RGB" translatesAutoresizingMaskIntoConstraints="NO" id="9Rj-En-s6N">
-                                <rect key="frame" x="109.5" y="84" width="156" height="70"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ForeSee_logo" translatesAutoresizingMaskIntoConstraints="NO" id="9Rj-En-s6N">
+                                <rect key="frame" x="152.5" y="84" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="01u-MQ-wbl"/>
-                                    <constraint firstAttribute="width" constant="156" id="adZ-tz-yMj"/>
+                                    <constraint firstAttribute="width" constant="70" id="adZ-tz-yMj"/>
                                 </constraints>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="MVz-xZ-Yao">
+                                <rect key="frame" x="26" y="485" width="323" height="66.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="200" id="3px-bR-Gxk"/>
+                                </constraints>
+                                <string key="text">Once the invite is shown, the SDK drops into an idle state until the repeat days have elapsed. Click here to reset the state of the SDK.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="MVz-xZ-Yao" secondAttribute="trailing" constant="10" id="8Rf-G7-BJy"/>
                             <constraint firstItem="3uz-Bd-AX9" firstAttribute="centerX" secondItem="UT1-Bk-8pa" secondAttribute="centerX" id="Dgg-qk-ZEM"/>
                             <constraint firstItem="1dx-FN-ad4" firstAttribute="top" secondItem="3uz-Bd-AX9" secondAttribute="bottom" constant="20" id="GS1-du-gMb"/>
                             <constraint firstItem="NV5-Ng-XiQ" firstAttribute="top" secondItem="1dx-FN-ad4" secondAttribute="bottom" constant="20" id="Iub-v3-rKo"/>
+                            <constraint firstItem="MVz-xZ-Yao" firstAttribute="leading" secondItem="UT1-Bk-8pa" secondAttribute="leadingMargin" constant="10" id="K7K-wT-wiZ"/>
                             <constraint firstItem="3uz-Bd-AX9" firstAttribute="left" secondItem="UT1-Bk-8pa" secondAttribute="leftMargin" constant="10" id="KKa-20-J08"/>
                             <constraint firstItem="9Rj-En-s6N" firstAttribute="top" secondItem="suh-PU-B5g" secondAttribute="bottom" constant="20" id="MHd-X9-muB"/>
                             <constraint firstItem="1dx-FN-ad4" firstAttribute="left" secondItem="UT1-Bk-8pa" secondAttribute="leftMargin" constant="10" id="adg-Se-v1X"/>
@@ -101,6 +115,7 @@
                             <constraint firstItem="wT9-Gy-wPv" firstAttribute="centerX" secondItem="UT1-Bk-8pa" secondAttribute="centerX" id="jDH-jk-IKW"/>
                             <constraint firstItem="NV5-Ng-XiQ" firstAttribute="centerX" secondItem="UT1-Bk-8pa" secondAttribute="centerX" id="jDK-Uo-xk0"/>
                             <constraint firstItem="wT9-Gy-wPv" firstAttribute="left" secondItem="UT1-Bk-8pa" secondAttribute="leftMargin" constant="10" id="mZ0-al-e2C"/>
+                            <constraint firstItem="MVz-xZ-Yao" firstAttribute="top" secondItem="NV5-Ng-XiQ" secondAttribute="bottom" constant="20" id="nak-Ro-Bag"/>
                             <constraint firstItem="NV5-Ng-XiQ" firstAttribute="left" secondItem="UT1-Bk-8pa" secondAttribute="leftMargin" constant="10" id="tWu-l0-4HY"/>
                             <constraint firstItem="3uz-Bd-AX9" firstAttribute="top" secondItem="wT9-Gy-wPv" secondAttribute="bottom" constant="20" id="ttW-WV-rIJ"/>
                             <constraint firstItem="wT9-Gy-wPv" firstAttribute="top" secondItem="9Rj-En-s6N" secondAttribute="bottom" constant="20" id="uqZ-bg-83d"/>
@@ -118,6 +133,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ForeSee_logo_RGB" width="854" height="383"/>
+        <image name="ForeSee_logo" width="200" height="200"/>
     </resources>
 </document>
