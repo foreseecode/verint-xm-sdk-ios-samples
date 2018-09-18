@@ -14,6 +14,7 @@
 
 @property (strong, nonatomic) IBOutlet UITextField *contactTextField;
 @property (strong, nonatomic) IBOutlet UIButton *resetButton;
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 
@@ -28,6 +29,7 @@
     }
     self.resetButton.layer.borderWidth = 1.0f;
     self.resetButton.layer.borderColor = [UIColor blackColor].CGColor;
+    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height + 80);
 }
 
 #pragma mark - IBActions
