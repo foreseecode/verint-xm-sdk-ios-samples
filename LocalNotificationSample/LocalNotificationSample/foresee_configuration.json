@@ -1,6 +1,6 @@
 {
   "clientId":"9NNs9GIBQIVdk1LpDlJpAQ==",
-  "notificationType":"LOCAL",
+  "notificationType":"EXIT_INVITE",
   "measures":
     [{
      "surveyId":"mobile_app-en",
