@@ -27,8 +27,6 @@
     if (contactDetails != nil && ![@"" isEqualToString:[self trim:contactDetails]]) {
         self.contactTextField.text = contactDetails;
     }
-    self.resetButton.layer.borderWidth = 1.0f;
-    self.resetButton.layer.borderColor = [UIColor blackColor].CGColor;
     self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height + 80);
 }
 

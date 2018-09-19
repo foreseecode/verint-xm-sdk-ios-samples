@@ -11,7 +11,6 @@
 @interface FSViewController : UIViewController
 
 - (IBAction)checkEligibility:(id)sender;
-
 - (IBAction)resetState:(id)sender;
 
 @end
