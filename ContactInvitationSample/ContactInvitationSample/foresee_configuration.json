@@ -10,6 +10,6 @@
 	],
     "appName": "Custom Invite Sample",
     "invite": {
-        "baseColor": [235,43,61]
+        "baseColor": [235, 43, 61]
     }
 }
