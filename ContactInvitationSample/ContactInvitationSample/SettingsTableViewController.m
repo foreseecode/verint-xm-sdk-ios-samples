@@ -180,6 +180,7 @@ NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
 #pragma mark - Util
 
 - (void)clearFields {
+    [self.storage removeObjectForKey:FSPreferredContactTypeKey];
     self.dirty = YES;
 }
 
