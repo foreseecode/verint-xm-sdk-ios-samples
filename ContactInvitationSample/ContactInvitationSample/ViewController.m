@@ -24,4 +24,8 @@
     [ForeSee checkIfEligibleForSurvey];
 }
 
+- (IBAction)handleResetState:(id)sender {
+    [ForeSee resetState];
+}
+
 @end
