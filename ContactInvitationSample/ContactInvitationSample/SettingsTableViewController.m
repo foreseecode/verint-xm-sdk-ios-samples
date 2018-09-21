@@ -14,6 +14,7 @@ typedef enum FSTableSections : NSUInteger {
     EmailEntrySection = 0,
     PhoneNumberEntrySection,
     PreferredTypeSelectionSection,
+    ResetStateSection,
     SectionCount
 } FSTableSections;
 
@@ -22,6 +23,7 @@ NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
 @interface SettingsTableViewController ()
 
 @property (nonatomic, strong) NSUserDefaults *storage;
+@property (nonatomic, getter=isDirty) BOOL dirty;
 
 @end
 
@@ -31,6 +33,7 @@ NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
     self = [super initWithCoder:aDecoder];
     if (self) {
         self.storage = [NSUserDefaults standardUserDefaults];
+        self.dirty = NO;
     }
     return self;
 }
@@ -69,17 +72,27 @@ NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
     return @"";
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
+    if (section == ResetStateSection) {
+        return @"This will clear stored contact details and reset the SDK to its initial state";
+    }
+    return @"";
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section <= PhoneNumberEntrySection) {
         return 1;
     } else if (section == PreferredTypeSelectionSection) {
         return 2;
+    } else if (section == ResetStateSection) {
+        return 1;
     }
     return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *str = @"";
+    UITableViewCell *cell;
     switch (indexPath.section) {
         case EmailEntrySection:
             return [self createEmailEntryCellForTableView:tableView];
@@ -97,13 +110,22 @@ NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
                     str = @"Unknown";
                     break;
             }
-            return [self createSimpleCellForTableView:tableView
+            cell = [self createSimpleCellForTableView:tableView
                                                  text:str
                                              selected:(self.preferredContactType == indexPath.row)];
+            break;
+        case ResetStateSection:
+            cell = [self createSimpleCellForTableView:tableView
+                                                 text:@"Reset State"
+                                             selected:false];
+            cell.textLabel.textAlignment = NSTextAlignmentCenter;
+            cell.textLabel.textColor = [UIColor redColor];
+            break;
         default:
             break;
     }
-    return nil; // error
+    self.dirty = NO;
+    return cell;
 }
 
 #pragma mark - UITableViewDelegate
@@ -111,8 +133,11 @@ NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == PreferredTypeSelectionSection) {
         [self setPreferredContactType:indexPath.row];
-        [tableView reloadData];
+    } else if (indexPath.section == ResetStateSection) {
+        [ForeSee resetState];
+        [self clearFields];
     }
+    [tableView reloadData];
 }
 
 #pragma mark - Cells
@@ -147,11 +172,16 @@ NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
 #pragma mark - UITextFieldDelegate
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {
-    [ForeSee setContactDetails:[self trim:textField.text] forType:(textField.tag == EmailEntrySection) ? kFSEmail : kFSPhoneNumber];
-    [self.tableView reloadData];
+    if (!self.isDirty) {
+        [ForeSee setContactDetails:[self trim:textField.text] forType:(textField.tag == EmailEntrySection) ? kFSEmail : kFSPhoneNumber];
+    }
 }
 
 #pragma mark - Util
+
+- (void)clearFields {
+    self.dirty = YES;
+}
 
 - (NSString *)trim:(NSString *)str {
     return [str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
