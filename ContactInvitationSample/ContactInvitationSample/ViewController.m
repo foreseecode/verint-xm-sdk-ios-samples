@@ -26,6 +26,7 @@
 
 - (IBAction)handleResetState:(id)sender {
     [ForeSee resetState];
+    [ForeSee setInviteHandler:nil];
 }
 
 @end

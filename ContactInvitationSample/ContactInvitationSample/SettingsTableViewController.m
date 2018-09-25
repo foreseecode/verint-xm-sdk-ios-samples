@@ -135,6 +135,7 @@ NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
         [self setPreferredContactType:indexPath.row];
     } else if (indexPath.section == ResetStateSection) {
         [ForeSee resetState];
+        [ForeSee setInviteHandler:nil];
         [self clearFields];
     }
     [tableView reloadData];
