@@ -1,15 +1,15 @@
 {
-	"clientId":"9NNs9GIBQIVdk1LpDlJpAQ==",
+    "clientId":"9NNs9GIBQIVdk1LpDlJpAQ==",
     "notificationType":"CONTACT",
-	"measures":
+    "measures":
 	[
 		{
 			"surveyId": "mobile_app-en",
 			"launchCount": 0
 		}
-    ],
+	],
+    "appName": "Custom Invite Sample",
     "invite": {
-        "logo": "ForeSee_logo",
-        "baseColor": [237, 38, 54]
+        "baseColor": [235, 43, 61]
     }
 }
