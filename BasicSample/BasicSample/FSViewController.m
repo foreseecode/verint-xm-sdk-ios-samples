@@ -13,9 +13,12 @@
 
 # pragma mark - Actions
 
-- (void)showInvite:(id)sender {
-  [ForeSee resetState];
+- (void)checkEligibility:(id)sender {
   [ForeSee checkIfEligibleForSurvey];
+}
+
+- (void)resetState:(id)sender {
+    [ForeSee resetState];
 }
 
 @end

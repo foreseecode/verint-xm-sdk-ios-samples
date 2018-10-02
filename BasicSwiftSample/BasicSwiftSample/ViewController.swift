@@ -9,25 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet var showInviteButton: UIButton!
-    
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
 		ForeSee.setDebugLogEnabled(true)
 		ForeSee.resetState()
-		ForeSee.checkIfEligibleForSurvey()
 	}
 	
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
 	}
-
-    @IBAction func handleShowInviteButtonTouchUpInside(_ sender: AnyObject) {
-        ForeSee.resetState()
+    
+    @IBAction func checkEligibility(_ sender: Any) {
         ForeSee.checkIfEligibleForSurvey()
+    }
+    
+    @IBAction func resetState(_ sender: Any) {
+        ForeSee.resetState()
     }
 }
 

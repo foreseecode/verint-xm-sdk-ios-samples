@@ -20,7 +20,7 @@
   [ForeSee setDebugLogEnabled:YES];
   [ForeSee setSkipPoolingCheck:YES];
   [ForeSee start];
-  [ForeSee checkIfEligibleForSurvey];
+  [ForeSee resetState];
 }
 
 @end

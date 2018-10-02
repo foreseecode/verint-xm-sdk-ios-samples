@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,26 +22,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELr-i5-fM8">
-                                <rect key="frame" x="148" y="318.5" width="79" height="30"/>
-                                <state key="normal" title="Show invite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ForeSee_logo" translatesAutoresizingMaskIntoConstraints="NO" id="5dI-IR-use">
+                                <rect key="frame" x="152" y="70" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="3S0-Re-JXj"/>
+                                    <constraint firstAttribute="height" constant="70" id="jWJ-RH-dbo"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZs-Hu-vJ1">
+                                <rect key="frame" x="36" y="280" width="303" height="30"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Check eligibility"/>
                                 <connections>
-                                    <action selector="handleShowInviteButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rDS-ZN-Bnh"/>
+                                    <action selector="checkEligibility:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2LS-sX-Vaa"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="IUm-mT-BCi">
+                                <rect key="frame" x="36" y="160" width="303" height="100"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="200" id="dM3-Vu-D9j"/>
+                                </constraints>
+                                <string key="text">This sample demonstrates the In Session type, which denotes that the survey is presented at the point where the user accepts the invitation. Follow the instructions below to check eligibility.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVi-7c-gBg">
+                                <rect key="frame" x="36" y="330" width="303" height="30"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Reset state"/>
+                                <connections>
+                                    <action selector="resetState:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qOb-aX-AMH"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="YBs-i6-4bp">
+                                <rect key="frame" x="36" y="380" width="303" height="83"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="200" id="1qZ-Gg-P0f"/>
+                                </constraints>
+                                <string key="text">Once the invite is shown, the SDK drops into an idle state until the repeat days have elapsed. Click here to reset the state of the SDK.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ELr-i5-fM8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LnB-5i-4FJ"/>
-                            <constraint firstItem="ELr-i5-fM8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ywl-zb-of4"/>
+                            <constraint firstItem="5dI-IR-use" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4ha-87-ZFm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YBs-i6-4bp" secondAttribute="trailing" constant="20" id="5mO-pY-ATb"/>
+                            <constraint firstItem="YBs-i6-4bp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="BO0-TN-mv3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IUm-mT-BCi" secondAttribute="trailing" constant="20" id="DK0-3F-6pF"/>
+                            <constraint firstItem="tVi-7c-gBg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Hew-QU-T1D"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WZs-Hu-vJ1" secondAttribute="trailing" constant="20" id="L0M-8m-3hL"/>
+                            <constraint firstItem="WZs-Hu-vJ1" firstAttribute="top" secondItem="IUm-mT-BCi" secondAttribute="bottom" constant="20" id="S8h-uK-9T9"/>
+                            <constraint firstItem="IUm-mT-BCi" firstAttribute="top" secondItem="5dI-IR-use" secondAttribute="bottom" constant="20" id="Zxc-ZG-hlF"/>
+                            <constraint firstItem="tVi-7c-gBg" firstAttribute="top" secondItem="WZs-Hu-vJ1" secondAttribute="bottom" constant="20" id="gze-AI-HbZ"/>
+                            <constraint firstItem="YBs-i6-4bp" firstAttribute="top" secondItem="tVi-7c-gBg" secondAttribute="bottom" constant="20" id="ho0-m8-Uek"/>
+                            <constraint firstItem="5dI-IR-use" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="kJI-hz-eyM"/>
+                            <constraint firstItem="WZs-Hu-vJ1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="lGQ-jj-KB8"/>
+                            <constraint firstItem="IUm-mT-BCi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="zaG-DU-J6a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tVi-7c-gBg" secondAttribute="trailing" constant="20" id="zxP-PB-lsp"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="showInviteButton" destination="ELr-i5-fM8" id="DsJ-6Q-aUk"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="ForeSee_logo" width="200" height="200"/>
+    </resources>
 </document>
