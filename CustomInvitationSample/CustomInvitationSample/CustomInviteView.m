@@ -205,20 +205,6 @@ typedef enum StyleTypes : NSUInteger {
 
 #pragma mark - Helpers
 
-+ (int)styleValue:(StyleTypes)styleType {
-    switch (styleType) {
-        case CONTENT_PADDING:
-            return 15;
-            break;
-        case FRAME_WIDTH:
-            return 10;
-            break;
-        default:
-            return 0;
-            break;
-    }
-}
-
 - (CGSize)sizeForString:(NSString *)string withFont:(UIFont *)font andSize:(CGSize)size {
     CGRect labelRect = [string boundingRectWithSize:size
                                             options:NSStringDrawingUsesLineFragmentOrigin
