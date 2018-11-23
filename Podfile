@@ -36,3 +36,8 @@ target "LocalNotificationSample" do
     project 'LocalNotificationSample/LocalNotificationSample.xcodeproj'
     foresee_pods
 end
+
+target "FeedbackSample" do
+  project 'FeedbackSample/FeedbackSample.xcodeproj'
+  foresee_pods
+end
