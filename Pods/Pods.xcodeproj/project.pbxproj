@@ -12,11 +12,11 @@
 		02526A9B00BA4C6DBEF1494F513BD3A0 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = D6C8666182DCA7E10CFC22661B305B81 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		061B4D5C9CC24DD4AB8306573ACB0569 /* Pods-LocalNotificationSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E69A2133D42C8605952E14A2C54999 /* Pods-LocalNotificationSample-dummy.m */; };
 		1A6FCDED6C22C71B42D230FBD8840952 /* SSSnackbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2D402DCECEA5DDEFFA9DDBC6055656 /* SSSnackbar-dummy.m */; };
-		229022F30B20E636BA04416EB7E1F271 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2DF18D0B2AAE7E9717A95D9C69F7525 /* UIKit.framework */; };
 		2D824B0B79A0178F480A44F7EA2B56A9 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 990609F334E91263FAFE885AED64DA94 /* SVProgressHUD-dummy.m */; };
 		327F6D78EFD42E1C3E2BA6AD787DE1E8 /* Pods-BasicSwiftSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B6743838F78373788CECDF8A9A4A08 /* Pods-BasicSwiftSample-dummy.m */; };
 		5D64EE3C4680779AE28853849E771B94 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B29BB7266BD95ABAE49C2D62200295F /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		716AD96BCA136581200696CF339680B3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA08EB53EA5345FD7140B51205E8D62 /* QuartzCore.framework */; };
+		62C928196BE021CE18FCA2610A609F25 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4313A40C799CE7015A1AFA921E86C510 /* QuartzCore.framework */; };
+		70059DCA83F1551D0D35432A27D72B8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73A737880C6034539805D2368380D6E /* UIKit.framework */; };
 		71A3A48EBE3A0C49B0BFABC85278A341 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E848D658DDDC3C48FCB0C6CE98B4AF5 /* SVProgressAnimatedView.m */; };
 		7A5798D2E61DCAEDDCD249AF64E3B48E /* Pods-BasicSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F169FE4357F56E394A84ACD35BD71568 /* Pods-BasicSample-dummy.m */; };
 		873012680C94EA0CE0EDE93A78CED7BC /* Pods-InternationalizationSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D624DBDE4774723A366653BB6862CF03 /* Pods-InternationalizationSample-dummy.m */; };
@@ -82,6 +82,7 @@
 		3D404A8C77EB03D4E79F2AF2974686DB /* libPods-CustomInvitationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CustomInvitationSample.a"; path = "libPods-CustomInvitationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E848D658DDDC3C48FCB0C6CE98B4AF5 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
 		416FCAA05C448E2F30AAE492BC59EDBA /* SSSnackbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSSnackbar-prefix.pch"; sourceTree = "<group>"; };
+		4313A40C799CE7015A1AFA921E86C510 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		4A25C004DBE6ABD557BD5B6F8C02486E /* libPods-BasicSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-BasicSample.a"; path = "libPods-BasicSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5E853BB7DA4919B87AF80A9865F8BB /* ForeSee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ForeSee.framework; path = lib/ForeSee.framework; sourceTree = "<group>"; };
 		4E38A228BA9715C6692C635D3542EB94 /* Pods-BasicSwiftSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BasicSwiftSample-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -108,11 +109,9 @@
 		9C0F837C2FDEC05B202596923198E906 /* Pods-BasicSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicSample.debug.xcconfig"; sourceTree = "<group>"; };
 		9C387C03CBE3C7ADF0CD13645DAE651F /* Pods-LocalNotificationSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocalNotificationSample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A061171FFD2446FDC9A14EF5B85D247A /* SSSnackbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSSnackbar.h; path = Pod/Classes/SSSnackbar.h; sourceTree = "<group>"; };
-		A2DF18D0B2AAE7E9717A95D9C69F7525 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		A503CA8B4796DFFBCBFA0252C46A6D7C /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
 		A63C7B5EB86D668588F12D83474ADA99 /* Pods-InternationalizationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InternationalizationSample.release.xcconfig"; sourceTree = "<group>"; };
 		A8CEF03604A75886A45BE4E4C52FF13C /* Pods-ContactInvitationSample.release w- symbols.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ContactInvitationSample.release w- symbols.xcconfig"; sourceTree = "<group>"; };
-		ACA08EB53EA5345FD7140B51205E8D62 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		AF7D7487CD4B2C8A2F03E7AB8791755D /* libPods-BasicSwiftSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-BasicSwiftSample.a"; path = "libPods-BasicSwiftSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD4EDB6DE608E35A06364A1687424DF /* Pods-BasicSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BasicSample-frameworks.sh"; sourceTree = "<group>"; };
 		AFD51595386F1EBBB4B6DB4A52238A8D /* SSSnackbar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SSSnackbar.bundle; path = "SSSnackbar-SSSnackbar.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +123,7 @@
 		BB16EA9EBAC1F788DE9B888112E3EC0C /* Pods-InternationalizationSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InternationalizationSample-acknowledgements.plist"; sourceTree = "<group>"; };
 		C37F3611D8E86CBD811A0E4D4C7922AE /* Pods-CustomInvitationSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CustomInvitationSample-acknowledgements.plist"; sourceTree = "<group>"; };
 		C5C922278FCA416F7DC4CD5258DE7297 /* Pods-BasicSwiftSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BasicSwiftSample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C73A737880C6034539805D2368380D6E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		CD4E104270B589707E25B1A305A0757B /* SSSnackbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSSnackbar.m; path = Pod/Classes/SSSnackbar.m; sourceTree = "<group>"; };
 		CEDFD50BAE5F5B574EA655197142D003 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		CF2D9E7D4116ADFD3EE6C2821296E51E /* Pods-CustomInvitationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomInvitationSample.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				716AD96BCA136581200696CF339680B3 /* QuartzCore.framework in Frameworks */,
+				62C928196BE021CE18FCA2610A609F25 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +207,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				229022F30B20E636BA04416EB7E1F271 /* UIKit.framework in Frameworks */,
+				70059DCA83F1551D0D35432A27D72B8D /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +279,7 @@
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				984694A3022BF6DBD9AA9E4250A5B52B /* iOS */,
+				8484C5A36296712890FE86AC39E53273 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -344,6 +344,15 @@
 			path = "../Target Support Files/SSSnackbar";
 			sourceTree = "<group>";
 		};
+		8484C5A36296712890FE86AC39E53273 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4313A40C799CE7015A1AFA921E86C510 /* QuartzCore.framework */,
+				C73A737880C6034539805D2368380D6E /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		96935E13848DCE4564A6766B545D8741 /* Pods-BasicSample */ = {
 			isa = PBXGroup;
 			children = (
@@ -358,15 +367,6 @@
 			);
 			name = "Pods-BasicSample";
 			path = "Target Support Files/Pods-BasicSample";
-			sourceTree = "<group>";
-		};
-		984694A3022BF6DBD9AA9E4250A5B52B /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				ACA08EB53EA5345FD7140B51205E8D62 /* QuartzCore.framework */,
-				A2DF18D0B2AAE7E9717A95D9C69F7525 /* UIKit.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		9B6F127FE6F5B083339A8A9EC852EEDB /* Pods-FeedbackSample */ = {
@@ -1323,6 +1323,134 @@
 			};
 			name = Debug;
 		};
+		8303035EC69BAB8A353A079AF88BD6F3 /* Release w/ symbols */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE_W__SYMBOLS=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = "Release w/ symbols";
+		};
+		8DDFA5FA8D4131BFD96E5E26F3672644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
 		94916221339F0E2314FC2CD11C4A1BA7 /* Release w/ symbols */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 058D8C382D96C94401C3DD4507DF52E9 /* SSSnackbar.xcconfig */;
@@ -1392,65 +1520,6 @@
 			};
 			name = Debug;
 		};
-		A78E62F4E6BF38498373A2CDCC4C3B87 /* Release w/ symbols */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE_W__SYMBOLS=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = "Release w/ symbols";
-		};
 		B7324F0667397DE4580A728D9CAEB6DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2335DBC3D7BFDEA0A1B2D2943AC0BEB4 /* Pods-InternationalizationSample.debug.xcconfig */;
@@ -1519,7 +1588,7 @@
 			};
 			name = "Release w/ symbols";
 		};
-		C92782E717C52E3633C9A5F211E7987A /* Debug */ = {
+		D5F759C82752B2EB010DB3CD3D69707C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1554,16 +1623,13 @@
 				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_DEBUG=1",
-					"DEBUG=1",
+					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1573,15 +1639,16 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
-			name = Debug;
+			name = Release;
 		};
 		DB314E93AF0D66332A0AE64C64238688 /* Release w/ symbols */ = {
 			isa = XCBuildConfiguration;
@@ -1642,65 +1709,6 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		EA8C7AF90938697605468604B2A17B9F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
@@ -1776,9 +1784,9 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C92782E717C52E3633C9A5F211E7987A /* Debug */,
-				EA8C7AF90938697605468604B2A17B9F /* Release */,
-				A78E62F4E6BF38498373A2CDCC4C3B87 /* Release w/ symbols */,
+				8DDFA5FA8D4131BFD96E5E26F3672644 /* Debug */,
+				D5F759C82752B2EB010DB3CD3D69707C /* Release */,
+				8303035EC69BAB8A353A079AF88BD6F3 /* Release w/ symbols */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

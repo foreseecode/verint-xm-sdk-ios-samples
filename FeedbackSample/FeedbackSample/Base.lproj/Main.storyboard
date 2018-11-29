@@ -34,7 +34,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Launch feedback #1"/>
                                 <connections>
-                                    <action selector="checkEligibility:" destination="7pL-L6-3Xy" eventType="touchUpInside" id="Iou-Pk-qr1"/>
+                                    <action selector="launchFeedback1:" destination="efp-5F-m9A" eventType="touchUpInside" id="nv9-qz-kCs"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="cxg-Hb-h2L">
@@ -63,7 +63,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Launch feedback #2"/>
                                 <connections>
-                                    <action selector="checkEligibility:" destination="7pL-L6-3Xy" eventType="touchUpInside" id="Zhr-da-TGz"/>
+                                    <action selector="launchFeedback2:" destination="efp-5F-m9A" eventType="touchUpInside" id="pG2-Y7-STm"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="KcK-iG-v5X">

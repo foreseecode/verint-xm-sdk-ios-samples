@@ -15,6 +15,7 @@
 		542E7CAD219D0B01006D4699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542E7CAB219D0B01006D4699 /* LaunchScreen.storyboard */; };
 		542E7CB8219D0B01006D4699 /* FeedbackSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E7CB7219D0B01006D4699 /* FeedbackSampleTests.swift */; };
 		542E7CC3219D0B01006D4699 /* FeedbackSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E7CC2219D0B01006D4699 /* FeedbackSampleUITests.swift */; };
+		54F818BF21AF6CF500772CDA /* foresee_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 54F818BE21AF6CF500772CDA /* foresee_configuration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		542E7CC2219D0B01006D4699 /* FeedbackSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackSampleUITests.swift; sourceTree = "<group>"; };
 		542E7CC4219D0B01006D4699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		544E57B121A794F00008D989 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		54F818BE21AF6CF500772CDA /* foresee_configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foresee_configuration.json; sourceTree = "<group>"; };
 		76B8A069EDA1A3616F84EA22 /* libPods-FeedbackSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FeedbackSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F2A3DD32E6868F92F3C233 /* Pods-FeedbackSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedbackSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-FeedbackSample/Pods-FeedbackSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +116,7 @@
 		542E7CA1219D0AFE006D4699 /* FeedbackSample */ = {
 			isa = PBXGroup;
 			children = (
+				54F818BE21AF6CF500772CDA /* foresee_configuration.json */,
 				542E7CA2219D0AFE006D4699 /* AppDelegate.swift */,
 				542E7CA4219D0AFE006D4699 /* ViewController.swift */,
 				542E7CA6219D0AFE006D4699 /* Main.storyboard */,
@@ -259,6 +262,7 @@
 			files = (
 				542E7CAD219D0B01006D4699 /* LaunchScreen.storyboard in Resources */,
 				542E7CAA219D0B01006D4699 /* Assets.xcassets in Resources */,
+				54F818BF21AF6CF500772CDA /* foresee_configuration.json in Resources */,
 				542E7CA8219D0AFE006D4699 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

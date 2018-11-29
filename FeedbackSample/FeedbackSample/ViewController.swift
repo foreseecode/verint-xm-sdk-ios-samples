@@ -15,9 +15,15 @@ class ViewController: UIViewController {
     // Do any additional setup after loading the view, typically from a nib.
     ForeSee.setDebugLogEnabled(true)
     ForeSee.resetState()
-    ForeSeeFeedback.checkIfFeedbackEnabledForName("Sample 2");
   }
 
+  @IBAction func launchFeedback1(_ sender: Any) {
+    // ForeSeeFeedback.showFeedbackSurvey()
+  }
+  
+  @IBAction func launchFeedback2(_ sender: Any) {
+    // ForeSeeFeedback.showFeedbackForName("Sample 2")
+  }
 
 }
 
