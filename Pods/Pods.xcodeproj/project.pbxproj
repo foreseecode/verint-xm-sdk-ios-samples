@@ -7,81 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01C522CBEE68A29446FE55E6C987E8D5 /* Pods-CustomInvitationSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF01AE61C37A60FCC2673E82D8BE3BA /* Pods-CustomInvitationSample-dummy.m */; };
-		025180EC4030A8A9BEF9F83DE410CAF1 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 269615B69C49E54850E8F95120DEB580 /* SVRadialGradientLayer.m */; };
-		02526A9B00BA4C6DBEF1494F513BD3A0 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = D6C8666182DCA7E10CFC22661B305B81 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		061B4D5C9CC24DD4AB8306573ACB0569 /* Pods-LocalNotificationSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F80F6D9F38DCA3B9BB21375D4697210 /* Pods-LocalNotificationSample-dummy.m */; };
-		1A6FCDED6C22C71B42D230FBD8840952 /* SSSnackbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2D402DCECEA5DDEFFA9DDBC6055656 /* SSSnackbar-dummy.m */; };
-		229022F30B20E636BA04416EB7E1F271 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2DF18D0B2AAE7E9717A95D9C69F7525 /* UIKit.framework */; };
-		2D824B0B79A0178F480A44F7EA2B56A9 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 990609F334E91263FAFE885AED64DA94 /* SVProgressHUD-dummy.m */; };
+		0945B14E841BCD70B29FAD3B728DCDEA /* SSSnackbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D0DB457C02B34A81445AE73436DDC29 /* SSSnackbar.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0AD1D25F3000BCD774BFAFE37C2A41D7 /* Pods-CustomInvitationSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF01AE61C37A60FCC2673E82D8BE3BA /* Pods-CustomInvitationSample-dummy.m */; };
+		17DFAC8498B9FB018C1401EF4B57AE89 /* SSSnackbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8420B03D175CCC38632EBDDE35756A /* SSSnackbar-dummy.m */; };
 		327F6D78EFD42E1C3E2BA6AD787DE1E8 /* Pods-BasicSwiftSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41278109A1D20BB501FC9DFF2086D05C /* Pods-BasicSwiftSample-dummy.m */; };
-		5D64EE3C4680779AE28853849E771B94 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B29BB7266BD95ABAE49C2D62200295F /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		716AD96BCA136581200696CF339680B3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA08EB53EA5345FD7140B51205E8D62 /* QuartzCore.framework */; };
-		71A3A48EBE3A0C49B0BFABC85278A341 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E848D658DDDC3C48FCB0C6CE98B4AF5 /* SVProgressAnimatedView.m */; };
+		41FA3C6B8851BC1412D751F9C6760FC1 /* SSSnackbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 27424E2F0451403AC0E194CE203147E6 /* SSSnackbar.m */; };
 		7A5798D2E61DCAEDDCD249AF64E3B48E /* Pods-BasicSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 679A469F87E708FFF24A66DCA97DB858 /* Pods-BasicSample-dummy.m */; };
 		873012680C94EA0CE0EDE93A78CED7BC /* Pods-InternationalizationSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5459DEC2D194AFBFF899444BFFE31A8 /* Pods-InternationalizationSample-dummy.m */; };
-		8A8816FDCB641602C30898D98BF0B668 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 37D1FD690E1F61F1903B3BAB381D8B4D /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		92BFADCCD067F059FB001E977015E059 /* Pods-ContactInvitationSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EADB202C2CC76FC9BBA8BE6549FA4191 /* Pods-ContactInvitationSample-dummy.m */; };
-		B866A369092F072CFE6E78DD914FF3B4 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2731E1B95038131DFAA084F71639AA /* SVProgressHUD.m */; };
-		C4219CBC6CE044C732097F03F0D32B68 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDFD50BAE5F5B574EA655197142D003 /* SVIndefiniteAnimatedView.m */; };
-		C4D37135938EA723A84A989975FA4337 /* SSSnackbar.h in Headers */ = {isa = PBXBuildFile; fileRef = A061171FFD2446FDC9A14EF5B85D247A /* SSSnackbar.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D0533A9A3668FCADE792A46BABD39387 /* SSSnackbar.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4E104270B589707E25B1A305A0757B /* SSSnackbar.m */; };
-		D92361D6F490BAB4DB3C06EC5A3512D4 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 60410BC719E7E09A997B9FE9A3B70227 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CC2F8BEC10171333A8F733D3E137001C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD46FBC041420035C341CC6342582587 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		42576DC43DD7404E84D5BFD5A95419A2 /* PBXContainerItemProxy */ = {
+		5966BDFA340290DC9E507E88C5762AB0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 57393B4E69CA92D926875B210A4A370F;
+			remoteGlobalIDString = D98114F9C63D6B5B160C3F8E5D182244;
 			remoteInfo = SSSnackbar;
 		};
-		DC21ABF5E9AF9F613DF0B024D0F8535A /* PBXContainerItemProxy */ = {
+		69EA65F916E415EAC4C61B4AAB594286 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1113AFDCD734CBAC1EE746C5D888579F;
+			remoteGlobalIDString = 2BFDC7E2B71ECE1145CB6AB38B9EF3F2;
 			remoteInfo = "SSSnackbar-SSSnackbar";
-		};
-		EDF3F8EBBD2F89ADF1F95669830B7D3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1AB144F54259C780DFAC5929987B0027;
-			remoteInfo = SVProgressHUD;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		004E67A49DE60511E85598126E43F698 /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSVProgressHUD.a; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0455ACBE5691C1AFC1E2F5F8208365F4 /* Pods-ContactInvitationSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ContactInvitationSample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		058D8C382D96C94401C3DD4507DF52E9 /* SSSnackbar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSSnackbar.xcconfig; sourceTree = "<group>"; };
-		0ACAA8B5EA3A527F4EA0916407AE82D8 /* libPods-InternationalizationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-InternationalizationSample.a"; path = "libPods-InternationalizationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F0971E6D0EB78D06CB9A3789549E7C /* Pods-ContactInvitationSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ContactInvitationSample-resources.sh"; sourceTree = "<group>"; };
 		1497BB711D3DF360984862599C2EA781 /* Pods-InternationalizationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InternationalizationSample.debug.xcconfig"; sourceTree = "<group>"; };
+		16FE78E79E4261158E798D41B4D48E01 /* SSSnackbar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SSSnackbar.bundle; path = "SSSnackbar-SSSnackbar.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D0DB457C02B34A81445AE73436DDC29 /* SSSnackbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSSnackbar.h; path = Pod/Classes/SSSnackbar.h; sourceTree = "<group>"; };
 		1D5E24CA22D8B608E9442C2D9020F0EC /* Pods-ContactInvitationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ContactInvitationSample.debug.xcconfig"; sourceTree = "<group>"; };
-		269615B69C49E54850E8F95120DEB580 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
-		26CEE1F7F50FB12BC833B08C01260D15 /* libPods-BasicSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-BasicSample.a"; path = "libPods-BasicSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B29BB7266BD95ABAE49C2D62200295F /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		27424E2F0451403AC0E194CE203147E6 /* SSSnackbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSSnackbar.m; path = Pod/Classes/SSSnackbar.m; sourceTree = "<group>"; };
 		2BF01AE61C37A60FCC2673E82D8BE3BA /* Pods-CustomInvitationSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CustomInvitationSample-dummy.m"; sourceTree = "<group>"; };
-		30601FA04F24567CDC94A91E958D6BE4 /* libSSSnackbar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSSSnackbar.a; path = libSSSnackbar.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3133F13FA341E170C2EDFEEC2349941B /* Pods-InternationalizationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InternationalizationSample.release.xcconfig"; sourceTree = "<group>"; };
+		3188481D4A578647E493B8A3E60E75CD /* libSSSnackbar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSSSnackbar.a; path = libSSSnackbar.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		32826AC975D0B5AFEC7702AD551988E3 /* Pods-InternationalizationSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InternationalizationSample-acknowledgements.plist"; sourceTree = "<group>"; };
 		3478F0FE4DA86195721729C2B16D65B8 /* Pods-BasicSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BasicSample-acknowledgements.plist"; sourceTree = "<group>"; };
-		37D1FD690E1F61F1903B3BAB381D8B4D /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
 		3C57C05ACE68FAB1A898DDC931C9CAE6 /* Pods-InternationalizationSample.release w- symbols.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InternationalizationSample.release w- symbols.xcconfig"; sourceTree = "<group>"; };
-		3E848D658DDDC3C48FCB0C6CE98B4AF5 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
 		41278109A1D20BB501FC9DFF2086D05C /* Pods-BasicSwiftSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BasicSwiftSample-dummy.m"; sourceTree = "<group>"; };
-		416FCAA05C448E2F30AAE492BC59EDBA /* SSSnackbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSSnackbar-prefix.pch"; sourceTree = "<group>"; };
-		433E24EF7FF8087D6A971F070D5C482F /* SSSnackbar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SSSnackbar.bundle; path = "SSSnackbar-SSSnackbar.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		434B684BBC4943F24E760010EA1D4FEC /* Pods-LocalNotificationSample.release w- symbols.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalNotificationSample.release w- symbols.xcconfig"; sourceTree = "<group>"; };
 		443E7297B1ABBC2E89E8F45F480DD23E /* Pods-ContactInvitationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ContactInvitationSample.release.xcconfig"; sourceTree = "<group>"; };
 		46A6EA24B18AA59C87683E1CEA8B0CA7 /* Pods-BasicSample.release w- symbols.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicSample.release w- symbols.xcconfig"; sourceTree = "<group>"; };
 		471498CE5F6371C06456EC0D5B9C170D /* Pods-InternationalizationSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InternationalizationSample-resources.sh"; sourceTree = "<group>"; };
 		4AC85F59EBFF943F442E5983D35A4FC7 /* Pods-CustomInvitationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomInvitationSample.debug.xcconfig"; sourceTree = "<group>"; };
-		4B5E853BB7DA4919B87AF80A9865F8BB /* ForeSee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ForeSee.framework; path = lib/ForeSee.framework; sourceTree = "<group>"; };
-		50D934F0D060280A6C27E446A0CA102C /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		5899745D5D12436A1BF4C231C9DD4022 /* libPods-ContactInvitationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ContactInvitationSample.a"; path = "libPods-ContactInvitationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF3002EEC82DBD62D2A88821A254281 /* Pods-LocalNotificationSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocalNotificationSample-resources.sh"; sourceTree = "<group>"; };
 		5C25B048D30A827AAA794A1AE9D5C996 /* Pods-CustomInvitationSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CustomInvitationSample-frameworks.sh"; sourceTree = "<group>"; };
 		5C54358C4CDE4015BD56961F06814FF8 /* Pods-BasicSwiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicSwiftSample.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,61 +64,47 @@
 		5CE4B856CD25A69F27148718D4151AC6 /* Pods-LocalNotificationSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocalNotificationSample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5EFA1E0AE2FBF26898E31526E70E4161 /* Pods-BasicSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BasicSample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5F9276F288261777E0E597B3B99E4031 /* Pods-CustomInvitationSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CustomInvitationSample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		60410BC719E7E09A997B9FE9A3B70227 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
 		679A469F87E708FFF24A66DCA97DB858 /* Pods-BasicSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BasicSample-dummy.m"; sourceTree = "<group>"; };
 		6938E6334E196AC393D58CC1D59487EA /* Pods-BasicSwiftSample.release w- symbols.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicSwiftSample.release w- symbols.xcconfig"; sourceTree = "<group>"; };
 		7F80F6D9F38DCA3B9BB21375D4697210 /* Pods-LocalNotificationSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocalNotificationSample-dummy.m"; sourceTree = "<group>"; };
 		805E61CAD4128B62D5188086996DBDE0 /* Pods-ContactInvitationSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ContactInvitationSample-acknowledgements.plist"; sourceTree = "<group>"; };
+		812FB48E9042EBF8E3D5FB8BAD352E8D /* libPods-BasicSwiftSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-BasicSwiftSample.a"; path = "libPods-BasicSwiftSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82E050EAAACF026BD392704A036870C9 /* Pods-CustomInvitationSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CustomInvitationSample-resources.sh"; sourceTree = "<group>"; };
 		8A69A7D994CBE520BDC09B4D5358C794 /* Pods-BasicSwiftSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BasicSwiftSample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8DA3ED94B2434C95A19CD7FE39AF5A0D /* libPods-LocalNotificationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LocalNotificationSample.a"; path = "libPods-LocalNotificationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED96CFF02EAFF2C91549A949FC2F371 /* Pods-BasicSwiftSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BasicSwiftSample-frameworks.sh"; sourceTree = "<group>"; };
 		8F60C3C6D84CF3D832AFDC08089B9856 /* Pods-BasicSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicSample.debug.xcconfig"; sourceTree = "<group>"; };
+		8F957C023D194545B642E6841F8EC21B /* libPods-BasicSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-BasicSample.a"; path = "libPods-BasicSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9291C2E84979C3163C60A173719E38F9 /* ResourceBundle-SSSnackbar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SSSnackbar-Info.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		990609F334E91263FAFE885AED64DA94 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		9F56876EA911A688385FEC619D372FC9 /* libPods-ContactInvitationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ContactInvitationSample.a"; path = "libPods-ContactInvitationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A061171FFD2446FDC9A14EF5B85D247A /* SSSnackbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSSnackbar.h; path = Pod/Classes/SSSnackbar.h; sourceTree = "<group>"; };
+		9D8420B03D175CCC38632EBDDE35756A /* SSSnackbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSSnackbar-dummy.m"; sourceTree = "<group>"; };
 		A0CFCB1CA75B180043299BFADB9CF448 /* Pods-BasicSwiftSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BasicSwiftSample-acknowledgements.plist"; sourceTree = "<group>"; };
 		A27462EA9675E3E51DE22D77F9BF2E4E /* Pods-LocalNotificationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalNotificationSample.debug.xcconfig"; sourceTree = "<group>"; };
-		A2DF18D0B2AAE7E9717A95D9C69F7525 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		A503CA8B4796DFFBCBFA0252C46A6D7C /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
 		A72FA86BDCD7FCF699F9600B8150790B /* Pods-LocalNotificationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalNotificationSample.release.xcconfig"; sourceTree = "<group>"; };
 		A789C0127994197E01B3B221C7130FC0 /* Pods-LocalNotificationSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocalNotificationSample-frameworks.sh"; sourceTree = "<group>"; };
 		AC260D1B6BF9B2B4150E12755305CBE0 /* Pods-CustomInvitationSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CustomInvitationSample-acknowledgements.plist"; sourceTree = "<group>"; };
-		ACA08EB53EA5345FD7140B51205E8D62 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		B7E8343D40E909DA3D39BDB870B80457 /* ForeSee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ForeSee.framework; path = lib/ForeSee.framework; sourceTree = "<group>"; };
 		B877EA5A5E037331AA1F8C4F693D368F /* Pods-LocalNotificationSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocalNotificationSample-acknowledgements.plist"; sourceTree = "<group>"; };
-		C3B797D5D8614F50097B1B3933B63551 /* libPods-CustomInvitationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CustomInvitationSample.a"; path = "libPods-CustomInvitationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C371278523DA00A3ED32CAFDD9EC1AB8 /* libPods-LocalNotificationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LocalNotificationSample.a"; path = "libPods-LocalNotificationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4CF7BFE163D77415BBA46692D22E8AE /* Pods-CustomInvitationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomInvitationSample.release.xcconfig"; sourceTree = "<group>"; };
 		CBBEF084183E14F37E2F37E2F5E37F73 /* Pods-BasicSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BasicSample-resources.sh"; sourceTree = "<group>"; };
-		CD4E104270B589707E25B1A305A0757B /* SSSnackbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSSnackbar.m; path = Pod/Classes/SSSnackbar.m; sourceTree = "<group>"; };
 		CDB08354D53609A3EB4DF8FDE04E636C /* Pods-ContactInvitationSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ContactInvitationSample-frameworks.sh"; sourceTree = "<group>"; };
-		CEDFD50BAE5F5B574EA655197142D003 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
-		CF6A7014A3EC8729ED9F3FA3EA6F313C /* ResourceBundle-SSSnackbar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SSSnackbar-Info.plist"; sourceTree = "<group>"; };
 		D5459DEC2D194AFBFF899444BFFE31A8 /* Pods-InternationalizationSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InternationalizationSample-dummy.m"; sourceTree = "<group>"; };
 		D6AF285AD5D4C4F4EA18AA81E220541D /* Pods-ContactInvitationSample.release w- symbols.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ContactInvitationSample.release w- symbols.xcconfig"; sourceTree = "<group>"; };
-		D6C8666182DCA7E10CFC22661B305B81 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		D8EAF3E68A32672A2C9A7B984C4A4D93 /* libPods-BasicSwiftSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-BasicSwiftSample.a"; path = "libPods-BasicSwiftSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D99EC1B874C3F64322DC7BB4E7AE57C3 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
-		DA2D402DCECEA5DDEFFA9DDBC6055656 /* SSSnackbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSSnackbar-dummy.m"; sourceTree = "<group>"; };
 		DB87B3685DD41B039DC2330AB1A44EAE /* Pods-BasicSwiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicSwiftSample.debug.xcconfig"; sourceTree = "<group>"; };
-		DD2731E1B95038131DFAA084F71639AA /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		DD46FBC041420035C341CC6342582587 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DE6CD420DAE17611269BC46B53921017 /* libPods-CustomInvitationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CustomInvitationSample.a"; path = "libPods-CustomInvitationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A401D3CD87E92A61B00E5B298F4C3C /* Pods-InternationalizationSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InternationalizationSample-frameworks.sh"; sourceTree = "<group>"; };
 		E9720CD143520FEF4B5AA6FF67D484D2 /* Pods-BasicSwiftSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BasicSwiftSample-resources.sh"; sourceTree = "<group>"; };
 		EAD879E7BEB3CBB2BAC3882B8B022CD7 /* Pods-BasicSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasicSample.release.xcconfig"; sourceTree = "<group>"; };
 		EADB202C2CC76FC9BBA8BE6549FA4191 /* Pods-ContactInvitationSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ContactInvitationSample-dummy.m"; sourceTree = "<group>"; };
 		F105670B43D0624D84231A4C5454BD5A /* Pods-InternationalizationSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InternationalizationSample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F658476FD416E572FB94F41A87EACBEC /* SSSnackbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSSnackbar-prefix.pch"; sourceTree = "<group>"; };
+		F84EF9043FFF03AB06F97BFDF3ABEBB9 /* SSSnackbar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSSnackbar.xcconfig; sourceTree = "<group>"; };
 		F8C70825AAB9F4CF8F3A4FAAAA88DE54 /* Pods-CustomInvitationSample.release w- symbols.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomInvitationSample.release w- symbols.xcconfig"; sourceTree = "<group>"; };
+		F901719A85C042927A7DF3F85AEE7111 /* libPods-InternationalizationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-InternationalizationSample.a"; path = "libPods-InternationalizationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0FD029BFBC927F850BF7F1F1A06CD002 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				716AD96BCA136581200696CF339680B3 /* QuartzCore.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1D62D5D0FBEDACD2870208D9034FF249 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -165,7 +126,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C237C08BF207AFD90DFF44E83C92BA6 /* Frameworks */ = {
+		3767907D1FE1E9B8FE72587325A706AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC2F8BEC10171333A8F733D3E137001C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42E664CB7D11A5D9135AED1DF96ED708 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -179,22 +148,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8AE5BCB7CC897459F13CA0E36AA566E5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AE0C9D87845D0211F25C0AD63E203488 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				229022F30B20E636BA04416EB7E1F271 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B9EE3D6BC5E5FFBA7D89EAE1C0499F1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D446A1BCBEDC193865DFF652A74E58AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -204,32 +165,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0088E10684FC37604D2AA2B7B31A0A60 /* Pods */ = {
+		0FDEAF8B31D8CED9430660F55FE2FED3 /* ForeSee */ = {
 			isa = PBXGroup;
 			children = (
-				5A56960DB4AF5490072F2DD19B1EEDBC /* ForeSee */,
-				3F2C36E19D7B99B24E1EF913271A8F5F /* SSSnackbar */,
-				02766770F7B242A3FA1DEF78ACE192DD /* SVProgressHUD */,
+				5C227E954A68D4FC4195BBC339EAF84E /* CxMeasure */,
 			);
-			name = Pods;
+			name = ForeSee;
+			path = ForeSee;
 			sourceTree = "<group>";
 		};
-		02766770F7B242A3FA1DEF78ACE192DD /* SVProgressHUD */ = {
+		20C9CDFF290660A36F682EE9B9596F8D /* SSSnackbar */ = {
 			isa = PBXGroup;
 			children = (
-				D6C8666182DCA7E10CFC22661B305B81 /* SVIndefiniteAnimatedView.h */,
-				CEDFD50BAE5F5B574EA655197142D003 /* SVIndefiniteAnimatedView.m */,
-				2B29BB7266BD95ABAE49C2D62200295F /* SVProgressAnimatedView.h */,
-				3E848D658DDDC3C48FCB0C6CE98B4AF5 /* SVProgressAnimatedView.m */,
-				37D1FD690E1F61F1903B3BAB381D8B4D /* SVProgressHUD.h */,
-				DD2731E1B95038131DFAA084F71639AA /* SVProgressHUD.m */,
-				60410BC719E7E09A997B9FE9A3B70227 /* SVRadialGradientLayer.h */,
-				269615B69C49E54850E8F95120DEB580 /* SVRadialGradientLayer.m */,
-				D8CDAE33690F1C0EBD813BE79494E1CF /* Resources */,
-				54A4D089046B5B326BA6A0E539BB4AE1 /* Support Files */,
+				1D0DB457C02B34A81445AE73436DDC29 /* SSSnackbar.h */,
+				27424E2F0451403AC0E194CE203147E6 /* SSSnackbar.m */,
+				3219FCBD4B05BB8F3F26BCB7D308ED2F /* Support Files */,
 			);
-			name = SVProgressHUD;
-			path = SVProgressHUD;
+			name = SSSnackbar;
+			path = SSSnackbar;
 			sourceTree = "<group>";
 		};
 		24535A57B8B9F5146068ED63535CE714 /* Pods-ContactInvitationSample */ = {
@@ -261,34 +214,24 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3F2C36E19D7B99B24E1EF913271A8F5F /* SSSnackbar */ = {
+		3219FCBD4B05BB8F3F26BCB7D308ED2F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A061171FFD2446FDC9A14EF5B85D247A /* SSSnackbar.h */,
-				CD4E104270B589707E25B1A305A0757B /* SSSnackbar.m */,
-				7E70380D150EAA8D08A526FC084CBC88 /* Support Files */,
-			);
-			name = SSSnackbar;
-			path = SSSnackbar;
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				984694A3022BF6DBD9AA9E4250A5B52B /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		54A4D089046B5B326BA6A0E539BB4AE1 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A503CA8B4796DFFBCBFA0252C46A6D7C /* SVProgressHUD.xcconfig */,
-				990609F334E91263FAFE885AED64DA94 /* SVProgressHUD-dummy.m */,
-				50D934F0D060280A6C27E446A0CA102C /* SVProgressHUD-prefix.pch */,
+				9291C2E84979C3163C60A173719E38F9 /* ResourceBundle-SSSnackbar-Info.plist */,
+				F84EF9043FFF03AB06F97BFDF3ABEBB9 /* SSSnackbar.xcconfig */,
+				9D8420B03D175CCC38632EBDDE35756A /* SSSnackbar-dummy.m */,
+				F658476FD416E572FB94F41A87EACBEC /* SSSnackbar-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SVProgressHUD";
+			path = "../Target Support Files/SSSnackbar";
+			sourceTree = "<group>";
+		};
+		3DFF91B9A4F29898487DF00D28E5ED46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7E8343D40E909DA3D39BDB870B80457 /* ForeSee.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		599D30BAA28516D7578B92D795BCB9AE /* Pods-InternationalizationSample */ = {
@@ -307,45 +250,47 @@
 			path = "Target Support Files/Pods-InternationalizationSample";
 			sourceTree = "<group>";
 		};
-		5A56960DB4AF5490072F2DD19B1EEDBC /* ForeSee */ = {
+		5C227E954A68D4FC4195BBC339EAF84E /* CxMeasure */ = {
 			isa = PBXGroup;
 			children = (
-				D88B7236368FAB6827183C6257F970AF /* CxMeasure */,
+				3DFF91B9A4F29898487DF00D28E5ED46 /* Frameworks */,
 			);
-			name = ForeSee;
-			path = ForeSee;
+			name = CxMeasure;
+			sourceTree = "<group>";
+		};
+		7A4838E18CA4C3B1124D68D337DA7709 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FDEAF8B31D8CED9430660F55FE2FED3 /* ForeSee */,
+				20C9CDFF290660A36F682EE9B9596F8D /* SSSnackbar */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				0088E10684FC37604D2AA2B7B31A0A60 /* Pods */,
-				BBB3325B78CBE90B65C3DC68E38668DF /* Products */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				7A4838E18CA4C3B1124D68D337DA7709 /* Pods */,
+				8666E895E373BEAE76F640D2C9E4D487 /* Products */,
 				2D74170852135A81CD584F006EAB8B20 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7E70380D150EAA8D08A526FC084CBC88 /* Support Files */ = {
+		8666E895E373BEAE76F640D2C9E4D487 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CF6A7014A3EC8729ED9F3FA3EA6F313C /* ResourceBundle-SSSnackbar-Info.plist */,
-				058D8C382D96C94401C3DD4507DF52E9 /* SSSnackbar.xcconfig */,
-				DA2D402DCECEA5DDEFFA9DDBC6055656 /* SSSnackbar-dummy.m */,
-				416FCAA05C448E2F30AAE492BC59EDBA /* SSSnackbar-prefix.pch */,
+				8F957C023D194545B642E6841F8EC21B /* libPods-BasicSample.a */,
+				812FB48E9042EBF8E3D5FB8BAD352E8D /* libPods-BasicSwiftSample.a */,
+				5899745D5D12436A1BF4C231C9DD4022 /* libPods-ContactInvitationSample.a */,
+				DE6CD420DAE17611269BC46B53921017 /* libPods-CustomInvitationSample.a */,
+				F901719A85C042927A7DF3F85AEE7111 /* libPods-InternationalizationSample.a */,
+				C371278523DA00A3ED32CAFDD9EC1AB8 /* libPods-LocalNotificationSample.a */,
+				3188481D4A578647E493B8A3E60E75CD /* libSSSnackbar.a */,
+				16FE78E79E4261158E798D41B4D48E01 /* SSSnackbar.bundle */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SSSnackbar";
-			sourceTree = "<group>";
-		};
-		984694A3022BF6DBD9AA9E4250A5B52B /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				ACA08EB53EA5345FD7140B51205E8D62 /* QuartzCore.framework */,
-				A2DF18D0B2AAE7E9717A95D9C69F7525 /* UIKit.framework */,
-			);
-			name = iOS;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		9AAEF92E6EFB87836AFCF100EC9DCD1F /* Pods-CustomInvitationSample */ = {
@@ -364,28 +309,12 @@
 			path = "Target Support Files/Pods-CustomInvitationSample";
 			sourceTree = "<group>";
 		};
-		9EC05733E0B5BFC45C3CC879FDB9890A /* Frameworks */ = {
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4B5E853BB7DA4919B87AF80A9865F8BB /* ForeSee.framework */,
+				FF5B08143E740C3777FEB0D3A952141C /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BBB3325B78CBE90B65C3DC68E38668DF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				26CEE1F7F50FB12BC833B08C01260D15 /* libPods-BasicSample.a */,
-				D8EAF3E68A32672A2C9A7B984C4A4D93 /* libPods-BasicSwiftSample.a */,
-				9F56876EA911A688385FEC619D372FC9 /* libPods-ContactInvitationSample.a */,
-				C3B797D5D8614F50097B1B3933B63551 /* libPods-CustomInvitationSample.a */,
-				0ACAA8B5EA3A527F4EA0916407AE82D8 /* libPods-InternationalizationSample.a */,
-				8DA3ED94B2434C95A19CD7FE39AF5A0D /* libPods-LocalNotificationSample.a */,
-				30601FA04F24567CDC94A91E958D6BE4 /* libSSSnackbar.a */,
-				004E67A49DE60511E85598126E43F698 /* libSVProgressHUD.a */,
-				433E24EF7FF8087D6A971F070D5C482F /* SSSnackbar.bundle */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		D02141DD57C4ED1D1CB05600BA3FEA22 /* Pods-BasicSample */ = {
@@ -402,22 +331,6 @@
 			);
 			name = "Pods-BasicSample";
 			path = "Target Support Files/Pods-BasicSample";
-			sourceTree = "<group>";
-		};
-		D88B7236368FAB6827183C6257F970AF /* CxMeasure */ = {
-			isa = PBXGroup;
-			children = (
-				9EC05733E0B5BFC45C3CC879FDB9890A /* Frameworks */,
-			);
-			name = CxMeasure;
-			sourceTree = "<group>";
-		};
-		D8CDAE33690F1C0EBD813BE79494E1CF /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				D99EC1B874C3F64322DC7BB4E7AE57C3 /* SVProgressHUD.bundle */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		E548A341A346E44624C1B52A81E15A26 /* Pods-LocalNotificationSample */ = {
@@ -452,16 +365,17 @@
 			path = "Target Support Files/Pods-BasicSwiftSample";
 			sourceTree = "<group>";
 		};
+		FF5B08143E740C3777FEB0D3A952141C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DD46FBC041420035C341CC6342582587 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1866513FA9D7A04CDE6C0FAC71781DF9 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		23E938D527590EB02657A4A6D87FC22D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -497,35 +411,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8634D62B88D5565CC97A3DE371731307 /* Headers */ = {
+		6526666F33DE31972F9A465684828331 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4D37135938EA723A84A989975FA4337 /* SSSnackbar.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F82CF01C942A14E16AABCD53DEECBCA3 /* Headers */ = {
+		B2F639F4F97D5DADDFD1D203C2FD34D3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02526A9B00BA4C6DBEF1494F513BD3A0 /* SVIndefiniteAnimatedView.h in Headers */,
-				5D64EE3C4680779AE28853849E771B94 /* SVProgressAnimatedView.h in Headers */,
-				8A8816FDCB641602C30898D98BF0B668 /* SVProgressHUD.h in Headers */,
-				D92361D6F490BAB4DB3C06EC5A3512D4 /* SVRadialGradientLayer.h in Headers */,
+				0945B14E841BCD70B29FAD3B728DCDEA /* SSSnackbar.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1113AFDCD734CBAC1EE746C5D888579F /* SSSnackbar-SSSnackbar */ = {
+		2BFDC7E2B71ECE1145CB6AB38B9EF3F2 /* SSSnackbar-SSSnackbar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FE8D77343C6235C26BF030026B05899C /* Build configuration list for PBXNativeTarget "SSSnackbar-SSSnackbar" */;
+			buildConfigurationList = 05AE93A0E518151467CC1E82FEC36240 /* Build configuration list for PBXNativeTarget "SSSnackbar-SSSnackbar" */;
 			buildPhases = (
-				94B418F767D71457067016606BE5ADB7 /* Sources */,
-				4C237C08BF207AFD90DFF44E83C92BA6 /* Frameworks */,
-				3BD079B2399C783AA5367AE403D3A3BE /* Resources */,
+				5B77DD1068E9726A03C00F665367727A /* Sources */,
+				42E664CB7D11A5D9135AED1DF96ED708 /* Frameworks */,
+				7917CA35D385E70D4C0622359C697960 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -533,42 +443,25 @@
 			);
 			name = "SSSnackbar-SSSnackbar";
 			productName = "SSSnackbar-SSSnackbar";
-			productReference = 433E24EF7FF8087D6A971F070D5C482F /* SSSnackbar.bundle */;
+			productReference = 16FE78E79E4261158E798D41B4D48E01 /* SSSnackbar.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		1AB144F54259C780DFAC5929987B0027 /* SVProgressHUD */ = {
+		698B5322BDEDDF77B8380488265C41E5 /* Pods-CustomInvitationSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 171D9CC7DB8340013134210E61A2C094 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildConfigurationList = 7E39CB89C49CA47D6AE20DC2EEA7174F /* Build configuration list for PBXNativeTarget "Pods-CustomInvitationSample" */;
 			buildPhases = (
-				F82CF01C942A14E16AABCD53DEECBCA3 /* Headers */,
-				DFCCAF0BFCEC5CB1F469D5D6D1E329DF /* Sources */,
-				0FD029BFBC927F850BF7F1F1A06CD002 /* Frameworks */,
+				6526666F33DE31972F9A465684828331 /* Headers */,
+				A74BAC9DAA7AEA670FD02B1D63161F8D /* Sources */,
+				D446A1BCBEDC193865DFF652A74E58AB /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9E55D25E220BE29317E1854D0F2EB88C /* PBXTargetDependency */,
 			);
-			name = SVProgressHUD;
-			productName = SVProgressHUD;
-			productReference = 004E67A49DE60511E85598126E43F698 /* libSVProgressHUD.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		57393B4E69CA92D926875B210A4A370F /* SSSnackbar */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FEFDABECCBE64F3488626990E7CE0A00 /* Build configuration list for PBXNativeTarget "SSSnackbar" */;
-			buildPhases = (
-				8634D62B88D5565CC97A3DE371731307 /* Headers */,
-				3F372A65C1F54F1897F50D93482890C3 /* Sources */,
-				AE0C9D87845D0211F25C0AD63E203488 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1120A1A4576993F82DF633DE41EDB6B2 /* PBXTargetDependency */,
-			);
-			name = SSSnackbar;
-			productName = SSSnackbar;
-			productReference = 30601FA04F24567CDC94A91E958D6BE4 /* libSSSnackbar.a */;
+			name = "Pods-CustomInvitationSample";
+			productName = "Pods-CustomInvitationSample";
+			productReference = DE6CD420DAE17611269BC46B53921017 /* libPods-CustomInvitationSample.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		77514B2DA728903263B9442C9E826EB4 /* Pods-ContactInvitationSample */ = {
@@ -585,7 +478,7 @@
 			);
 			name = "Pods-ContactInvitationSample";
 			productName = "Pods-ContactInvitationSample";
-			productReference = 9F56876EA911A688385FEC619D372FC9 /* libPods-ContactInvitationSample.a */;
+			productReference = 5899745D5D12436A1BF4C231C9DD4022 /* libPods-ContactInvitationSample.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		7A46B8CACE55D37B0BC30C352463369A /* Pods-LocalNotificationSample */ = {
@@ -602,26 +495,7 @@
 			);
 			name = "Pods-LocalNotificationSample";
 			productName = "Pods-LocalNotificationSample";
-			productReference = 8DA3ED94B2434C95A19CD7FE39AF5A0D /* libPods-LocalNotificationSample.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		8069E52D62F07441D422FB0F23E35008 /* Pods-CustomInvitationSample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4D4F8E67CF0693E5D144423E78D09F41 /* Build configuration list for PBXNativeTarget "Pods-CustomInvitationSample" */;
-			buildPhases = (
-				1866513FA9D7A04CDE6C0FAC71781DF9 /* Headers */,
-				46BA3B9A1B85C0266D80F5D42407766D /* Sources */,
-				8AE5BCB7CC897459F13CA0E36AA566E5 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CFF97A6217C2FE1A06D6FD8CCCD4ADE6 /* PBXTargetDependency */,
-				4A426DC532960FE06E791F327EBCBF28 /* PBXTargetDependency */,
-			);
-			name = "Pods-CustomInvitationSample";
-			productName = "Pods-CustomInvitationSample";
-			productReference = C3B797D5D8614F50097B1B3933B63551 /* libPods-CustomInvitationSample.a */;
+			productReference = C371278523DA00A3ED32CAFDD9EC1AB8 /* libPods-LocalNotificationSample.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		D3D2D0801633A1B654D517729BA50A64 /* Pods-BasicSample */ = {
@@ -638,7 +512,7 @@
 			);
 			name = "Pods-BasicSample";
 			productName = "Pods-BasicSample";
-			productReference = 26CEE1F7F50FB12BC833B08C01260D15 /* libPods-BasicSample.a */;
+			productReference = 8F957C023D194545B642E6841F8EC21B /* libPods-BasicSample.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		D77F5A898D4E33F72EA17918AF377A34 /* Pods-BasicSwiftSample */ = {
@@ -655,7 +529,25 @@
 			);
 			name = "Pods-BasicSwiftSample";
 			productName = "Pods-BasicSwiftSample";
-			productReference = D8EAF3E68A32672A2C9A7B984C4A4D93 /* libPods-BasicSwiftSample.a */;
+			productReference = 812FB48E9042EBF8E3D5FB8BAD352E8D /* libPods-BasicSwiftSample.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D98114F9C63D6B5B160C3F8E5D182244 /* SSSnackbar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A3B3BE5F3E9C15D6C399C3B47D59E89 /* Build configuration list for PBXNativeTarget "SSSnackbar" */;
+			buildPhases = (
+				B2F639F4F97D5DADDFD1D203C2FD34D3 /* Headers */,
+				1891A54A1EA28C6C6B06780166C2DFF6 /* Sources */,
+				3767907D1FE1E9B8FE72587325A706AC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F553B021EE3E4B38E72D09611A20D75 /* PBXTargetDependency */,
+			);
+			name = SSSnackbar;
+			productName = SSSnackbar;
+			productReference = 3188481D4A578647E493B8A3E60E75CD /* libSSSnackbar.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		F5C89A5B0E491A85D9AB46FCBDAD1528 /* Pods-InternationalizationSample */ = {
@@ -672,7 +564,7 @@
 			);
 			name = "Pods-InternationalizationSample";
 			productName = "Pods-InternationalizationSample";
-			productReference = 0ACAA8B5EA3A527F4EA0916407AE82D8 /* libPods-InternationalizationSample.a */;
+			productReference = F901719A85C042927A7DF3F85AEE7111 /* libPods-InternationalizationSample.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -692,25 +584,24 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = BBB3325B78CBE90B65C3DC68E38668DF /* Products */;
+			productRefGroup = 8666E895E373BEAE76F640D2C9E4D487 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				D3D2D0801633A1B654D517729BA50A64 /* Pods-BasicSample */,
 				D77F5A898D4E33F72EA17918AF377A34 /* Pods-BasicSwiftSample */,
 				77514B2DA728903263B9442C9E826EB4 /* Pods-ContactInvitationSample */,
-				8069E52D62F07441D422FB0F23E35008 /* Pods-CustomInvitationSample */,
+				698B5322BDEDDF77B8380488265C41E5 /* Pods-CustomInvitationSample */,
 				F5C89A5B0E491A85D9AB46FCBDAD1528 /* Pods-InternationalizationSample */,
 				7A46B8CACE55D37B0BC30C352463369A /* Pods-LocalNotificationSample */,
-				57393B4E69CA92D926875B210A4A370F /* SSSnackbar */,
-				1113AFDCD734CBAC1EE746C5D888579F /* SSSnackbar-SSSnackbar */,
-				1AB144F54259C780DFAC5929987B0027 /* SVProgressHUD */,
+				D98114F9C63D6B5B160C3F8E5D182244 /* SSSnackbar */,
+				2BFDC7E2B71ECE1145CB6AB38B9EF3F2 /* SSSnackbar-SSSnackbar */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3BD079B2399C783AA5367AE403D3A3BE /* Resources */ = {
+		7917CA35D385E70D4C0622359C697960 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -725,6 +616,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				327F6D78EFD42E1C3E2BA6AD787DE1E8 /* Pods-BasicSwiftSample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1891A54A1EA28C6C6B06780166C2DFF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17DFAC8498B9FB018C1401EF4B57AE89 /* SSSnackbar-dummy.m in Sources */,
+				41FA3C6B8851BC1412D751F9C6760FC1 /* SSSnackbar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,20 +644,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F372A65C1F54F1897F50D93482890C3 /* Sources */ = {
+		5B77DD1068E9726A03C00F665367727A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A6FCDED6C22C71B42D230FBD8840952 /* SSSnackbar-dummy.m in Sources */,
-				D0533A9A3668FCADE792A46BABD39387 /* SSSnackbar.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		46BA3B9A1B85C0266D80F5D42407766D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				01C522CBEE68A29446FE55E6C987E8D5 /* Pods-CustomInvitationSample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -769,10 +659,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		94B418F767D71457067016606BE5ADB7 /* Sources */ = {
+		A74BAC9DAA7AEA670FD02B1D63161F8D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AD1D25F3000BCD774BFAFE37C2A41D7 /* Pods-CustomInvitationSample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -784,66 +675,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DFCCAF0BFCEC5CB1F469D5D6D1E329DF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C4219CBC6CE044C732097F03F0D32B68 /* SVIndefiniteAnimatedView.m in Sources */,
-				71A3A48EBE3A0C49B0BFABC85278A341 /* SVProgressAnimatedView.m in Sources */,
-				2D824B0B79A0178F480A44F7EA2B56A9 /* SVProgressHUD-dummy.m in Sources */,
-				B866A369092F072CFE6E78DD914FF3B4 /* SVProgressHUD.m in Sources */,
-				025180EC4030A8A9BEF9F83DE410CAF1 /* SVRadialGradientLayer.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1120A1A4576993F82DF633DE41EDB6B2 /* PBXTargetDependency */ = {
+		0F553B021EE3E4B38E72D09611A20D75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "SSSnackbar-SSSnackbar";
-			target = 1113AFDCD734CBAC1EE746C5D888579F /* SSSnackbar-SSSnackbar */;
-			targetProxy = DC21ABF5E9AF9F613DF0B024D0F8535A /* PBXContainerItemProxy */;
+			target = 2BFDC7E2B71ECE1145CB6AB38B9EF3F2 /* SSSnackbar-SSSnackbar */;
+			targetProxy = 69EA65F916E415EAC4C61B4AAB594286 /* PBXContainerItemProxy */;
 		};
-		4A426DC532960FE06E791F327EBCBF28 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SVProgressHUD;
-			target = 1AB144F54259C780DFAC5929987B0027 /* SVProgressHUD */;
-			targetProxy = EDF3F8EBBD2F89ADF1F95669830B7D3A /* PBXContainerItemProxy */;
-		};
-		CFF97A6217C2FE1A06D6FD8CCCD4ADE6 /* PBXTargetDependency */ = {
+		9E55D25E220BE29317E1854D0F2EB88C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SSSnackbar;
-			target = 57393B4E69CA92D926875B210A4A370F /* SSSnackbar */;
-			targetProxy = 42576DC43DD7404E84D5BFD5A95419A2 /* PBXContainerItemProxy */;
+			target = D98114F9C63D6B5B160C3F8E5D182244 /* SSSnackbar */;
+			targetProxy = 5966BDFA340290DC9E507E88C5762AB0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		07D3999193F89E4E12C5F493257B07B6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 058D8C382D96C94401C3DD4507DF52E9 /* SSSnackbar.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SSSnackbar/SSSnackbar-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = SSSnackbar;
-				PRODUCT_NAME = SSSnackbar;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		0EEB771E7974595653DAEB67B77F3E0B /* Release w/ symbols */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6938E6334E196AC393D58CC1D59487EA /* Pods-BasicSwiftSample.release w- symbols.xcconfig */;
@@ -862,6 +711,30 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release w/ symbols";
+		};
+		14DB6D1B1179F83AEC5758349DBF316D /* Release w/ symbols */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F84EF9043FFF03AB06F97BFDF3ABEBB9 /* SSSnackbar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SSSnackbar/SSSnackbar-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SSSnackbar;
+				PRODUCT_NAME = SSSnackbar;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -958,30 +831,7 @@
 			};
 			name = Debug;
 		};
-		33BBDA9ACBA6CBED0B5306D917D3BC00 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A503CA8B4796DFFBCBFA0252C46A6D7C /* SVProgressHUD.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = SVProgressHUD;
-				PRODUCT_NAME = SVProgressHUD;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		3EFF39F3695BE9547632C69DCBDEEA05 /* Release w/ symbols */ = {
+		47D864EC01BD10A81A1C75DB85A7A33F /* Release w/ symbols */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F8C70825AAB9F4CF8F3A4FAAAA88DE54 /* Pods-CustomInvitationSample.release w- symbols.xcconfig */;
 			buildSettings = {
@@ -1004,9 +854,9 @@
 			};
 			name = "Release w/ symbols";
 		};
-		460C63569FB71994AA44498BEA2C7179 /* Debug */ = {
+		4CC1269E6B8781039BFA823CFBC0B535 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 058D8C382D96C94401C3DD4507DF52E9 /* SSSnackbar.xcconfig */;
+			baseConfigurationReference = F84EF9043FFF03AB06F97BFDF3ABEBB9 /* SSSnackbar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1118,30 +968,6 @@
 			};
 			name = Release;
 		};
-		5B38594CFAC7700FC5AB7510D06A70D9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A503CA8B4796DFFBCBFA0252C46A6D7C /* SVProgressHUD.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = SVProgressHUD;
-				PRODUCT_NAME = SVProgressHUD;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		5DC129C6031B4725B42D8762F677AFAC /* Release w/ symbols */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 46A6EA24B18AA59C87683E1CEA8B0CA7 /* Pods-BasicSample.release w- symbols.xcconfig */;
@@ -1187,9 +1013,9 @@
 			};
 			name = Debug;
 		};
-		94916221339F0E2314FC2CD11C4A1BA7 /* Release w/ symbols */ = {
+		77FAF93AFD4DA484EC88A3288BADA0A9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 058D8C382D96C94401C3DD4507DF52E9 /* SSSnackbar.xcconfig */;
+			baseConfigurationReference = F84EF9043FFF03AB06F97BFDF3ABEBB9 /* SSSnackbar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1209,7 +1035,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = "Release w/ symbols";
+			name = Release;
 		};
 		9B4DC63513A8633EB9FA323F73F230B5 /* Release w/ symbols */ = {
 			isa = XCBuildConfiguration;
@@ -1234,7 +1060,7 @@
 			};
 			name = "Release w/ symbols";
 		};
-		A5B8D4DA290994279B099F7AD5D5AD19 /* Debug */ = {
+		A0C1DF7971A0A7167B19F094BA69A8E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4AC85F59EBFF943F442E5983D35A4FC7 /* Pods-CustomInvitationSample.debug.xcconfig */;
 			buildSettings = {
@@ -1315,6 +1141,22 @@
 			};
 			name = "Release w/ symbols";
 		};
+		B6F57D023E6CADE3A16B15AA2EBB6D2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F84EF9043FFF03AB06F97BFDF3ABEBB9 /* SSSnackbar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SSSnackbar";
+				INFOPLIST_FILE = "Target Support Files/SSSnackbar/ResourceBundle-SSSnackbar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = SSSnackbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		B7324F0667397DE4580A728D9CAEB6DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1497BB711D3DF360984862599C2EA781 /* Pods-InternationalizationSample.debug.xcconfig */;
@@ -1358,30 +1200,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
-		};
-		C9050B0302F33D643FCD2F65E52EFE10 /* Release w/ symbols */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A503CA8B4796DFFBCBFA0252C46A6D7C /* SVProgressHUD.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = SVProgressHUD;
-				PRODUCT_NAME = SVProgressHUD;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = "Release w/ symbols";
 		};
 		C92782E717C52E3633C9A5F211E7987A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1470,23 +1288,7 @@
 			};
 			name = "Release w/ symbols";
 		};
-		E3E79D414CD68E17E3FA51B0814BB8AB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 058D8C382D96C94401C3DD4507DF52E9 /* SSSnackbar.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SSSnackbar";
-				INFOPLIST_FILE = "Target Support Files/SSSnackbar/ResourceBundle-SSSnackbar-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = SSSnackbar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		E599DAC96B512CEAAE5A86556329E64C /* Release */ = {
+		E5020442F6D1BDD1636684AB030BEE34 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C4CF7BFE163D77415BBA46692D22E8AE /* Pods-CustomInvitationSample.release.xcconfig */;
 			buildSettings = {
@@ -1506,6 +1308,22 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E7FF6B8749633023810920FB3ECB95BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F84EF9043FFF03AB06F97BFDF3ABEBB9 /* SSSnackbar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SSSnackbar";
+				INFOPLIST_FILE = "Target Support Files/SSSnackbar/ResourceBundle-SSSnackbar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = SSSnackbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -1568,22 +1386,6 @@
 			};
 			name = Release;
 		};
-		F7DD40F80C151F839857B4088D9DE0B9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 058D8C382D96C94401C3DD4507DF52E9 /* SSSnackbar.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SSSnackbar";
-				INFOPLIST_FILE = "Target Support Files/SSSnackbar/ResourceBundle-SSSnackbar-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = SSSnackbar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1607,22 +1409,31 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		05AE93A0E518151467CC1E82FEC36240 /* Build configuration list for PBXNativeTarget "SSSnackbar-SSSnackbar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6F57D023E6CADE3A16B15AA2EBB6D2E /* Debug */,
+				E7FF6B8749633023810920FB3ECB95BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A3B3BE5F3E9C15D6C399C3B47D59E89 /* Build configuration list for PBXNativeTarget "SSSnackbar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC1269E6B8781039BFA823CFBC0B535 /* Debug */,
+				77FAF93AFD4DA484EC88A3288BADA0A9 /* Release */,
+				14DB6D1B1179F83AEC5758349DBF316D /* Release w/ symbols */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0C884DA382CE7FB3F941617661C447A8 /* Build configuration list for PBXNativeTarget "Pods-ContactInvitationSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B8F8C9323B93B23ABA772C9D79BF6090 /* Debug */,
 				260025C36658DFDB3B4FD378B1AD598D /* Release */,
 				9B4DC63513A8633EB9FA323F73F230B5 /* Release w/ symbols */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		171D9CC7DB8340013134210E61A2C094 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				33BBDA9ACBA6CBED0B5306D917D3BC00 /* Debug */,
-				5B38594CFAC7700FC5AB7510D06A70D9 /* Release */,
-				C9050B0302F33D643FCD2F65E52EFE10 /* Release w/ symbols */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1647,12 +1458,12 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4D4F8E67CF0693E5D144423E78D09F41 /* Build configuration list for PBXNativeTarget "Pods-CustomInvitationSample" */ = {
+		7E39CB89C49CA47D6AE20DC2EEA7174F /* Build configuration list for PBXNativeTarget "Pods-CustomInvitationSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A5B8D4DA290994279B099F7AD5D5AD19 /* Debug */,
-				E599DAC96B512CEAAE5A86556329E64C /* Release */,
-				3EFF39F3695BE9547632C69DCBDEEA05 /* Release w/ symbols */,
+				A0C1DF7971A0A7167B19F094BA69A8E1 /* Debug */,
+				E5020442F6D1BDD1636684AB030BEE34 /* Release */,
+				47D864EC01BD10A81A1C75DB85A7A33F /* Release w/ symbols */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1663,25 +1474,6 @@
 				2F0486122A2E13656BE970FB7B09640A /* Debug */,
 				52FC511F4F8F8AE9C36662BB6C102DDC /* Release */,
 				5DC129C6031B4725B42D8762F677AFAC /* Release w/ symbols */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FE8D77343C6235C26BF030026B05899C /* Build configuration list for PBXNativeTarget "SSSnackbar-SSSnackbar" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E3E79D414CD68E17E3FA51B0814BB8AB /* Debug */,
-				F7DD40F80C151F839857B4088D9DE0B9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FEFDABECCBE64F3488626990E7CE0A00 /* Build configuration list for PBXNativeTarget "SSSnackbar" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				460C63569FB71994AA44498BEA2C7179 /* Debug */,
-				07D3999193F89E4E12C5F493257B07B6 /* Release */,
-				94916221339F0E2314FC2CD11C4A1BA7 /* Release w/ symbols */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

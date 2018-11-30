@@ -7,70 +7,68 @@
 //
 
 #import "CustomInviteDelegate.h"
-#import "SVProgressHUD.h"
 #import <ForeSee/TRMeasure.h>
 
 @implementation CustomInviteDelegate
 
 #pragma mark - FSInviteDelegate
 
+/* These delegate methods capture ForeSee SDK lifecycle events.
+ 
+ */
+
 - (void)willShowInviteForMeasure:(TRMeasure *)measure {
-    NSLog(@"Showing invite for %@", measure.surveyID);
-    [self showStatus:NSStringFromSelector(_cmd)];
+    [self showStatus:NSStringFromSelector(_cmd) measure:measure];
 }
 
 - (void)willNotShowInviteWithEligibilityFailedForMeasure:(TRMeasure *)measure {
-    [self showStatus:NSStringFromSelector(_cmd)];
+    [self showStatus:NSStringFromSelector(_cmd) measure:measure];
 }
 
 - (void)willNotShowInviteWithSamplingFailedForMeasure:(TRMeasure *)measure {
-    [self showStatus:NSStringFromSelector(_cmd)];
+    [self showStatus:NSStringFromSelector(_cmd) measure:measure];
 }
 
 - (void)didShowInviteForMeasure:(TRMeasure *)measure {
-    [self showStatus:NSStringFromSelector(_cmd)];
+    [self showStatus:NSStringFromSelector(_cmd) measure:measure];
 }
 
 - (void)didAcceptInviteForMeasure:(TRMeasure *)measure {
-    [self showStatus:NSStringFromSelector(_cmd)];
+    [self showStatus:NSStringFromSelector(_cmd) measure:measure];
 }
 
 - (void)didDeclineInviteForMeasure:(TRMeasure *)measure {
-    [self showStatus:NSStringFromSelector(_cmd)];
+    [self showStatus:NSStringFromSelector(_cmd) measure:measure];
 }
 
 - (void)didShowSurveyForMeasure:(TRMeasure *)measure {
-    [self showStatus:NSStringFromSelector(_cmd)];
+    [self showStatus:NSStringFromSelector(_cmd) measure:measure];
 }
 
 - (void)didCancelSurveyForMeasure:(TRMeasure *)measure {
-    [self showStatus:NSStringFromSelector(_cmd)];
+    [self showStatus:NSStringFromSelector(_cmd) measure:measure];
 }
 
 - (void)didCompleteSurveyForMeasure:(TRMeasure *)measure {
-    [self showStatus:NSStringFromSelector(_cmd)];
+    [self showStatus:NSStringFromSelector(_cmd) measure:measure];
 }
 
 - (void)didFailForMeasure:(TRMeasure *)measure withContactFormatError:(NSError *)error {
-    [self showStatus:NSStringFromSelector(_cmd)];
+    [self showStatus:NSStringFromSelector(_cmd) measure:measure];
 }
 
 - (void)didFailForMeasure:(TRMeasure *)measure withMissingInformationError:(NSError *)error {
-    [self showStatus:NSStringFromSelector(_cmd)];
+    [self showStatus:NSStringFromSelector(_cmd) measure:measure];
 }
 
 - (void)didFailForMeasure:(TRMeasure *)measure withNetworkError:(NSError *)error {
-    [self showStatus:NSStringFromSelector(_cmd)];
+    [self showStatus:NSStringFromSelector(_cmd) measure:measure];
 }
 
 #pragma mark - Status
 
-- (void)showStatus:(NSString *)str {
-    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
-    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleLight];
-    [SVProgressHUD setInfoImage:nil];
-    [SVProgressHUD setOffsetFromCenter:UIOffsetMake(0, 220)];
-    [SVProgressHUD showInfoWithStatus:[NSString stringWithFormat:@"[%@]", [self trim:str]]];
+- (void)showStatus:(NSString *)str measure:(TRMeasure *)measure {
+    NSLog(@"FSInviteDelegate event = %@ (%@)", [self trim:str], measure.surveyID);
 }
 
 - (NSString *)trim:(NSString *)str {
