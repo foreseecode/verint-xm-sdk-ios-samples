@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9WE-dN-mzU">
-    <device id="retina6_1" orientation="portrait">
+    <device id="ipad12_9rounded" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,21 +15,21 @@
             <objects>
                 <viewController id="9WE-dN-mzU" customClass="FSViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nce-qH-ZAN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ForeSee_logo" translatesAutoresizingMaskIntoConstraints="NO" id="JnM-SK-dkT">
-                                <rect key="frame" x="172" y="94" width="70" height="70"/>
+                                <rect key="frame" x="477" y="74" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="N7U-b1-e7Y"/>
                                     <constraint firstAttribute="width" constant="70" id="R4L-NV-23Y"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gnM-t0-Ivs">
-                                <rect key="frame" x="20" y="184" width="374" height="180"/>
+                                <rect key="frame" x="20" y="164" width="984" height="216.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="x3G-9p-QsC"/>
+                                    <constraint firstAttribute="height" constant="216.5" id="x3G-9p-QsC"/>
                                 </constraints>
                                 <string key="text">This is a sample project demonstrating how to customize the provided survey invitation for internationalization support.
 
@@ -42,7 +42,7 @@ Have a look at Localizable.strings to see the definitions for the invite text
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHR-gs-JmW">
-                                <rect key="frame" x="20" y="384" width="374" height="30"/>
+                                <rect key="frame" x="20" y="364" width="984" height="30"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Check Eligibility"/>
                                 <connections>
@@ -60,7 +60,7 @@ Have a look at Localizable.strings to see the definitions for the invite text
                             <constraint firstItem="MHR-gs-JmW" firstAttribute="leading" secondItem="2Zx-h9-a4T" secondAttribute="leading" constant="20" id="VTK-KS-rnc"/>
                             <constraint firstItem="JnM-SK-dkT" firstAttribute="top" secondItem="2Zx-h9-a4T" secondAttribute="top" constant="50" id="bjr-m8-46S"/>
                             <constraint firstItem="MHR-gs-JmW" firstAttribute="trailing" secondItem="2Zx-h9-a4T" secondAttribute="trailing" constant="-20" id="d75-we-ph3"/>
-                            <constraint firstItem="MHR-gs-JmW" firstAttribute="top" secondItem="gnM-t0-Ivs" secondAttribute="bottom" constant="20" id="fqt-Hj-Jwh"/>
+                            <constraint firstItem="MHR-gs-JmW" firstAttribute="top" secondItem="gnM-t0-Ivs" secondAttribute="bottom" constant="-16.5" id="fqt-Hj-Jwh"/>
                             <constraint firstItem="gnM-t0-Ivs" firstAttribute="trailing" secondItem="2Zx-h9-a4T" secondAttribute="trailing" constant="-20" id="kR1-IC-veo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2Zx-h9-a4T"/>
