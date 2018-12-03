@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1FB2C647214AD98E0002E96A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB2C646214AD98E0002E96A /* Assets.xcassets */; };
 		961640BD21B5C9D0005247A0 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961640BC21B5C9D0005247A0 /* Launch Screen.storyboard */; };
-		9641172F21B5C63200F81ACE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9641172E21B5C63200F81ACE /* Storyboard.storyboard */; };
+		9641172F21B5C63200F81ACE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9641172E21B5C63200F81ACE /* Main.storyboard */; };
 		99AF581D1B911C3D00826506 /* foresee_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 99AF581B1B911C3D00826506 /* foresee_configuration.json */; };
 		D51310D1150541F200619182 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51310D0150541F200619182 /* UIKit.framework */; };
 		D51310D3150541F200619182 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51310D2150541F200619182 /* Foundation.framework */; };
@@ -35,7 +35,7 @@
 		21678F83D5A08F99C42F9334 /* libPods-InternationalizationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InternationalizationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C9616078280B3DC9C7B21CF /* Pods-InternationalizationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InternationalizationSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-InternationalizationSample/Pods-InternationalizationSample.release.xcconfig"; sourceTree = "<group>"; };
 		961640BC21B5C9D0005247A0 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		9641172E21B5C63200F81ACE /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		9641172E21B5C63200F81ACE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		99AF581C1B911C3D00826506 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/foresee_configuration.json; sourceTree = "<group>"; };
 		99AF581E1B911C4400826506 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/foresee_configuration.json; sourceTree = "<group>"; };
 		99AF581F1B911C4D00826506 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = fr; path = fr.lproj/foresee_configuration.json; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 				D51310E3150541F200619182 /* FSViewController.m */,
 				D51310D7150541F200619182 /* Supporting Files */,
 				1FB2C646214AD98E0002E96A /* Assets.xcassets */,
-				9641172E21B5C63200F81ACE /* Storyboard.storyboard */,
+				9641172E21B5C63200F81ACE /* Main.storyboard */,
 			);
 			path = InternationalizationSample;
 			sourceTree = "<group>";
@@ -223,7 +223,7 @@
 				D513114D1505444F00619182 /* Localizable.strings in Resources */,
 				1FB2C647214AD98E0002E96A /* Assets.xcassets in Resources */,
 				99AF581D1B911C3D00826506 /* foresee_configuration.json in Resources */,
-				9641172F21B5C63200F81ACE /* Storyboard.storyboard in Resources */,
+				9641172F21B5C63200F81ACE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
