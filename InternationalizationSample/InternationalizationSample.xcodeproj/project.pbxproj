@@ -99,7 +99,6 @@
 		D51310C1150541F200619182 = {
 			isa = PBXGroup;
 			children = (
-				961640BC21B5C9D0005247A0 /* Launch Screen.storyboard */,
 				D51310D6150541F200619182 /* InternationalizationSample */,
 				D51310CF150541F200619182 /* Frameworks */,
 				D51310CD150541F200619182 /* Products */,
@@ -144,6 +143,7 @@
 				D51310E3150541F200619182 /* FSViewController.m */,
 				D51310D7150541F200619182 /* Supporting Files */,
 				1FB2C646214AD98E0002E96A /* Assets.xcassets */,
+				961640BC21B5C9D0005247A0 /* Launch Screen.storyboard */,
 				9641172E21B5C63200F81ACE /* Main.storyboard */,
 			);
 			path = InternationalizationSample;

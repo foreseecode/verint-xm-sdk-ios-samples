@@ -17,8 +17,52 @@
                     <view key="view" contentMode="scaleToFill" id="Nce-qH-ZAN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ForeSee_logo" translatesAutoresizingMaskIntoConstraints="NO" id="JnM-SK-dkT">
+                                <rect key="frame" x="172" y="94" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="N7U-b1-e7Y"/>
+                                    <constraint firstAttribute="width" constant="70" id="R4L-NV-23Y"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gnM-t0-Ivs">
+                                <rect key="frame" x="20" y="184" width="374" height="180"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="x3G-9p-QsC"/>
+                                </constraints>
+                                <string key="text">This is a sample project demonstrating how to customize the provided survey invitation for internationalization support.
+
+Change the language of your device to French or Spanish to see the localized invitation.
+
+Have a look at Localizable.strings to see the definitions for the invite text
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHR-gs-JmW">
+                                <rect key="frame" x="20" y="384" width="374" height="30"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Check Eligibility"/>
+                                <connections>
+                                    <action selector="triggerInvite:" destination="9WE-dN-mzU" eventType="touchUpInside" id="OJg-ne-rD5"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JnM-SK-dkT" firstAttribute="centerX" secondItem="2Zx-h9-a4T" secondAttribute="centerX" id="6YK-Iz-xLM"/>
+                            <constraint firstItem="gnM-t0-Ivs" firstAttribute="top" secondItem="JnM-SK-dkT" secondAttribute="bottom" constant="20" id="AsF-rn-sXi"/>
+                            <constraint firstItem="gnM-t0-Ivs" firstAttribute="leading" secondItem="2Zx-h9-a4T" secondAttribute="leading" constant="20" id="FDw-eQ-I19"/>
+                            <constraint firstItem="gnM-t0-Ivs" firstAttribute="centerX" secondItem="2Zx-h9-a4T" secondAttribute="centerX" id="To6-DF-sVW"/>
+                            <constraint firstItem="MHR-gs-JmW" firstAttribute="leading" secondItem="2Zx-h9-a4T" secondAttribute="leading" constant="20" id="VTK-KS-rnc"/>
+                            <constraint firstItem="JnM-SK-dkT" firstAttribute="top" secondItem="2Zx-h9-a4T" secondAttribute="top" constant="50" id="bjr-m8-46S"/>
+                            <constraint firstItem="MHR-gs-JmW" firstAttribute="trailing" secondItem="2Zx-h9-a4T" secondAttribute="trailing" constant="-20" id="d75-we-ph3"/>
+                            <constraint firstItem="MHR-gs-JmW" firstAttribute="top" secondItem="gnM-t0-Ivs" secondAttribute="bottom" constant="20" id="fqt-Hj-Jwh"/>
+                            <constraint firstItem="gnM-t0-Ivs" firstAttribute="trailing" secondItem="2Zx-h9-a4T" secondAttribute="trailing" constant="-20" id="kR1-IC-veo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2Zx-h9-a4T"/>
                     </view>
                 </viewController>
@@ -27,4 +71,7 @@
             <point key="canvasLocation" x="-158" y="-216"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ForeSee_logo" width="200" height="200"/>
+    </resources>
 </document>
