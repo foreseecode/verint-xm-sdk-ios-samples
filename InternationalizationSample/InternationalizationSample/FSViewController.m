@@ -11,14 +11,6 @@
 
 @implementation FSViewController
 
-@synthesize button = button_;
-
-#pragma mark - View lifecycle
-
-- (void)viewDidLoad {
-  [super viewDidLoad];
-}
-
 # pragma mark - Actions
 
 - (void)triggerInvite:(id)sender {

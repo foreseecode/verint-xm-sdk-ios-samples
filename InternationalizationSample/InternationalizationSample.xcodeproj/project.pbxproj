@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1FB2C647214AD98E0002E96A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB2C646214AD98E0002E96A /* Assets.xcassets */; };
+		961640BD21B5C9D0005247A0 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961640BC21B5C9D0005247A0 /* Launch Screen.storyboard */; };
+		9641172F21B5C63200F81ACE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9641172E21B5C63200F81ACE /* Storyboard.storyboard */; };
 		99AF581D1B911C3D00826506 /* foresee_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 99AF581B1B911C3D00826506 /* foresee_configuration.json */; };
 		D51310D1150541F200619182 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51310D0150541F200619182 /* UIKit.framework */; };
 		D51310D3150541F200619182 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51310D2150541F200619182 /* Foundation.framework */; };
@@ -16,7 +18,6 @@
 		D51310DD150541F200619182 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D51310DC150541F200619182 /* main.m */; };
 		D51310E1150541F200619182 /* FSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D51310E0150541F200619182 /* FSAppDelegate.m */; };
 		D51310E4150541F200619182 /* FSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D51310E3150541F200619182 /* FSViewController.m */; };
-		D51310E7150541F200619182 /* FSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51310E5150541F200619182 /* FSViewController.xib */; };
 		D5131148150542CA00619182 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5131147150542CA00619182 /* QuartzCore.framework */; };
 		D513114A150542D200619182 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5131149150542D100619182 /* SystemConfiguration.framework */; };
 		D513114D1505444F00619182 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D513114F1505444F00619182 /* Localizable.strings */; };
@@ -25,7 +26,6 @@
 		D586FDC217383520008BD52B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D586FDC117383520008BD52B /* CoreMotion.framework */; };
 		D586FDC417383524008BD52B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D586FDC317383524008BD52B /* CoreVideo.framework */; };
 		D586FDC617383528008BD52B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D586FDC517383528008BD52B /* libz.dylib */; };
-		D586FE1B173839B4008BD52B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D586FE1A173839B4008BD52B /* Default-568h@2x.png */; };
 		E9CAFBE1DC7EE230BEA970A0 /* libPods-InternationalizationSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21678F83D5A08F99C42F9334 /* libPods-InternationalizationSample.a */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +34,8 @@
 		1FB2C646214AD98E0002E96A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21678F83D5A08F99C42F9334 /* libPods-InternationalizationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InternationalizationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C9616078280B3DC9C7B21CF /* Pods-InternationalizationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InternationalizationSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-InternationalizationSample/Pods-InternationalizationSample.release.xcconfig"; sourceTree = "<group>"; };
+		961640BC21B5C9D0005247A0 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		9641172E21B5C63200F81ACE /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		99AF581C1B911C3D00826506 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/foresee_configuration.json; sourceTree = "<group>"; };
 		99AF581E1B911C4400826506 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/foresee_configuration.json; sourceTree = "<group>"; };
 		99AF581F1B911C4D00826506 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = fr; path = fr.lproj/foresee_configuration.json; sourceTree = "<group>"; };
@@ -49,22 +51,18 @@
 		D51310E0150541F200619182 /* FSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSAppDelegate.m; sourceTree = "<group>"; };
 		D51310E2150541F200619182 /* FSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSViewController.h; sourceTree = "<group>"; };
 		D51310E3150541F200619182 /* FSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSViewController.m; sourceTree = "<group>"; };
-		D51310E6150541F200619182 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FSViewController.xib; sourceTree = "<group>"; };
 		D5131147150542CA00619182 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D5131149150542D100619182 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D513114E1505444F00619182 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D5131150150544EE00619182 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D5131151150544EE00619182 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		D5131152150544EE00619182 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/FSViewController.xib; sourceTree = "<group>"; };
 		D5131153150544FD00619182 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D5131154150544FD00619182 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
-		D5131155150544FD00619182 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/FSViewController.xib; sourceTree = "<group>"; };
 		D586FDBD17383517008BD52B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D586FDBF1738351B008BD52B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		D586FDC117383520008BD52B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		D586FDC317383524008BD52B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		D586FDC517383528008BD52B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		D586FE1A173839B4008BD52B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +99,7 @@
 		D51310C1150541F200619182 = {
 			isa = PBXGroup;
 			children = (
+				961640BC21B5C9D0005247A0 /* Launch Screen.storyboard */,
 				D51310D6150541F200619182 /* InternationalizationSample */,
 				D51310CF150541F200619182 /* Frameworks */,
 				D51310CD150541F200619182 /* Products */,
@@ -143,9 +142,9 @@
 				D51310E0150541F200619182 /* FSAppDelegate.m */,
 				D51310E2150541F200619182 /* FSViewController.h */,
 				D51310E3150541F200619182 /* FSViewController.m */,
-				D51310E5150541F200619182 /* FSViewController.xib */,
 				D51310D7150541F200619182 /* Supporting Files */,
 				1FB2C646214AD98E0002E96A /* Assets.xcassets */,
+				9641172E21B5C63200F81ACE /* Storyboard.storyboard */,
 			);
 			path = InternationalizationSample;
 			sourceTree = "<group>";
@@ -154,7 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				99AF581B1B911C3D00826506 /* foresee_configuration.json */,
-				D586FE1A173839B4008BD52B /* Default-568h@2x.png */,
 				D51310D8150541F200619182 /* InternationalizationSample-Info.plist */,
 				D51310D9150541F200619182 /* InfoPlist.strings */,
 				D51310DC150541F200619182 /* main.m */,
@@ -203,6 +201,7 @@
 				en,
 				es,
 				fr,
+				Base,
 			);
 			mainGroup = D51310C1150541F200619182;
 			productRefGroup = D51310CD150541F200619182 /* Products */;
@@ -220,11 +219,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D51310DB150541F200619182 /* InfoPlist.strings in Resources */,
-				D51310E7150541F200619182 /* FSViewController.xib in Resources */,
+				961640BD21B5C9D0005247A0 /* Launch Screen.storyboard in Resources */,
 				D513114D1505444F00619182 /* Localizable.strings in Resources */,
 				1FB2C647214AD98E0002E96A /* Assets.xcassets in Resources */,
 				99AF581D1B911C3D00826506 /* foresee_configuration.json in Resources */,
-				D586FE1B173839B4008BD52B /* Default-568h@2x.png in Resources */,
+				9641172F21B5C63200F81ACE /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,16 +300,6 @@
 				D5131153150544FD00619182 /* es */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D51310E5150541F200619182 /* FSViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D51310E6150541F200619182 /* en */,
-				D5131152150544EE00619182 /* fr */,
-				D5131155150544FD00619182 /* es */,
-			);
-			name = FSViewController.xib;
 			sourceTree = "<group>";
 		};
 		D513114F1505444F00619182 /* Localizable.strings */ = {
@@ -421,6 +410,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0972AAB8AB71EEF58EEB1A2E /* Pods-InternationalizationSample.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -432,6 +422,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.foresee.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -440,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8C9616078280B3DC9C7B21CF /* Pods-InternationalizationSample.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,6 +443,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.foresee.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
