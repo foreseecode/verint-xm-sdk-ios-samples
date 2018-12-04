@@ -10,8 +10,4 @@
 
 @interface FSViewController : UIViewController
 
-@property (nonatomic, retain) IBOutlet UIButton *button;
-
-- (IBAction)triggerInvite:(id)sender;
-
 @end
