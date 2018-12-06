@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,16 +13,12 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BasicSwiftSample" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ForeSee_logo" translatesAutoresizingMaskIntoConstraints="NO" id="5dI-IR-use">
-                                <rect key="frame" x="152" y="70" width="70" height="70"/>
+                                <rect key="frame" x="152.5" y="70" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="3S0-Re-JXj"/>
                                     <constraint firstAttribute="height" constant="70" id="jWJ-RH-dbo"/>
@@ -70,7 +65,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="5dI-IR-use" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4ha-87-ZFm"/>
+                            <constraint firstItem="5dI-IR-use" firstAttribute="centerX" secondItem="umy-xr-4Wn" secondAttribute="centerX" id="4ha-87-ZFm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="YBs-i6-4bp" secondAttribute="trailing" constant="20" id="5mO-pY-ATb"/>
                             <constraint firstItem="YBs-i6-4bp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="BO0-TN-mv3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IUm-mT-BCi" secondAttribute="trailing" constant="20" id="DK0-3F-6pF"/>
@@ -80,11 +75,12 @@
                             <constraint firstItem="IUm-mT-BCi" firstAttribute="top" secondItem="5dI-IR-use" secondAttribute="bottom" constant="20" id="Zxc-ZG-hlF"/>
                             <constraint firstItem="tVi-7c-gBg" firstAttribute="top" secondItem="WZs-Hu-vJ1" secondAttribute="bottom" constant="20" id="gze-AI-HbZ"/>
                             <constraint firstItem="YBs-i6-4bp" firstAttribute="top" secondItem="tVi-7c-gBg" secondAttribute="bottom" constant="20" id="ho0-m8-Uek"/>
-                            <constraint firstItem="5dI-IR-use" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="kJI-hz-eyM"/>
+                            <constraint firstItem="5dI-IR-use" firstAttribute="top" secondItem="umy-xr-4Wn" secondAttribute="top" constant="50" id="kJI-hz-eyM"/>
                             <constraint firstItem="WZs-Hu-vJ1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="lGQ-jj-KB8"/>
                             <constraint firstItem="IUm-mT-BCi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="zaG-DU-J6a"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tVi-7c-gBg" secondAttribute="trailing" constant="20" id="zxP-PB-lsp"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="umy-xr-4Wn"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
