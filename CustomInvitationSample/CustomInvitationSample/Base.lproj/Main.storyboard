@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aNq-xe-4de">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aNq-xe-4de">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -30,10 +30,6 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController title="Main View Controller" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,25 +58,26 @@
                                     <segue destination="NcQ-xA-o44" kind="show" id="6I3-24-hCi"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ForeSee_logo_RGB.png" translatesAutoresizingMaskIntoConstraints="NO" id="ubK-vn-88u">
-                                <rect key="frame" x="109.5" y="84" width="156" height="70"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foresee_logo" translatesAutoresizingMaskIntoConstraints="NO" id="ubK-vn-88u">
+                                <rect key="frame" x="152.5" y="84" width="70" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="156" id="Tff-hw-sJ9"/>
+                                    <constraint firstAttribute="width" constant="70" id="Tff-hw-sJ9"/>
                                     <constraint firstAttribute="height" constant="70" id="ZhX-4C-S22"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ubK-vn-88u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5n4-Is-fao"/>
+                            <constraint firstItem="ubK-vn-88u" firstAttribute="centerX" secondItem="r7R-Wg-cca" secondAttribute="centerX" id="5n4-Is-fao"/>
                             <constraint firstItem="gb3-8G-MaM" firstAttribute="left" secondItem="8bC-Xf-vdC" secondAttribute="leftMargin" constant="10" id="7ZC-XK-D68"/>
                             <constraint firstItem="gb3-8G-MaM" firstAttribute="top" secondItem="pSE-L7-day" secondAttribute="bottom" constant="20" id="CHr-br-bEg"/>
-                            <constraint firstItem="pSE-L7-day" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DbA-Fz-ZdA"/>
-                            <constraint firstItem="ubK-vn-88u" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="h6c-pl-cLv"/>
-                            <constraint firstItem="gb3-8G-MaM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jck-Vq-3jV"/>
+                            <constraint firstItem="pSE-L7-day" firstAttribute="centerX" secondItem="r7R-Wg-cca" secondAttribute="centerX" id="DbA-Fz-ZdA"/>
+                            <constraint firstItem="ubK-vn-88u" firstAttribute="top" secondItem="r7R-Wg-cca" secondAttribute="top" constant="20" id="h6c-pl-cLv"/>
+                            <constraint firstItem="gb3-8G-MaM" firstAttribute="centerX" secondItem="r7R-Wg-cca" secondAttribute="centerX" id="jck-Vq-3jV"/>
                             <constraint firstItem="pSE-L7-day" firstAttribute="top" secondItem="ubK-vn-88u" secondAttribute="bottom" constant="40" id="mbt-e1-MqE"/>
                             <constraint firstItem="pSE-L7-day" firstAttribute="left" secondItem="8bC-Xf-vdC" secondAttribute="leftMargin" constant="10" id="peF-UN-7ZW"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="r7R-Wg-cca"/>
                     </view>
                     <navigationItem key="navigationItem" title="Choose an invite" id="aL0-h6-Rg3"/>
                 </viewController>
@@ -92,10 +89,6 @@
         <scene sceneID="3nD-8C-UeR">
             <objects>
                 <viewController title="Custom Invite Example" id="bSi-nl-Gvc" customClass="CustomInviteViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="QdI-hD-Dad"/>
-                        <viewControllerLayoutGuide type="bottom" id="gQc-Gc-Kkf"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3bJ-Tb-F6W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,12 +119,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Wrb-cA-fYg" firstAttribute="top" secondItem="SWz-h0-V9z" secondAttribute="bottom" constant="20" id="BDW-mV-wzc"/>
-                            <constraint firstItem="SWz-h0-V9z" firstAttribute="centerX" secondItem="3bJ-Tb-F6W" secondAttribute="centerX" id="MPL-Zs-f14"/>
+                            <constraint firstItem="SWz-h0-V9z" firstAttribute="centerX" secondItem="ll5-ad-pvK" secondAttribute="centerX" id="MPL-Zs-f14"/>
                             <constraint firstItem="SWz-h0-V9z" firstAttribute="left" secondItem="3bJ-Tb-F6W" secondAttribute="leftMargin" constant="10" id="gDl-QH-kz9"/>
                             <constraint firstItem="Wrb-cA-fYg" firstAttribute="left" secondItem="3bJ-Tb-F6W" secondAttribute="leftMargin" constant="10" id="hj9-va-ON9"/>
-                            <constraint firstItem="SWz-h0-V9z" firstAttribute="top" secondItem="QdI-hD-Dad" secondAttribute="bottom" constant="20" id="hsx-no-Hhw"/>
-                            <constraint firstItem="Wrb-cA-fYg" firstAttribute="centerX" secondItem="3bJ-Tb-F6W" secondAttribute="centerX" id="zSO-eZ-DY3"/>
+                            <constraint firstItem="SWz-h0-V9z" firstAttribute="top" secondItem="ll5-ad-pvK" secondAttribute="top" constant="20" id="hsx-no-Hhw"/>
+                            <constraint firstItem="Wrb-cA-fYg" firstAttribute="centerX" secondItem="ll5-ad-pvK" secondAttribute="centerX" id="zSO-eZ-DY3"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="ll5-ad-pvK"/>
                     </view>
                     <connections>
                         <outlet property="textView" destination="SWz-h0-V9z" id="KAR-tL-P7f"/>
@@ -145,10 +139,6 @@
         <scene sceneID="5to-wg-3Ig">
             <objects>
                 <viewController title="Snackbar Invite Example" id="NcQ-xA-o44" customClass="SnackbarInviteViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cgo-B5-38q"/>
-                        <viewControllerLayoutGuide type="bottom" id="KQf-R2-UKa"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RhN-Fm-S53">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,13 +168,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="uqb-hI-g8B" firstAttribute="centerX" secondItem="RhN-Fm-S53" secondAttribute="centerX" id="Bhz-qe-9oF"/>
-                            <constraint firstItem="Cqy-6Y-wEX" firstAttribute="centerX" secondItem="RhN-Fm-S53" secondAttribute="centerX" id="Lsf-YQ-WJe"/>
-                            <constraint firstItem="uqb-hI-g8B" firstAttribute="top" secondItem="cgo-B5-38q" secondAttribute="bottom" constant="20" id="PyF-4v-000"/>
+                            <constraint firstItem="uqb-hI-g8B" firstAttribute="centerX" secondItem="bBX-gK-kNg" secondAttribute="centerX" id="Bhz-qe-9oF"/>
+                            <constraint firstItem="Cqy-6Y-wEX" firstAttribute="centerX" secondItem="bBX-gK-kNg" secondAttribute="centerX" id="Lsf-YQ-WJe"/>
+                            <constraint firstItem="uqb-hI-g8B" firstAttribute="top" secondItem="bBX-gK-kNg" secondAttribute="top" constant="20" id="PyF-4v-000"/>
                             <constraint firstItem="uqb-hI-g8B" firstAttribute="left" secondItem="RhN-Fm-S53" secondAttribute="leftMargin" constant="10" id="hud-fq-fhf"/>
                             <constraint firstItem="Cqy-6Y-wEX" firstAttribute="left" secondItem="RhN-Fm-S53" secondAttribute="leftMargin" constant="10" id="skK-wt-IPt"/>
                             <constraint firstItem="Cqy-6Y-wEX" firstAttribute="top" secondItem="uqb-hI-g8B" secondAttribute="bottom" constant="20" id="vWU-UE-pEn"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="bBX-gK-kNg"/>
                     </view>
                     <connections>
                         <outlet property="textView" destination="uqb-hI-g8B" id="ACT-Ra-Al7"/>
@@ -196,6 +187,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ForeSee_logo_RGB.png" width="854" height="383"/>
+        <image name="foresee_logo" width="200" height="200"/>
     </resources>
 </document>

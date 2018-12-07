@@ -6,46 +6,6 @@
  Copyright (c) 2012 ForeSee. All rights reserved.
  */
 
-"FSPrivacyPolicyNavBarTitle"="Conditions générales";
-"FSPrivacyPolicyLinkText"="Conditions générales";
-
-"FSInviteDeclineButtonText"="Non, merci";
-"FSInviteAcceptButtonText"="J'accepte";
-"FSInviteTitle"="Nous aimerions recevoir vos commentaires!";
-
-"FSContactInviteBody"="Pouvons-nous vous envoyer par courriel ou message texte un court sondage sur la satisfaction de la clientèle afin de pouvoir améliorer votre expérience sur notre site mobile?";
-"FSContactDetailsTitle"="Nous vous remercions.";
-"FSContactDetailsBody"="Veuillez indiquer votre adresse électronique ou numéro de téléphone cellulaire (aux États-Unis et au Canada uniquement). Après votre visite, nous vous enverrons un courriel ou un message texte comportant un lien menant au sondage.";
-"FSContactDetailsDeclineButtonText"="Annuler";
-"FSContactDetailsHint"="Courriel ou cellulaire";
-"FSContactDetailsEmptyInputError"="Veuillez entrer un numéro de téléphone cellulaire ou une adresse électronique";
-"FSContactDetailsInvalidInputError"="Le format doit être comme suit : nom@domaine.com ou 123-456-7890";
-"FSContactDetailsAcceptButtonText"="Écrivez-moi un courriel ou texto";
-"FSContactDetailsTextMessageNotificationButtonText"="Envoyez-moi un message texte";
-"FSContactDetailsEmailNotificationButtonText"="Envoyez-moi un courriel";
-
-"FSErrorDialogButtonText"="OK";
-"FSErrorDialogTitle"="Erreur";
-
-"FSExitInviteNotificationTitle"="Faites-nous part de votre opinion";
-"FSExitSurveyNotificationTitle"="Sondage sur l’ABC Company";
-
-"FSInSessionInviteBody"="Vous avez été sélectionné pour participer à une enquête de satisfaction client brève pour nous faire savoir comment nous pouvons améliorer votre expérience.";
-
-"FSLocalNotificationSurveyLinkBody"="Sondage sur l’ABC Company";
-"FSLocalNotificationInviteBody"="Vous avez été choisi(e) pour participer à un bref sondage sur la satisfaction de la clientèle en vue de nous aider à améliorer votre expérience.";
-
-"FSAttributionText"="Dirigé par ForeSee.";
-
-"FSSurveyNavBarTitle"="Sondage sur l’ABC Company";
-"FSSurveyCloseButtonText"="<NEEDS TRANSLATION>";
-"FSSurveyLoadErrorMessage"="Il est impossible de télécharger le sondage en ce moment. La connexion est peut-être en cause.";
-
-"FSCouldNotLoadSurveyTitle"="Nous sommes désolés";
-"FSCouldNotLoadSurveyMessage"="Il est impossible de télécharger le sondage en ce moment. La connexion est peut-être en cause.";
-
-"FSWebCloseButtonText"="<NEEDS TRANSLATION>";
-"FSWebLoadErrorTitle"="Nous sommes désolés.";
-"FSWebLoadURLNotWhitelistedErrorMessage"="<NEEDS TRANSLATION>";
-"FSWebLoadErrorMessage"="Il est impossible de télécharger le page en ce moment. La connexion est peut-être en cause.";
-"FSWebLoadErrorButtonText"="OK";
+"FORESEE_Invite_InSession_DeclineButton"="Non, merci";
+"FORESEE_Invite_InSession_AcceptButton"="J'accepte";
+"FORESEE_Invite_InSession_InvitePage_Title"="Nous aimerions recevoir vos commentaires!";
