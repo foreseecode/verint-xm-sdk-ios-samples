@@ -8,14 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@class FSViewController;
 
 @interface FSAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) FSViewController *viewController;
-
-- (void)initializeForeSeeTrigger;
 
 @end

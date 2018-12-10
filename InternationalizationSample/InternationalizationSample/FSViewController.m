@@ -11,19 +11,14 @@
 
 @implementation FSViewController
 
-@synthesize button = button_;
-
-#pragma mark - View lifecycle
-
-- (void)viewDidLoad {
-  [super viewDidLoad];
-}
-
 # pragma mark - Actions
 
-- (void)triggerInvite:(id)sender {
-  [ForeSee resetState];
+- (IBAction)checkEligibility:(id)sender {
   [ForeSee checkIfEligibleForSurvey];
+}
+
+- (IBAction)resetState:(id)sender {
+  [ForeSee resetState];
 }
 
 @end

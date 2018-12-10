@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZPz-z4-ztB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZPz-z4-ztB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,7 +35,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wT9-Gy-wPv">
-                                <rect key="frame" x="10" y="174" width="355" height="116.5"/>
+                                <rect key="frame" x="20" y="174" width="335" height="116.5"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="250" constant="200" id="D4L-Za-4SG"/>
@@ -52,7 +52,7 @@
                                 </constraints>
                             </imageView>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dx-FN-ad4">
-                                <rect key="frame" x="10" y="300.5" width="355" height="30"/>
+                                <rect key="frame" x="20" y="300.5" width="335" height="30"/>
                                 <color key="backgroundColor" red="0.92156862745098034" green="0.16862745098039217" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Show Contact Invite"/>
@@ -61,7 +61,7 @@
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBW-S8-4in">
-                                <rect key="frame" x="10" y="400.5" width="355" height="30"/>
+                                <rect key="frame" x="20" y="400.5" width="335" height="30"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -71,7 +71,7 @@
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AId-Pr-2RX">
-                                <rect key="frame" x="10" y="350.5" width="355" height="30"/>
+                                <rect key="frame" x="20" y="350.5" width="335" height="30"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Show &quot;Custom&quot; Invite"/>
@@ -80,7 +80,7 @@
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbc-Fq-XHk">
-                                <rect key="frame" x="10" y="450.5" width="355" height="30"/>
+                                <rect key="frame" x="20" y="450.5" width="335" height="30"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -90,7 +90,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n4f-a7-2Mv">
-                                <rect key="frame" x="10" y="490.5" width="355" height="100"/>
+                                <rect key="frame" x="20" y="490.5" width="335" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="4Li-EM-kIM"/>
@@ -102,21 +102,21 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Mbc-Fq-XHk" firstAttribute="leading" secondItem="ty6-Ys-bdw" secondAttribute="leading" constant="10" id="1UY-pq-63h"/>
+                            <constraint firstItem="Mbc-Fq-XHk" firstAttribute="leading" secondItem="ty6-Ys-bdw" secondAttribute="leading" constant="20" id="1UY-pq-63h"/>
                             <constraint firstItem="n4f-a7-2Mv" firstAttribute="top" secondItem="Mbc-Fq-XHk" secondAttribute="bottom" constant="10" id="4Jf-h6-zgZ"/>
                             <constraint firstItem="AId-Pr-2RX" firstAttribute="top" secondItem="1dx-FN-ad4" secondAttribute="bottom" constant="20" id="4b6-Me-w1G"/>
-                            <constraint firstItem="wT9-Gy-wPv" firstAttribute="leading" secondItem="ty6-Ys-bdw" secondAttribute="leading" constant="10" id="5l6-6I-DPZ"/>
+                            <constraint firstItem="wT9-Gy-wPv" firstAttribute="leading" secondItem="ty6-Ys-bdw" secondAttribute="leading" constant="20" id="5l6-6I-DPZ"/>
                             <constraint firstItem="9Rj-En-s6N" firstAttribute="top" secondItem="ty6-Ys-bdw" secondAttribute="top" constant="20" id="MHd-X9-muB"/>
                             <constraint firstItem="1dx-FN-ad4" firstAttribute="top" secondItem="wT9-Gy-wPv" secondAttribute="bottom" constant="10" id="MJM-B7-9Ic"/>
-                            <constraint firstItem="AId-Pr-2RX" firstAttribute="leading" secondItem="ty6-Ys-bdw" secondAttribute="leading" constant="10" id="S53-8p-Qtf"/>
-                            <constraint firstItem="n4f-a7-2Mv" firstAttribute="leading" secondItem="ty6-Ys-bdw" secondAttribute="leading" constant="10" id="Y3P-yK-fgw"/>
+                            <constraint firstItem="AId-Pr-2RX" firstAttribute="leading" secondItem="ty6-Ys-bdw" secondAttribute="leading" constant="20" id="S53-8p-Qtf"/>
+                            <constraint firstItem="n4f-a7-2Mv" firstAttribute="leading" secondItem="ty6-Ys-bdw" secondAttribute="leading" constant="20" id="Y3P-yK-fgw"/>
                             <constraint firstItem="1dx-FN-ad4" firstAttribute="centerX" secondItem="ty6-Ys-bdw" secondAttribute="centerX" id="hka-Fr-YR7"/>
                             <constraint firstItem="9Rj-En-s6N" firstAttribute="centerX" secondItem="ty6-Ys-bdw" secondAttribute="centerX" id="ix4-Ly-v9L"/>
-                            <constraint firstItem="ty6-Ys-bdw" firstAttribute="trailing" secondItem="n4f-a7-2Mv" secondAttribute="trailing" constant="10" id="j0N-RT-YtK"/>
-                            <constraint firstItem="nBW-S8-4in" firstAttribute="leading" secondItem="ty6-Ys-bdw" secondAttribute="leading" constant="10" id="jAE-gY-0yX"/>
+                            <constraint firstItem="ty6-Ys-bdw" firstAttribute="trailing" secondItem="n4f-a7-2Mv" secondAttribute="trailing" constant="20" id="j0N-RT-YtK"/>
+                            <constraint firstItem="nBW-S8-4in" firstAttribute="leading" secondItem="ty6-Ys-bdw" secondAttribute="leading" constant="20" id="jAE-gY-0yX"/>
                             <constraint firstItem="wT9-Gy-wPv" firstAttribute="centerX" secondItem="ty6-Ys-bdw" secondAttribute="centerX" id="jDH-jk-IKW"/>
                             <constraint firstItem="AId-Pr-2RX" firstAttribute="centerX" secondItem="ty6-Ys-bdw" secondAttribute="centerX" id="jiV-5V-1ZZ"/>
-                            <constraint firstItem="1dx-FN-ad4" firstAttribute="leading" secondItem="ty6-Ys-bdw" secondAttribute="leading" constant="10" id="mRb-sb-KYL"/>
+                            <constraint firstItem="1dx-FN-ad4" firstAttribute="leading" secondItem="ty6-Ys-bdw" secondAttribute="leading" constant="20" id="mRb-sb-KYL"/>
                             <constraint firstItem="nBW-S8-4in" firstAttribute="top" secondItem="AId-Pr-2RX" secondAttribute="bottom" constant="20" id="nck-8l-5sr"/>
                             <constraint firstItem="nBW-S8-4in" firstAttribute="centerX" secondItem="ty6-Ys-bdw" secondAttribute="centerX" id="tmo-ID-FMX"/>
                             <constraint firstItem="wT9-Gy-wPv" firstAttribute="top" secondItem="9Rj-En-s6N" secondAttribute="bottom" constant="20" id="uqZ-bg-83d"/>
