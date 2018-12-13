@@ -1,0 +1,23 @@
+framework module ForeSee {
+  
+    umbrella header "ForeSee.h"
+    
+    header "FSUserProfile.h"
+    header "SRViewChangeDefinition.h"
+    
+    
+    explicit module Trigger {
+      // backward compat
+      header "TRMeasure.h"
+      header "FSInviteDelegate.h"
+      header "FSTriggerCriteria.h"
+      header "FSInviteHandler.h"
+    }
+    
+    explicit module Internal {
+      header "ForeSeeComponent.h"
+    }
+    
+    module * { export * }
+    export *
+}

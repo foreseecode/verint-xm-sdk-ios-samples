@@ -1,9 +1,9 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/ForeSee/lib"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/ForeSee-test/lib"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ForeSee" "${PODS_ROOT}/Headers/Public/SSSnackbar" "${PODS_ROOT}/Headers/Public/SVProgressHUD"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ForeSee-test" "${PODS_ROOT}/Headers/Public/SSSnackbar" "${PODS_ROOT}/Headers/Public/SVProgressHUD"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/ForeSee" -isystem "${PODS_ROOT}/Headers/Public/SSSnackbar" -isystem "${PODS_ROOT}/Headers/Public/SVProgressHUD"
-OTHER_LDFLAGS = $(inherited) -ObjC -framework "AVFoundation" -framework "CoreGraphics" -framework "CoreMedia" -framework "CoreMotion" -framework "CoreVideo" -framework "ForeSee" -framework "Foundation" -framework "QuartzCore" -framework "SystemConfiguration" -framework "UIKit" -framework "WebKit" -weak_framework "UserNotifications"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/ForeSee-test" -isystem "${PODS_ROOT}/Headers/Public/SSSnackbar" -isystem "${PODS_ROOT}/Headers/Public/SVProgressHUD"
+OTHER_LDFLAGS = $(inherited) -ObjC -framework "AVFoundation" -framework "CoreGraphics" -framework "CoreMedia" -framework "CoreMotion" -framework "CoreVideo" -framework "ForeSee" -framework "ForeSeeCxMeasure" -framework "Foundation" -framework "QuartzCore" -framework "SystemConfiguration" -framework "UIKit" -framework "WebKit" -weak_framework "UserNotifications"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/..

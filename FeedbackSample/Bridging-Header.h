@@ -5,6 +5,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <ForeSee/ForeSee.h>
-#import <ForeSee/ForeSee.h>
+#import <ForeSeeFeedback/ForeSeeFeedback-Swift.h>
 
 

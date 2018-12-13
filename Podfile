@@ -1,8 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/foreseecode/podspecs'
+
 platform :ios, '10.0'
 workspace 'ForeSeeSamples.xcworkspace'
 
 def foresee_pods
-    pod 'ForeSee', '5.1.0'
+    pod 'ForeSee-test', '5.2.0-RC14'
 end
 
 target "CustomInvitationSample" do
@@ -38,6 +41,8 @@ target "LocalNotificationSample" do
 end
 
 target "FeedbackSample" do
-  project 'FeedbackSample/FeedbackSample.xcodeproj'
-  foresee_pods
+    project 'FeedbackSample/FeedbackSample.xcodeproj'
+    foresee_pods
+    # include the optional Feedback pod
+    pod 'ForeSee-test/ForeSeeFeedback', '5.2.0-RC14'
 end

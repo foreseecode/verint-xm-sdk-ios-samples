@@ -1,0 +1,1 @@
+../../../../ForeSee-test/lib/ForeSeeCxMeasure.framework/Headers/ForeSeeTrigger.h

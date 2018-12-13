@@ -1,0 +1,1 @@
+../../../../ForeSee-test/lib/ForeSee.framework/Headers/FSTriggerCriteria.h

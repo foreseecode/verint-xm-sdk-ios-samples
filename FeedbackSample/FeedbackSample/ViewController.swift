@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import ForeSee
+import ForeSee
+import ForeSeeFeedback.Feedback
 
 class ViewController: UIViewController {
 
@@ -18,11 +21,12 @@ class ViewController: UIViewController {
   }
 
   @IBAction func launchFeedback1(_ sender: Any) {
-    // ForeSeeFeedback.showFeedbackSurvey()
+    ForeSee.resetState()
+    ForeSeeFeedback.showFeedbackSurvey()
   }
   
   @IBAction func launchFeedback2(_ sender: Any) {
-    // ForeSeeFeedback.showFeedbackForName("Sample 2")
+    ForeSeeFeedback.showFeedbackForName("Sample 2")
   }
 
 }
