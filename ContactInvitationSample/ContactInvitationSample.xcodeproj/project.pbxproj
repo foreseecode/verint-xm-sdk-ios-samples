@@ -239,7 +239,7 @@
 				9672706D1D04DF4F00F90E54 /* Sources */,
 				9672706E1D04DF4F00F90E54 /* Frameworks */,
 				9672706F1D04DF4F00F90E54 /* Resources */,
-				293AD9E4061DADA67CC41DF8 /* [CP] Embed Pods Frameworks */,
+				09004DABE56904B8744B0760 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -357,10 +357,12 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		293AD9E4061DADA67CC41DF8 /* [CP] Embed Pods Frameworks */ = {
+		09004DABE56904B8744B0760 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${SRCROOT}/../Pods/Target Support Files/Pods-ContactInvitationSample/Pods-ContactInvitationSample-frameworks.sh",
@@ -368,6 +370,8 @@
 				"${PODS_ROOT}/ForeSee-test/lib/ForeSeeCxMeasure.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSee.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeCxMeasure.framework",

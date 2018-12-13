@@ -175,7 +175,7 @@
 				D51310C8150541F200619182 /* Sources */,
 				D51310C9150541F200619182 /* Frameworks */,
 				D51310CA150541F200619182 /* Resources */,
-				BC835EB28532CDE2C4A8AF1D /* [CP] Embed Pods Frameworks */,
+				6F5551892608C3A02C25206E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,10 +231,12 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BC835EB28532CDE2C4A8AF1D /* [CP] Embed Pods Frameworks */ = {
+		6F5551892608C3A02C25206E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${SRCROOT}/../Pods/Target Support Files/Pods-InternationalizationSample/Pods-InternationalizationSample-frameworks.sh",
@@ -242,6 +244,8 @@
 				"${PODS_ROOT}/ForeSee-test/lib/ForeSeeCxMeasure.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSee.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeCxMeasure.framework",
