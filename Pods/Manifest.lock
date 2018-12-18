@@ -1,17 +1,17 @@
 PODS:
-  - ForeSee-test (5.2.0-RC19):
-    - ForeSee-test/ForeSeeCxMeasure (= 5.2.0-RC19)
-  - ForeSee-test/Core (5.2.0-RC19)
-  - ForeSee-test/ForeSeeCxMeasure (5.2.0-RC19):
+  - ForeSee-test (5.2.0-RC20):
+    - ForeSee-test/ForeSeeCxMeasure (= 5.2.0-RC20)
+  - ForeSee-test/Core (5.2.0-RC20)
+  - ForeSee-test/ForeSeeCxMeasure (5.2.0-RC20):
     - ForeSee-test/Core
-  - ForeSee-test/ForeSeeFeedback (5.2.0-RC19):
+  - ForeSee-test/ForeSeeFeedback (5.2.0-RC20):
     - ForeSee-test/Core
   - SSSnackbar (0.1.2)
   - SVProgressHUD (2.0.4)
 
 DEPENDENCIES:
-  - ForeSee-test (= 5.2.0-RC19)
-  - ForeSee-test/ForeSeeFeedback (= 5.2.0-RC19)
+  - ForeSee-test (= 5.2.0-RC20)
+  - ForeSee-test/ForeSeeFeedback (= 5.2.0-RC20)
   - SSSnackbar (~> 0.1.2)
   - SVProgressHUD (~> 2.0.3)
 
@@ -23,10 +23,10 @@ SPEC REPOS:
     - ForeSee-test
 
 SPEC CHECKSUMS:
-  ForeSee-test: d24cab60827df48260907638f0d3f215661a537b
+  ForeSee-test: 5e4702094a10f1055821c14265ee5b6422f238ec
   SSSnackbar: 6a16cf8ab848d99a03ba21a7dab94d4478beabed
   SVProgressHUD: bfde85ed6c573ea802b9cb37894ed9b629034f1b
 
-PODFILE CHECKSUM: 156b3a3566a83b2702cfff9e56719e509a2780c0
+PODFILE CHECKSUM: 3b295d2133d296bdceabe315ad85c80018d482e8
 
 COCOAPODS: 1.5.3
