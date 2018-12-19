@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7pL-L6-3Xy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7pL-L6-3Xy">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,10 +14,6 @@
         <scene sceneID="2q7-ZX-aXZ">
             <objects>
                 <viewController id="7pL-L6-3Xy" customClass="ViewController" customModule="FeedbackSample" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wd6-We-qsq"/>
-                        <viewControllerLayoutGuide type="bottom" id="Zmr-I6-XbC"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hb2-ld-omO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,25 +77,25 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="swy-NW-2wZ" firstAttribute="top" secondItem="P7y-dX-MVR" secondAttribute="bottom" constant="10" id="0wf-D5-hhb"/>
-                            <constraint firstItem="KcK-iG-v5X" firstAttribute="leading" secondItem="gHZ-gA-frm" secondAttribute="leading" constant="36" id="4lv-nV-E0E"/>
-                            <constraint firstItem="gHZ-gA-frm" firstAttribute="trailing" secondItem="zol-zD-rak" secondAttribute="trailing" constant="36" id="Bvg-uV-edV"/>
-                            <constraint firstItem="bT5-Cf-J7E" firstAttribute="top" secondItem="wd6-We-qsq" secondAttribute="bottom" constant="50" id="CZB-ra-Ikb"/>
+                            <constraint firstItem="KcK-iG-v5X" firstAttribute="leading" secondItem="6gt-cI-OxU" secondAttribute="leading" constant="36" id="4lv-nV-E0E"/>
+                            <constraint firstItem="6gt-cI-OxU" firstAttribute="trailing" secondItem="zol-zD-rak" secondAttribute="trailing" constant="36" id="Bvg-uV-edV"/>
+                            <constraint firstItem="bT5-Cf-J7E" firstAttribute="top" secondItem="6gt-cI-OxU" secondAttribute="top" constant="50" id="CZB-ra-Ikb"/>
                             <constraint firstItem="KcK-iG-v5X" firstAttribute="top" secondItem="swy-NW-2wZ" secondAttribute="bottom" constant="10" id="G3I-sc-60Z"/>
                             <constraint firstItem="P7y-dX-MVR" firstAttribute="top" secondItem="cxg-Hb-h2L" secondAttribute="bottom" constant="10" id="GxB-iC-4vL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="swy-NW-2wZ" secondAttribute="trailing" constant="20" id="Kn1-Gs-iFb"/>
                             <constraint firstItem="KcK-iG-v5X" firstAttribute="leading" secondItem="zol-zD-rak" secondAttribute="leading" id="L8r-n2-o5J"/>
                             <constraint firstItem="P7y-dX-MVR" firstAttribute="leading" secondItem="swy-NW-2wZ" secondAttribute="leading" id="M2z-Em-Z2r"/>
-                            <constraint firstItem="P7y-dX-MVR" firstAttribute="leading" secondItem="gHZ-gA-frm" secondAttribute="leading" constant="36" id="M7j-VV-SoF"/>
+                            <constraint firstItem="P7y-dX-MVR" firstAttribute="leading" secondItem="6gt-cI-OxU" secondAttribute="leading" constant="36" id="M7j-VV-SoF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cxg-Hb-h2L" secondAttribute="trailing" constant="20" id="Pyu-zT-Avn"/>
-                            <constraint firstItem="gHZ-gA-frm" firstAttribute="trailing" secondItem="KcK-iG-v5X" secondAttribute="trailing" constant="36" id="T0N-0V-8Sd"/>
+                            <constraint firstItem="6gt-cI-OxU" firstAttribute="trailing" secondItem="KcK-iG-v5X" secondAttribute="trailing" constant="36" id="T0N-0V-8Sd"/>
                             <constraint firstItem="swy-NW-2wZ" firstAttribute="leading" secondItem="hb2-ld-omO" secondAttribute="leadingMargin" constant="20" id="aPk-XC-Od2"/>
-                            <constraint firstItem="bT5-Cf-J7E" firstAttribute="centerX" secondItem="hb2-ld-omO" secondAttribute="centerX" id="eVD-KJ-5W7"/>
-                            <constraint firstAttribute="trailing" secondItem="P7y-dX-MVR" secondAttribute="trailing" constant="36" id="fJG-iF-OVG"/>
+                            <constraint firstItem="bT5-Cf-J7E" firstAttribute="centerX" secondItem="6gt-cI-OxU" secondAttribute="centerX" id="eVD-KJ-5W7"/>
+                            <constraint firstItem="6gt-cI-OxU" firstAttribute="trailing" secondItem="P7y-dX-MVR" secondAttribute="trailing" constant="36" id="fJG-iF-OVG"/>
                             <constraint firstItem="zol-zD-rak" firstAttribute="top" secondItem="KcK-iG-v5X" secondAttribute="bottom" constant="10" id="sqb-te-dwj"/>
                             <constraint firstItem="cxg-Hb-h2L" firstAttribute="top" secondItem="bT5-Cf-J7E" secondAttribute="bottom" constant="10" id="uHm-Fc-GWp"/>
                             <constraint firstItem="cxg-Hb-h2L" firstAttribute="leading" secondItem="hb2-ld-omO" secondAttribute="leadingMargin" constant="20" id="xrg-dr-3fg"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="gHZ-gA-frm"/>
+                        <viewLayoutGuide key="safeArea" id="6gt-cI-OxU"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="efp-5F-m9A" sceneMemberID="firstResponder"/>
