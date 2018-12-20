@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ForeSee_logo" translatesAutoresizingMaskIntoConstraints="NO" id="bT5-Cf-J7E">
-                                <rect key="frame" x="152.5" y="70" width="70" height="70"/>
+                                <rect key="frame" x="152.5" y="40" width="70" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="4ez-31-tlr"/>
-                                    <constraint firstAttribute="height" constant="70" id="D6f-sY-rtV"/>
+                                    <constraint firstAttribute="height" constant="70" id="4XL-C9-7cY"/>
+                                    <constraint firstAttribute="width" constant="70" id="haQ-6X-oos"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swy-NW-2wZ">
-                                <rect key="frame" x="36" y="340" width="303" height="30"/>
+                                <rect key="frame" x="10" y="310" width="355" height="30"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Launch feedback #1"/>
@@ -35,27 +35,27 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="cxg-Hb-h2L">
-                                <rect key="frame" x="36" y="150" width="303" height="100"/>
+                                <rect key="frame" x="10" y="130" width="355" height="90"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" priority="250" constant="80" id="Yob-EE-K7m"/>
+                                    <constraint firstAttribute="height" constant="90" id="Z9z-MV-0GB"/>
                                 </constraints>
-                                <string key="text">This sample demonstrates the feedback survey. See foresee_configuration.json file to find out how feedback surveys are defined. Follow the instructions below to launch a feedback survey.</string>
+                                <string key="text">This sample demonstrates the feedback survey. See foresee_configuration.json file to find out how feedback surveys are defined. Follow the instructions below to launch a feedback survey. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="P7y-dX-MVR">
-                                <rect key="frame" x="36" y="260" width="303" height="70"/>
+                                <rect key="frame" x="10" y="230" width="355" height="70"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="1Cm-J4-meD"/>
+                                    <constraint firstAttribute="height" constant="70" id="a3R-sG-4iH"/>
                                 </constraints>
                                 <string key="text">1. Launch feedback survey sample #1. This sample will auto close the survey completion page (the Thank You page) after 3 seconds.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zol-zD-rak">
-                                <rect key="frame" x="36" y="490" width="303" height="30"/>
+                                <rect key="frame" x="10" y="460" width="355" height="30"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Launch feedback #2"/>
@@ -64,10 +64,10 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="KcK-iG-v5X">
-                                <rect key="frame" x="36" y="380" width="303" height="100"/>
+                                <rect key="frame" x="10" y="350" width="355" height="100"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="bgt-WY-Z4L"/>
+                                    <constraint firstAttribute="height" constant="100" id="Cas-r6-nBX"/>
                                 </constraints>
                                 <string key="text">2. Launch feedback survey sample #2. In this sample we will check whether the feedback survey is enabled first, then only launch the sample when it is enabled. This sample will not auto close the survey completion page.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -76,30 +76,30 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="swy-NW-2wZ" firstAttribute="top" secondItem="P7y-dX-MVR" secondAttribute="bottom" constant="10" id="0wf-D5-hhb"/>
-                            <constraint firstItem="KcK-iG-v5X" firstAttribute="leading" secondItem="6gt-cI-OxU" secondAttribute="leading" constant="36" id="4lv-nV-E0E"/>
-                            <constraint firstItem="6gt-cI-OxU" firstAttribute="trailing" secondItem="zol-zD-rak" secondAttribute="trailing" constant="36" id="Bvg-uV-edV"/>
-                            <constraint firstItem="bT5-Cf-J7E" firstAttribute="top" secondItem="6gt-cI-OxU" secondAttribute="top" constant="50" id="CZB-ra-Ikb"/>
-                            <constraint firstItem="KcK-iG-v5X" firstAttribute="top" secondItem="swy-NW-2wZ" secondAttribute="bottom" constant="10" id="G3I-sc-60Z"/>
-                            <constraint firstItem="P7y-dX-MVR" firstAttribute="top" secondItem="cxg-Hb-h2L" secondAttribute="bottom" constant="10" id="GxB-iC-4vL"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="swy-NW-2wZ" secondAttribute="trailing" constant="20" id="Kn1-Gs-iFb"/>
-                            <constraint firstItem="KcK-iG-v5X" firstAttribute="leading" secondItem="zol-zD-rak" secondAttribute="leading" id="L8r-n2-o5J"/>
-                            <constraint firstItem="P7y-dX-MVR" firstAttribute="leading" secondItem="swy-NW-2wZ" secondAttribute="leading" id="M2z-Em-Z2r"/>
-                            <constraint firstItem="P7y-dX-MVR" firstAttribute="leading" secondItem="6gt-cI-OxU" secondAttribute="leading" constant="36" id="M7j-VV-SoF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="cxg-Hb-h2L" secondAttribute="trailing" constant="20" id="Pyu-zT-Avn"/>
-                            <constraint firstItem="6gt-cI-OxU" firstAttribute="trailing" secondItem="KcK-iG-v5X" secondAttribute="trailing" constant="36" id="T0N-0V-8Sd"/>
-                            <constraint firstItem="swy-NW-2wZ" firstAttribute="leading" secondItem="hb2-ld-omO" secondAttribute="leadingMargin" constant="20" id="aPk-XC-Od2"/>
-                            <constraint firstItem="bT5-Cf-J7E" firstAttribute="centerX" secondItem="6gt-cI-OxU" secondAttribute="centerX" id="eVD-KJ-5W7"/>
-                            <constraint firstItem="6gt-cI-OxU" firstAttribute="trailing" secondItem="P7y-dX-MVR" secondAttribute="trailing" constant="36" id="fJG-iF-OVG"/>
-                            <constraint firstItem="zol-zD-rak" firstAttribute="top" secondItem="KcK-iG-v5X" secondAttribute="bottom" constant="10" id="sqb-te-dwj"/>
-                            <constraint firstItem="cxg-Hb-h2L" firstAttribute="top" secondItem="bT5-Cf-J7E" secondAttribute="bottom" constant="10" id="uHm-Fc-GWp"/>
-                            <constraint firstItem="cxg-Hb-h2L" firstAttribute="leading" secondItem="hb2-ld-omO" secondAttribute="leadingMargin" constant="20" id="xrg-dr-3fg"/>
+                            <constraint firstItem="swy-NW-2wZ" firstAttribute="centerX" secondItem="DJU-I6-2FP" secondAttribute="centerX" id="3nL-5i-TAm"/>
+                            <constraint firstItem="bT5-Cf-J7E" firstAttribute="centerX" secondItem="DJU-I6-2FP" secondAttribute="centerX" id="4yp-sS-QzJ"/>
+                            <constraint firstItem="bT5-Cf-J7E" firstAttribute="top" secondItem="DJU-I6-2FP" secondAttribute="top" constant="20" id="CjK-iX-zac"/>
+                            <constraint firstItem="P7y-dX-MVR" firstAttribute="top" secondItem="cxg-Hb-h2L" secondAttribute="bottom" constant="10" id="Ogs-EM-jB3"/>
+                            <constraint firstItem="cxg-Hb-h2L" firstAttribute="leading" secondItem="DJU-I6-2FP" secondAttribute="leading" constant="10" id="Pcm-mb-G7F"/>
+                            <constraint firstItem="KcK-iG-v5X" firstAttribute="centerX" secondItem="DJU-I6-2FP" secondAttribute="centerX" id="U9X-lI-op5"/>
+                            <constraint firstItem="zol-zD-rak" firstAttribute="leading" secondItem="DJU-I6-2FP" secondAttribute="leading" constant="10" id="VLu-za-LHC"/>
+                            <constraint firstItem="cxg-Hb-h2L" firstAttribute="top" secondItem="bT5-Cf-J7E" secondAttribute="bottom" constant="20" id="ZBt-Lg-1vU"/>
+                            <constraint firstItem="KcK-iG-v5X" firstAttribute="top" secondItem="swy-NW-2wZ" secondAttribute="bottom" constant="10" id="a48-wZ-13n"/>
+                            <constraint firstItem="zol-zD-rak" firstAttribute="centerX" secondItem="hb2-ld-omO" secondAttribute="centerX" id="b26-6j-9kw"/>
+                            <constraint firstItem="swy-NW-2wZ" firstAttribute="leading" secondItem="DJU-I6-2FP" secondAttribute="leading" constant="10" id="cgK-lk-mLF"/>
+                            <constraint firstItem="swy-NW-2wZ" firstAttribute="top" secondItem="P7y-dX-MVR" secondAttribute="bottom" constant="10" id="e55-EI-hXn"/>
+                            <constraint firstItem="zol-zD-rak" firstAttribute="top" secondItem="KcK-iG-v5X" secondAttribute="bottom" constant="10" id="i38-fw-PFn"/>
+                            <constraint firstItem="P7y-dX-MVR" firstAttribute="leading" secondItem="hb2-ld-omO" secondAttribute="leading" constant="10" id="jO0-xH-q3r"/>
+                            <constraint firstItem="P7y-dX-MVR" firstAttribute="centerX" secondItem="hb2-ld-omO" secondAttribute="centerX" id="mGU-CN-K2b"/>
+                            <constraint firstItem="KcK-iG-v5X" firstAttribute="leading" secondItem="hb2-ld-omO" secondAttribute="leading" constant="10" id="mpr-q1-2nx"/>
+                            <constraint firstItem="cxg-Hb-h2L" firstAttribute="centerX" secondItem="DJU-I6-2FP" secondAttribute="centerX" id="ppo-TY-ZgR"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6gt-cI-OxU"/>
+                        <viewLayoutGuide key="safeArea" id="DJU-I6-2FP"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="efp-5F-m9A" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="132" y="102.99850074962519"/>
         </scene>
     </scenes>
     <resources>
