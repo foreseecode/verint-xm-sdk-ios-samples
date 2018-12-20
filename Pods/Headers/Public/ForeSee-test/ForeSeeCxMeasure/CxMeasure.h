@@ -1,1 +1,0 @@
-../../../../ForeSee-test/lib/ForeSeeCxMeasure.framework/Headers/CxMeasure.h
