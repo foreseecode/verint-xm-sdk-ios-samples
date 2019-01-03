@@ -293,9 +293,9 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/../Pods/Target Support Files/Pods-FeedbackSample/Pods-FeedbackSample-frameworks.sh",
-				"${PODS_ROOT}/ForeSee-test/lib/ForeSee.framework",
-				"${PODS_ROOT}/ForeSee-test/lib/ForeSeeCxMeasure.framework",
-				"${PODS_ROOT}/ForeSee-test/lib/ForeSeeFeedback.framework",
+				"${PODS_ROOT}/ForeSee/lib/ForeSee.framework",
+				"${PODS_ROOT}/ForeSee/lib/ForeSeeCxMeasure.framework",
+				"${PODS_ROOT}/ForeSee/lib/ForeSeeFeedback.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (

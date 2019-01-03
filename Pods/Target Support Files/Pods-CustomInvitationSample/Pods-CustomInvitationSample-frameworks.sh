@@ -143,12 +143,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${PODS_ROOT}/ForeSee-test/lib/ForeSee.framework"
-  install_framework "${PODS_ROOT}/ForeSee-test/lib/ForeSeeCxMeasure.framework"
+  install_framework "${PODS_ROOT}/ForeSee/lib/ForeSee.framework"
+  install_framework "${PODS_ROOT}/ForeSee/lib/ForeSeeCxMeasure.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${PODS_ROOT}/ForeSee-test/lib/ForeSee.framework"
-  install_framework "${PODS_ROOT}/ForeSee-test/lib/ForeSeeCxMeasure.framework"
+  install_framework "${PODS_ROOT}/ForeSee/lib/ForeSee.framework"
+  install_framework "${PODS_ROOT}/ForeSee/lib/ForeSeeCxMeasure.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
