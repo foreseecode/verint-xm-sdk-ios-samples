@@ -147,7 +147,7 @@
 				D544DF3815068C0C0025FF43 /* Sources */,
 				D544DF3915068C0C0025FF43 /* Frameworks */,
 				D544DF3A15068C0C0025FF43 /* Resources */,
-				093330A9E110562877AA1EDA /* [CP] Embed Pods Frameworks */,
+				8BFED31CC1DF1A60FFC3E3D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,24 +201,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		093330A9E110562877AA1EDA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-BasicSample/Pods-BasicSample-frameworks.sh",
-				"${PODS_ROOT}/ForeSee/lib/ForeSee.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSee.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BasicSample/Pods-BasicSample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		370368C93CD07F36D1A5F1DB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -235,6 +217,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BFED31CC1DF1A60FFC3E3D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-BasicSample/Pods-BasicSample-frameworks.sh",
+				"${PODS_ROOT}/ForeSee/lib/ForeSee.framework",
+				"${PODS_ROOT}/ForeSee/lib/ForeSeeCxMeasure.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSee.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeCxMeasure.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BasicSample/Pods-BasicSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

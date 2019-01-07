@@ -6,7 +6,7 @@ platform :ios, '12.0'
 workspace 'ForeSeeSamples.xcworkspace'
 
 def foresee_pods
-    pod 'ForeSee', '5.1.0'
+    pod 'ForeSee', '5.2.0-alpha'
 end
 
 target "CustomInvitationSample" do
@@ -38,4 +38,11 @@ end
 target "LocalNotificationSample" do
     project 'LocalNotificationSample/LocalNotificationSample.xcodeproj'
     foresee_pods
+end
+
+target "FeedbackSample" do
+    project 'FeedbackSample/FeedbackSample.xcodeproj'
+    foresee_pods
+    # include the optional Feedback pod
+    pod 'ForeSee/ForeSeeFeedback', '5.2.0-alpha'
 end

@@ -1,13 +1,16 @@
 PODS:
-  - ForeSee (5.1.0):
-    - ForeSee/Core (= 5.1.0)
-  - ForeSee/Core (5.1.0):
-    - ForeSee/CxMeasure
-  - ForeSee/CxMeasure (5.1.0)
+  - ForeSee (5.2.0-alpha):
+    - ForeSee/ForeSeeCxMeasure (= 5.2.0-alpha)
+  - ForeSee/Core (5.2.0-alpha)
+  - ForeSee/ForeSeeCxMeasure (5.2.0-alpha):
+    - ForeSee/Core
+  - ForeSee/ForeSeeFeedback (5.2.0-alpha):
+    - ForeSee/Core
   - SSSnackbar (0.1.2)
 
 DEPENDENCIES:
-  - ForeSee (= 5.1.0)
+  - ForeSee (= 5.2.0-alpha)
+  - ForeSee/ForeSeeFeedback (= 5.2.0-alpha)
   - SSSnackbar (~> 0.1.2)
 
 SPEC REPOS:
@@ -16,9 +19,9 @@ SPEC REPOS:
     - SSSnackbar
 
 SPEC CHECKSUMS:
-  ForeSee: 7d5da1c4ee91ce3d4412106c8161f8261ddfb45d
+  ForeSee: fba6e30caf73021cad3d0d5cd750173a832a2015
   SSSnackbar: 6a16cf8ab848d99a03ba21a7dab94d4478beabed
 
-PODFILE CHECKSUM: f2f4e3b352db2c5926be04bb31f9902fd28f0acd
+PODFILE CHECKSUM: 6f0be72b355f8c7c25f72673d20d2488ca862f4b
 
 COCOAPODS: 1.5.3

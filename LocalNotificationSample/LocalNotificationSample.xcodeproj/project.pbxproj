@@ -163,7 +163,7 @@
 				D5D68AE51582A63D00730160 /* Sources */,
 				D5D68AE61582A63D00730160 /* Frameworks */,
 				D5D68AE71582A63D00730160 /* Resources */,
-				5AE968F2CCDE6420C0E322CA /* [CP] Embed Pods Frameworks */,
+				C59DE73C64671DAD9173D344 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,18 +218,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5AE968F2CCDE6420C0E322CA /* [CP] Embed Pods Frameworks */ = {
+		C59DE73C64671DAD9173D344 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
 				"${SRCROOT}/../Pods/Target Support Files/Pods-LocalNotificationSample/Pods-LocalNotificationSample-frameworks.sh",
 				"${PODS_ROOT}/ForeSee/lib/ForeSee.framework",
+				"${PODS_ROOT}/ForeSee/lib/ForeSeeCxMeasure.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSee.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeCxMeasure.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
