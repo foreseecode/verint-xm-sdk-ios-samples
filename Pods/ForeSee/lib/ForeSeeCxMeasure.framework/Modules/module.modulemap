@@ -1,0 +1,14 @@
+framework module ForeSeeCxMeasure {
+  
+  export *
+  
+  explicit module Measure {
+    /*
+    header "TRMeasure.h"
+    header "FSInviteDelegate.h"
+    header "FSTriggerCriteria.h"
+    header "FSInviteHandler.h"
+    */
+    export ForeSee
+  }
+}

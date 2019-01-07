@@ -1,0 +1,13 @@
+framework module ForeSeeFeedback {
+  umbrella header "ForeSeeFeedback.h"
+  export *
+  
+  explicit module Feedback {
+    export ForeSee
+  }
+}
+
+module ForeSeeFeedback.Swift {
+    header "ForeSeeFeedback-Swift.h"
+    requires objc
+}
