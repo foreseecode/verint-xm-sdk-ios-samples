@@ -1,12 +1,12 @@
 # Private repo for internal testing use only
-#source 'https://github.com/CocoaPods/Specs.git'
-#source 'https://github.com/foreseecode/podspecs'
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/foreseecode/podspecs'
 
 platform :ios, '12.0'
 workspace 'ForeSeeSamples.xcworkspace'
 
 def foresee_pods
-    pod 'ForeSee', '5.2.0-alpha'
+    pod 'ForeSee', '5.2.0-alpha4'
 end
 
 target "CustomInvitationSample" do
@@ -45,5 +45,5 @@ target "FeedbackSample" do
     project 'FeedbackSample/FeedbackSample.xcodeproj'
     foresee_pods
     # include the optional Feedback pod
-    pod 'ForeSee/ForeSeeFeedback', '5.2.0-alpha'
+    pod 'ForeSee/ForeSeeFeedback', '5.2.0-alpha4'
 end

@@ -8,12 +8,12 @@ Add the following to your Podfile:
 
 `pod 'ForeSee'`
 
-To include Replay:
+To include Feedback:
 
-`pod 'ForeSee/Replay'`
+`pod 'ForeSee/ForeSeeFeedback'`
 
 Visit the [CocoaPods](http://cocoapods.org/) website for help getting started with Podfiles.
 
 # Documentation
 
-Full documentation is available on the [ForeSee Developer Portal](http://developer.foresee.com/docs-articles/ios-sdk/).
+Full documentation is available on the [ForeSee Developer Portal](https://developer.foresee.com/docs/ios-sdk).
