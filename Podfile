@@ -41,6 +41,7 @@ target "LocalNotificationSample" do
 end
 
 target "FeedbackSample" do
+    use_frameworks!
     project 'FeedbackSample/FeedbackSample.xcodeproj'
     foresee_pods
     # include the optional Feedback pod

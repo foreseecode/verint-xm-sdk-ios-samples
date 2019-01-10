@@ -6,6 +6,7 @@
 //  Copyright © 2018 Alan Wang. All rights reserved.
 //
 
+import ForeSee
 import UIKit
 
 @UIApplicationMain
