@@ -1,6 +1,6 @@
 # Private repo for internal testing use only
-source 'https://github.com/CocoaPods/Specs.git'
-source 'https://github.com/foreseecode/podspecs'
+#source 'https://github.com/CocoaPods/Specs.git'
+#source 'https://github.com/foreseecode/podspecs'
 
 platform :ios, '12.0'
 workspace 'ForeSeeSamples.xcworkspace'
