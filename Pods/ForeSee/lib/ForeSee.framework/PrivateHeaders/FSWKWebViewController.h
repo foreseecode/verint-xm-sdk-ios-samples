@@ -23,5 +23,6 @@
 
 - (id)initWithURL:(NSURL *)url title:(NSString *)title;
 - (void)showError:(NSError *)error autoclose:(bool)autoclose;
+- (void)adjustScrollViewInsetsForNavigationBar:(UINavigationBar *)navigationBar;
 
 @end
