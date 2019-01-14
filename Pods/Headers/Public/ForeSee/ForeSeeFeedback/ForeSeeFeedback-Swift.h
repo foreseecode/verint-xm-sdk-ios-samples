@@ -1,1 +1,0 @@
-../../../../ForeSee/lib/ForeSeeFeedback.framework/Headers/ForeSeeFeedback-Swift.h
