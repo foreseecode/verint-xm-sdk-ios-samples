@@ -13,3 +13,5 @@ profile
 DerivedData
 .DS_Store
 xcuserdata/
+*.xcworkspace/
+Pods/

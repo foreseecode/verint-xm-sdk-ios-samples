@@ -4,23 +4,11 @@ These sample projects demonstrate typical usage of the ForeSee SDK.
 
 ## Installation
 
-All sample projects use [Cocoapods](http://cocoapods.org/). The Pods and workspace folders are
-included, so it isn't strictly necessary to manually install anything. 
+All sample projects use [Cocoapods](http://cocoapods.org/). 
 
-### Known issues / Troubleshooting
+To install, run:
 
-Some users have reported the following error on first run ([#12](https://github.com/foreseecode/foresee-sdk-ios-samples/issues/12)):
-
-    dyld: Library not loaded: @rpath/ForeSee.framework/ForeSee
-     Referenced from: /Users/uiwehb/Library/Developer/CoreSimulator/Devices/8FAE80C7-CE04-4F4A-BD4C-95EAB508C733/data/Containers/Bundle/Application/FBC926AF-540F-4AB1-8E2D-7FEEA3FC77E7/BasicSample.app/BasicSample
-    Reason: image not found
-
-This is fixed by re-installing the pods from scratch with the following commands:
-
-    $ sudo rm -r Pods/
     $ pod install
-
-Note: this fix requires CocoaPods.
 
 ## Projects
 All projects can be found in: `ForeSeeSamples.xcworkspace`
@@ -51,3 +39,7 @@ All strings used by the FSInviteView class are defined in the Localizable.string
 ## LocalNotificationSample
 This sample project demonstrates a local notification invite. Accept the invite and then close the application.
 You will receive a local notification linking the survey.
+
+## FeedbackSample
+
+This example demonstrates usage of the ForeSeeFeedback module.
