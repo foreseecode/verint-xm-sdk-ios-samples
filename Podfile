@@ -1,5 +1,3 @@
-# Private repo for internal testing use only
-
 platform :ios, '12.0'
 workspace 'ForeSeeSamples.xcworkspace'
 
