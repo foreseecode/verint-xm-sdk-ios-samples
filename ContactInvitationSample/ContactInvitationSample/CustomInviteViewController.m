@@ -7,6 +7,7 @@
 //
 
 #import "CustomInviteViewController.h"
+#import "SettingsTableViewController.h"
 
 @interface CustomInviteViewController ()
 
@@ -108,8 +109,17 @@
         [ForeSee customInviteDeclined];
     }
     [ForeSee resetState];
+    [ForeSee setPreferredContactType:[self preferredContactType]];
     [ForeSee setContactDetails:email forType:kFSEmail];
     [ForeSee setContactDetails:phoneNumber forType:kFSPhoneNumber];
+}
+
+- (FSContactType)preferredContactType {
+    NSNumber *preferredType = [[NSUserDefaults standardUserDefaults] objectForKey:FSPreferredContactTypeKey];
+    if (preferredType) {
+        return [preferredType unsignedIntegerValue];
+    }
+    return kFSPhoneNumber;
 }
 
 @end
