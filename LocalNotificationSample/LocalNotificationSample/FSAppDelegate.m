@@ -12,17 +12,9 @@
 
 @implementation FSAppDelegate
 
-@synthesize window = _window;
-@synthesize viewController = _viewController;
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-  // Override point for customization after application launch.
-  self.viewController = [[FSViewController alloc] initWithNibName:@"FSViewController" bundle:nil];
-  self.window.rootViewController = self.viewController;
-  
+  [UNUserNotificationCenter currentNotificationCenter].delegate = self;
   [self initializeForeSeeTrigger];
-  [self.window makeKeyAndVisible];
   return YES;
 }
 
@@ -35,9 +27,24 @@
   [ForeSee checkIfEligibleForSurvey];
 }
 
-- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
-  // Allow the API to handle the notification
-  NSString *surveyID = [notification.userInfo objectForKey:FSLocalNotificationMeasureKey];
-  [ForeSee showSurveyForSurveyID:surveyID];
+#pragma mark - UNUserNotificationCenterDelegate
+
+// Called when a notification is delivered to the foregrounded app
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center
+       willPresentNotification:(UNNotification *)notification
+         withCompletionHandler:(nonnull void (^)(UNNotificationPresentationOptions))completionHandler
+{
+    NSLog(@"User Info : %@",notification.request.content.userInfo);
+    completionHandler(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge);
+}
+
+// Called to let your app know which action was selected by the user for a given notification
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center
+didReceiveNotificationResponse:(UNNotificationResponse *)response
+         withCompletionHandler:(nonnull void (^)(void))completionHandler
+{
+    [ForeSee showSurveyForNotificationResponse:response];
+    NSLog(@"User Info : %@",response.notification.request.content.userInfo);
+    completionHandler();
 }
 @end

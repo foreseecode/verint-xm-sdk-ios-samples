@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <UserNotifications/UserNotifications.h>
 
 @class FSViewController;
 
-@interface FSAppDelegate : UIResponder <UIApplicationDelegate>
+@interface FSAppDelegate : NSObject <UIApplicationDelegate, UNUserNotificationCenterDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) FSViewController *viewController;
 
 - (void)initializeForeSeeTrigger;
 
