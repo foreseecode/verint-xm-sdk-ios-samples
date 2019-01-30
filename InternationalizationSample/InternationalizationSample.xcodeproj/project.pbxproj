@@ -146,6 +146,7 @@
 				D51310E3150541F200619182 /* FSViewController.m */,
 				D51310D7150541F200619182 /* Supporting Files */,
 				1FB2C646214AD98E0002E96A /* Assets.xcassets */,
+				99AF581B1B911C3D00826506 /* foresee_configuration.json */,
 				961640BC21B5C9D0005247A0 /* Launch Screen.storyboard */,
 				9641172E21B5C63200F81ACE /* Main.storyboard */,
 			);
@@ -155,7 +156,6 @@
 		D51310D7150541F200619182 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				99AF581B1B911C3D00826506 /* foresee_configuration.json */,
 				D51310D8150541F200619182 /* InternationalizationSample-Info.plist */,
 				D51310D9150541F200619182 /* InfoPlist.strings */,
 				D51310DC150541F200619182 /* main.m */,

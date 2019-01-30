@@ -1,13 +1,15 @@
 {
-	"clientId":"9NNs9GIBQIVdk1LpDlJpAQ==",
-	"repeatDaysAfterDecline":60,
-	"repeatDaysAfterComplete":120,
-	"measures":
-    [{
-     "surveyId":"mobile_app-en",
-     "daysSinceLaunch":0,
-     "launchCount":0
-    }],
+    "clientId":"9NNs9GIBQIVdk1LpDlJpAQ==",
+    "notificationType": "IN_SESSION",
+    "repeatDaysAfterDecline":60,
+    "repeatDaysAfterComplete":120,
+    "measures":[
+        {
+            "surveyId":"mobile_app-en",
+            "daysSinceLaunch":0,
+            "launchCount":0
+        }
+    ],
     "invite": {
         "logo": "ForeSee_logo",
         "baseColor": [237, 38, 54]
