@@ -6,22 +6,18 @@ PODS:
     - ForeSee/Core
   - ForeSee/ForeSeeFeedback (5.2.0):
     - ForeSee/Core
-  - SSSnackbar (0.1.2)
 
 DEPENDENCIES:
   - ForeSee (= 5.2.0)
   - ForeSee/ForeSeeFeedback (= 5.2.0)
-  - SSSnackbar (~> 0.1.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - ForeSee
-    - SSSnackbar
 
 SPEC CHECKSUMS:
   ForeSee: 5680dd31d531e73f4af5d3ba5b6dd0033a2cabf5
-  SSSnackbar: 6a16cf8ab848d99a03ba21a7dab94d4478beabed
 
-PODFILE CHECKSUM: 0e79a205f7cc7246523d370e5f4ebe16a15d8fc9
+PODFILE CHECKSUM: 4fc994be5e9e68ed1da3df9b86241c0bf47885eb
 
 COCOAPODS: 1.5.3

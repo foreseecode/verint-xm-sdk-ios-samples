@@ -7,44 +7,51 @@
 //
 
 #import "CustomInviteTrackerSnackbar.h"
-#import "SSSnackbar.h"
-
-#define DURATION 6
 
 @interface CustomInviteTrackerSnackbar ()
 
-@property (nonatomic) SSSnackbar *inviteView;
+@property (nonatomic, assign) UIViewController *viewController;
 
 @end
 
 @implementation CustomInviteTrackerSnackbar
 
+#pragma mark - init
+- (id)initWithViewController:(UIViewController *)viewController {
+    _viewController = viewController;
+    return [super init];
+}
+
 #pragma mark - FSInviteHandler
 
 - (void)show {
-    if (!self.inviteView) {
-        self.inviteView = [[SSSnackbar alloc] initWithMessage:@"Would you like to take a survey?"
-                                                   actionText:@"Yes!"
-                                                     duration:DURATION
-                                                  actionBlock:^(SSSnackbar *sender) {
-                                                      [ForeSee customInviteAccepted];
-                                                  } dismissalBlock:^(SSSnackbar *sender) {
-                                                      [ForeSee customInviteDeclined];
-                                                  }];
-        [self.inviteView show];
-    }
+    UIAlertController* inviteAlert = [UIAlertController alertControllerWithTitle:@"Survey invitation"
+                                                                         message:@"Would you like to take a survey?"
+                                                                  preferredStyle:(UIAlertControllerStyle)UIAlertControllerStyleActionSheet];
+    
+    UIAlertAction* yayAction = [UIAlertAction actionWithTitle:@"Yay!"
+                                                        style:UIAlertActionStyleDefault
+                                                      handler:^(UIAlertAction * action) {
+                                                          [ForeSee customInviteAccepted];
+                                                      }];
+    UIAlertAction* nayAction = [UIAlertAction actionWithTitle:@"Nay"
+                                                        style:UIAlertActionStyleCancel
+                                                      handler:^(UIAlertAction * action) {
+                                                          [ForeSee customInviteDeclined];
+                                                      }];
+    
+    [inviteAlert addAction:yayAction];
+    [inviteAlert addAction:nayAction];
+    [self.viewController presentViewController:inviteAlert animated:YES completion:nil];
 }
 
 - (void)hideWithAnimation:(BOOL)animate {
-    self.inviteView.dismissalBlock = nil;
-    self.inviteView = nil;
+    // No-op
 }
 
+
 - (void)dealloc {
-    if (self.inviteView) {
-        [self.inviteView dismiss];
-        [ForeSee customInviteDeclined];
-    }
+    [ForeSee customInviteDeclined];
 }
 
 @end

@@ -7,7 +7,6 @@ end
 
 target "CustomInvitationSample" do
     project 'CustomInvitationSample/CustomInvitationSample.xcodeproj'
-    pod 'SSSnackbar', '~> 0.1.2'
     foresee_pods
 end
 

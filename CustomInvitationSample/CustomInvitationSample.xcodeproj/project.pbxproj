@@ -10,7 +10,7 @@
 		968D2F581CFD6A6800C6066B /* CustomInviteTrackerSnackbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F571CFD6A6800C6066B /* CustomInviteTrackerSnackbar.m */; };
 		968D2F5B1CFD6DCC00C6066B /* CustomInviteDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F5A1CFD6DCC00C6066B /* CustomInviteDelegate.m */; };
 		968D2F911CFE430700C6066B /* CustomInviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F901CFE430700C6066B /* CustomInviteViewController.m */; };
-		968D2F981CFE453000C6066B /* SnackbarInviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F971CFE453000C6066B /* SnackbarInviteViewController.m */; };
+		968D2F981CFE453000C6066B /* AlertInviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F971CFE453000C6066B /* AlertInviteViewController.m */; };
 		968D2FA31CFF4C1800C6066B /* InviteExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2FA21CFF4C1800C6066B /* InviteExampleViewController.m */; };
 		968D2FAB1CFF627800C6066B /* ForeSee_logo_1-color.png in Resources */ = {isa = PBXBuildFile; fileRef = 968D2FA91CFF627800C6066B /* ForeSee_logo_1-color.png */; };
 		968D2FAC1CFF627800C6066B /* ForeSee_logo_RGB.png in Resources */ = {isa = PBXBuildFile; fileRef = 968D2FAA1CFF627800C6066B /* ForeSee_logo_RGB.png */; };
@@ -68,8 +68,8 @@
 		968D2F5A1CFD6DCC00C6066B /* CustomInviteDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInviteDelegate.m; sourceTree = "<group>"; };
 		968D2F8F1CFE430700C6066B /* CustomInviteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInviteViewController.h; sourceTree = "<group>"; };
 		968D2F901CFE430700C6066B /* CustomInviteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInviteViewController.m; sourceTree = "<group>"; };
-		968D2F961CFE453000C6066B /* SnackbarInviteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnackbarInviteViewController.h; sourceTree = "<group>"; };
-		968D2F971CFE453000C6066B /* SnackbarInviteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnackbarInviteViewController.m; sourceTree = "<group>"; };
+		968D2F961CFE453000C6066B /* AlertInviteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertInviteViewController.h; sourceTree = "<group>"; };
+		968D2F971CFE453000C6066B /* AlertInviteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertInviteViewController.m; sourceTree = "<group>"; };
 		968D2FA11CFF4C1800C6066B /* InviteExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InviteExampleViewController.h; sourceTree = "<group>"; };
 		968D2FA21CFF4C1800C6066B /* InviteExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InviteExampleViewController.m; sourceTree = "<group>"; };
 		968D2FA91CFF627800C6066B /* ForeSee_logo_1-color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ForeSee_logo_1-color.png"; sourceTree = "<group>"; };
@@ -201,8 +201,8 @@
 			children = (
 				968D2F561CFD6A6800C6066B /* CustomInviteTrackerSnackbar.h */,
 				968D2F571CFD6A6800C6066B /* CustomInviteTrackerSnackbar.m */,
-				968D2F961CFE453000C6066B /* SnackbarInviteViewController.h */,
-				968D2F971CFE453000C6066B /* SnackbarInviteViewController.m */,
+				968D2F961CFE453000C6066B /* AlertInviteViewController.h */,
+				968D2F971CFE453000C6066B /* AlertInviteViewController.m */,
 			);
 			name = "Example #2";
 			sourceTree = "<group>";
@@ -319,7 +319,6 @@
 				96C3D5E41CDB284A005040C8 /* Sources */,
 				96C3D5E51CDB284A005040C8 /* Frameworks */,
 				96C3D5E61CDB284A005040C8 /* Resources */,
-				CC138043B488429C4605FDE7 /* [CP] Copy Pods Resources */,
 				A112AC75B258605E8368F40C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -485,24 +484,6 @@
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CC138043B488429C4605FDE7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/SSSnackbar/SSSnackbar.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SSSnackbar.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -510,7 +491,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				968D2F981CFE453000C6066B /* SnackbarInviteViewController.m in Sources */,
+				968D2F981CFE453000C6066B /* AlertInviteViewController.m in Sources */,
 				96C3D5F31CDB284A005040C8 /* ViewController.m in Sources */,
 				96C3D5F01CDB284A005040C8 /* AppDelegate.m in Sources */,
 				968D2F581CFD6A6800C6066B /* CustomInviteTrackerSnackbar.m in Sources */,

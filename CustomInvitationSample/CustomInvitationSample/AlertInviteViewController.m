@@ -6,13 +6,13 @@
 //  Copyright © 2016 ForeSee. All rights reserved.
 //
 
-#import "SnackbarInviteViewController.h"
+#import "AlertInviteViewController.h"
 #import "CustomInviteTrackerSnackbar.h"
 
-@implementation SnackbarInviteViewController
+@implementation AlertInviteViewController
 
 - (void)viewDidLoad {
-    self.inviteHandler = [[CustomInviteTrackerSnackbar alloc] init];
+    self.inviteHandler = [[CustomInviteTrackerSnackbar alloc] initWithViewController:self];
     [ForeSee setInviteHandler:self.inviteHandler];
 }
 

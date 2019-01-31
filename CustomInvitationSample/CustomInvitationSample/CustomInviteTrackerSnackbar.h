@@ -12,4 +12,6 @@
 
 @interface CustomInviteTrackerSnackbar : NSObject <FSInviteHandler>
 
+- (id)initWithViewController:(UIViewController *)viewController;
+
 @end

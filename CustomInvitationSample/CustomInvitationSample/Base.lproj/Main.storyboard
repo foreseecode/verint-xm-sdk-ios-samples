@@ -65,11 +65,11 @@
                                             <segue destination="bSi-nl-Gvc" kind="show" id="avf-cB-gpd"/>
                                         </connections>
                                     </button>
-                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gb3-8G-MaM" userLabel="Show Snackbar Invite">
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gb3-8G-MaM" userLabel="Show Alert Controller Invite">
                                         <rect key="frame" x="20" y="334" width="335" height="34"/>
                                         <color key="backgroundColor" red="0.92156862745098034" green="0.16862745098039217" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.097796724979999999" green="0.14065014889999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Custom &quot;Snackbar&quot; invite">
+                                        <state key="normal" title="Custom &quot;Alert Controller&quot; invite">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -216,10 +216,10 @@
             </objects>
             <point key="canvasLocation" x="360" y="-60"/>
         </scene>
-        <!--Snackbar Invite Example-->
+        <!--Alert Controller Invite Example-->
         <scene sceneID="5to-wg-3Ig">
             <objects>
-                <viewController title="Snackbar Invite Example" id="NcQ-xA-o44" customClass="SnackbarInviteViewController" sceneMemberID="viewController">
+                <viewController title="Alert Controller Invite Example" id="NcQ-xA-o44" customClass="AlertInviteViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RhN-Fm-S53">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -242,7 +242,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" priority="250" constant="180" id="u8V-ac-he6"/>
                                 </constraints>
-                                <string key="text">This example shows a fully custom IN_SESSION invite that presents a snackbar-like view at the bottom of the page. The SDK tells the custom tracker when to display its views and, in turn, the custom invite lets the SDK know when an invite has been accepted. The invite will automatically be declined and dismissed after a period of inactivity.  Press the button below to display the invite.</string>
+                                <mutableString key="text">This example shows a fully custom IN_SESSION invite that presents an alert controller view at the bottom of the page. The SDK tells the custom tracker when to display its views and, in turn, the custom invite lets the SDK know when an invite has been accepted. The invite will automatically be declined and dismissed after a period of inactivity.  Press the button below to display the invite.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>

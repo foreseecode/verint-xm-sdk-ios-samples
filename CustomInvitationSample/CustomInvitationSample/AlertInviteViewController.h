@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "InviteExampleViewController.h"
 
-@interface SnackbarInviteViewController : InviteExampleViewController
+@interface AlertInviteViewController : InviteExampleViewController
 
 - (IBAction)resetState:(id)sender;
 
