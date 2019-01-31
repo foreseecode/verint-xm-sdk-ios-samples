@@ -1,5 +1,5 @@
 //
-//  SnackbarInviteViewController.h
+//  AlertInviteViewController.h
 //  CustomInvitationSample
 //
 //  Created by Wayne Burkett on 5/31/16.

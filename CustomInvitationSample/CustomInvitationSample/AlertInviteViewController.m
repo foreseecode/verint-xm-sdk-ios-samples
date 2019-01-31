@@ -1,5 +1,5 @@
 //
-//  SnackbarInviteViewController.m
+//  AlertInviteViewController.m
 //  CustomInvitationSample
 //
 //  Created by Wayne Burkett on 5/31/16.
@@ -7,12 +7,12 @@
 //
 
 #import "AlertInviteViewController.h"
-#import "CustomInviteTrackerSnackbar.h"
+#import "CustomInviteHandler.h"
 
 @implementation AlertInviteViewController
 
 - (void)viewDidLoad {
-    self.inviteHandler = [[CustomInviteTrackerSnackbar alloc] initWithViewController:self];
+    self.inviteHandler = [[CustomInviteHandler alloc] initWithViewController:self];
     [ForeSee setInviteHandler:self.inviteHandler];
 }
 

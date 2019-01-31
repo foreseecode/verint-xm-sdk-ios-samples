@@ -1,20 +1,20 @@
 //
-//  CustomInviteTrackerSnackbar.m
+//  CustomInviteHandler.m
 //  CustomInvitationSample
 //
 //  Created by Wayne Burkett on 5/31/16.
 //  Copyright © 2016 ForeSee. All rights reserved.
 //
 
-#import "CustomInviteTrackerSnackbar.h"
+#import "CustomInviteHandler.h"
 
-@interface CustomInviteTrackerSnackbar ()
+@interface CustomInviteHandler ()
 
 @property (nonatomic, assign) UIViewController *viewController;
 
 @end
 
-@implementation CustomInviteTrackerSnackbar
+@implementation CustomInviteHandler
 
 #pragma mark - init
 - (id)initWithViewController:(UIViewController *)viewController {
