@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -34,48 +33,102 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSE-L7-day" userLabel="Show Custom Invite">
-                                <rect key="frame" x="26" y="194" width="323" height="34"/>
-                                <color key="backgroundColor" red="0.92156862745098034" green="0.16862745098039217" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.097796724979999999" green="0.14065014889999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Custom Invite">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="bSi-nl-Gvc" kind="show" id="avf-cB-gpd"/>
-                                </connections>
-                            </button>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gb3-8G-MaM" userLabel="Show Snackbar Invite">
-                                <rect key="frame" x="26" y="248" width="323" height="34"/>
-                                <color key="backgroundColor" red="0.92156862745098034" green="0.16862745098039217" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.097796724979999999" green="0.14065014889999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Custom &quot;Snackbar&quot; Invite">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="NcQ-xA-o44" kind="show" id="6I3-24-hCi"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foresee_logo" translatesAutoresizingMaskIntoConstraints="NO" id="ubK-vn-88u">
-                                <rect key="frame" x="152.5" y="84" width="70" height="70"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1c-dx-00P">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foresee_logo" translatesAutoresizingMaskIntoConstraints="NO" id="ubK-vn-88u">
+                                        <rect key="frame" x="152.5" y="20" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="Qys-ST-Na9"/>
+                                            <constraint firstAttribute="width" constant="70" id="iOh-Zy-JII"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3G-kA-xwC">
+                                        <rect key="frame" x="20" y="110" width="335" height="150"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="Xy9-i7-VSB"/>
+                                        </constraints>
+                                        <string key="text">This sample demonstrates some simple custom invitation styles. Select one of the "Custom Invite" buttons to show an invite. The SDK transitions to an idle state after an invite is displayed. Use "Reset State" to test again. (This will also delete pre-set contact details.). Internet connection is required.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSE-L7-day" userLabel="Show Custom Invite">
+                                        <rect key="frame" x="20" y="280" width="335" height="34"/>
+                                        <color key="backgroundColor" red="0.92156862745098034" green="0.16862745098039217" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.097796724979999999" green="0.14065014889999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Custom invite">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="bSi-nl-Gvc" kind="show" id="avf-cB-gpd"/>
+                                        </connections>
+                                    </button>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gb3-8G-MaM" userLabel="Show Snackbar Invite">
+                                        <rect key="frame" x="20" y="334" width="335" height="34"/>
+                                        <color key="backgroundColor" red="0.92156862745098034" green="0.16862745098039217" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.097796724979999999" green="0.14065014889999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Custom &quot;Snackbar&quot; invite">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="NcQ-xA-o44" kind="show" id="6I3-24-hCi"/>
+                                        </connections>
+                                    </button>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Go4-hU-EHc" userLabel="Reset state">
+                                        <rect key="frame" x="20" y="388" width="335" height="34"/>
+                                        <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.097796724979999999" green="0.14065014889999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Reset state">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="resetState:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qa3-8G-bRa"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PxN-Eo-yR1">
+                                        <rect key="frame" x="20" y="442" width="335" height="80"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="i9n-lg-PFb"/>
+                                        </constraints>
+                                        <string key="text">Once the invite is shown, the SDK drops into an idle state until the repeat days have elapsed. Tap "Reset State" to reset the state of the SDK.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="Tff-hw-sJ9"/>
-                                    <constraint firstAttribute="height" constant="70" id="ZhX-4C-S22"/>
+                                    <constraint firstItem="PxN-Eo-yR1" firstAttribute="top" secondItem="Go4-hU-EHc" secondAttribute="bottom" constant="20" id="0ne-Zo-yMt"/>
+                                    <constraint firstAttribute="bottom" secondItem="PxN-Eo-yR1" secondAttribute="bottom" constant="20" id="2EF-72-aV1"/>
+                                    <constraint firstItem="gb3-8G-MaM" firstAttribute="leading" secondItem="b3G-kA-xwC" secondAttribute="leading" id="2yv-Ug-yUi"/>
+                                    <constraint firstItem="pSE-L7-day" firstAttribute="leading" secondItem="b3G-kA-xwC" secondAttribute="leading" id="7nC-uN-93J"/>
+                                    <constraint firstItem="ubK-vn-88u" firstAttribute="centerX" secondItem="t1c-dx-00P" secondAttribute="centerX" id="8JT-BX-wGT"/>
+                                    <constraint firstItem="gb3-8G-MaM" firstAttribute="top" secondItem="pSE-L7-day" secondAttribute="bottom" constant="20" id="ALl-oH-ilQ"/>
+                                    <constraint firstItem="Go4-hU-EHc" firstAttribute="top" secondItem="gb3-8G-MaM" secondAttribute="bottom" constant="20" id="Je8-CU-dGq"/>
+                                    <constraint firstItem="ubK-vn-88u" firstAttribute="top" secondItem="t1c-dx-00P" secondAttribute="top" constant="20" id="LUC-Oe-VvG"/>
+                                    <constraint firstItem="b3G-kA-xwC" firstAttribute="centerX" secondItem="t1c-dx-00P" secondAttribute="centerX" id="Pq1-ri-yaC"/>
+                                    <constraint firstAttribute="trailing" secondItem="pSE-L7-day" secondAttribute="trailing" constant="20" id="Uyx-vU-Qu7"/>
+                                    <constraint firstItem="Go4-hU-EHc" firstAttribute="centerX" secondItem="t1c-dx-00P" secondAttribute="centerX" id="WNh-9r-tuR"/>
+                                    <constraint firstAttribute="trailing" secondItem="b3G-kA-xwC" secondAttribute="trailing" constant="20" id="XWh-rO-eH7"/>
+                                    <constraint firstItem="PxN-Eo-yR1" firstAttribute="centerX" secondItem="t1c-dx-00P" secondAttribute="centerX" id="ZNM-10-g6i"/>
+                                    <constraint firstItem="gb3-8G-MaM" firstAttribute="centerX" secondItem="t1c-dx-00P" secondAttribute="centerX" id="eF0-S6-rvL"/>
+                                    <constraint firstItem="pSE-L7-day" firstAttribute="top" secondItem="b3G-kA-xwC" secondAttribute="bottom" constant="20" id="ifU-xN-xnC"/>
+                                    <constraint firstItem="b3G-kA-xwC" firstAttribute="leading" secondItem="PxN-Eo-yR1" secondAttribute="leading" id="qdU-2S-1hs"/>
+                                    <constraint firstItem="b3G-kA-xwC" firstAttribute="top" secondItem="ubK-vn-88u" secondAttribute="bottom" constant="20" id="si6-zP-1rt"/>
+                                    <constraint firstItem="Go4-hU-EHc" firstAttribute="leading" secondItem="b3G-kA-xwC" secondAttribute="leading" id="xps-k2-5qz"/>
+                                    <constraint firstItem="b3G-kA-xwC" firstAttribute="leading" secondItem="t1c-dx-00P" secondAttribute="leading" constant="20" id="xr9-cB-fWz"/>
                                 </constraints>
-                            </imageView>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ubK-vn-88u" firstAttribute="centerX" secondItem="r7R-Wg-cca" secondAttribute="centerX" id="5n4-Is-fao"/>
-                            <constraint firstItem="gb3-8G-MaM" firstAttribute="left" secondItem="8bC-Xf-vdC" secondAttribute="leftMargin" constant="10" id="7ZC-XK-D68"/>
-                            <constraint firstItem="gb3-8G-MaM" firstAttribute="top" secondItem="pSE-L7-day" secondAttribute="bottom" constant="20" id="CHr-br-bEg"/>
-                            <constraint firstItem="pSE-L7-day" firstAttribute="centerX" secondItem="r7R-Wg-cca" secondAttribute="centerX" id="DbA-Fz-ZdA"/>
-                            <constraint firstItem="ubK-vn-88u" firstAttribute="top" secondItem="r7R-Wg-cca" secondAttribute="top" constant="20" id="h6c-pl-cLv"/>
-                            <constraint firstItem="gb3-8G-MaM" firstAttribute="centerX" secondItem="r7R-Wg-cca" secondAttribute="centerX" id="jck-Vq-3jV"/>
-                            <constraint firstItem="pSE-L7-day" firstAttribute="top" secondItem="ubK-vn-88u" secondAttribute="bottom" constant="40" id="mbt-e1-MqE"/>
-                            <constraint firstItem="pSE-L7-day" firstAttribute="left" secondItem="8bC-Xf-vdC" secondAttribute="leftMargin" constant="10" id="peF-UN-7ZW"/>
+                            <constraint firstItem="t1c-dx-00P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J45-tU-J8i"/>
+                            <constraint firstItem="t1c-dx-00P" firstAttribute="top" secondItem="r7R-Wg-cca" secondAttribute="top" id="JKc-u2-INQ"/>
+                            <constraint firstItem="t1c-dx-00P" firstAttribute="leading" secondItem="r7R-Wg-cca" secondAttribute="leading" id="k0V-J0-KxI"/>
+                            <constraint firstItem="r7R-Wg-cca" firstAttribute="bottom" secondItem="t1c-dx-00P" secondAttribute="bottom" id="sXz-Q1-LOl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="r7R-Wg-cca"/>
                     </view>
@@ -83,7 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-418" y="251"/>
+            <point key="canvasLocation" x="-418.39999999999998" y="250.52473763118442"/>
         </scene>
         <!--Custom Invite Example-->
         <scene sceneID="3nD-8C-UeR">
@@ -93,8 +146,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wrb-cA-fYg" userLabel="Show Custom Invite">
-                                <rect key="frame" x="26" y="237" width="323" height="34"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wrb-cA-fYg" userLabel="Show custom invite">
+                                <rect key="frame" x="20" y="237" width="335" height="34"/>
                                 <color key="backgroundColor" red="0.92156862745098034" green="0.16862745098039217" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.097796724979999999" green="0.14065014889999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Show Custom Invite">
@@ -106,7 +159,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="SWz-h0-V9z">
-                                <rect key="frame" x="26" y="84" width="323" height="133"/>
+                                <rect key="frame" x="20" y="84" width="335" height="133"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="250" constant="120" id="leX-Cv-DSg"/>
@@ -115,14 +168,42 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ag-Zj-25v" userLabel="Reset state">
+                                <rect key="frame" x="20" y="291" width="335" height="34"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.097796724979999999" green="0.14065014889999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Reset state">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetState:" destination="bSi-nl-Gvc" eventType="touchUpInside" id="GVU-KZ-zQ7"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0z0-2G-ZV2">
+                                <rect key="frame" x="20" y="345" width="335" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="IBB-T7-Uww"/>
+                                </constraints>
+                                <string key="text">Once the invite is shown, the SDK drops into an idle state until the repeat days have elapsed. Tap "Reset State" to reset the state of the SDK.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="7ag-Zj-25v" firstAttribute="top" secondItem="Wrb-cA-fYg" secondAttribute="bottom" constant="20" id="1nQ-Xr-8Ge"/>
                             <constraint firstItem="Wrb-cA-fYg" firstAttribute="top" secondItem="SWz-h0-V9z" secondAttribute="bottom" constant="20" id="BDW-mV-wzc"/>
+                            <constraint firstItem="7ag-Zj-25v" firstAttribute="centerX" secondItem="3bJ-Tb-F6W" secondAttribute="centerX" id="C8c-Ng-cUc"/>
                             <constraint firstItem="SWz-h0-V9z" firstAttribute="centerX" secondItem="ll5-ad-pvK" secondAttribute="centerX" id="MPL-Zs-f14"/>
-                            <constraint firstItem="SWz-h0-V9z" firstAttribute="left" secondItem="3bJ-Tb-F6W" secondAttribute="leftMargin" constant="10" id="gDl-QH-kz9"/>
-                            <constraint firstItem="Wrb-cA-fYg" firstAttribute="left" secondItem="3bJ-Tb-F6W" secondAttribute="leftMargin" constant="10" id="hj9-va-ON9"/>
+                            <constraint firstItem="0z0-2G-ZV2" firstAttribute="top" secondItem="7ag-Zj-25v" secondAttribute="bottom" constant="20" id="O8l-Ja-nxg"/>
+                            <constraint firstItem="7ag-Zj-25v" firstAttribute="leading" secondItem="ll5-ad-pvK" secondAttribute="leading" constant="20" id="eEL-QP-Y6f"/>
+                            <constraint firstItem="SWz-h0-V9z" firstAttribute="left" secondItem="ll5-ad-pvK" secondAttribute="left" constant="20" id="gDl-QH-kz9"/>
+                            <constraint firstItem="0z0-2G-ZV2" firstAttribute="leading" secondItem="ll5-ad-pvK" secondAttribute="leading" constant="20" id="gTC-0I-U3e"/>
+                            <constraint firstItem="Wrb-cA-fYg" firstAttribute="left" secondItem="ll5-ad-pvK" secondAttribute="left" constant="20" id="hj9-va-ON9"/>
                             <constraint firstItem="SWz-h0-V9z" firstAttribute="top" secondItem="ll5-ad-pvK" secondAttribute="top" constant="20" id="hsx-no-Hhw"/>
+                            <constraint firstItem="0z0-2G-ZV2" firstAttribute="centerX" secondItem="3bJ-Tb-F6W" secondAttribute="centerX" id="vWV-ES-Dcm"/>
                             <constraint firstItem="Wrb-cA-fYg" firstAttribute="centerX" secondItem="ll5-ad-pvK" secondAttribute="centerX" id="zSO-eZ-DY3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ll5-ad-pvK"/>
@@ -143,8 +224,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cqy-6Y-wEX" userLabel="Show Custom Invite">
-                                <rect key="frame" x="26" y="287.5" width="323" height="34"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cqy-6Y-wEX" userLabel="Show custom invite">
+                                <rect key="frame" x="20" y="287.5" width="335" height="34"/>
                                 <color key="backgroundColor" red="0.92156862745098034" green="0.16862745098039217" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.097796724979999999" green="0.14065014889999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Show Custom Invite">
@@ -156,7 +237,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="uqb-hI-g8B">
-                                <rect key="frame" x="26" y="84" width="323" height="183.5"/>
+                                <rect key="frame" x="20" y="84" width="335" height="183.5"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="250" constant="180" id="u8V-ac-he6"/>
@@ -165,15 +246,44 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hat-gj-lN7" userLabel="Reset state">
+                                <rect key="frame" x="20" y="341.5" width="335" height="34"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.097796724979999999" green="0.14065014889999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Reset state">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetState:" destination="NcQ-xA-o44" eventType="touchUpInside" id="qMM-VY-Z7j"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTQ-aP-G05">
+                                <rect key="frame" x="20" y="395.5" width="335" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="e7z-OP-Y4P"/>
+                                </constraints>
+                                <string key="text">Once the invite is shown, the SDK drops into an idle state until the repeat days have elapsed. Tap "Reset State" to reset the state of the SDK.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="hat-gj-lN7" firstAttribute="leading" secondItem="bBX-gK-kNg" secondAttribute="leading" constant="20" id="Arc-Xs-2ub"/>
                             <constraint firstItem="uqb-hI-g8B" firstAttribute="centerX" secondItem="bBX-gK-kNg" secondAttribute="centerX" id="Bhz-qe-9oF"/>
+                            <constraint firstItem="hat-gj-lN7" firstAttribute="centerX" secondItem="RhN-Fm-S53" secondAttribute="centerX" id="Edn-DT-6Nu"/>
                             <constraint firstItem="Cqy-6Y-wEX" firstAttribute="centerX" secondItem="bBX-gK-kNg" secondAttribute="centerX" id="Lsf-YQ-WJe"/>
                             <constraint firstItem="uqb-hI-g8B" firstAttribute="top" secondItem="bBX-gK-kNg" secondAttribute="top" constant="20" id="PyF-4v-000"/>
-                            <constraint firstItem="uqb-hI-g8B" firstAttribute="left" secondItem="RhN-Fm-S53" secondAttribute="leftMargin" constant="10" id="hud-fq-fhf"/>
-                            <constraint firstItem="Cqy-6Y-wEX" firstAttribute="left" secondItem="RhN-Fm-S53" secondAttribute="leftMargin" constant="10" id="skK-wt-IPt"/>
+                            <constraint firstItem="cTQ-aP-G05" firstAttribute="centerX" secondItem="RhN-Fm-S53" secondAttribute="centerX" id="eby-2p-u3G"/>
+                            <constraint firstItem="uqb-hI-g8B" firstAttribute="left" secondItem="bBX-gK-kNg" secondAttribute="left" constant="20" id="hud-fq-fhf"/>
+                            <constraint firstItem="hat-gj-lN7" firstAttribute="top" secondItem="Cqy-6Y-wEX" secondAttribute="bottom" constant="20" id="nOa-uF-LAM"/>
+                            <constraint firstItem="cTQ-aP-G05" firstAttribute="top" secondItem="hat-gj-lN7" secondAttribute="bottom" constant="20" id="ndd-Fh-m0W"/>
+                            <constraint firstItem="cTQ-aP-G05" firstAttribute="top" secondItem="hat-gj-lN7" secondAttribute="bottom" constant="20" id="scK-4U-lOZ"/>
+                            <constraint firstItem="Cqy-6Y-wEX" firstAttribute="left" secondItem="bBX-gK-kNg" secondAttribute="left" constant="20" id="skK-wt-IPt"/>
                             <constraint firstItem="Cqy-6Y-wEX" firstAttribute="top" secondItem="uqb-hI-g8B" secondAttribute="bottom" constant="20" id="vWU-UE-pEn"/>
+                            <constraint firstItem="cTQ-aP-G05" firstAttribute="leading" secondItem="bBX-gK-kNg" secondAttribute="leading" constant="20" id="yZM-lL-rpN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bBX-gK-kNg"/>
                     </view>
