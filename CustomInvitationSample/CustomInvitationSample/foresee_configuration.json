@@ -1,13 +1,11 @@
 {
     "clientId":"9NNs9GIBQIVdk1LpDlJpAQ==",
-    "notificationType": "IN_SESSION",
-    "repeatDaysAfterDecline":60,
-    "repeatDaysAfterComplete":120,
-    "measures":[
+    "notificationType":"IN_SESSION",
+    "measures":
+    [
         {
             "surveyId":"mobile_app-en",
-            "daysSinceLaunch":0,
-            "launchCount":0
+            "launchCount": 0
         }
     ],
     "invite": {
