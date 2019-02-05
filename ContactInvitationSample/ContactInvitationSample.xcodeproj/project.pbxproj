@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F52A9E278BF734CE4289CD6 /* libPods-ContactInvitationSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E817663A01B1186EA6E8D85F /* libPods-ContactInvitationSample.a */; };
+		54DBBB8F769DEAC5DC7319A5 /* Pods_ContactInvitationSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2F44A3C1FA4D14939C57A2 /* Pods_ContactInvitationSample.framework */; };
 		9667BEFB2138418D00F750DD /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9667BEFA2138418D00F750DD /* SettingsTableViewController.m */; };
 		9667BEFE21384C4900F750DD /* TextFieldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9667BEFD21384C4900F750DD /* TextFieldTableViewCell.m */; };
 		967270761D04DF4F00F90E54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 967270751D04DF4F00F90E54 /* main.m */; };
@@ -81,8 +81,8 @@
 		96FF0F991D052DDB000A2176 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		96FF0F9B1D052DEB000A2176 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		A45BDC04B222154EB3000923 /* Pods-ContactInvitationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactInvitationSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContactInvitationSample/Pods-ContactInvitationSample.debug.xcconfig"; sourceTree = "<group>"; };
+		AE2F44A3C1FA4D14939C57A2 /* Pods_ContactInvitationSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContactInvitationSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3D2E880F9504154D0382DA /* Pods-ContactInvitationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactInvitationSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ContactInvitationSample/Pods-ContactInvitationSample.debug.xcconfig"; sourceTree = "<group>"; };
-		E817663A01B1186EA6E8D85F /* libPods-ContactInvitationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ContactInvitationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29D4DA8BAE3233876805821 /* Pods-ContactInvitationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactInvitationSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContactInvitationSample/Pods-ContactInvitationSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,7 +99,7 @@
 				96FF0F981D052DD3000A2176 /* CoreVideo.framework in Frameworks */,
 				96FF0F901D052DBE000A2176 /* AVFoundation.framework in Frameworks */,
 				96FF0F8E1D052DB4000A2176 /* SystemConfiguration.framework in Frameworks */,
-				4F52A9E278BF734CE4289CD6 /* libPods-ContactInvitationSample.a in Frameworks */,
+				54DBBB8F769DEAC5DC7319A5 /* Pods_ContactInvitationSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +142,7 @@
 				96FF0F941D052DD3000A2176 /* CoreVideo.framework */,
 				96FF0F8F1D052DBE000A2176 /* AVFoundation.framework */,
 				96FF0F8D1D052DB4000A2176 /* SystemConfiguration.framework */,
-				E817663A01B1186EA6E8D85F /* libPods-ContactInvitationSample.a */,
+				AE2F44A3C1FA4D14939C57A2 /* Pods_ContactInvitationSample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

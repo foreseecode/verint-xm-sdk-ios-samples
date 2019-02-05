@@ -16,5 +16,11 @@
       }
     ],
     "surveyCompletionPageDelay":3
+  },
+  "notificationType": "IN_SESSION",
+  "measures": {},
+  "invite":
+  {
+    "baseColor": [237, 38, 54]
   }
 }
