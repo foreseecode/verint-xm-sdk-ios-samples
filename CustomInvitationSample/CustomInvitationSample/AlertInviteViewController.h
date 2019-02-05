@@ -1,5 +1,5 @@
 //
-//  SnackbarInviteViewController.h
+//  AlertInviteViewController.h
 //  CustomInvitationSample
 //
 //  Created by Wayne Burkett on 5/31/16.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "InviteExampleViewController.h"
 
-@interface SnackbarInviteViewController : InviteExampleViewController
+@interface AlertInviteViewController : InviteExampleViewController
 
 - (IBAction)resetState:(id)sender;
 
