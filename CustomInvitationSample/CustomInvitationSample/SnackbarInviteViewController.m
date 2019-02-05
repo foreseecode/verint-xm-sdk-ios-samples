@@ -20,4 +20,8 @@
     [ForeSee checkIfEligibleForSurvey];
 }
 
+- (IBAction)resetState:(id)sender {
+    [ForeSee resetState];
+}
+
 @end

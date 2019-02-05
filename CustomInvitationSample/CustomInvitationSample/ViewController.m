@@ -11,4 +11,8 @@
 
 @implementation ViewController
 
+- (void)resetState:(id)sender {
+    [ForeSee resetState];
+}
+
 @end

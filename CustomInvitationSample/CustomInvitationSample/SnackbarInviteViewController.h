@@ -11,4 +11,6 @@
 
 @interface SnackbarInviteViewController : InviteExampleViewController
 
+- (IBAction)resetState:(id)sender;
+
 @end
