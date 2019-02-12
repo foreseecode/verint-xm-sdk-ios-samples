@@ -1,5 +1,6 @@
 platform :ios, '12.0'
 workspace 'ForeSeeSamples.xcworkspace'
+use_frameworks!
 
 def foresee_pods
     pod 'ForeSee', '5.2.0'
@@ -7,7 +8,6 @@ end
 
 target "CustomInvitationSample" do
     project 'CustomInvitationSample/CustomInvitationSample.xcodeproj'
-    pod 'SSSnackbar', '~> 0.1.2'
     foresee_pods
 end
 
