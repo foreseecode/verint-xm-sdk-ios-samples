@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1FB2C649214AD9E60002E96A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB2C648214AD9E60002E96A /* Assets.xcassets */; };
+		51C3D31A150FD3EBF71191B2 /* Pods_LocalNotificationSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64868A6CA6260731C2B7477 /* Pods_LocalNotificationSample.framework */; };
+		547BA53A21FFCE630087BDE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 547BA53921FFCE630087BDE1 /* Main.storyboard */; };
+		547BA53C21FFD5E90087BDE1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 547BA53B21FFD5E90087BDE1 /* Launch Screen.storyboard */; };
 		961907A51BE171CB00C78C26 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 961907A41BE171CB00C78C26 /* Default-568h@2x.png */; };
 		990EABCD18610D5D005BB53E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 990EABCB18610D5D005BB53E /* Localizable.strings */; };
 		99F1EC7D18860568001B1A8B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F1EC7A18860568001B1A8B /* CoreMedia.framework */; };
@@ -15,7 +18,6 @@
 		99F1EC7F18860568001B1A8B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F1EC7C18860568001B1A8B /* CoreVideo.framework */; };
 		99F1EC8118860570001B1A8B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F1EC8018860570001B1A8B /* AVFoundation.framework */; };
 		99F1ECA0188606A7001B1A8B /* foresee_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 99F1EC9F188606A7001B1A8B /* foresee_configuration.json */; };
-		A6525F672F80A2B7A42199A6 /* libPods-LocalNotificationSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 281C477F91892550A71628D6 /* libPods-LocalNotificationSample.a */; };
 		D5D68AEE1582A63D00730160 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D68AED1582A63D00730160 /* UIKit.framework */; };
 		D5D68AF01582A63D00730160 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D68AEF1582A63D00730160 /* Foundation.framework */; };
 		D5D68AF21582A63D00730160 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D68AF11582A63D00730160 /* CoreGraphics.framework */; };
@@ -23,15 +25,15 @@
 		D5D68AFA1582A63D00730160 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D68AF91582A63D00730160 /* main.m */; };
 		D5D68AFE1582A63D00730160 /* FSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D68AFD1582A63D00730160 /* FSAppDelegate.m */; };
 		D5D68B011582A63E00730160 /* FSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D68B001582A63E00730160 /* FSViewController.m */; };
-		D5D68B041582A63E00730160 /* FSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5D68B021582A63E00730160 /* FSViewController.xib */; };
 		D5D68B301582A76700730160 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D68B2F1582A76700730160 /* SystemConfiguration.framework */; };
 		D5D68B321582A76D00730160 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D68B311582A76D00730160 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1FB2C648214AD9E60002E96A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		281C477F91892550A71628D6 /* libPods-LocalNotificationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocalNotificationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B82C9388C4774316B5FA69 /* Pods-LocalNotificationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalNotificationSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-LocalNotificationSample/Pods-LocalNotificationSample.release.xcconfig"; sourceTree = "<group>"; };
+		547BA53921FFCE630087BDE1 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		547BA53B21FFD5E90087BDE1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		961907A41BE171CB00C78C26 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		990EABCC18610D5D005BB53E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		99F1EC7A18860568001B1A8B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -51,9 +53,9 @@
 		D5D68AFD1582A63D00730160 /* FSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSAppDelegate.m; sourceTree = "<group>"; };
 		D5D68AFF1582A63E00730160 /* FSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSViewController.h; sourceTree = "<group>"; };
 		D5D68B001582A63E00730160 /* FSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSViewController.m; sourceTree = "<group>"; };
-		D5D68B031582A63E00730160 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FSViewController.xib; sourceTree = "<group>"; };
 		D5D68B2F1582A76700730160 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D5D68B311582A76D00730160 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D64868A6CA6260731C2B7477 /* Pods_LocalNotificationSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocalNotificationSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FD1C4F1E6D2A2B6EC906D1 /* Pods-LocalNotificationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalNotificationSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-LocalNotificationSample/Pods-LocalNotificationSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,7 +73,7 @@
 				D5D68AEE1582A63D00730160 /* UIKit.framework in Frameworks */,
 				D5D68AF01582A63D00730160 /* Foundation.framework in Frameworks */,
 				D5D68AF21582A63D00730160 /* CoreGraphics.framework in Frameworks */,
-				A6525F672F80A2B7A42199A6 /* libPods-LocalNotificationSample.a in Frameworks */,
+				51C3D31A150FD3EBF71191B2 /* Pods_LocalNotificationSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +122,7 @@
 				D5D68AED1582A63D00730160 /* UIKit.framework */,
 				D5D68AEF1582A63D00730160 /* Foundation.framework */,
 				D5D68AF11582A63D00730160 /* CoreGraphics.framework */,
-				281C477F91892550A71628D6 /* libPods-LocalNotificationSample.a */,
+				D64868A6CA6260731C2B7477 /* Pods_LocalNotificationSample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,9 +135,10 @@
 				D5D68AFD1582A63D00730160 /* FSAppDelegate.m */,
 				D5D68AFF1582A63E00730160 /* FSViewController.h */,
 				D5D68B001582A63E00730160 /* FSViewController.m */,
-				D5D68B021582A63E00730160 /* FSViewController.xib */,
 				D5D68AF41582A63D00730160 /* Supporting Files */,
 				1FB2C648214AD9E60002E96A /* Assets.xcassets */,
+				547BA53921FFCE630087BDE1 /* Main.storyboard */,
+				547BA53B21FFD5E90087BDE1 /* Launch Screen.storyboard */,
 			);
 			path = LocalNotificationSample;
 			sourceTree = "<group>";
@@ -206,12 +209,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				547BA53A21FFCE630087BDE1 /* Main.storyboard in Resources */,
 				D5D68AF81582A63D00730160 /* InfoPlist.strings in Resources */,
 				961907A51BE171CB00C78C26 /* Default-568h@2x.png in Resources */,
 				99F1ECA0188606A7001B1A8B /* foresee_configuration.json in Resources */,
-				D5D68B041582A63E00730160 /* FSViewController.xib in Resources */,
 				1FB2C649214AD9E60002E96A /* Assets.xcassets in Resources */,
 				990EABCD18610D5D005BB53E /* Localizable.strings in Resources */,
+				547BA53C21FFD5E90087BDE1 /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +231,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/../Pods/Target Support Files/Pods-LocalNotificationSample/Pods-LocalNotificationSample-frameworks.sh",
+				"${PODS_ROOT}/ForeSee/lib/ForeSeeLegacy.framework",
 				"${PODS_ROOT}/ForeSee/lib/ForeSee.framework",
 				"${PODS_ROOT}/ForeSee/lib/ForeSeeCxMeasure.framework",
 			);
@@ -234,6 +239,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeLegacy.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSee.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeCxMeasure.framework",
 			);
@@ -290,14 +296,6 @@
 				D5D68AF71582A63D00730160 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D5D68B021582A63E00730160 /* FSViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D5D68B031582A63E00730160 /* en */,
-			);
-			name = FSViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

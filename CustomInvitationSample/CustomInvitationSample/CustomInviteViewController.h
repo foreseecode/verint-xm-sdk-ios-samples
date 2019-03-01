@@ -11,4 +11,6 @@
 
 @interface CustomInviteViewController : InviteExampleViewController
 
+- (IBAction)resetState:(id)sender;
+
 @end

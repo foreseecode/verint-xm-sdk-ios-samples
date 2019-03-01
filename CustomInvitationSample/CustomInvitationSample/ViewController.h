@@ -10,5 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)resetState:(id)sender;
+
 @end
 

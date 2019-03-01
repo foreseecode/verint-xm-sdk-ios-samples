@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vYy-39-P3C">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="JW3-h7-Bai">
+            <objects>
+                <viewController storyboardIdentifier="FSViewController" title="Main View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vYy-39-P3C" customClass="FSViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JkA-2S-EYm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ForeSee_logo" translatesAutoresizingMaskIntoConstraints="NO" id="qXB-JU-63R">
+                                <rect key="frame" x="152.5" y="70" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="EVF-XX-poP"/>
+                                    <constraint firstAttribute="width" constant="70" id="WvH-UQ-ZmH"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msQ-hV-MLy">
+                                <rect key="frame" x="20" y="280" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Check eligibility"/>
+                                <connections>
+                                    <action selector="checkEligibility:" destination="vYy-39-P3C" eventType="touchUpInside" id="hfu-nU-Yd8"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="GJ3-Zz-Ehg">
+                                <rect key="frame" x="20" y="160" width="335" height="100"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="200" id="Bac-ip-eBj"/>
+                                </constraints>
+                                <string key="text">This sample demonstrates the Exit Invite type, which denotes that the invitation appears as a local notification that appears after the app is exited. Follow the instructions below to check eligibility.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STd-0i-AuQ">
+                                <rect key="frame" x="20" y="330" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Reset state"/>
+                                <connections>
+                                    <action selector="resetState:" destination="vYy-39-P3C" eventType="touchUpInside" id="ZJD-EO-hYd"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="u1o-Z4-y6v">
+                                <rect key="frame" x="20" y="380" width="335" height="83"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="200" id="ZNC-MC-Jhf"/>
+                                </constraints>
+                                <string key="text">Once the invitation local notification is shown, the SDK drops into an idle state until the repeat days have elapsed. Click here to reset the state of the SDK.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GJ3-Zz-Ehg" firstAttribute="top" secondItem="qXB-JU-63R" secondAttribute="bottom" constant="20" id="3JE-jG-BVD"/>
+                            <constraint firstItem="qXB-JU-63R" firstAttribute="top" secondItem="TCG-hY-Jtl" secondAttribute="top" constant="50" id="Jvg-uZ-ygM"/>
+                            <constraint firstItem="u1o-Z4-y6v" firstAttribute="top" secondItem="STd-0i-AuQ" secondAttribute="bottom" constant="20" id="OkK-yB-OBi"/>
+                            <constraint firstItem="msQ-hV-MLy" firstAttribute="centerX" secondItem="JkA-2S-EYm" secondAttribute="centerX" id="Rf8-M1-v34"/>
+                            <constraint firstItem="qXB-JU-63R" firstAttribute="centerX" secondItem="JkA-2S-EYm" secondAttribute="centerX" id="Tiv-Qi-JIF"/>
+                            <constraint firstItem="STd-0i-AuQ" firstAttribute="centerX" secondItem="JkA-2S-EYm" secondAttribute="centerX" id="XZr-0T-Qrk"/>
+                            <constraint firstItem="GJ3-Zz-Ehg" firstAttribute="centerX" secondItem="JkA-2S-EYm" secondAttribute="centerX" id="ZB5-IZ-g3w"/>
+                            <constraint firstItem="msQ-hV-MLy" firstAttribute="leading" secondItem="TCG-hY-Jtl" secondAttribute="leading" constant="20" id="bm5-k5-Dl6"/>
+                            <constraint firstItem="GJ3-Zz-Ehg" firstAttribute="leading" secondItem="JkA-2S-EYm" secondAttribute="leading" constant="20" id="hLH-mO-0fj"/>
+                            <constraint firstItem="u1o-Z4-y6v" firstAttribute="centerX" secondItem="JkA-2S-EYm" secondAttribute="centerX" id="ngE-NJ-kwT"/>
+                            <constraint firstItem="STd-0i-AuQ" firstAttribute="leading" secondItem="TCG-hY-Jtl" secondAttribute="leading" constant="20" id="o5e-ju-9nM"/>
+                            <constraint firstItem="STd-0i-AuQ" firstAttribute="top" secondItem="msQ-hV-MLy" secondAttribute="bottom" constant="20" id="oFz-GK-hi1"/>
+                            <constraint firstItem="u1o-Z4-y6v" firstAttribute="leading" secondItem="JkA-2S-EYm" secondAttribute="leading" constant="20" id="q0l-XS-WNv"/>
+                            <constraint firstItem="msQ-hV-MLy" firstAttribute="top" secondItem="GJ3-Zz-Ehg" secondAttribute="bottom" constant="20" id="vBV-N9-aP4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TCG-hY-Jtl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EvO-v6-Ox9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ForeSee_logo" width="200" height="200"/>
+    </resources>
+</document>

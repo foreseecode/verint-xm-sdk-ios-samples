@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3247E465CAF9E04CC384E1C0 /* libPods-BasicSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E2FD53D3C005EE024A5C8E /* libPods-BasicSample.a */; };
+		6D6279B180567A86F6CB13A5 /* Pods_BasicSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95CAAE00100055B34050F0D /* Pods_BasicSample.framework */; };
 		966346F91FA8BE47002F322D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966346F81FA8BE47002F322D /* Main.storyboard */; };
 		966346FB1FA8BE7C002F322D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 966346FA1FA8BE7C002F322D /* Assets.xcassets */; };
 		966346FD1FA8BFDD002F322D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966346FC1FA8BFDD002F322D /* Launch Screen.storyboard */; };
@@ -31,7 +31,7 @@
 		99F1EC3E18860433001B1A8B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		99F1EC401886045E001B1A8B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		99F1EC78188604E6001B1A8B /* foresee_configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foresee_configuration.json; sourceTree = "<group>"; };
-		A1E2FD53D3C005EE024A5C8E /* libPods-BasicSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BasicSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A95CAAE00100055B34050F0D /* Pods_BasicSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D544DF3C15068C0C0025FF43 /* BasicSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D544DF4015068C0C0025FF43 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D544DF4215068C0C0025FF43 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3247E465CAF9E04CC384E1C0 /* libPods-BasicSample.a in Frameworks */,
+				6D6279B180567A86F6CB13A5 /* Pods_BasicSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +104,7 @@
 				D544DF4015068C0C0025FF43 /* UIKit.framework */,
 				D544DF4215068C0C0025FF43 /* Foundation.framework */,
 				D544DF4415068C0C0025FF43 /* CoreGraphics.framework */,
-				A1E2FD53D3C005EE024A5C8E /* libPods-BasicSample.a */,
+				A95CAAE00100055B34050F0D /* Pods_BasicSample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -210,6 +210,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/../Pods/Target Support Files/Pods-BasicSample/Pods-BasicSample-frameworks.sh",
+				"${PODS_ROOT}/ForeSee/lib/ForeSeeLegacy.framework",
 				"${PODS_ROOT}/ForeSee/lib/ForeSee.framework",
 				"${PODS_ROOT}/ForeSee/lib/ForeSeeCxMeasure.framework",
 			);
@@ -217,6 +218,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeLegacy.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSee.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeCxMeasure.framework",
 			);

@@ -13,9 +13,13 @@
 
 # pragma mark - Actions
 
-- (void)checkEligibility:(id)sender {
-  [ForeSee resetState];
-  [ForeSee checkIfEligibleForSurvey];
+- (IBAction)checkEligibility:(id)sender {
+    [ForeSee checkIfEligibleForSurvey];
+}
+
+- (IBAction)resetState:(id)sender {
+    [ForeSee resetState];
+
 }
 
 @end

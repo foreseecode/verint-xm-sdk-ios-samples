@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		576EBFFBF3C48EFC52197267 /* Pods_BasicSwiftSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0AF8690973BCD8EB30F32A /* Pods_BasicSwiftSample.framework */; };
 		9680152F1BC6C7CE001B0926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9680152E1BC6C7CE001B0926 /* AppDelegate.swift */; };
 		968015311BC6C7CE001B0926 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968015301BC6C7CE001B0926 /* ViewController.swift */; };
 		968015341BC6C7CE001B0926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 968015321BC6C7CE001B0926 /* Main.storyboard */; };
@@ -22,12 +23,11 @@
 		9680154F1BC6C8FA001B0926 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9680154E1BC6C8FA001B0926 /* Foundation.framework */; };
 		968015511BC6C900001B0926 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968015501BC6C900001B0926 /* CoreGraphics.framework */; };
 		968015581BC6CE41001B0926 /* foresee_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 968015571BC6CE41001B0926 /* foresee_configuration.json */; };
-		F746A22DABFDC750D8BC56B0 /* libPods-BasicSwiftSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 307AAF4D69E9745E25929DFA /* libPods-BasicSwiftSample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		08AF87013A29F49ED15ED111 /* Pods-BasicSwiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicSwiftSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicSwiftSample/Pods-BasicSwiftSample.release.xcconfig"; sourceTree = "<group>"; };
-		307AAF4D69E9745E25929DFA /* libPods-BasicSwiftSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BasicSwiftSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B0AF8690973BCD8EB30F32A /* Pods_BasicSwiftSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicSwiftSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9680152B1BC6C7CE001B0926 /* BasicSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9680152E1BC6C7CE001B0926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		968015301BC6C7CE001B0926 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 				968015451BC6C8D8001B0926 /* CoreMedia.framework in Frameworks */,
 				968015431BC6C8D3001B0926 /* AVFoundation.framework in Frameworks */,
 				968015411BC6C8CB001B0926 /* CoreVideo.framework in Frameworks */,
-				F746A22DABFDC750D8BC56B0 /* libPods-BasicSwiftSample.a in Frameworks */,
+				576EBFFBF3C48EFC52197267 /* Pods_BasicSwiftSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,9 +73,9 @@
 		968015221BC6C7CE001B0926 = {
 			isa = PBXGroup;
 			children = (
-				968015541BC6CBDF001B0926 /* Frameworks */,
 				9680152D1BC6C7CE001B0926 /* BasicSwiftSample */,
 				9680152C1BC6C7CE001B0926 /* Products */,
+				968015541BC6CBDF001B0926 /* Frameworks */,
 				968015551BC6CCDA001B0926 /* Bridging-Header.h */,
 				A28A157EA0BF8C29DC9BD27C /* Pods */,
 			);
@@ -94,11 +94,11 @@
 		9680152D1BC6C7CE001B0926 /* BasicSwiftSample */ = {
 			isa = PBXGroup;
 			children = (
-				968015571BC6CE41001B0926 /* foresee_configuration.json */,
 				9680152E1BC6C7CE001B0926 /* AppDelegate.swift */,
 				968015301BC6C7CE001B0926 /* ViewController.swift */,
 				968015321BC6C7CE001B0926 /* Main.storyboard */,
 				968015351BC6C7CE001B0926 /* Assets.xcassets */,
+				968015571BC6CE41001B0926 /* foresee_configuration.json */,
 				968015371BC6C7CE001B0926 /* LaunchScreen.storyboard */,
 				9680153A1BC6C7CE001B0926 /* Info.plist */,
 			);
@@ -117,7 +117,7 @@
 				968015441BC6C8D8001B0926 /* CoreMedia.framework */,
 				968015421BC6C8D3001B0926 /* AVFoundation.framework */,
 				968015401BC6C8CB001B0926 /* CoreVideo.framework */,
-				307AAF4D69E9745E25929DFA /* libPods-BasicSwiftSample.a */,
+				3B0AF8690973BCD8EB30F32A /* Pods_BasicSwiftSample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -228,6 +228,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/../Pods/Target Support Files/Pods-BasicSwiftSample/Pods-BasicSwiftSample-frameworks.sh",
+				"${PODS_ROOT}/ForeSee/lib/ForeSeeLegacy.framework",
 				"${PODS_ROOT}/ForeSee/lib/ForeSee.framework",
 				"${PODS_ROOT}/ForeSee/lib/ForeSeeCxMeasure.framework",
 			);
@@ -235,6 +236,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeLegacy.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSee.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeCxMeasure.framework",
 			);

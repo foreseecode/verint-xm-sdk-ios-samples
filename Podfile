@@ -1,13 +1,13 @@
 platform :ios, '12.0'
 workspace 'ForeSeeSamples.xcworkspace'
+use_frameworks!
 
 def foresee_pods
-    pod 'ForeSee', '5.2.0'
+    pod 'ForeSee', '5.2.1'
 end
 
 target "CustomInvitationSample" do
     project 'CustomInvitationSample/CustomInvitationSample.xcodeproj'
-    pod 'SSSnackbar', '~> 0.1.2'
     foresee_pods
 end
 
@@ -40,5 +40,5 @@ target "FeedbackSample" do
     project 'FeedbackSample/FeedbackSample.xcodeproj'
     foresee_pods
     # include the optional Feedback pod
-    pod 'ForeSee/ForeSeeFeedback', '5.2.0'
+    pod 'ForeSee/ForeSeeFeedback', '5.2.1'
 end
