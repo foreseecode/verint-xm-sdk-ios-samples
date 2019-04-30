@@ -3,7 +3,7 @@ workspace 'ForeSeeSamples.xcworkspace'
 use_frameworks!
 
 def foresee_pods
-    pod 'ForeSee', '5.2.1'
+    pod 'ForeSee', '5.3.0'
 end
 
 target "CustomInvitationSample" do
@@ -40,5 +40,5 @@ target "FeedbackSample" do
     project 'FeedbackSample/FeedbackSample.xcodeproj'
     foresee_pods
     # include the optional Feedback pod
-    pod 'ForeSee/ForeSeeFeedback', '5.2.1'
+    pod 'ForeSee/ForeSeeFeedback', '5.3.0'
 end
