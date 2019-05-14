@@ -292,7 +292,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-FeedbackSample/Pods-FeedbackSample-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-FeedbackSample/Pods-FeedbackSample-frameworks.sh",
 				"${PODS_ROOT}/ForeSee/lib/ForeSeeLegacy.framework",
 				"${PODS_ROOT}/ForeSee/lib/ForeSee.framework",
 				"${PODS_ROOT}/ForeSee/lib/ForeSeeUtilities.framework",
@@ -311,7 +311,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-FeedbackSample/Pods-FeedbackSample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FeedbackSample/Pods-FeedbackSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EE13153C30121DF88F6F7A94 /* [CP] Check Pods Manifest.lock */ = {

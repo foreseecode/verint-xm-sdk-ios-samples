@@ -230,7 +230,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-LocalNotificationSample/Pods-LocalNotificationSample-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-LocalNotificationSample/Pods-LocalNotificationSample-frameworks.sh",
 				"${PODS_ROOT}/ForeSee/lib/ForeSeeLegacy.framework",
 				"${PODS_ROOT}/ForeSee/lib/ForeSee.framework",
 				"${PODS_ROOT}/ForeSee/lib/ForeSeeUtilities.framework",
@@ -247,7 +247,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-LocalNotificationSample/Pods-LocalNotificationSample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LocalNotificationSample/Pods-LocalNotificationSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F8588C4257779EF8048FE1CB /* [CP] Check Pods Manifest.lock */ = {

@@ -110,9 +110,9 @@
 		96CA07571CE23490000F766C /* CustomInviteViewBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInviteViewBox.h; sourceTree = "<group>"; };
 		96CA07581CE23490000F766C /* CustomInviteViewBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInviteViewBox.m; sourceTree = "<group>"; };
 		9C5F51C4E3606A54BA60B910 /* Pods-CustomInvitationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomInvitationSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample.release.xcconfig"; sourceTree = "<group>"; };
-		AE3B6D560153132F0657E975 /* Pods-CustomInvitationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomInvitationSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample.release.xcconfig"; sourceTree = "<group>"; };
+		AE3B6D560153132F0657E975 /* Pods-CustomInvitationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomInvitationSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample.release.xcconfig"; sourceTree = "<group>"; };
 		B6EB598839F7B1D964FECC17 /* Pods_CustomInvitationSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomInvitationSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEBBF9E174BBEC6FACEFC70E /* Pods-CustomInvitationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomInvitationSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample.debug.xcconfig"; sourceTree = "<group>"; };
+		DEBBF9E174BBEC6FACEFC70E /* Pods-CustomInvitationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomInvitationSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -468,7 +468,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample-frameworks.sh",
 				"${PODS_ROOT}/ForeSee/lib/ForeSeeLegacy.framework",
 				"${PODS_ROOT}/ForeSee/lib/ForeSee.framework",
 				"${PODS_ROOT}/ForeSee/lib/ForeSeeUtilities.framework",
@@ -485,7 +485,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

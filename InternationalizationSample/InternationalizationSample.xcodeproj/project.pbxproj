@@ -244,7 +244,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-InternationalizationSample/Pods-InternationalizationSample-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-InternationalizationSample/Pods-InternationalizationSample-frameworks.sh",
 				"${PODS_ROOT}/ForeSee/lib/ForeSeeLegacy.framework",
 				"${PODS_ROOT}/ForeSee/lib/ForeSee.framework",
 				"${PODS_ROOT}/ForeSee/lib/ForeSeeUtilities.framework",
@@ -261,7 +261,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-InternationalizationSample/Pods-InternationalizationSample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InternationalizationSample/Pods-InternationalizationSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DB14D2A1294BB57C0211D70B /* [CP] Check Pods Manifest.lock */ = {
