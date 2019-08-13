@@ -290,24 +290,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FeedbackSample/Pods-FeedbackSample-frameworks.sh",
-				"${PODS_ROOT}/ForeSee/lib/ForeSeeLegacy.framework",
-				"${PODS_ROOT}/ForeSee/lib/ForeSee.framework",
-				"${PODS_ROOT}/ForeSee/lib/ForeSeeUtilities.framework",
-				"${PODS_ROOT}/ForeSee/lib/ForeSeeCxMeasure.framework",
-				"${PODS_ROOT}/ForeSee/lib/ForeSeeFeedback.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-FeedbackSample/Pods-FeedbackSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeLegacy.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSee.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeCxMeasure.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeFeedback.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-FeedbackSample/Pods-FeedbackSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
