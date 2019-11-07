@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -224,13 +224,16 @@
 				TargetAttributes = {
 					542E7C9E219D0AFE006D4699 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1100;
 					};
 					542E7CB2219D0B01006D4699 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1100;
 						TestTargetID = 542E7C9E219D0AFE006D4699;
 					};
 					542E7CBD219D0B01006D4699 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1100;
 						TestTargetID = 542E7C9E219D0AFE006D4699;
 					};
 				};
@@ -525,7 +528,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -548,7 +551,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -567,7 +570,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = foresee.FeedbackSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeedbackSample.app/FeedbackSample";
 			};
@@ -587,7 +590,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = foresee.FeedbackSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeedbackSample.app/FeedbackSample";
 			};
@@ -606,7 +609,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = foresee.FeedbackSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = FeedbackSample;
 			};
@@ -625,7 +628,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = foresee.FeedbackSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = FeedbackSample;
 			};
