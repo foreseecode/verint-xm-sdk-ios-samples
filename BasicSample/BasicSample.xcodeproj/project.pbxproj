@@ -10,7 +10,7 @@
 		6D6279B180567A86F6CB13A5 /* Pods_BasicSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95CAAE00100055B34050F0D /* Pods_BasicSample.framework */; };
 		966346F91FA8BE47002F322D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966346F81FA8BE47002F322D /* Main.storyboard */; };
 		966346FB1FA8BE7C002F322D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 966346FA1FA8BE7C002F322D /* Assets.xcassets */; };
-		966346FD1FA8BFDD002F322D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966346FC1FA8BFDD002F322D /* Launch Screen.storyboard */; };
+		966346FD1FA8BFDD002F322D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966346FC1FA8BFDD002F322D /* LaunchScreen.storyboard */; };
 		966346FF1FA8C060002F322D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 966346FE1FA8C060002F322D /* Default-568h@2x.png */; };
 		99F1EC79188604E6001B1A8B /* foresee_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 99F1EC78188604E6001B1A8B /* foresee_configuration.json */; };
 		D544DF4B15068C0C0025FF43 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D544DF4915068C0C0025FF43 /* InfoPlist.strings */; };
@@ -24,7 +24,7 @@
 		43DBC987345A4FFC87867579 /* Pods-BasicSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicSample/Pods-BasicSample.debug.xcconfig"; sourceTree = "<group>"; };
 		966346F81FA8BE47002F322D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		966346FA1FA8BE7C002F322D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		966346FC1FA8BFDD002F322D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		966346FC1FA8BFDD002F322D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		966346FE1FA8C060002F322D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		99F1EC3818860415001B1A8B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		99F1EC3918860415001B1A8B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
@@ -113,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				966346F81FA8BE47002F322D /* Main.storyboard */,
-				966346FC1FA8BFDD002F322D /* Launch Screen.storyboard */,
+				966346FC1FA8BFDD002F322D /* LaunchScreen.storyboard */,
 				966346FA1FA8BE7C002F322D /* Assets.xcassets */,
 				99F1EC78188604E6001B1A8B /* foresee_configuration.json */,
 				D544DF4F15068C0C0025FF43 /* FSAppDelegate.h */,
@@ -195,7 +195,7 @@
 				D544DF4B15068C0C0025FF43 /* InfoPlist.strings in Resources */,
 				966346FB1FA8BE7C002F322D /* Assets.xcassets in Resources */,
 				966346FF1FA8C060002F322D /* Default-568h@2x.png in Resources */,
-				966346FD1FA8BFDD002F322D /* Launch Screen.storyboard in Resources */,
+				966346FD1FA8BFDD002F322D /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
