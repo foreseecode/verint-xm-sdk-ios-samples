@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		96F16D56237AFFCA00735B49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96F16D54237AFFCA00735B49 /* Main.storyboard */; };
 		96F16D58237AFFCB00735B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96F16D57237AFFCB00735B49 /* Assets.xcassets */; };
 		96F16D5B237AFFCB00735B49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96F16D59237AFFCB00735B49 /* LaunchScreen.storyboard */; };
+		96F16D63237B02D900735B49 /* foresee_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 96F16D62237B02D900735B49 /* foresee_configuration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		96F16D57237AFFCB00735B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96F16D5A237AFFCB00735B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96F16D5C237AFFCB00735B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96F16D62237B02D900735B49 /* foresee_configuration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = foresee_configuration.json; sourceTree = "<group>"; };
 		F50CD1EB270BC9B781BE1A34 /* Pods-AdvancedSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvancedSample.release.xcconfig"; path = "Target Support Files/Pods-AdvancedSample/Pods-AdvancedSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 				96F16D57237AFFCB00735B49 /* Assets.xcassets */,
 				96F16D59237AFFCB00735B49 /* LaunchScreen.storyboard */,
 				96F16D5C237AFFCB00735B49 /* Info.plist */,
+				96F16D62237B02D900735B49 /* foresee_configuration.json */,
 			);
 			path = AdvancedSample;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			files = (
 				96F16D5B237AFFCB00735B49 /* LaunchScreen.storyboard in Resources */,
 				96F16D58237AFFCB00735B49 /* Assets.xcassets in Resources */,
+				96F16D63237B02D900735B49 /* foresee_configuration.json in Resources */,
 				96F16D56237AFFCA00735B49 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
