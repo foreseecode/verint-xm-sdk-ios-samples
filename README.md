@@ -1,45 +1,37 @@
-# Sample Projects
-
-These sample projects demonstrate typical usage of the ForeSee SDK.
-
-## Installation
-
-All sample projects use [Cocoapods](http://cocoapods.org/). 
-
-To install, run:
-
-    $ pod install
-
 ## Projects
 All projects can be found in: `ForeSeeSamples.xcworkspace`
+## AdvancedSample
+This sample project demonstrates a more advanced implementation of the ForeSee trigger code in an empty iPhone app.
+
+Features:
+
+* A ForeSee measure survey triggered by a "significant event" count, which can be incremented using a button in the app. The user will 
+become eligibile to receive and invitation once a configured threshold is met.
+* A ForeSee Feedback survey 
+* Localization of invites/survey. This app supports invite text overrides for Spanish, French, German, and Portuguese and can show surveys in English, French, and Spanish. 
+Change your device's language setting to view invites/surveys in another language.
+
+
 
 ## BasicSample
 This sample project demonstrates a basic implementation of the ForeSee trigger code in an empty iPhone app.
 It uses the provided FSInviteView to show a modal dialog to the user inviting them to take a survey when
 they have met the configured threshold.
 
-## BasicSwiftSample
-This sample project demonstrates a basic Swift implementation of the ForeSee trigger code. It uses a bridging header to include the SDK.
-
 ## ContactInvitationSample
 This example shows how to provide a user's contact information to the SDK for use in a CONTACT mode survey.
+
+
+## Pods
 
 ## CustomInvitationSample
 This example demonstrates the use of a custom invite handler.
 
 
-## InternationalizationSample
-This sample project demonstrates how you can customize the default Invite View (FSInviteView) with text of your
-choosing.  It also demonstrates how you can localize the invitation text using standard localization techniques
-for iOS.  The demo app supports English, French, and Spanish.  Simply change the language setting of the test device
-to see the invite in another language.
-
-All strings used by the FSInviteView class are defined in the Localizable.strings file.
+## FeedbackSample
+This sample project demonstrates a Swift implementation of the ForeSee Feedback Survey code and configuration. 
 
 ## LocalNotificationSample
-This sample project demonstrates a local notification invite. Accept the invite and then close the application.
+This sample project demonstrates a local notification invite. Accept the invite and then close the application. 
 You will receive a local notification linking the survey.
 
-## FeedbackSample
-
-This example demonstrates usage of the ForeSeeFeedback module.
