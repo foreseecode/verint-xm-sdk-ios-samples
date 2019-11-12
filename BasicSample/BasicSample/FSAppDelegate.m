@@ -18,8 +18,8 @@
 
 - (void)initializeForeSeeTrigger {
   [ForeSee setDebugLogEnabled:YES];
-  [ForeSee setSkipPoolingCheck:YES];
   [ForeSee start];
+  [ForeSee setSkipPoolingCheck:YES];
   [ForeSee resetState];
 }
 

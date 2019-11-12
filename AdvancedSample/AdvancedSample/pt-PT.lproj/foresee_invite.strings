@@ -1,0 +1,11 @@
+/* 
+  ForeSeeInvite.strings
+  AdvancedSample
+
+  Created by Wayne Burkett on 11/12/19.
+  Copyright © 2019 ForeSee. All rights reserved.
+*/
+
+"FORESEE_Invite_InSession_DeclineButton"="Não, obrigado";
+"FORESEE_Invite_InSession_AcceptButton"="Sim, eu vou ajudar";
+"FORESEE_Invite_InSession_InvitePage_Title"="Precisamos da sua opinião!";
