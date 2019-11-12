@@ -34,11 +34,6 @@ target "ContactInvitationSample" do
     foresee_pods
 end
 
-target "InternationalizationSample" do
-    project 'InternationalizationSample/InternationalizationSample.xcodeproj'
-    foresee_pods
-end
-
 target "LocalNotificationSample" do
     project 'LocalNotificationSample/LocalNotificationSample.xcodeproj'
     foresee_pods
@@ -46,7 +41,5 @@ end
 
 target "FeedbackSample" do
     project 'FeedbackSample/FeedbackSample.xcodeproj'
-    foresee_pods
-    # include the optional Feedback pod
-    pod 'ForeSee/ForeSeeFeedback', '5.3.3'
+    foresee_pods true
 end
