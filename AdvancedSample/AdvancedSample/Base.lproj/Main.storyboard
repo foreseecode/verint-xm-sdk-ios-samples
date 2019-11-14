@@ -36,7 +36,7 @@
                                 <rect key="frame" x="20" y="287" width="374" height="30"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Check Eligibility"/>
+                                <state key="normal" title="Check Invite Eligibility"/>
                                 <connections>
                                     <action selector="checkEligibilityButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wdt-4Y-mCo"/>
                                 </connections>
@@ -45,7 +45,7 @@
                                 <rect key="frame" x="20" y="337" width="374" height="30"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Check Feedback Eligibility"/>
+                                <state key="normal" title="Show Feedback"/>
                                 <connections>
                                     <action selector="checkFeedbackEligibilityButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2sv-JQ-wGt"/>
                                 </connections>
@@ -61,7 +61,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnf-0m-E5x" userLabel="ResetState">
                                 <rect key="frame" x="20" y="437" width="374" height="30"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Reset State"/>
                                 <connections>
