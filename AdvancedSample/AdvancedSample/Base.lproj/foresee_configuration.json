@@ -5,10 +5,16 @@
   [
     {
       "surveyId": "mobile_app-en",
-      "significantEventThresholds":
-      {
-        "app_test_1": 4
-      }
+      "combinedCriteria":
+      [
+        {
+          "pageViews": 2,
+          "significantEventThresholds":
+          {
+            "app_test_1": 4
+          }
+        }
+      ]
     }
   ],
   "invite":
