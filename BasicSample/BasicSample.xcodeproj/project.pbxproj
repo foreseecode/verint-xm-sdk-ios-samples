@@ -10,8 +10,7 @@
 		6D6279B180567A86F6CB13A5 /* Pods_BasicSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95CAAE00100055B34050F0D /* Pods_BasicSample.framework */; };
 		966346F91FA8BE47002F322D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966346F81FA8BE47002F322D /* Main.storyboard */; };
 		966346FB1FA8BE7C002F322D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 966346FA1FA8BE7C002F322D /* Assets.xcassets */; };
-		966346FD1FA8BFDD002F322D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966346FC1FA8BFDD002F322D /* Launch Screen.storyboard */; };
-		966346FF1FA8C060002F322D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 966346FE1FA8C060002F322D /* Default-568h@2x.png */; };
+		966346FD1FA8BFDD002F322D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966346FC1FA8BFDD002F322D /* LaunchScreen.storyboard */; };
 		99F1EC79188604E6001B1A8B /* foresee_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 99F1EC78188604E6001B1A8B /* foresee_configuration.json */; };
 		D544DF4B15068C0C0025FF43 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D544DF4915068C0C0025FF43 /* InfoPlist.strings */; };
 		D544DF4D15068C0C0025FF43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D544DF4C15068C0C0025FF43 /* main.m */; };
@@ -24,8 +23,7 @@
 		43DBC987345A4FFC87867579 /* Pods-BasicSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicSample/Pods-BasicSample.debug.xcconfig"; sourceTree = "<group>"; };
 		966346F81FA8BE47002F322D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		966346FA1FA8BE7C002F322D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		966346FC1FA8BFDD002F322D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		966346FE1FA8C060002F322D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		966346FC1FA8BFDD002F322D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99F1EC3818860415001B1A8B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		99F1EC3918860415001B1A8B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		99F1EC3E18860433001B1A8B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -74,7 +72,6 @@
 		D544DF3115068C0C0025FF43 = {
 			isa = PBXGroup;
 			children = (
-				966346FE1FA8C060002F322D /* Default-568h@2x.png */,
 				D544DF4615068C0C0025FF43 /* BasicSample */,
 				D544DF3F15068C0C0025FF43 /* Frameworks */,
 				D544DF3D15068C0C0025FF43 /* Products */,
@@ -113,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				966346F81FA8BE47002F322D /* Main.storyboard */,
-				966346FC1FA8BFDD002F322D /* Launch Screen.storyboard */,
+				966346FC1FA8BFDD002F322D /* LaunchScreen.storyboard */,
 				966346FA1FA8BE7C002F322D /* Assets.xcassets */,
 				99F1EC78188604E6001B1A8B /* foresee_configuration.json */,
 				D544DF4F15068C0C0025FF43 /* FSAppDelegate.h */,
@@ -164,15 +161,16 @@
 		D544DF3315068C0C0025FF43 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = ForeSee;
 			};
 			buildConfigurationList = D544DF3615068C0C0025FF43 /* Build configuration list for PBXProject "BasicSample" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = D544DF3115068C0C0025FF43;
 			productRefGroup = D544DF3D15068C0C0025FF43 /* Products */;
@@ -193,8 +191,7 @@
 				966346F91FA8BE47002F322D /* Main.storyboard in Resources */,
 				D544DF4B15068C0C0025FF43 /* InfoPlist.strings in Resources */,
 				966346FB1FA8BE7C002F322D /* Assets.xcassets in Resources */,
-				966346FF1FA8C060002F322D /* Default-568h@2x.png in Resources */,
-				966346FD1FA8BFDD002F322D /* Launch Screen.storyboard in Resources */,
+				966346FD1FA8BFDD002F322D /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +271,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -305,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
@@ -340,6 +338,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -378,7 +377,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
@@ -389,6 +388,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -419,7 +419,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;

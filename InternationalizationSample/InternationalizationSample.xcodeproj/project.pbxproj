@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1FB2C647214AD98E0002E96A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB2C646214AD98E0002E96A /* Assets.xcassets */; };
-		961640BD21B5C9D0005247A0 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961640BC21B5C9D0005247A0 /* Launch Screen.storyboard */; };
 		9641172F21B5C63200F81ACE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9641172E21B5C63200F81ACE /* Main.storyboard */; };
+		96E5355D2374753E008983C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E5355C2374753E008983C7 /* LaunchScreen.storyboard */; };
 		99AF581D1B911C3D00826506 /* foresee_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 99AF581B1B911C3D00826506 /* foresee_configuration.json */; };
 		D51310D1150541F200619182 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51310D0150541F200619182 /* UIKit.framework */; };
 		D51310D3150541F200619182 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51310D2150541F200619182 /* Foundation.framework */; };
@@ -37,8 +37,8 @@
 		547BA53721FF8B420087BDE1 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		547BA53821FF8B670087BDE1 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		8C9616078280B3DC9C7B21CF /* Pods-InternationalizationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InternationalizationSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-InternationalizationSample/Pods-InternationalizationSample.release.xcconfig"; sourceTree = "<group>"; };
-		961640BC21B5C9D0005247A0 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		9641172E21B5C63200F81ACE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		96E5355C2374753E008983C7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99AF581C1B911C3D00826506 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/foresee_configuration.json; sourceTree = "<group>"; };
 		99AF581E1B911C4400826506 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/foresee_configuration.json; sourceTree = "<group>"; };
 		99AF581F1B911C4D00826506 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = fr; path = fr.lproj/foresee_configuration.json; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 				D51310D7150541F200619182 /* Supporting Files */,
 				1FB2C646214AD98E0002E96A /* Assets.xcassets */,
 				99AF581B1B911C3D00826506 /* foresee_configuration.json */,
-				961640BC21B5C9D0005247A0 /* Launch Screen.storyboard */,
+				96E5355C2374753E008983C7 /* LaunchScreen.storyboard */,
 				9641172E21B5C63200F81ACE /* Main.storyboard */,
 			);
 			path = InternationalizationSample;
@@ -198,7 +198,7 @@
 			};
 			buildConfigurationList = D51310C6150541F200619182 /* Build configuration list for PBXProject "InternationalizationSample" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -225,9 +225,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D51310DB150541F200619182 /* InfoPlist.strings in Resources */,
-				961640BD21B5C9D0005247A0 /* Launch Screen.storyboard in Resources */,
 				D513114D1505444F00619182 /* Localizable.strings in Resources */,
 				1FB2C647214AD98E0002E96A /* Assets.xcassets in Resources */,
+				96E5355D2374753E008983C7 /* LaunchScreen.storyboard in Resources */,
 				99AF581D1B911C3D00826506 /* foresee_configuration.json in Resources */,
 				9641172F21B5C63200F81ACE /* Main.storyboard in Resources */,
 			);
@@ -373,7 +373,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -414,7 +414,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

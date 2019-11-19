@@ -1,4 +1,4 @@
-platform :ios, '12.0'
+platform :ios, '13.0'
 workspace 'ForeSeeSamples.xcworkspace'
 use_frameworks!
 
@@ -16,7 +16,7 @@ target "BasicSample" do
     foresee_pods
 end
 
-target "BasicSwiftSample" do
+target "SwiftSample" do
     project 'BasicSwiftSample/BasicSwiftSample.xcodeproj'
     foresee_pods
 end

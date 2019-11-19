@@ -10,6 +10,7 @@
 	],
     "appName": "Custom Invite Sample",
     "invite": {
+        "logo": "ForeSee_logo",
         "baseColor": [235, 43, 61]
     }
 }

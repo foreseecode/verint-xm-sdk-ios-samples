@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ForeSee_logo" translatesAutoresizingMaskIntoConstraints="NO" id="uGh-RB-sxg">
+                                <rect key="frame" x="172" y="74" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="0vK-Oc-CVg"/>
+                                    <constraint firstAttribute="height" constant="70" id="1UJ-sS-fpH"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="zVv-Wy-MAh">
+                                <rect key="frame" x="20" y="174" width="374" height="83"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="200" id="7Kj-xA-FLW"/>
+                                </constraints>
+                                <string key="text">This sample demonstrates the In Session type, which denotes that the survey is presented at the point where the user accepts the invitation. Follow the instructions below to check eligibility.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNo-CO-t5T">
+                                <rect key="frame" x="20" y="287" width="374" height="30"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Check eligibility"/>
+                                <connections>
+                                    <action selector="checkEligibilityButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o5c-KQ-iPw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4W-Ki-Gyk">
+                                <rect key="frame" x="20" y="337" width="374" height="30"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Reset state"/>
+                                <connections>
+                                    <action selector="resetStateButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zCf-4S-jqH"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="NIL-cM-QCW">
+                                <rect key="frame" x="20" y="397" width="374" height="66.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="200" id="oHp-KY-5am"/>
+                                </constraints>
+                                <string key="text">Once the invite is shown, the SDK drops into an idle state until the repeat days have elapsed. Click here to reset the state of the SDK.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zVv-Wy-MAh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2Hb-VC-sGG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NIL-cM-QCW" secondAttribute="trailing" constant="20" id="3yA-Cp-ZmO"/>
+                            <constraint firstItem="c4W-Ki-Gyk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9ZE-dr-v54"/>
+                            <constraint firstItem="BNo-CO-t5T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ira-bF-QGW"/>
+                            <constraint firstItem="BNo-CO-t5T" firstAttribute="top" secondItem="zVv-Wy-MAh" secondAttribute="bottom" constant="30" id="Uer-5h-ffz"/>
+                            <constraint firstAttribute="trailing" secondItem="BNo-CO-t5T" secondAttribute="trailing" constant="20" id="Vdf-Dr-rDM"/>
+                            <constraint firstItem="NIL-cM-QCW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="awA-4I-qH1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zVv-Wy-MAh" secondAttribute="trailing" constant="20" id="b5A-xZ-zZy"/>
+                            <constraint firstItem="uGh-RB-sxg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="cfJ-dd-vhn"/>
+                            <constraint firstItem="uGh-RB-sxg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mp0-CN-7AE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c4W-Ki-Gyk" secondAttribute="trailing" constant="20" id="ngH-Q9-kMQ"/>
+                            <constraint firstItem="NIL-cM-QCW" firstAttribute="top" secondItem="c4W-Ki-Gyk" secondAttribute="bottom" constant="30" id="pQZ-vZ-xJB"/>
+                            <constraint firstItem="zVv-Wy-MAh" firstAttribute="top" secondItem="uGh-RB-sxg" secondAttribute="bottom" constant="30" id="rHz-nq-xrG"/>
+                            <constraint firstItem="c4W-Ki-Gyk" firstAttribute="top" secondItem="BNo-CO-t5T" secondAttribute="bottom" constant="20" id="rn0-4m-HUe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ForeSee_logo" width="200" height="200"/>
+    </resources>
+</document>
