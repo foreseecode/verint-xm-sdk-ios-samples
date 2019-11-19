@@ -13,6 +13,7 @@
 		9651C46E23844BDF00FDFF7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9651C46C23844BDF00FDFF7C /* Main.storyboard */; };
 		9651C47023844BE100FDFF7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9651C46F23844BE100FDFF7C /* Assets.xcassets */; };
 		9651C48B2384505F00FDFF7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9651C48A2384505F00FDFF7C /* LaunchScreen.storyboard */; };
+		965747D1238459C6000632BD /* foresee_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 965747D0238459C6000632BD /* foresee_configuration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		9651C46F23844BE100FDFF7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9651C47423844BE100FDFF7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9651C48A2384505F00FDFF7C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		965747CF238454B4000632BD /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		965747D0238459C6000632BD /* foresee_configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foresee_configuration.json; sourceTree = "<group>"; };
 		F71EE2E127D6145BCA099A64 /* Pods-AdobeExtensionSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdobeExtensionSample.debug.xcconfig"; path = "Target Support Files/Pods-AdobeExtensionSample/Pods-AdobeExtensionSample.debug.xcconfig"; sourceTree = "<group>"; };
 		FFD11CF08C9CDA301F2149E8 /* Pods_AdobeExtensionSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdobeExtensionSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -61,10 +64,12 @@
 		9651C46523844BDF00FDFF7C /* AdobeExtensionSample */ = {
 			isa = PBXGroup;
 			children = (
+				965747D0238459C6000632BD /* foresee_configuration.json */,
 				9651C46623844BDF00FDFF7C /* AppDelegate.swift */,
 				9651C46A23844BDF00FDFF7C /* ViewController.swift */,
 				9651C46C23844BDF00FDFF7C /* Main.storyboard */,
 				9651C48A2384505F00FDFF7C /* LaunchScreen.storyboard */,
+				965747CF238454B4000632BD /* Bridging-Header.h */,
 				9651C46F23844BE100FDFF7C /* Assets.xcassets */,
 				9651C47423844BE100FDFF7C /* Info.plist */,
 			);
@@ -156,6 +161,7 @@
 			files = (
 				9651C48B2384505F00FDFF7C /* LaunchScreen.storyboard in Resources */,
 				9651C47023844BE100FDFF7C /* Assets.xcassets in Resources */,
+				965747D1238459C6000632BD /* foresee_configuration.json in Resources */,
 				9651C46E23844BDF00FDFF7C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +361,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ForeSee.AdobeExtensionSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AdobeExtensionSample/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -373,6 +380,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ForeSee.AdobeExtensionSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AdobeExtensionSample/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
