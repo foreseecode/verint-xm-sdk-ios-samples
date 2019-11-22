@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdvancedSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TQ8-Bi-Ld8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ForeSee_logo" translatesAutoresizingMaskIntoConstraints="NO" id="upD-A7-0hn">
+                                <rect key="frame" x="172" y="94" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="ZZr-Y7-iMg"/>
+                                    <constraint firstAttribute="height" constant="70" id="gYB-kl-1lH"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efW-f0-k4I">
+                                <rect key="frame" x="20" y="184" width="374" height="66.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="200" id="4Kn-wR-Qb2"/>
+                                </constraints>
+                                <string key="text">This sample demonstrates a configuration with combined eligibility criteria. Please see the HOWTO included in this project for detailed  instructions.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQE-Z6-62t">
+                                <rect key="frame" x="20" y="270.5" width="374" height="30"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Check Eligibility"/>
+                                <connections>
+                                    <action selector="checkEligibilityButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wdt-4Y-mCo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZA-DH-GmN" userLabel="Feedback Eligibility">
+                                <rect key="frame" x="20" y="320.5" width="374" height="30"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Show Feedback"/>
+                                <connections>
+                                    <action selector="checkFeedbackEligibilityButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2sv-JQ-wGt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wu9-ac-gaW">
+                                <rect key="frame" x="20" y="370.5" width="374" height="30"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Increment Event"/>
+                                <connections>
+                                    <action selector="incrementEventButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GgO-nB-YTt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnf-0m-E5x" userLabel="ResetState">
+                                <rect key="frame" x="20" y="420.5" width="374" height="30"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Reset State"/>
+                                <connections>
+                                    <action selector="resetStateButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YQb-mx-gXn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="upD-A7-0hn" firstAttribute="top" secondItem="kcP-A7-Aqb" secondAttribute="top" constant="50" id="4Tr-0W-A7C"/>
+                            <constraint firstItem="Bnf-0m-E5x" firstAttribute="top" secondItem="Wu9-ac-gaW" secondAttribute="bottom" constant="20" id="7eO-3r-chx"/>
+                            <constraint firstItem="Wu9-ac-gaW" firstAttribute="top" secondItem="wZA-DH-GmN" secondAttribute="bottom" constant="20" id="7l9-ZT-RhJ"/>
+                            <constraint firstItem="Bnf-0m-E5x" firstAttribute="leading" secondItem="kcP-A7-Aqb" secondAttribute="leading" constant="20" id="8Vr-tz-5r7"/>
+                            <constraint firstItem="wZA-DH-GmN" firstAttribute="top" secondItem="xQE-Z6-62t" secondAttribute="bottom" constant="20" id="FgK-BL-ODE"/>
+                            <constraint firstItem="upD-A7-0hn" firstAttribute="centerX" secondItem="kcP-A7-Aqb" secondAttribute="centerX" id="I0I-ie-zi2"/>
+                            <constraint firstItem="kcP-A7-Aqb" firstAttribute="trailing" secondItem="xQE-Z6-62t" secondAttribute="trailing" constant="20" id="LaK-T0-RVc"/>
+                            <constraint firstItem="efW-f0-k4I" firstAttribute="top" secondItem="upD-A7-0hn" secondAttribute="bottom" constant="20" id="Mpa-Ni-c17"/>
+                            <constraint firstItem="kcP-A7-Aqb" firstAttribute="trailing" secondItem="efW-f0-k4I" secondAttribute="trailing" constant="20" id="NYb-5l-dEh"/>
+                            <constraint firstItem="efW-f0-k4I" firstAttribute="leading" secondItem="kcP-A7-Aqb" secondAttribute="leading" constant="20" id="NfU-W4-4zs"/>
+                            <constraint firstItem="xQE-Z6-62t" firstAttribute="leading" secondItem="kcP-A7-Aqb" secondAttribute="leading" constant="20" id="OqT-Xl-lfx"/>
+                            <constraint firstItem="kcP-A7-Aqb" firstAttribute="trailing" secondItem="wZA-DH-GmN" secondAttribute="trailing" constant="20" id="RlV-SY-cct"/>
+                            <constraint firstItem="wZA-DH-GmN" firstAttribute="leading" secondItem="kcP-A7-Aqb" secondAttribute="leading" constant="20" id="SpM-ub-xpA"/>
+                            <constraint firstItem="Wu9-ac-gaW" firstAttribute="leading" secondItem="kcP-A7-Aqb" secondAttribute="leading" constant="20" id="hLM-6O-3xH"/>
+                            <constraint firstItem="xQE-Z6-62t" firstAttribute="top" secondItem="efW-f0-k4I" secondAttribute="bottom" constant="20" id="tiO-1P-yhA"/>
+                            <constraint firstItem="kcP-A7-Aqb" firstAttribute="trailing" secondItem="Wu9-ac-gaW" secondAttribute="trailing" constant="20" id="tsk-Sr-PmW"/>
+                            <constraint firstItem="kcP-A7-Aqb" firstAttribute="trailing" secondItem="Bnf-0m-E5x" secondAttribute="trailing" constant="20" id="xLQ-hy-Ubu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kcP-A7-Aqb"/>
+                    </view>
+                    <connections>
+                        <outlet property="incrementEventButton" destination="Wu9-ac-gaW" id="H4e-qO-TUf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ForeSee_logo" width="200" height="200"/>
+    </resources>
+</document>
