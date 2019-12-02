@@ -144,7 +144,6 @@
 				D544DF3815068C0C0025FF43 /* Sources */,
 				D544DF3915068C0C0025FF43 /* Frameworks */,
 				D544DF3A15068C0C0025FF43 /* Resources */,
-				30887653BEB41C7047FA08D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,30 +197,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		30887653BEB41C7047FA08D2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BasicSample/Pods-BasicSample-frameworks.sh",
-				"${PODS_ROOT}/ForeSee/lib/ForeSeeLegacy.framework",
-				"${PODS_ROOT}/ForeSee/lib/ForeSee.framework",
-				"${PODS_ROOT}/ForeSee/lib/ForeSeeUtilities.framework",
-				"${PODS_ROOT}/ForeSee/lib/ForeSeeCxMeasure.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeLegacy.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSee.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeCxMeasure.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicSample/Pods-BasicSample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		370368C93CD07F36D1A5F1DB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
