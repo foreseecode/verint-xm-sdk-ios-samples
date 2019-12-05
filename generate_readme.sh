@@ -6,9 +6,9 @@ static
 for file in */
 do
     if [ -d $file ]; then
-        echo "##" `basename "$file"`
         if [ -e $file/README ]
         then
+            echo "##" `basename "$file"`
             cat "$file/README"
         fi;
         echo ""
