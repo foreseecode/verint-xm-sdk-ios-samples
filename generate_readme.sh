@@ -3,7 +3,7 @@ cat <<static
 All projects can be found in: \`ForeSeeSamples.xcworkspace\`
 static
 
-for file in `ls *`
+for file in */
 do
     if [ -d $file ]; then
         echo "##" `basename "$file"`

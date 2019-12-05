@@ -78,7 +78,7 @@
 		D544DF3115068C0C0025FF43 = {
 			isa = PBXGroup;
 			children = (
-				D544DF4615068C0C0025FF43 /* BasicSample */,
+				D544DF4615068C0C0025FF43 /* AdobeExtensionSample */,
 				D544DF3F15068C0C0025FF43 /* Frameworks */,
 				D544DF3D15068C0C0025FF43 /* Products */,
 				B9712A1B285294CE3C1DE748 /* Pods */,
@@ -112,7 +112,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D544DF4615068C0C0025FF43 /* BasicSample */ = {
+		D544DF4615068C0C0025FF43 /* AdobeExtensionSample */ = {
 			isa = PBXGroup;
 			children = (
 				966346F81FA8BE47002F322D /* Main.storyboard */,
@@ -125,7 +125,7 @@
 				D544DF5315068C0C0025FF43 /* FSViewController.m */,
 				D544DF4715068C0C0025FF43 /* Supporting Files */,
 			);
-			path = BasicSample;
+			path = AdobeExtensionSample;
 			sourceTree = "<group>";
 		};
 		D544DF4715068C0C0025FF43 /* Supporting Files */ = {
