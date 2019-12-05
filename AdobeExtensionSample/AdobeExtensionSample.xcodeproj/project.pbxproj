@@ -328,8 +328,8 @@
 					"$(PROJECT_DIR)/BasicSample",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BasicSample/BasicSample-Prefix.pch";
-				INFOPLIST_FILE = "BasicSample/BasicSample-Info.plist";
+				GCC_PREFIX_HEADER = "AdobeExtensionSample/BasicSample-Prefix.pch";
+				INFOPLIST_FILE = "AdobeExtensionSample/BasicSample-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/BasicSample\"",
@@ -443,8 +443,8 @@
 					"$(PROJECT_DIR)/BasicSample",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BasicSample/BasicSample-Prefix.pch";
-				INFOPLIST_FILE = "BasicSample/BasicSample-Info.plist";
+				GCC_PREFIX_HEADER = "AdobeExtensionSample/BasicSample-Prefix.pch";
+				INFOPLIST_FILE = "AdobeExtensionSample/BasicSample-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/BasicSample\"",
@@ -465,8 +465,8 @@
 					"$(PROJECT_DIR)/BasicSample",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BasicSample/BasicSample-Prefix.pch";
-				INFOPLIST_FILE = "BasicSample/BasicSample-Info.plist";
+				GCC_PREFIX_HEADER = "AdobeExtensionSample/BasicSample-Prefix.pch";
+				INFOPLIST_FILE = "AdobeExtensionSample/BasicSample-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/BasicSample\"",
