@@ -1,0 +1,16 @@
+{
+    "clientId":"9NNs9GIBQIVdk1LpDlJpAQ==",
+    "notificationType": "IN_SESSION",
+    "measures":
+    [
+        {
+            "surveyId": "mobile_app-en",
+            "launchCount": 3,
+            "surveyStyle": "modern"
+        }
+    ],
+    "invite": {
+        "logo": "ForeSee_logo",
+        "baseColor": [237, 38, 54]
+    }
+}

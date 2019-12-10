@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D6279B180567A86F6CB13A5 /* Pods_BasicSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95CAAE00100055B34050F0D /* Pods_BasicSample.framework */; };
+		8BE723688A22C46F85F353FA /* Pods_AdobeExtensionSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF97AC48EDC85616EF44B107 /* Pods_AdobeExtensionSample.framework */; };
 		966346F91FA8BE47002F322D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966346F81FA8BE47002F322D /* Main.storyboard */; };
 		966346FB1FA8BE7C002F322D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 966346FA1FA8BE7C002F322D /* Assets.xcassets */; };
 		966346FD1FA8BFDD002F322D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966346FC1FA8BFDD002F322D /* LaunchScreen.storyboard */; };
@@ -21,6 +21,8 @@
 /* Begin PBXFileReference section */
 		11B7DF9598731FA9E9228FE7 /* Pods-BasicSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicSample/Pods-BasicSample.release.xcconfig"; sourceTree = "<group>"; };
 		43DBC987345A4FFC87867579 /* Pods-BasicSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicSample/Pods-BasicSample.debug.xcconfig"; sourceTree = "<group>"; };
+		6797B4C0A6AE9E81CF0810E1 /* Pods-AdobeExtensionSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdobeExtensionSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-AdobeExtensionSample/Pods-AdobeExtensionSample.debug.xcconfig"; sourceTree = "<group>"; };
+		94A063DBE27B6C2E7DF11E62 /* Pods-AdobeExtensionSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdobeExtensionSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-AdobeExtensionSample/Pods-AdobeExtensionSample.release.xcconfig"; sourceTree = "<group>"; };
 		966346F81FA8BE47002F322D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		966346FA1FA8BE7C002F322D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		966346FC1FA8BFDD002F322D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,8 +31,8 @@
 		99F1EC3E18860433001B1A8B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		99F1EC401886045E001B1A8B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		99F1EC78188604E6001B1A8B /* foresee_configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foresee_configuration.json; sourceTree = "<group>"; };
-		A95CAAE00100055B34050F0D /* Pods_BasicSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D544DF3C15068C0C0025FF43 /* BasicSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCDD9926D3A2D03583E43F94 /* Pods-AdobeExtensionSample.release w- symbols.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdobeExtensionSample.release w- symbols.xcconfig"; path = "../Pods/Target Support Files/Pods-AdobeExtensionSample/Pods-AdobeExtensionSample.release w- symbols.xcconfig"; sourceTree = "<group>"; };
+		D544DF3C15068C0C0025FF43 /* AdobeExtensionSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdobeExtensionSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D544DF4015068C0C0025FF43 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D544DF4215068C0C0025FF43 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D544DF4415068C0C0025FF43 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -44,6 +46,7 @@
 		D544DF5315068C0C0025FF43 /* FSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSViewController.m; sourceTree = "<group>"; };
 		D544DFB3150691AE0025FF43 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D544DFB5150691B60025FF43 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DF97AC48EDC85616EF44B107 /* Pods_AdobeExtensionSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdobeExtensionSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF5BFAD88F19395B72B786C /* Pods-BasicSample.release w- symbols.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicSample.release w- symbols.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicSample/Pods-BasicSample.release w- symbols.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D6279B180567A86F6CB13A5 /* Pods_BasicSample.framework in Frameworks */,
+				8BE723688A22C46F85F353FA /* Pods_AdobeExtensionSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +68,9 @@
 				43DBC987345A4FFC87867579 /* Pods-BasicSample.debug.xcconfig */,
 				11B7DF9598731FA9E9228FE7 /* Pods-BasicSample.release.xcconfig */,
 				FBF5BFAD88F19395B72B786C /* Pods-BasicSample.release w- symbols.xcconfig */,
+				6797B4C0A6AE9E81CF0810E1 /* Pods-AdobeExtensionSample.debug.xcconfig */,
+				94A063DBE27B6C2E7DF11E62 /* Pods-AdobeExtensionSample.release.xcconfig */,
+				BCDD9926D3A2D03583E43F94 /* Pods-AdobeExtensionSample.release w- symbols.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -72,7 +78,7 @@
 		D544DF3115068C0C0025FF43 = {
 			isa = PBXGroup;
 			children = (
-				D544DF4615068C0C0025FF43 /* BasicSample */,
+				D544DF4615068C0C0025FF43 /* AdobeExtensionSample */,
 				D544DF3F15068C0C0025FF43 /* Frameworks */,
 				D544DF3D15068C0C0025FF43 /* Products */,
 				B9712A1B285294CE3C1DE748 /* Pods */,
@@ -84,7 +90,7 @@
 		D544DF3D15068C0C0025FF43 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D544DF3C15068C0C0025FF43 /* BasicSample.app */,
+				D544DF3C15068C0C0025FF43 /* AdobeExtensionSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,12 +107,12 @@
 				D544DF4015068C0C0025FF43 /* UIKit.framework */,
 				D544DF4215068C0C0025FF43 /* Foundation.framework */,
 				D544DF4415068C0C0025FF43 /* CoreGraphics.framework */,
-				A95CAAE00100055B34050F0D /* Pods_BasicSample.framework */,
+				DF97AC48EDC85616EF44B107 /* Pods_AdobeExtensionSample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D544DF4615068C0C0025FF43 /* BasicSample */ = {
+		D544DF4615068C0C0025FF43 /* AdobeExtensionSample */ = {
 			isa = PBXGroup;
 			children = (
 				966346F81FA8BE47002F322D /* Main.storyboard */,
@@ -119,7 +125,7 @@
 				D544DF5315068C0C0025FF43 /* FSViewController.m */,
 				D544DF4715068C0C0025FF43 /* Supporting Files */,
 			);
-			path = BasicSample;
+			path = AdobeExtensionSample;
 			sourceTree = "<group>";
 		};
 		D544DF4715068C0C0025FF43 /* Supporting Files */ = {
@@ -136,22 +142,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D544DF3B15068C0C0025FF43 /* BasicSample */ = {
+		D544DF3B15068C0C0025FF43 /* AdobeExtensionSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D544DF5A15068C0C0025FF43 /* Build configuration list for PBXNativeTarget "BasicSample" */;
+			buildConfigurationList = D544DF5A15068C0C0025FF43 /* Build configuration list for PBXNativeTarget "AdobeExtensionSample" */;
 			buildPhases = (
 				370368C93CD07F36D1A5F1DB /* [CP] Check Pods Manifest.lock */,
 				D544DF3815068C0C0025FF43 /* Sources */,
 				D544DF3915068C0C0025FF43 /* Frameworks */,
 				D544DF3A15068C0C0025FF43 /* Resources */,
+				30887653BEB41C7047FA08D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BasicSample;
+			name = AdobeExtensionSample;
 			productName = BasicSample;
-			productReference = D544DF3C15068C0C0025FF43 /* BasicSample.app */;
+			productReference = D544DF3C15068C0C0025FF43 /* AdobeExtensionSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -163,7 +170,7 @@
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = ForeSee;
 			};
-			buildConfigurationList = D544DF3615068C0C0025FF43 /* Build configuration list for PBXProject "BasicSample" */;
+			buildConfigurationList = D544DF3615068C0C0025FF43 /* Build configuration list for PBXProject "AdobeExtensionSample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -176,7 +183,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D544DF3B15068C0C0025FF43 /* BasicSample */,
+				D544DF3B15068C0C0025FF43 /* AdobeExtensionSample */,
 			);
 		};
 /* End PBXProject section */
@@ -197,6 +204,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		30887653BEB41C7047FA08D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdobeExtensionSample/Pods-AdobeExtensionSample-frameworks.sh",
+				"${PODS_ROOT}/ForeSee/lib/ForeSeeLegacy.framework",
+				"${PODS_ROOT}/ForeSee/lib/ForeSee.framework",
+				"${PODS_ROOT}/ForeSee/lib/ForeSeeUtilities.framework",
+				"${PODS_ROOT}/ForeSee/lib/ForeSeeCxMeasure.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeLegacy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSee.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeCxMeasure.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdobeExtensionSample/Pods-AdobeExtensionSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		370368C93CD07F36D1A5F1DB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -208,7 +239,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BasicSample-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AdobeExtensionSample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -289,7 +320,7 @@
 		};
 		96E815A01B20F9BF0062E50C /* Release w/ symbols */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBF5BFAD88F19395B72B786C /* Pods-BasicSample.release w- symbols.xcconfig */;
+			baseConfigurationReference = BCDD9926D3A2D03583E43F94 /* Pods-AdobeExtensionSample.release w- symbols.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -297,8 +328,8 @@
 					"$(PROJECT_DIR)/BasicSample",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BasicSample/BasicSample-Prefix.pch";
-				INFOPLIST_FILE = "BasicSample/BasicSample-Info.plist";
+				GCC_PREFIX_HEADER = "AdobeExtensionSample/BasicSample-Prefix.pch";
+				INFOPLIST_FILE = "AdobeExtensionSample/BasicSample-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/BasicSample\"",
@@ -404,7 +435,7 @@
 		};
 		D544DF5B15068C0C0025FF43 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43DBC987345A4FFC87867579 /* Pods-BasicSample.debug.xcconfig */;
+			baseConfigurationReference = 6797B4C0A6AE9E81CF0810E1 /* Pods-AdobeExtensionSample.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -412,8 +443,8 @@
 					"$(PROJECT_DIR)/BasicSample",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BasicSample/BasicSample-Prefix.pch";
-				INFOPLIST_FILE = "BasicSample/BasicSample-Info.plist";
+				GCC_PREFIX_HEADER = "AdobeExtensionSample/BasicSample-Prefix.pch";
+				INFOPLIST_FILE = "AdobeExtensionSample/BasicSample-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/BasicSample\"",
@@ -426,7 +457,7 @@
 		};
 		D544DF5C15068C0C0025FF43 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11B7DF9598731FA9E9228FE7 /* Pods-BasicSample.release.xcconfig */;
+			baseConfigurationReference = 94A063DBE27B6C2E7DF11E62 /* Pods-AdobeExtensionSample.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -434,8 +465,8 @@
 					"$(PROJECT_DIR)/BasicSample",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BasicSample/BasicSample-Prefix.pch";
-				INFOPLIST_FILE = "BasicSample/BasicSample-Info.plist";
+				GCC_PREFIX_HEADER = "AdobeExtensionSample/BasicSample-Prefix.pch";
+				INFOPLIST_FILE = "AdobeExtensionSample/BasicSample-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/BasicSample\"",
@@ -450,7 +481,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D544DF3615068C0C0025FF43 /* Build configuration list for PBXProject "BasicSample" */ = {
+		D544DF3615068C0C0025FF43 /* Build configuration list for PBXProject "AdobeExtensionSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D544DF5815068C0C0025FF43 /* Debug */,
@@ -460,7 +491,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D544DF5A15068C0C0025FF43 /* Build configuration list for PBXNativeTarget "BasicSample" */ = {
+		D544DF5A15068C0C0025FF43 /* Build configuration list for PBXNativeTarget "AdobeExtensionSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D544DF5B15068C0C0025FF43 /* Debug */,
