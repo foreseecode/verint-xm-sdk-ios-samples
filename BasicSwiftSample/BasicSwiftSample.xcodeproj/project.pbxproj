@@ -21,15 +21,6 @@
 		3B0AF8690973BCD8EB30F32A /* Pods_BasicSwiftSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicSwiftSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE029CC6A3E3204419877D5 /* Pods-SwiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-SwiftSample/Pods-SwiftSample.debug.xcconfig"; sourceTree = "<group>"; };
 		62BDD8AD7CEDF3E20C1278D5 /* Pods-SwiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-SwiftSample/Pods-SwiftSample.release.xcconfig"; sourceTree = "<group>"; };
-		968015401BC6C8CB001B0926 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		968015421BC6C8D3001B0926 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		968015441BC6C8D8001B0926 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		968015461BC6C8E0001B0926 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		968015481BC6C8E5001B0926 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		9680154A1BC6C8ED001B0926 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		9680154C1BC6C8F4001B0926 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		9680154E1BC6C8FA001B0926 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		968015501BC6C900001B0926 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		968015571BC6CE41001B0926 /* foresee_configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foresee_configuration.json; sourceTree = "<group>"; };
 		96B1EDA223746AE700CB911B /* SwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B1EDA423746AE700CB911B /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 2; };
@@ -77,15 +68,6 @@
 		968015541BC6CBDF001B0926 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				968015501BC6C900001B0926 /* CoreGraphics.framework */,
-				9680154E1BC6C8FA001B0926 /* Foundation.framework */,
-				9680154C1BC6C8F4001B0926 /* UIKit.framework */,
-				9680154A1BC6C8ED001B0926 /* QuartzCore.framework */,
-				968015481BC6C8E5001B0926 /* SystemConfiguration.framework */,
-				968015461BC6C8E0001B0926 /* CoreMotion.framework */,
-				968015441BC6C8D8001B0926 /* CoreMedia.framework */,
-				968015421BC6C8D3001B0926 /* AVFoundation.framework */,
-				968015401BC6C8CB001B0926 /* CoreVideo.framework */,
 				3B0AF8690973BCD8EB30F32A /* Pods_BasicSwiftSample.framework */,
 				D962D542B59FEBDD29D6D3D1 /* Pods_SwiftSample.framework */,
 			);
