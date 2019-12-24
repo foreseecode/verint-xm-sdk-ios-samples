@@ -21,6 +21,7 @@ end
 
 target "BasicSample" do
     project 'BasicSample/BasicSample.xcodeproj'
+    foresee_pods
 end
 
 target "AdobeExtensionSample" do
