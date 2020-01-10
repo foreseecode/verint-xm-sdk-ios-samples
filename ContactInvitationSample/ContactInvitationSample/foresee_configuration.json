@@ -1,10 +1,10 @@
 {
-    "clientId":"9NNs9GIBQIVdk1LpDlJpAQ==",
+    "clientId":"FSRTESTINGCODECID12345==",
     "notificationType":"CONTACT",
     "measures":
 	[
 		{
-			"surveyId": "mobile_app-en",
+			"surveyId": "iphone_app_QA",
 			"launchCount": 0
 		}
 	],

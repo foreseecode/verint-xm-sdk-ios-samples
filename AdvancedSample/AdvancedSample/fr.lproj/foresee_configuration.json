@@ -1,10 +1,11 @@
 {
-  "clientId": "Ij6P1lfZHchO/co10lQ4BQ==",
+  "clientId": "FSRTESTINGCODECID12345==",
   "notificationType": "IN_SESSION",
   "measures":
   [
     {
-      "surveyId": "mobile_app-fr",
+      "surveyId": "iphone_app_QA_fr",
+      "surveyStyle": "modern",
       "significantEventThresholds":
       {
         "app_test_1": 4
@@ -13,7 +14,7 @@
   ],
   "invite":
   {
-    "logo": "ForeSee_logo",
+    "logo": "foresee_logo",
     "baseColor": [237, 38, 54]
   },
   "cppParameters":
