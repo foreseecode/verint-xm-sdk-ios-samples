@@ -5,6 +5,7 @@
   [
     {
       "surveyId": "iphone_app_QA_es",
+      "surveyStyle": "modern",
       "significantEventThresholds":
       {
         "app_test_1": 4
