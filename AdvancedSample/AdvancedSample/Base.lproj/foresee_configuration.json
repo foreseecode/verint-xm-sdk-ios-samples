@@ -5,6 +5,7 @@
   [
     {
       "surveyId": "iphone_app_QA",
+      "surveyStyle": "modern",
       "combinedCriteria":
       [
         {
