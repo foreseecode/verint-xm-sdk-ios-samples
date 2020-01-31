@@ -1,12 +1,15 @@
 {
-  "clientId":"9NNs9GIBQIVdk1LpDlJpAQ==",
+  "clientId":"FSRTESTINGCODECID12345==",
   "notificationType":"EXIT_INVITE",
   "measures":
-    [{
-     "surveyId":"mobile_app-en",
-     "daysSinceLaunch":0,
-     "launchCount":0
-    }],
+    [
+        {
+         "surveyId": "iphone_app_QA",
+         "surveyStyle": "modern",
+         "daysSinceLaunch":0,
+         "launchCount":0
+        }
+    ],
     "invite": {
         "logo": "ForeSee_logo",
         "baseColor": [237, 38, 54]

@@ -1,10 +1,10 @@
 {
-  "clientId":"Ij6P1lfZHchO/co10lQ4BQ==",
-  "cppParameters":{
+  "clientId":"FSRTESTINGCODECID12345==",
+  "cppParameters": {
     "sample_app":"Feedback Survey"
   },
-  "feedback":{
-    "feedbackSurveys":[
+  "feedback": {
+    "feedbackSurveys": [
       {
         "name":"Sample 1",
         "feedbackId":"AEvfwfp1vY"
@@ -21,6 +21,7 @@
   "measures": {},
   "invite":
   {
+    "logo": "ForeSee_logo",
     "baseColor": [237, 38, 54]
   }
 }

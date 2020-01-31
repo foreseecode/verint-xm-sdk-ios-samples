@@ -1,9 +1,12 @@
-platform :ios, '12.0'
+platform :ios, '13.0'
 workspace 'ForeSeeSamples.xcworkspace'
 use_frameworks!
 
-def foresee_pods
-    pod 'ForeSee', '5.3.3'
+FORESEE_VERSION = '5.3.4'
+
+def foresee_pods(include_feedback=false)
+    pod 'ForeSee', FORESEE_VERSION
+    pod 'ForeSee/ForeSeeFeedback', FORESEE_VERSION if include_feedback
 end
 
 target "CustomInvitationSample" do
@@ -11,23 +14,30 @@ target "CustomInvitationSample" do
     foresee_pods
 end
 
+target "AdvancedSample" do
+    project 'AdvancedSample/AdvancedSample.xcodeproj'
+    foresee_pods true
+end
+
 target "BasicSample" do
     project 'BasicSample/BasicSample.xcodeproj'
     foresee_pods
 end
 
-target "BasicSwiftSample" do
+target "AdobeExtensionSample" do
+    project 'AdobeExtensionSample/AdobeExtensionSample.xcodeproj'
+    pod 'ForeSeeAdobeExtension', '~> 1.0'
+    pod 'ACPCore', '~> 2.0'
+    pod 'ACPUserProfile', '~> 2.0'
+end
+
+target "SwiftSample" do
     project 'BasicSwiftSample/BasicSwiftSample.xcodeproj'
     foresee_pods
 end
 
 target "ContactInvitationSample" do
     project 'ContactInvitationSample/ContactInvitationSample.xcodeproj'
-    foresee_pods
-end
-
-target "InternationalizationSample" do
-    project 'InternationalizationSample/InternationalizationSample.xcodeproj'
     foresee_pods
 end
 
@@ -38,7 +48,5 @@ end
 
 target "FeedbackSample" do
     project 'FeedbackSample/FeedbackSample.xcodeproj'
-    foresee_pods
-    # include the optional Feedback pod
-    pod 'ForeSee/ForeSeeFeedback', '5.3.3'
+    foresee_pods true
 end

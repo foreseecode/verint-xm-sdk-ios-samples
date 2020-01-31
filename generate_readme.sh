@@ -3,12 +3,12 @@ cat <<static
 All projects can be found in: \`ForeSeeSamples.xcworkspace\`
 static
 
-for file in `ls *`
+for file in */
 do
     if [ -d $file ]; then
-        echo "##" `basename "$file"`
         if [ -e $file/README ]
         then
+            echo "##" `basename "$file"`
             cat "$file/README"
         fi;
         echo ""

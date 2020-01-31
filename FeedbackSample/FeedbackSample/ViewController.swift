@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ForeSee
 import ForeSeeFeedback
 
 class ViewController: UIViewController {
