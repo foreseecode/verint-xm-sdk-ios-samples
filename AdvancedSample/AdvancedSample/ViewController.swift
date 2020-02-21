@@ -36,7 +36,7 @@ class ViewController: UIViewController {
   }
   
   @IBAction func checkFeedbackEligibilityButtonTouchUpInside(_ sender: Any) {
-    ForeSeeFeedback.showFeedbackSurvey()
+    ForeSeeFeedbackComponent.showFeedbackSurvey()
   }
   
   @IBAction func incrementEventButtonTouchUpInside(_ sender: Any) {
