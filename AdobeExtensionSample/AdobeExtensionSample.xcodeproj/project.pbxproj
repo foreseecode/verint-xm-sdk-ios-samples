@@ -36,10 +36,10 @@
 		D544DF4015068C0C0025FF43 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D544DF4215068C0C0025FF43 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D544DF4415068C0C0025FF43 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D544DF4815068C0C0025FF43 /* BasicSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BasicSample-Info.plist"; sourceTree = "<group>"; };
+		D544DF4815068C0C0025FF43 /* AdobeExtensionSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AdobeExtensionSample-Info.plist"; sourceTree = "<group>"; };
 		D544DF4A15068C0C0025FF43 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D544DF4C15068C0C0025FF43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D544DF4E15068C0C0025FF43 /* BasicSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BasicSample-Prefix.pch"; sourceTree = "<group>"; };
+		D544DF4E15068C0C0025FF43 /* AdobeExtensionSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdobeExtensionSample-Prefix.pch"; sourceTree = "<group>"; };
 		D544DF4F15068C0C0025FF43 /* FSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSAppDelegate.h; sourceTree = "<group>"; };
 		D544DF5015068C0C0025FF43 /* FSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSAppDelegate.m; sourceTree = "<group>"; };
 		D544DF5215068C0C0025FF43 /* FSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSViewController.h; sourceTree = "<group>"; };
@@ -131,10 +131,10 @@
 		D544DF4715068C0C0025FF43 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D544DF4815068C0C0025FF43 /* BasicSample-Info.plist */,
+				D544DF4815068C0C0025FF43 /* AdobeExtensionSample-Info.plist */,
 				D544DF4915068C0C0025FF43 /* InfoPlist.strings */,
 				D544DF4C15068C0C0025FF43 /* main.m */,
-				D544DF4E15068C0C0025FF43 /* BasicSample-Prefix.pch */,
+				D544DF4E15068C0C0025FF43 /* AdobeExtensionSample-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -157,7 +157,7 @@
 			dependencies = (
 			);
 			name = AdobeExtensionSample;
-			productName = BasicSample;
+			productName = AdobeExtensionSample;
 			productReference = D544DF3C15068C0C0025FF43 /* AdobeExtensionSample.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -325,14 +325,14 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/BasicSample",
+					"$(PROJECT_DIR)/AdobeExtensionSample",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AdobeExtensionSample/BasicSample-Prefix.pch";
-				INFOPLIST_FILE = "AdobeExtensionSample/BasicSample-Info.plist";
+				GCC_PREFIX_HEADER = "AdobeExtensionSample/AdobeExtensionSample-Prefix.pch";
+				INFOPLIST_FILE = "AdobeExtensionSample/AdobeExtensionSample-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/BasicSample\"",
+					"\"$(SRCROOT)/AdobeExtensionSample\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.foresee.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -440,14 +440,14 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/BasicSample",
+					"$(PROJECT_DIR)/AdobeExtensionSample",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AdobeExtensionSample/BasicSample-Prefix.pch";
-				INFOPLIST_FILE = "AdobeExtensionSample/BasicSample-Info.plist";
+				GCC_PREFIX_HEADER = "AdobeExtensionSample/AdobeExtensionSample-Prefix.pch";
+				INFOPLIST_FILE = "AdobeExtensionSample/AdobeExtensionSample-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/BasicSample\"",
+					"\"$(SRCROOT)/AdobeExtensionSample\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.foresee.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -462,14 +462,14 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/BasicSample",
+					"$(PROJECT_DIR)/AdobeExtensionSample",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AdobeExtensionSample/BasicSample-Prefix.pch";
-				INFOPLIST_FILE = "AdobeExtensionSample/BasicSample-Info.plist";
+				GCC_PREFIX_HEADER = "AdobeExtensionSample/AdobeExtensionSample-Prefix.pch";
+				INFOPLIST_FILE = "AdobeExtensionSample/AdobeExtensionSample-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/BasicSample\"",
+					"\"$(SRCROOT)/AdobeExtensionSample\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.foresee.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
