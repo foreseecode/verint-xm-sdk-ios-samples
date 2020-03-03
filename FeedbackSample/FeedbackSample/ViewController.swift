@@ -21,11 +21,11 @@ class ViewController: UIViewController {
 
   @IBAction func launchFeedback1(_ sender: Any) {
     ForeSee.resetState()
-    ForeSeeFeedback.showFeedbackSurvey()
+    ForeSeeFeedbackComponent.showFeedbackSurvey()
   }
   
   @IBAction func launchFeedback2(_ sender: Any) {
-    ForeSeeFeedback.showFeedbackForName("Sample 2")
+    ForeSeeFeedbackComponent.showFeedbackForName("Sample 2")
   }
 
 }

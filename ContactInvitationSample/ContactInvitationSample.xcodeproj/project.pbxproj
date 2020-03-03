@@ -20,14 +20,6 @@
 		967270A81D04E19A00F90E54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967270A71D04E19A00F90E54 /* Main.storyboard */; };
 		967C4522213894F000C825D3 /* CustomInviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C4521213894F000C825D3 /* CustomInviteViewController.m */; };
 		96FF0F8C1D052C6C000A2176 /* foresee_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 96FF0F8B1D052C6C000A2176 /* foresee_configuration.json */; };
-		96FF0F8E1D052DB4000A2176 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FF0F8D1D052DB4000A2176 /* SystemConfiguration.framework */; };
-		96FF0F901D052DBE000A2176 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FF0F8F1D052DBE000A2176 /* AVFoundation.framework */; };
-		96FF0F951D052DD3000A2176 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FF0F911D052DD3000A2176 /* CoreGraphics.framework */; };
-		96FF0F961D052DD3000A2176 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FF0F921D052DD3000A2176 /* CoreMedia.framework */; };
-		96FF0F971D052DD3000A2176 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FF0F931D052DD3000A2176 /* CoreMotion.framework */; };
-		96FF0F981D052DD3000A2176 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FF0F941D052DD3000A2176 /* CoreVideo.framework */; };
-		96FF0F9A1D052DDB000A2176 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FF0F991D052DDB000A2176 /* QuartzCore.framework */; };
-		96FF0F9C1D052DEB000A2176 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FF0F9B1D052DEB000A2176 /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,14 +83,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96FF0F9C1D052DEB000A2176 /* libz.tbd in Frameworks */,
-				96FF0F9A1D052DDB000A2176 /* QuartzCore.framework in Frameworks */,
-				96FF0F951D052DD3000A2176 /* CoreGraphics.framework in Frameworks */,
-				96FF0F961D052DD3000A2176 /* CoreMedia.framework in Frameworks */,
-				96FF0F971D052DD3000A2176 /* CoreMotion.framework in Frameworks */,
-				96FF0F981D052DD3000A2176 /* CoreVideo.framework in Frameworks */,
-				96FF0F901D052DBE000A2176 /* AVFoundation.framework in Frameworks */,
-				96FF0F8E1D052DB4000A2176 /* SystemConfiguration.framework in Frameworks */,
 				54DBBB8F769DEAC5DC7319A5 /* Pods_ContactInvitationSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
