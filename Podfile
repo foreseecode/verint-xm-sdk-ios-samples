@@ -2,6 +2,15 @@ platform :ios, '13.0'
 workspace 'ForeSeeSamples.xcworkspace'
 use_frameworks!
 
+project 'CustomInvitationSample/CustomInvitationSample.xcodeproj'
+project 'AdvancedSample/AdvancedSample.xcodeproj'
+project 'BasicSample/BasicSample.xcodeproj'
+project 'AdobeExtensionSample/AdobeExtensionSample.xcodeproj'
+project 'SwiftSample/SwiftSample.xcodeproj'
+project 'ContactInvitationSample/ContactInvitationSample.xcodeproj'
+project 'LocalNotificationSample/LocalNotificationSample.xcodeproj'
+project 'SwiftSample/SwiftSample.xcodeproj'
+
 FORESEE_VERSION = '5.3.5'
 
 def foresee_pods(include_feedback=false)
