@@ -6,7 +6,7 @@ project 'CustomInvitationSample/CustomInvitationSample.xcodeproj'
 project 'AdvancedSample/AdvancedSample.xcodeproj'
 project 'BasicSample/BasicSample.xcodeproj'
 project 'AdobeExtensionSample/AdobeExtensionSample.xcodeproj'
-project 'BasicSwiftSample/BasicSwiftSample.xcodeproj'
+#project 'BasicSwiftSample/BasicSwiftSample.xcodeproj'
 project 'ContactInvitationSample/ContactInvitationSample.xcodeproj'
 project 'LocalNotificationSample/LocalNotificationSample.xcodeproj'
 project 'FeedbackSample/FeedbackSample.xcodeproj'
@@ -40,10 +40,10 @@ target "AdobeExtensionSample" do
     pod 'ACPUserProfile', '~> 2.0'
 end
 
-target "SwiftSample" do
-    project 'BasicSwiftSample/BasicSwiftSample.xcodeproj'
-    foresee_pods
-end
+#target "SwiftSample" do
+#    project 'BasicSwiftSample/BasicSwiftSample.xcodeproj'
+#    foresee_pods
+#end
 
 target "ContactInvitationSample" do
     project 'ContactInvitationSample/ContactInvitationSample.xcodeproj'
