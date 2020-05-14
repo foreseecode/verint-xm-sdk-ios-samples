@@ -25,8 +25,7 @@ typedef enum StyleTypes : NSUInteger {
 #pragma mark - Init
 
 - (instancetype)init {
-    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
-    self = [self initWithFrame:window.frame];
+    self = [self initWithFrame:[UIScreen mainScreen].bounds];
     if (self) {
         [self setup];
         [self createSubviews];
@@ -214,13 +213,26 @@ typedef enum StyleTypes : NSUInteger {
                       ceil(labelRect.size.height));
 }
 
++ (UIWindowScene *)keyScene {
+    for (UIWindowScene *scene in [UIApplication sharedApplication].connectedScenes) {
+        if (scene.activationState == UISceneActivationStateForegroundActive) {
+            return scene;
+        }
+    }
+    return nil;
+}
+
++ (UIWindow *)keyWindow {
+    return [[self class] keyScene].windows[0];
+}
+
 # pragma mark - Public methods
 
 - (void)showAndOnComplete:(void (^)(void))completion {
     
     // Fades in the primary view (inviteView)
     
-    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    UIWindow *window = [[self class] keyWindow];
     [window addSubview:self];
     
     self.frame = self.superview.bounds;

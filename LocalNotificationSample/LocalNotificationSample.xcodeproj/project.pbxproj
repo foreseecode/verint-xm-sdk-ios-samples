@@ -12,20 +12,11 @@
 		547BA53A21FFCE630087BDE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 547BA53921FFCE630087BDE1 /* Main.storyboard */; };
 		96E5355F23747576008983C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E5355E23747576008983C7 /* LaunchScreen.storyboard */; };
 		990EABCD18610D5D005BB53E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 990EABCB18610D5D005BB53E /* Localizable.strings */; };
-		99F1EC7D18860568001B1A8B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F1EC7A18860568001B1A8B /* CoreMedia.framework */; };
-		99F1EC7E18860568001B1A8B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F1EC7B18860568001B1A8B /* CoreMotion.framework */; };
-		99F1EC7F18860568001B1A8B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F1EC7C18860568001B1A8B /* CoreVideo.framework */; };
-		99F1EC8118860570001B1A8B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F1EC8018860570001B1A8B /* AVFoundation.framework */; };
 		99F1ECA0188606A7001B1A8B /* foresee_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 99F1EC9F188606A7001B1A8B /* foresee_configuration.json */; };
-		D5D68AEE1582A63D00730160 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D68AED1582A63D00730160 /* UIKit.framework */; };
-		D5D68AF01582A63D00730160 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D68AEF1582A63D00730160 /* Foundation.framework */; };
-		D5D68AF21582A63D00730160 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D68AF11582A63D00730160 /* CoreGraphics.framework */; };
 		D5D68AF81582A63D00730160 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5D68AF61582A63D00730160 /* InfoPlist.strings */; };
 		D5D68AFA1582A63D00730160 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D68AF91582A63D00730160 /* main.m */; };
 		D5D68AFE1582A63D00730160 /* FSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D68AFD1582A63D00730160 /* FSAppDelegate.m */; };
 		D5D68B011582A63E00730160 /* FSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D68B001582A63E00730160 /* FSViewController.m */; };
-		D5D68B301582A76700730160 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D68B2F1582A76700730160 /* SystemConfiguration.framework */; };
-		D5D68B321582A76D00730160 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D68B311582A76D00730160 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,15 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99F1EC8118860570001B1A8B /* AVFoundation.framework in Frameworks */,
-				99F1EC7D18860568001B1A8B /* CoreMedia.framework in Frameworks */,
-				99F1EC7E18860568001B1A8B /* CoreMotion.framework in Frameworks */,
-				99F1EC7F18860568001B1A8B /* CoreVideo.framework in Frameworks */,
-				D5D68B321582A76D00730160 /* QuartzCore.framework in Frameworks */,
-				D5D68B301582A76700730160 /* SystemConfiguration.framework in Frameworks */,
-				D5D68AEE1582A63D00730160 /* UIKit.framework in Frameworks */,
-				D5D68AF01582A63D00730160 /* Foundation.framework in Frameworks */,
-				D5D68AF21582A63D00730160 /* CoreGraphics.framework in Frameworks */,
 				51C3D31A150FD3EBF71191B2 /* Pods_LocalNotificationSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

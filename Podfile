@@ -2,21 +2,11 @@ platform :ios, '13.0'
 workspace 'ForeSeeSamples.xcworkspace'
 use_frameworks!
 
-project 'CustomInvitationSample/CustomInvitationSample.xcodeproj'
-project 'AdvancedSample/AdvancedSample.xcodeproj'
-project 'BasicSample/BasicSample.xcodeproj'
-project 'AdobeExtensionSample/AdobeExtensionSample.xcodeproj'
-#project 'BasicSwiftSample/BasicSwiftSample.xcodeproj'
-project 'ContactInvitationSample/ContactInvitationSample.xcodeproj'
-project 'LocalNotificationSample/LocalNotificationSample.xcodeproj'
-project 'FeedbackSample/FeedbackSample.xcodeproj'
-
 FORESEE_VERSION = '6.0.0-alpha2'
 
 def foresee_pods(include_feedback=false)
     pod 'ForeSee', FORESEE_VERSION
     pod 'ForeSee/ForeSeeFeedback', FORESEE_VERSION if include_feedback
-    pod 'ForeSeeAdobeExtension', '~> 1.0.1-alpha1'
 end
 
 target "CustomInvitationSample" do
@@ -36,7 +26,7 @@ end
 
 target "AdobeExtensionSample" do
     project 'AdobeExtensionSample/AdobeExtensionSample.xcodeproj'
-    pod 'ForeSeeAdobeExtension', '~> 1.0'
+    pod 'ForeSeeAdobeExtension', '1.0.1-alpha1'
     pod 'ACPCore', '~> 2.0'
     pod 'ACPUserProfile', '~> 2.0'
 end
