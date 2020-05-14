@@ -11,7 +11,7 @@ project 'ContactInvitationSample/ContactInvitationSample.xcodeproj'
 project 'LocalNotificationSample/LocalNotificationSample.xcodeproj'
 project 'FeedbackSample/FeedbackSample.xcodeproj'
 
-FORESEE_VERSION = '5.3.5'
+FORESEE_VERSION = '6.0.0-alpha2'
 
 def foresee_pods(include_feedback=false)
     pod 'ForeSee', FORESEE_VERSION
