@@ -16,6 +16,7 @@ FORESEE_VERSION = '6.0.0-alpha2'
 def foresee_pods(include_feedback=false)
     pod 'ForeSee', FORESEE_VERSION
     pod 'ForeSee/ForeSeeFeedback', FORESEE_VERSION if include_feedback
+    pod 'ForeSeeAdobeExtension', '~> 1.0.1-alpha1'
 end
 
 target "CustomInvitationSample" do
