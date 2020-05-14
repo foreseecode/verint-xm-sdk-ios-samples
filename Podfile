@@ -6,10 +6,10 @@ project 'CustomInvitationSample/CustomInvitationSample.xcodeproj'
 project 'AdvancedSample/AdvancedSample.xcodeproj'
 project 'BasicSample/BasicSample.xcodeproj'
 project 'AdobeExtensionSample/AdobeExtensionSample.xcodeproj'
-project 'SwiftSample/SwiftSample.xcodeproj'
+project 'BasicSwiftSample/BasicSwiftSample.xcodeproj'
 project 'ContactInvitationSample/ContactInvitationSample.xcodeproj'
 project 'LocalNotificationSample/LocalNotificationSample.xcodeproj'
-project 'SwiftSample/SwiftSample.xcodeproj'
+project 'FeedbackSample/FeedbackSample.xcodeproj'
 
 FORESEE_VERSION = '5.3.5'
 
