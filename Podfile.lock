@@ -1,7 +1,7 @@
 PODS:
-  - ACPCore (2.5.0):
-    - ACPCore/iOS (= 2.5.0)
-  - ACPCore/iOS (2.5.0)
+  - ACPCore (2.5.1):
+    - ACPCore/iOS (= 2.5.1)
+  - ACPCore/iOS (2.5.1)
   - ACPUserProfile (2.0.1):
     - ACPCore (~> 2.0)
     - ACPUserProfile/iOS (= 2.0.1)
@@ -34,11 +34,11 @@ SPEC REPOS:
     - ForeSeeAdobeExtension
 
 SPEC CHECKSUMS:
-  ACPCore: c2dc84ac0f6d63421fc4d973e75da3a7cb119ff6
+  ACPCore: fcd37514a72707a2864f85dea01266c3348e0c50
   ACPUserProfile: d5141c8f5154e10e3a08124649ddaae13efd5131
   ForeSee: d6f3c7e6967e22bc759d4f0951975263f468f5a9
   ForeSeeAdobeExtension: 689b52ff7853a0f3eca9e2281e88cf2dbab6260d
 
 PODFILE CHECKSUM: 2369275cd74bd829d3b84c446b4bdc48dd6d249e
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.8.3
