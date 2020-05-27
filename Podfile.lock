@@ -7,25 +7,25 @@ PODS:
     - ACPUserProfile/iOS (= 2.1.0)
   - ACPUserProfile/iOS (2.1.0):
     - ACPCore (~> 2.0)
-  - ForeSee (6.0.0-alpha4):
-    - ForeSee/ForeSeeCxMeasure (= 6.0.0-alpha4)
-  - ForeSee/Core (6.0.0-alpha4)
-  - ForeSee/ForeSeeCxMeasure (6.0.0-alpha4):
+  - ForeSee (6.0.0-alpha5):
+    - ForeSee/ForeSeeCxMeasure (= 6.0.0-alpha5)
+  - ForeSee/Core (6.0.0-alpha5)
+  - ForeSee/ForeSeeCxMeasure (6.0.0-alpha5):
     - ForeSee/Core
-  - ForeSee/ForeSeeFeedback (6.0.0-alpha4):
+  - ForeSee/ForeSeeFeedback (6.0.0-alpha5):
     - ForeSee/Core
-  - ForeSeeAdobeExtension (1.0.1-alpha4):
+  - ForeSeeAdobeExtension (1.0.1-alpha5):
     - ACPCore (~> 2.0)
     - ACPUserProfile (~> 2.0)
-    - ForeSee (= 6.0.0-alpha4)
+    - ForeSee (= 6.0.0-alpha5)
 
 DEPENDENCIES:
   - ACPCore (~> 2.0)
   - ACPUserProfile (~> 2.0)
-  - ForeSee/Core (= 6.0.0-alpha4)
-  - ForeSee/ForeSeeCxMeasure (= 6.0.0-alpha4)
-  - ForeSee/ForeSeeFeedback (= 6.0.0-alpha4)
-  - ForeSeeAdobeExtension (= 1.0.1-alpha4)
+  - ForeSee/Core (= 6.0.0-alpha5)
+  - ForeSee/ForeSeeCxMeasure (= 6.0.0-alpha5)
+  - ForeSee/ForeSeeFeedback (= 6.0.0-alpha5)
+  - ForeSeeAdobeExtension (= 1.0.1-alpha5)
 
 SPEC REPOS:
   trunk:
@@ -37,9 +37,9 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   ACPCore: e2f2ff66174350cdc00387a2ca74ac4f77ea3ba0
   ACPUserProfile: 934b0d8136dc8b4c71e95c347ae733c4482d5b9d
-  ForeSee: 632c1fea7a56b26f1e07687d0421416b1df1d9d7
-  ForeSeeAdobeExtension: 13a815beb547f96bb6e2348a17abe9bb53ced160
+  ForeSee: 87152416680c87c26ab920c48ea2538b0e1afd68
+  ForeSeeAdobeExtension: 5ca07b518d0c7f88a6af6c8605437e84a4456259
 
-PODFILE CHECKSUM: 47781079901bb8bf02ea2023e84601539e6ca686
+PODFILE CHECKSUM: 633c894fa81326effec7c927db6c65580a1bb11d
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.9.1
