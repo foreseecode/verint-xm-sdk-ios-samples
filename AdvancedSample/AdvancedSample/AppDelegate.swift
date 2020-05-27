@@ -8,6 +8,7 @@
 
 import UIKit
 import ForeSee
+import ForeSeeCxMeasure
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     ForeSee.setDebugLogEnabled(true)
     ForeSee.start()
-    ForeSee.setSkipPoolingCheck(true)
+    ForeSeeCxMeasure.setSkipPoolingCheck(true)
     ForeSee.resetState()
     return true
   }

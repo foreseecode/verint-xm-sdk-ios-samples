@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <ForeSee/ForeSee.h>
 #import "CustomInviteView.h"
-#import <ForeSee/FSInviteHandler.h>
-#import <ForeSee/FSInviteDelegate.h>
+#import <ForeSeeCxMeasure/FSInviteHandler.h>
+#import <ForeSeeCxMeasure/FSInviteDelegate.h>
 
 @interface CustomInviteTracker : NSObject <FSInviteHandler, CustomInviteViewDelegate>
 

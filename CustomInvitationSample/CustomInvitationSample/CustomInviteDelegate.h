@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <ForeSee/ForeSee.h>
-#import <ForeSee/FSInviteDelegate.h>
+#import <ForeSeeCxMeasure/FSInviteDelegate.h>
 
 @interface CustomInviteDelegate : NSObject <FSInviteDelegate>
 

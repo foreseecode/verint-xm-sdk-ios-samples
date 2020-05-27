@@ -19,7 +19,7 @@
 
 - (void)viewWillDisappear:(BOOL)animated {
     self.inviteHandler = nil;
-    [ForeSee setInviteHandler:nil];
+    [ForeSeeCxMeasure setInviteHandler:nil];
 }
 
 @end

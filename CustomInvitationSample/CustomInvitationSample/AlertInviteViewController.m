@@ -13,11 +13,11 @@
 
 - (void)viewDidLoad {
     self.inviteHandler = [[CustomInviteHandler alloc] initWithViewController:self];
-    [ForeSee setInviteHandler:self.inviteHandler];
+    [ForeSeeCxMeasure setInviteHandler:self.inviteHandler];
 }
 
 - (IBAction)handleShowInviteTouchUpInside:(id)sender {
-    [ForeSee checkIfEligibleForSurvey];
+    [ForeSeeCxMeasure checkIfEligibleForSurvey];
 }
 
 - (IBAction)resetState:(id)sender {

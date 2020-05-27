@@ -9,6 +9,7 @@
 #import "SettingsTableViewController.h"
 #import "TextFieldTableViewCell.h"
 #import <ForeSee/ForeSee.h>
+#import <ForeSeeCxMeasure/ForeSeeCxMeasure.h>
 
 typedef enum FSTableSections : NSUInteger {
     EmailEntrySection = 0,
@@ -49,7 +50,7 @@ NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
 }
 
 - (void)setPreferredContactType:(FSContactType)preferredContactType {
-    [ForeSee setPreferredContactType:preferredContactType];
+    [ForeSeeCxMeasure setPreferredContactType:preferredContactType];
     [self.storage setInteger:preferredContactType forKey:FSPreferredContactTypeKey];
     [self.storage synchronize];
 }
@@ -135,7 +136,7 @@ NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
         [self setPreferredContactType:indexPath.row];
     } else if (indexPath.section == ResetStateSection) {
         [ForeSee resetState];
-        [ForeSee setInviteHandler:nil];
+        [ForeSeeCxMeasure setInviteHandler:nil];
         [self clearFields];
     }
     [tableView reloadData];
@@ -148,7 +149,7 @@ NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
     cell.textField.tag = EmailEntrySection;
     cell.textField.placeholder = @"example@foresee.com";
     cell.textField.keyboardType = UIKeyboardTypeEmailAddress;
-    cell.textField.text = [ForeSee contactDetailsForType:kFSEmail];
+    cell.textField.text = [ForeSeeCxMeasure contactDetailsForType:kFSEmail];
     cell.textField.delegate = self;
     return cell;
 }
@@ -158,7 +159,7 @@ NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
     cell.textField.tag = PhoneNumberEntrySection;
     cell.textField.placeholder = @"555-555-5555";
     cell.textField.keyboardType = UIKeyboardTypePhonePad;
-    cell.textField.text = [ForeSee contactDetailsForType:kFSPhoneNumber];
+    cell.textField.text = [ForeSeeCxMeasure contactDetailsForType:kFSPhoneNumber];
     cell.textField.delegate = self;
     return cell;
 }
@@ -174,7 +175,7 @@ NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {
     if (!self.isDirty) {
-        [ForeSee setContactDetails:[self trim:textField.text] forType:(textField.tag == EmailEntrySection) ? kFSEmail : kFSPhoneNumber];
+        [ForeSeeCxMeasure setContactDetails:[self trim:textField.text] forType:(textField.tag == EmailEntrySection) ? kFSEmail : kFSPhoneNumber];
     }
 }
 

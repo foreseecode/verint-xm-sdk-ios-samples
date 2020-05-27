@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <ForeSee/ForeSee.h>
-#import <ForeSee/FSInviteHandler.h>
+#import <ForeSeeCxMeasure/FSInviteHandler.h>
 
 @interface InviteExampleViewController : UIViewController
 
