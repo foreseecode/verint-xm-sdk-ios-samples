@@ -8,6 +8,7 @@
 
 import UIKit
 import ForeSee
+import ForeSeeCxMeasure
 import ForeSeeFeedback
 
 class ViewController: UIViewController {
@@ -32,7 +33,7 @@ class ViewController: UIViewController {
   // MARK: Actions
   
   @IBAction func checkEligibilityButtonTouchUpInside(_ sender: Any) {
-    ForeSee.checkIfEligibleForSurvey()
+    ForeSeeCxMeasure.checkIfEligibleForSurvey()
   }
   
   @IBAction func checkFeedbackEligibilityButtonTouchUpInside(_ sender: Any) {
@@ -66,7 +67,7 @@ class ViewController: UIViewController {
       // now we incremenet the significant event count every time we update our
       // counter, so that our local value is always in sync with the ForeSee SDK (as
       // long as we don't increment this count anywhere else)
-      ForeSee.incrementSignificantEventCount(withKey: significantEventKey)
+      ForeSeeCxMeasure.incrementSignificantEventCount(withKey: significantEventKey)
       counter += 1
       return counter
     }

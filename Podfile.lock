@@ -1,30 +1,30 @@
 PODS:
-  - ACPCore (2.5.0):
-    - ACPCore/iOS (= 2.5.0)
-  - ACPCore/iOS (2.5.0)
-  - ACPUserProfile (2.0.1):
+  - ACPCore (2.6.1):
+    - ACPCore/iOS (= 2.6.1)
+  - ACPCore/iOS (2.6.1)
+  - ACPUserProfile (2.1.0):
     - ACPCore (~> 2.0)
-    - ACPUserProfile/iOS (= 2.0.1)
-  - ACPUserProfile/iOS (2.0.1):
+    - ACPUserProfile/iOS (= 2.1.0)
+  - ACPUserProfile/iOS (2.1.0):
     - ACPCore (~> 2.0)
-  - ForeSee (6.0.0-alpha2):
-    - ForeSee/ForeSeeCxMeasure (= 6.0.0-alpha2)
-  - ForeSee/Core (6.0.0-alpha2)
-  - ForeSee/ForeSeeCxMeasure (6.0.0-alpha2):
+  - ForeSee (6.0.0-alpha5):
+    - ForeSee/ForeSeeCxMeasure (= 6.0.0-alpha5)
+  - ForeSee/Core (6.0.0-alpha5)
+  - ForeSee/ForeSeeCxMeasure (6.0.0-alpha5):
     - ForeSee/Core
-  - ForeSee/ForeSeeFeedback (6.0.0-alpha2):
+  - ForeSee/ForeSeeFeedback (6.0.0-alpha5):
     - ForeSee/Core
-  - ForeSeeAdobeExtension (1.0.1-alpha1):
+  - ForeSeeAdobeExtension (1.0.1-alpha5):
     - ACPCore (~> 2.0)
     - ACPUserProfile (~> 2.0)
-    - ForeSee (= 6.0.0-alpha2)
+    - ForeSee (= 6.0.0-alpha5)
 
 DEPENDENCIES:
   - ACPCore (~> 2.0)
   - ACPUserProfile (~> 2.0)
-  - ForeSee (= 6.0.0-alpha2)
-  - ForeSee/ForeSeeFeedback (= 6.0.0-alpha2)
-  - ForeSeeAdobeExtension (= 1.0.1-alpha1)
+  - ForeSee (= 6.0.0-alpha5)
+  - ForeSee/ForeSeeFeedback (= 6.0.0-alpha5)
+  - ForeSeeAdobeExtension (= 1.0.1-alpha5)
 
 SPEC REPOS:
   trunk:
@@ -34,11 +34,11 @@ SPEC REPOS:
     - ForeSeeAdobeExtension
 
 SPEC CHECKSUMS:
-  ACPCore: c2dc84ac0f6d63421fc4d973e75da3a7cb119ff6
-  ACPUserProfile: d5141c8f5154e10e3a08124649ddaae13efd5131
-  ForeSee: d6f3c7e6967e22bc759d4f0951975263f468f5a9
-  ForeSeeAdobeExtension: 689b52ff7853a0f3eca9e2281e88cf2dbab6260d
+  ACPCore: e2f2ff66174350cdc00387a2ca74ac4f77ea3ba0
+  ACPUserProfile: 934b0d8136dc8b4c71e95c347ae733c4482d5b9d
+  ForeSee: 87152416680c87c26ab920c48ea2538b0e1afd68
+  ForeSeeAdobeExtension: 5ca07b518d0c7f88a6af6c8605437e84a4456259
 
-PODFILE CHECKSUM: 2369275cd74bd829d3b84c446b4bdc48dd6d249e
+PODFILE CHECKSUM: ecb8186f77c53f4f2c3c9d844a24838218acf747
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

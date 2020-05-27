@@ -9,6 +9,7 @@
 #import "FSAppDelegate.h"
 #import "FSViewController.h"
 #import <ForeSee/ForeSee.h>
+#import <ForeSeeCxMeasure/ForeSeeCxMeasure.h>
 
 @implementation FSAppDelegate
 
@@ -20,11 +21,11 @@
 
 - (void)initializeForeSeeTrigger {
   [ForeSee setDebugLogEnabled:YES];
-  [ForeSee setSkipPoolingCheck:YES];
+  [ForeSeeCxMeasure setSkipPoolingCheck:YES];
   [ForeSee resetState];
 
   [ForeSee start];
-  [ForeSee checkIfEligibleForSurvey];
+  [ForeSeeCxMeasure checkIfEligibleForSurvey];
 }
 
 #pragma mark - UNUserNotificationCenterDelegate
@@ -43,7 +44,7 @@
 didReceiveNotificationResponse:(UNNotificationResponse *)response
          withCompletionHandler:(nonnull void (^)(void))completionHandler
 {
-    [ForeSee showSurveyForNotificationResponse:response];
+    [ForeSeeCxMeasure showSurveyForNotificationResponse:response];
     NSLog(@"User Info : %@",response.notification.request.content.userInfo);
     completionHandler();
 }

@@ -8,13 +8,14 @@
 
 #import "FSViewController.h"
 #import <ForeSee/ForeSee.h>
+#import <ForeSeeCxMeasure/ForeSeeCxMeasure.h>
 
 @implementation FSViewController
 
 # pragma mark - Actions
 
 - (IBAction)checkEligibility:(id)sender {
-    [ForeSee checkIfEligibleForSurvey];
+    [ForeSeeCxMeasure checkIfEligibleForSurvey];
 }
 
 - (IBAction)resetState:(id)sender {

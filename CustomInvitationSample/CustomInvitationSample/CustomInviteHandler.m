@@ -32,12 +32,12 @@
     UIAlertAction* yayAction = [UIAlertAction actionWithTitle:@"Yay!"
                                                         style:UIAlertActionStyleDefault
                                                       handler:^(UIAlertAction * action) {
-                                                          [ForeSee customInviteAccepted];
+                                                          [ForeSeeCxMeasure customInviteAccepted];
                                                       }];
     UIAlertAction* nayAction = [UIAlertAction actionWithTitle:@"Nay"
                                                         style:UIAlertActionStyleCancel
                                                       handler:^(UIAlertAction * action) {
-                                                          [ForeSee customInviteDeclined];
+                                                          [ForeSeeCxMeasure customInviteDeclined];
                                                       }];
     
     [inviteAlert addAction:yayAction];
@@ -51,7 +51,7 @@
 
 
 - (void)dealloc {
-    [ForeSee customInviteDeclined];
+    [ForeSeeCxMeasure customInviteDeclined];
 }
 
 @end

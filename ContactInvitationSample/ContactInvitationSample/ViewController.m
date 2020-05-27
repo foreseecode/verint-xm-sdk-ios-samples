@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import <ForeSee/ForeSee.h>
+#import <ForeSeeCxMeasure/ForeSeeCxMeasure.h>
 
 @interface ViewController ()
 
@@ -23,12 +24,12 @@
 #pragma mark - IBActions
 
 - (IBAction)handleShowInviteTouchUpInside:(id)sender {
-    [ForeSee checkIfEligibleForSurvey];
+    [ForeSeeCxMeasure checkIfEligibleForSurvey];
 }
 
 - (IBAction)handleResetState:(id)sender {
     [ForeSee resetState];
-    [ForeSee setInviteHandler:nil];
+    [ForeSeeCxMeasure setInviteHandler:nil];
 }
 
 @end

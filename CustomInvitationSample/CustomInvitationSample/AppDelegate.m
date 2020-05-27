@@ -26,7 +26,7 @@
     // capture and log ForeSee lifecycle events;
     // active for all examples
     self.triggerDelegate = [[CustomInviteDelegate alloc] init];
-    [ForeSee setInviteDelegate:self.triggerDelegate];
+    [ForeSeeCxMeasure setInviteDelegate:self.triggerDelegate];
     
     return YES;
 }

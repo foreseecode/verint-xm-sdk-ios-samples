@@ -2,7 +2,8 @@ platform :ios, '13.0'
 workspace 'ForeSeeSamples.xcworkspace'
 use_frameworks!
 
-FORESEE_VERSION = '6.0.0-alpha2'
+FORESEE_VERSION = '6.0.0-alpha5'
+FORESEE_ADOBE_EXTENSION_VERSION = '1.0.1-alpha5'
 
 def foresee_pods(include_feedback=false)
     pod 'ForeSee', FORESEE_VERSION
@@ -26,7 +27,7 @@ end
 
 target "AdobeExtensionSample" do
     project 'AdobeExtensionSample/AdobeExtensionSample.xcodeproj'
-    pod 'ForeSeeAdobeExtension', '1.0.1-alpha1'
+    pod 'ForeSeeAdobeExtension', FORESEE_ADOBE_EXTENSION_VERSION
     pod 'ACPCore', '~> 2.0'
     pod 'ACPUserProfile', '~> 2.0'
 end

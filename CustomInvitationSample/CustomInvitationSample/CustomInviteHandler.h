@@ -6,9 +6,9 @@
 //  Copyright © 2016 ForeSee. All rights reserved.
 //
 
-#import <ForeSee/FSInviteHandler.h>
 #import <UIKit/UIKit.h>
 #import <ForeSee/ForeSee.h>
+#import <ForeSeeCxMeasure/FSInviteHandler.h>
 
 @interface CustomInviteHandler : NSObject <FSInviteHandler>
 
