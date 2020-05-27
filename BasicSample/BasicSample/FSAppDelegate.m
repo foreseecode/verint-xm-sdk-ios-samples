@@ -8,6 +8,7 @@
 
 #import "FSAppDelegate.h"
 #import <ForeSee/ForeSee.h>
+#import <ForeSeeCxMeasure/ForeSeeCxMeasure.h>
 
 @implementation FSAppDelegate
 
@@ -19,7 +20,7 @@
 - (void)initializeForeSeeTrigger {
   [ForeSee setDebugLogEnabled:YES];
   [ForeSee start];
-  [ForeSee setSkipPoolingCheck:YES];
+  [ForeSeeCxMeasure setSkipPoolingCheck:YES];
   [ForeSee resetState];
 }
 
