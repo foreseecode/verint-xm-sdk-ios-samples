@@ -15,6 +15,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   [UNUserNotificationCenter currentNotificationCenter].delegate = self;
+  [self registerNotificationService];
   [self initializeForeSeeTrigger];
   return YES;
 }
@@ -48,4 +49,16 @@ didReceiveNotificationResponse:(UNNotificationResponse *)response
     NSLog(@"User Info : %@",response.notification.request.content.userInfo);
     completionHandler();
 }
+
+#pragma mark - Notification Service
+- (void)registerNotificationService {
+  UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+  [center requestAuthorizationWithOptions:(UNAuthorizationOptionBadge | UNAuthorizationOptionSound | UNAuthorizationOptionAlert)
+                        completionHandler:^(BOOL granted, NSError * _Nullable error) {
+    if (!error) {
+      NSLog(@"request authorization succeeded!");
+    }
+  }];
+}
+
 @end

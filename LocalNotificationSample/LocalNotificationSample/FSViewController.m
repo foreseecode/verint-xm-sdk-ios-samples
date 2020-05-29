@@ -9,6 +9,8 @@
 #import "FSViewController.h"
 #import <ForeSee/ForeSee.h>
 #import <ForeSeeCxMeasure/ForeSeeCxMeasure.h>
+#import <UserNotifications/UserNotifications.h>
+
 
 @implementation FSViewController
 
