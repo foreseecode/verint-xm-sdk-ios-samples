@@ -25,14 +25,6 @@ target "BasicSample" do
     foresee_pods
 end
 
-target "AdobeExtensionSample" do
-    platform :ios, '10.0'
-    project 'AdobeExtensionSample/AdobeExtensionSample.xcodeproj'
-    pod 'ForeSeeAdobeExtension', '1.0.1-alpha5'
-    pod 'ACPCore', '~> 2.0'
-    pod 'ACPUserProfile', '~> 2.0'
-end
-
 target "SwiftSample" do
     project 'BasicSwiftSample/BasicSwiftSample.xcodeproj'
     foresee_pods
