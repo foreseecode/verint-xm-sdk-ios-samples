@@ -37,15 +37,15 @@
     [self resetAndRestoreContactDetails];
     
     // #2 Set this class as the custom invite handler
-    [ForeSee setInviteHandler:self];
+    [ForeSeeCxMeasure setInviteHandler:self];
     
     // #3 Check eligibility. If eligible (and we should be), the ForeSee SDK will call the invite handler's `show` method
-    [ForeSee checkIfEligibleForSurvey];
+    [ForeSeeCxMeasure checkIfEligibleForSurvey];
 }
 
 - (void)dealloc {
     if (self.isShowing) {
-        [ForeSee customInviteDeclined];
+        [ForeSeeCxMeasure customInviteDeclined];
     }
 }
 
@@ -77,8 +77,8 @@
 // #6a The SDK couldn't find contact details for the preferred contact type. The invite is neither accepted or declined.
 - (void)setInvalidInput:(BOOL)isInvalid {
     NSLog(@"Invalid input");
-    NSLog(@"Current stored email = %@", [ForeSee contactDetailsForType:kFSEmail]);
-    NSLog(@"Current stored phone number = %@", [ForeSee contactDetailsForType:kFSPhoneNumber]);
+    NSLog(@"Current stored email = %@", [ForeSeeCxMeasure contactDetailsForType:kFSEmail]);
+    NSLog(@"Current stored phone number = %@", [ForeSeeCxMeasure contactDetailsForType:kFSPhoneNumber]);
 }
 
 #pragma mark - Invite actions
@@ -88,12 +88,12 @@
     // input is good (i.e. if there is a value stored for the preferred contact type), then the invite's lifecycle is
     // complete and the SDK will invoke `hideWithAnimation:`. If the input is bad (i.e. there are no valid contact
     // details stored), then the SDK will notify us by calling `setInvalidInput:`.
-    [ForeSee customInviteAccepted];
+    [ForeSeeCxMeasure customInviteAccepted];
 }
 
 - (IBAction)handleDeclineButtonTouchUpInside:(id)sender {
     // #5b If the decline button is tapped, then we'll notify the ForeSee SDK that the invite was declined.
-    [ForeSee customInviteDeclined];
+    [ForeSeeCxMeasure customInviteDeclined];
 }
 
 #pragma mark - Reset
@@ -102,16 +102,16 @@
     // A full state-reset also removes the stored contact details. We want to reset the tracker state
     // while keeping those details. This workaround achieves that. (None if this is necessary in real
     // implementations. You usually want to maintain state.)
-    NSString *email = [ForeSee contactDetailsForType:kFSEmail];
-    NSString *phoneNumber = [ForeSee contactDetailsForType:kFSPhoneNumber];
+    NSString *email = [ForeSeeCxMeasure contactDetailsForType:kFSEmail];
+    NSString *phoneNumber = [ForeSeeCxMeasure contactDetailsForType:kFSPhoneNumber];
     if (self.isShowing) {
         // already showing from a previous load; let's reset and start over
-        [ForeSee customInviteDeclined];
+        [ForeSeeCxMeasure customInviteDeclined];
     }
     [ForeSee resetState];
-    [ForeSee setPreferredContactType:[self preferredContactType]];
-    [ForeSee setContactDetails:email forType:kFSEmail];
-    [ForeSee setContactDetails:phoneNumber forType:kFSPhoneNumber];
+    [ForeSeeCxMeasure setPreferredContactType:[self preferredContactType]];
+    [ForeSeeCxMeasure setContactDetails:email forType:kFSEmail];
+    [ForeSeeCxMeasure setContactDetails:phoneNumber forType:kFSPhoneNumber];
 }
 
 - (FSContactType)preferredContactType {

@@ -5,6 +5,7 @@
 
 import UIKit
 import ForeSee
+import ForeSeeCxMeasure
 
 struct Product {
   let name: String
@@ -37,17 +38,17 @@ class ProductsViewController: UIViewController, UICollectionViewDelegate, UIColl
     self.gridView.dataSource = self
     self.gridView.delegate = self
     
-    ForeSee.setInviteHandler(self)
-    ForeSee.checkIfEligibleForSurvey()
+    ForeSeeCxMeasure.setInviteHandler(self)
+    ForeSeeCxMeasure.checkIfEligibleForSurvey()
   }
   
   override func viewDidDisappear(_ animated: Bool) {
     super.viewDidDisappear(true)
     
     if self.invited {
-      ForeSee.customInviteDeclined()
+      ForeSeeCxMeasure.customInviteDeclined()
     }
-    ForeSee.setInviteHandler(nil)
+    ForeSeeCxMeasure.setInviteHandler(nil)
   }
   
   
@@ -87,7 +88,7 @@ class ProductsViewController: UIViewController, UICollectionViewDelegate, UIColl
   }
   
   func inviteAcceptedAction() {
-    ForeSee.customInviteAccepted()
+    ForeSeeCxMeasure.customInviteAccepted()
     self.invited = false
   }
 }

@@ -7,7 +7,7 @@
 //
 
 #import "CustomInviteDelegate.h"
-#import <ForeSee/TRMeasure.h>
+#import <ForeSeeCxMeasure/TRMeasure.h>
 
 @implementation CustomInviteDelegate
 

@@ -9,22 +9,24 @@
 #import "FSAppDelegate.h"
 #import "FSViewController.h"
 #import <ForeSee/ForeSee.h>
+#import <ForeSeeCxMeasure/ForeSeeCxMeasure.h>
 
 @implementation FSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   [UNUserNotificationCenter currentNotificationCenter].delegate = self;
+  [self registerNotificationService];
   [self initializeForeSeeTrigger];
   return YES;
 }
 
 - (void)initializeForeSeeTrigger {
   [ForeSee setDebugLogEnabled:YES];
-  [ForeSee setSkipPoolingCheck:YES];
+  [ForeSeeCxMeasure setSkipPoolingCheck:YES];
   [ForeSee resetState];
 
   [ForeSee start];
-  [ForeSee checkIfEligibleForSurvey];
+  [ForeSeeCxMeasure checkIfEligibleForSurvey];
 }
 
 #pragma mark - UNUserNotificationCenterDelegate
@@ -43,8 +45,20 @@
 didReceiveNotificationResponse:(UNNotificationResponse *)response
          withCompletionHandler:(nonnull void (^)(void))completionHandler
 {
-    [ForeSee showSurveyForNotificationResponse:response];
+    [ForeSeeCxMeasure showSurveyForNotificationResponse:response];
     NSLog(@"User Info : %@",response.notification.request.content.userInfo);
     completionHandler();
 }
+
+#pragma mark - Notification Service
+- (void)registerNotificationService {
+  UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+  [center requestAuthorizationWithOptions:(UNAuthorizationOptionBadge | UNAuthorizationOptionSound | UNAuthorizationOptionAlert)
+                        completionHandler:^(BOOL granted, NSError * _Nullable error) {
+    if (!error) {
+      NSLog(@"request authorization succeeded!");
+    }
+  }];
+}
+
 @end

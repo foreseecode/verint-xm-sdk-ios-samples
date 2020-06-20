@@ -24,16 +24,6 @@
 		96C3D6061CDB284A005040C8 /* CustomInvitationSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C3D6051CDB284A005040C8 /* CustomInvitationSampleTests.m */; };
 		96C3D6111CDB284A005040C8 /* CustomInvitationSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C3D6101CDB284A005040C8 /* CustomInvitationSampleUITests.m */; };
 		96C3D61F1CDB9958005040C8 /* foresee_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 96C3D61E1CDB9958005040C8 /* foresee_configuration.json */; };
-		96C3D6471CDB9F4F005040C8 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C3D6411CDB9F4F005040C8 /* CoreAudio.framework */; };
-		96C3D6481CDB9F4F005040C8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C3D6421CDB9F4F005040C8 /* CoreFoundation.framework */; };
-		96C3D6491CDB9F4F005040C8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C3D6431CDB9F4F005040C8 /* CoreGraphics.framework */; };
-		96C3D64A1CDB9F4F005040C8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C3D6441CDB9F4F005040C8 /* CoreMedia.framework */; };
-		96C3D64B1CDB9F4F005040C8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C3D6451CDB9F4F005040C8 /* CoreMotion.framework */; };
-		96C3D64C1CDB9F4F005040C8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C3D6461CDB9F4F005040C8 /* QuartzCore.framework */; };
-		96C3D64E1CDB9F5A005040C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C3D64D1CDB9F5A005040C8 /* UIKit.framework */; };
-		96C3D6511CDB9F65005040C8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C3D64F1CDB9F65005040C8 /* AVFoundation.framework */; };
-		96C3D6521CDB9F65005040C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C3D6501CDB9F65005040C8 /* Foundation.framework */; };
-		96C3D6541CDB9F7C005040C8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C3D6531CDB9F7C005040C8 /* SystemConfiguration.framework */; };
 		96C3D6571CDBA240005040C8 /* CustomInviteTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C3D6561CDBA240005040C8 /* CustomInviteTracker.m */; };
 		96C3D65A1CDBA26A005040C8 /* CustomInviteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C3D6591CDBA26A005040C8 /* CustomInviteView.m */; };
 		96C3D65F1CDCFA6B005040C8 /* header1.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C3D65E1CDCFA6B005040C8 /* header1.png */; };
@@ -120,16 +110,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96C3D6541CDB9F7C005040C8 /* SystemConfiguration.framework in Frameworks */,
-				96C3D6511CDB9F65005040C8 /* AVFoundation.framework in Frameworks */,
-				96C3D6521CDB9F65005040C8 /* Foundation.framework in Frameworks */,
-				96C3D64E1CDB9F5A005040C8 /* UIKit.framework in Frameworks */,
-				96C3D6471CDB9F4F005040C8 /* CoreAudio.framework in Frameworks */,
-				96C3D6481CDB9F4F005040C8 /* CoreFoundation.framework in Frameworks */,
-				96C3D6491CDB9F4F005040C8 /* CoreGraphics.framework in Frameworks */,
-				96C3D64A1CDB9F4F005040C8 /* CoreMedia.framework in Frameworks */,
-				96C3D64B1CDB9F4F005040C8 /* CoreMotion.framework in Frameworks */,
-				96C3D64C1CDB9F4F005040C8 /* QuartzCore.framework in Frameworks */,
 				68E38B3000DB35966A79663A /* Pods_CustomInvitationSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

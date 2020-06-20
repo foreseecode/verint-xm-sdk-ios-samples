@@ -8,6 +8,7 @@
 
 import UIKit
 import ForeSee
+import ForeSeeCxMeasure
 
 class ViewController: UIViewController {
   
@@ -19,7 +20,7 @@ class ViewController: UIViewController {
   }
   
   @IBAction func checkEligibilityButtonTouchUpInside(_ sender: Any) {
-    ForeSee.checkIfEligibleForSurvey()
+    ForeSeeCxMeasure.checkIfEligibleForSurvey()
   }
   
   @IBAction func resetStateButtonTouchUpInside(_ sender: Any) {
