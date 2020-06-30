@@ -310,7 +310,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/BasicSample\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.foresee.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.BasicSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -425,7 +425,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/BasicSample\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.foresee.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.BasicSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -447,7 +447,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/BasicSample\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.foresee.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.BasicSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				WRAPPER_EXTENSION = app;

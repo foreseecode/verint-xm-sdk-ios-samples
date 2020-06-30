@@ -559,7 +559,7 @@
 				);
 				INFOPLIST_FILE = ContactInvitationSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = foresee.ContactInvitationSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.ContactInvitationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -575,7 +575,7 @@
 				);
 				INFOPLIST_FILE = ContactInvitationSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = foresee.ContactInvitationSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.ContactInvitationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
