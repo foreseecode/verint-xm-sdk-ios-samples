@@ -381,7 +381,7 @@
 				GCC_PREFIX_HEADER = "LocalNotificationSample/LocalNotificationSample-Prefix.pch";
 				INFOPLIST_FILE = "LocalNotificationSample/LocalNotificationSample-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.foresee.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.LocalNotificationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -399,7 +399,7 @@
 				GCC_PREFIX_HEADER = "LocalNotificationSample/LocalNotificationSample-Prefix.pch";
 				INFOPLIST_FILE = "LocalNotificationSample/LocalNotificationSample-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.foresee.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.LocalNotificationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
