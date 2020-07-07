@@ -357,6 +357,8 @@
 				TargetAttributes = {
 					96C3D5E71CDB284A005040C8 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = Q7SXD2TU64;
+						ProvisioningStyle = Manual;
 					};
 					96C3D6001CDB284A005040C8 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -647,6 +649,8 @@
 			baseConfigurationReference = 5858EF61849E87D448A2698A /* Pods-CustomInvitationSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Q7SXD2TU64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CustomInvitationSample",
@@ -655,6 +659,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.CustomInvitationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.CustomInvitationSample";
 			};
 			name = Debug;
 		};
@@ -663,6 +668,8 @@
 			baseConfigurationReference = 9C5F51C4E3606A54BA60B910 /* Pods-CustomInvitationSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Q7SXD2TU64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CustomInvitationSample",
@@ -671,6 +678,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.CustomInvitationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.CustomInvitationSample";
 			};
 			name = Release;
 		};
