@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9680152A1BC6C7CE001B0926"
+               BlueprintIdentifier = "96B1EDA123746AE700CB911B"
                BuildableName = "BasicSwiftSample.app"
                BlueprintName = "BasicSwiftSample"
                ReferencedContainer = "container:BasicSwiftSample.xcodeproj">
@@ -30,7 +30,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9680152A1BC6C7CE001B0926"
+            BlueprintIdentifier = "96B1EDA123746AE700CB911B"
             BuildableName = "BasicSwiftSample.app"
             BlueprintName = "BasicSwiftSample"
             ReferencedContainer = "container:BasicSwiftSample.xcodeproj">
@@ -59,15 +59,6 @@
             ReferencedContainer = "container:BasicSwiftSample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9680152A1BC6C7CE001B0926"
-            BuildableName = "BasicSwiftSample.app"
-            BlueprintName = "BasicSwiftSample"
-            ReferencedContainer = "container:BasicSwiftSample.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -79,7 +70,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9680152A1BC6C7CE001B0926"
+            BlueprintIdentifier = "96B1EDA123746AE700CB911B"
             BuildableName = "BasicSwiftSample.app"
             BlueprintName = "BasicSwiftSample"
             ReferencedContainer = "container:BasicSwiftSample.xcodeproj">
