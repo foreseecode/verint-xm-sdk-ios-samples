@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3AC9F330B89875FD022A631C /* Pods_SwiftSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D962D542B59FEBDD29D6D3D1 /* Pods_SwiftSample.framework */; };
+		4730B1B2F1EBBD0194A6387C /* Pods_BasicSwiftSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0AF8690973BCD8EB30F32A /* Pods_BasicSwiftSample.framework */; };
 		96416A6C23746DCB0077B113 /* foresee_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 968015571BC6CE41001B0926 /* foresee_configuration.json */; };
 		96B1EDA523746AE700CB911B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B1EDA423746AE700CB911B /* AppDelegate.swift */; };
 		96B1EDA923746AE700CB911B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B1EDA823746AE700CB911B /* ViewController.swift */; };
@@ -22,14 +22,13 @@
 		3EE029CC6A3E3204419877D5 /* Pods-SwiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-SwiftSample/Pods-SwiftSample.debug.xcconfig"; sourceTree = "<group>"; };
 		62BDD8AD7CEDF3E20C1278D5 /* Pods-SwiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-SwiftSample/Pods-SwiftSample.release.xcconfig"; sourceTree = "<group>"; };
 		968015571BC6CE41001B0926 /* foresee_configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foresee_configuration.json; sourceTree = "<group>"; };
-		96B1EDA223746AE700CB911B /* SwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96B1EDA223746AE700CB911B /* BasicSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B1EDA423746AE700CB911B /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 2; };
 		96B1EDA823746AE700CB911B /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
 		96B1EDAB23746AE700CB911B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96B1EDAD23746AE900CB911B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96B1EDB023746AE900CB911B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96B1EDB223746AE900CB911B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D962D542B59FEBDD29D6D3D1 /* Pods_SwiftSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAF9227D385506BD52E5CA72 /* Pods-BasicSwiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicSwiftSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicSwiftSample/Pods-BasicSwiftSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -38,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AC9F330B89875FD022A631C /* Pods_SwiftSample.framework in Frameworks */,
+				4730B1B2F1EBBD0194A6387C /* Pods_BasicSwiftSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +59,7 @@
 		9680152C1BC6C7CE001B0926 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				96B1EDA223746AE700CB911B /* SwiftSample.app */,
+				96B1EDA223746AE700CB911B /* BasicSwiftSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				3B0AF8690973BCD8EB30F32A /* Pods_BasicSwiftSample.framework */,
-				D962D542B59FEBDD29D6D3D1 /* Pods_SwiftSample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,9 +100,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		96B1EDA123746AE700CB911B /* SwiftSample */ = {
+		96B1EDA123746AE700CB911B /* BasicSwiftSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 96B1EDB323746AE900CB911B /* Build configuration list for PBXNativeTarget "SwiftSample" */;
+			buildConfigurationList = 96B1EDB323746AE900CB911B /* Build configuration list for PBXNativeTarget "BasicSwiftSample" */;
 			buildPhases = (
 				5B953A2A84B5329CFF7927A1 /* [CP] Check Pods Manifest.lock */,
 				96B1ED9E23746AE700CB911B /* Sources */,
@@ -116,9 +114,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftSample;
+			name = BasicSwiftSample;
 			productName = SwiftSample;
-			productReference = 96B1EDA223746AE700CB911B /* SwiftSample.app */;
+			productReference = 96B1EDA223746AE700CB911B /* BasicSwiftSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -150,7 +148,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				96B1EDA123746AE700CB911B /* SwiftSample */,
+				96B1EDA123746AE700CB911B /* BasicSwiftSample */,
 			);
 		};
 /* End PBXProject section */
@@ -176,7 +174,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftSample/Pods-SwiftSample-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-BasicSwiftSample/Pods-BasicSwiftSample-frameworks.sh",
 				"${PODS_ROOT}/ForeSee/lib/ForeSeeLegacy.framework",
 				"${PODS_ROOT}/ForeSee/lib/ForeSee.framework",
 				"${PODS_ROOT}/ForeSee/lib/ForeSeeUtilities.framework",
@@ -191,7 +189,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftSample/Pods-SwiftSample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicSwiftSample/Pods-BasicSwiftSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5B953A2A84B5329CFF7927A1 /* [CP] Check Pods Manifest.lock */ = {
@@ -209,7 +207,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SwiftSample-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BasicSwiftSample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -360,7 +358,7 @@
 		};
 		96B1EDB423746AE900CB911B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EE029CC6A3E3204419877D5 /* Pods-SwiftSample.debug.xcconfig */;
+			baseConfigurationReference = EAF9227D385506BD52E5CA72 /* Pods-BasicSwiftSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -385,7 +383,7 @@
 		};
 		96B1EDB523746AE900CB911B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62BDD8AD7CEDF3E20C1278D5 /* Pods-SwiftSample.release.xcconfig */;
+			baseConfigurationReference = 08AF87013A29F49ED15ED111 /* Pods-BasicSwiftSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -418,7 +416,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		96B1EDB323746AE900CB911B /* Build configuration list for PBXNativeTarget "SwiftSample" */ = {
+		96B1EDB323746AE900CB911B /* Build configuration list for PBXNativeTarget "BasicSwiftSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96B1EDB423746AE900CB911B /* Debug */,

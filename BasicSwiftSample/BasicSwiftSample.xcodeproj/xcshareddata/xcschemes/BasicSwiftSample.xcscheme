@@ -54,8 +54,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "96B1EDA123746AE700CB911B"
-            BuildableName = "SwiftSample.app"
-            BlueprintName = "SwiftSample"
+            BuildableName = "BasicSwiftSample.app"
+            BlueprintName = "BasicSwiftSample"
             ReferencedContainer = "container:BasicSwiftSample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
