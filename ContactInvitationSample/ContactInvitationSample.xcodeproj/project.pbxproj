@@ -281,6 +281,8 @@
 				TargetAttributes = {
 					967270701D04DF4F00F90E54 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = Q7SXD2TU64;
+						ProvisioningStyle = Manual;
 					};
 					967270891D04DF4F00F90E54 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -553,14 +555,17 @@
 			baseConfigurationReference = BB3D2E880F9504154D0382DA /* Pods-ContactInvitationSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Q7SXD2TU64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ContactInvitationSample",
 				);
 				INFOPLIST_FILE = ContactInvitationSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = foresee.ContactInvitationSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.ContactInvitationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.ContactInvitationSample";
 			};
 			name = Debug;
 		};
@@ -569,14 +574,17 @@
 			baseConfigurationReference = 07485F3358C9DA0321E3C9BE /* Pods-ContactInvitationSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Q7SXD2TU64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ContactInvitationSample",
 				);
 				INFOPLIST_FILE = ContactInvitationSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = foresee.ContactInvitationSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.ContactInvitationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.ContactInvitationSample";
 			};
 			name = Release;
 		};
