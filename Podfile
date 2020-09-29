@@ -25,7 +25,7 @@ target "BasicSample" do
     foresee_pods
 end
 
-target "SwiftSample" do
+target "BasicSwiftSample" do
     project 'BasicSwiftSample/BasicSwiftSample.xcodeproj'
     foresee_pods
 end

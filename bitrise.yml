@@ -1,0 +1,215 @@
+---
+format_version: '8'
+default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
+project_type: ios
+trigger_map:
+- push_branch: "*"
+  workflow: primary
+- pull_request_source_branch: "*"
+  workflow: primary
+workflows:
+  deploy:
+    steps:
+    - activate-ssh-key@4:
+        run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
+    - git-clone@4: {}
+    - cache-pull@2: {}
+    - script@1:
+        title: Do anything with Script step
+    - certificate-and-profile-installer@1: {}
+    - cocoapods-install@1: {}
+    - xcode-test@2:
+        inputs:
+        - project_path: "$BITRISE_PROJECT_PATH"
+        - scheme: "$BITRISE_SCHEME"
+    - xcode-archive@2:
+        inputs:
+        - project_path: "$BITRISE_PROJECT_PATH"
+        - scheme: "$BITRISE_SCHEME"
+        - export_method: "$BITRISE_EXPORT_METHOD"
+    - deploy-to-bitrise-io@1: {}
+    - cache-push@2: {}
+  primary:
+    steps:
+    - activate-ssh-key@4:
+        run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
+    - git-clone@4: {}
+    - cache-pull@2: {}
+    - script@1:
+        title: Do anything with Script step
+    - certificate-and-profile-installer@1: {}
+    - cocoapods-install@1: {}
+    - xcode-test@2:
+        inputs:
+        - project_path: "$BITRISE_PROJECT_PATH"
+        - scheme: "$BITRISE_SCHEME"
+    - deploy-to-bitrise-io@1: {}
+    - cache-push@2: {}
+  build:
+    steps:
+    - activate-ssh-key@4:
+        run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
+    - git-clone@4: {}
+    - cache-pull@2: {}
+    - script@1:
+        title: Do anything with Script step
+    - certificate-and-profile-installer@1: {}
+    - cocoapods-install@1: {}
+    - xcode-test@2:
+        inputs:
+        - project_path: "$BITRISE_PROJECT_PATH"
+        - scheme: "$BITRISE_SCHEME"
+    - xcode-archive@2: {}
+    - deploy-to-bitrise-io@1: {}
+    - cache-push@2: {}
+  Prepare:
+    steps:
+    - activate-ssh-key@4:
+        run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
+    - git-clone@4: {}
+    - fastlane@2:
+        inputs:
+        - lane: certificates
+    - cocoapods-install@1: {}
+  Build-BasicSample:
+    before_run:
+    - Prepare
+    steps:
+    - xcode-archive@2:
+        inputs:
+        - force_code_sign_identity: ''
+        - force_team_id: ''
+    - cache-pull@2: {}
+    - deploy-to-bitrise-io@1: {}
+    envs:
+    - opts:
+        is_expand: false
+      BITRISE_SCHEME: BasicSample
+  Build-AdvancedSample:
+    before_run:
+    - Prepare
+    steps:
+    - xcode-archive@2:
+        inputs:
+        - force_code_sign_identity: ''
+        - force_team_id: ''
+    - cache-pull@2: {}
+    - deploy-to-bitrise-io@1: {}
+    envs:
+    - opts:
+        is_expand: false
+      BITRISE_SCHEME: AdvancedSample
+  Build-All:
+    steps:
+    - trigger-bitrise-workflow@0:
+        inputs:
+        - workflow_id: Build-BasicSample
+        - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
+    - trigger-bitrise-workflow@0:
+        inputs:
+        - workflow_id: Build-AdvancedSample
+        - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
+    - trigger-bitrise-workflow@0:
+        inputs:
+        - workflow_id: Build-FeedbackSample
+        - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
+    - trigger-bitrise-workflow@0:
+        inputs:
+        - workflow_id: Build-LocalNotificationSample
+        - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
+    - trigger-bitrise-workflow@0:
+        inputs:
+        - workflow_id: Build-BasicSwiftSample
+        - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
+    - trigger-bitrise-workflow@0:
+        inputs:
+        - workflow_id: Build-CustomInvitationSample
+        - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
+    - trigger-bitrise-workflow@0:
+        inputs:
+        - workflow_id: Build-ContactInvitationSample
+        - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
+  Build-FeedbackSample:
+    before_run:
+    - Prepare
+    steps:
+    - xcode-archive@2:
+        inputs:
+        - force_code_sign_identity: ''
+        - force_team_id: ''
+    - cache-pull@2: {}
+    - deploy-to-bitrise-io@1: {}
+    envs:
+    - opts:
+        is_expand: false
+      BITRISE_SCHEME: FeedbackSample
+  Build-LocalNotificationSample:
+    before_run:
+    - Prepare
+    steps:
+    - xcode-archive@2:
+        inputs:
+        - force_code_sign_identity: ''
+        - force_team_id: ''
+    - cache-pull@2: {}
+    - deploy-to-bitrise-io@1: {}
+    envs:
+    - opts:
+        is_expand: false
+      BITRISE_SCHEME: LocalNotificationSample
+  Build-CustomInvitationSample:
+    before_run:
+    - Prepare
+    steps:
+    - xcode-archive@2:
+        inputs:
+        - force_code_sign_identity: ''
+        - force_team_id: ''
+    - cache-pull@2: {}
+    - deploy-to-bitrise-io@1: {}
+    envs:
+    - opts:
+        is_expand: false
+      BITRISE_SCHEME: CustomInvitationSample
+  Build-ContactInvitationSample:
+    before_run:
+    - Prepare
+    steps:
+    - xcode-archive@2:
+        inputs:
+        - force_code_sign_identity: ''
+        - force_team_id: ''
+    - cache-pull@2: {}
+    - deploy-to-bitrise-io@1: {}
+    envs:
+    - opts:
+        is_expand: false
+      BITRISE_SCHEME: ContactInvitationSample
+  Build-BasicSwiftSample:
+    before_run:
+    - Prepare
+    steps:
+    - xcode-archive@2:
+        inputs:
+        - force_code_sign_identity: ''
+        - force_team_id: ''
+    - cache-pull@2: {}
+    - deploy-to-bitrise-io@1: {}
+    envs:
+    - opts:
+        is_expand: false
+      BITRISE_SCHEME: FeedbackSample
+app:
+  envs:
+  - opts:
+      is_expand: false
+    BITRISE_PROJECT_PATH: ForeSeeSamples.xcworkspace
+  - opts:
+      is_expand: false
+    BITRISE_SCHEME: FeedbackSample
+  - opts:
+      is_expand: false
+    BITRISE_EXPORT_METHOD: development
+  - git_url: https://github.com/foreseecode/mobile-fastlane-match
+    opts:
+      is_expand: false
