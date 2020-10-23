@@ -22,21 +22,7 @@ platform :ios do
   end
 
   lane :certificates do
-    # development
-    match(git_url: "git@github.com:foreseecode/mobile-fastlane-match.git", app_identifier: "com.foresee.samples.FeedbackSample",  git_branch: "foresee", type: "development", readonly: true)
-    match(git_url: "git@github.com:foreseecode/mobile-fastlane-match.git", app_identifier: "com.foresee.samples.LocalNotificationSample",  git_branch: "foresee", type: "development", readonly: true)
-    match(git_url: "git@github.com:foreseecode/mobile-fastlane-match.git", app_identifier: "com.foresee.samples.BasicSample",  git_branch: "foresee", type: "development", readonly: true)
-    match(git_url: "git@github.com:foreseecode/mobile-fastlane-match.git", app_identifier: "com.foresee.samples.BasicSwiftSample",  git_branch: "foresee", type: "development", readonly: true)
-    match(git_url: "git@github.com:foreseecode/mobile-fastlane-match.git", app_identifier: "com.foresee.samples.CustomInvitationSample",  git_branch: "foresee", type: "development", readonly: true)
-    match(git_url: "git@github.com:foreseecode/mobile-fastlane-match.git", app_identifier: "com.foresee.samples.ComplexSample",  git_branch: "foresee", type: "development", readonly: true)
-    match(git_url: "git@github.com:foreseecode/mobile-fastlane-match.git", app_identifier: "com.foresee.samples.ContactInvitationSample",  git_branch: "foresee", type: "development", readonly: true)
-    # adhoc
-    match(git_url: "git@github.com:foreseecode/mobile-fastlane-match.git", app_identifier: "com.foresee.samples.FeedbackSample",  git_branch: "foresee", type: "adhoc", readonly: true)
-    match(git_url: "git@github.com:foreseecode/mobile-fastlane-match.git", app_identifier: "com.foresee.samples.LocalNotificationSample",  git_branch: "foresee", type: "adhoc", readonly: true)
-    match(git_url: "git@github.com:foreseecode/mobile-fastlane-match.git", app_identifier: "com.foresee.samples.BasicSample",  git_branch: "foresee", type: "adhoc", readonly: true)
-    match(git_url: "git@github.com:foreseecode/mobile-fastlane-match.git", app_identifier: "com.foresee.samples.BasicSwiftSample",  git_branch: "foresee", type: "adhoc", readonly: true)
-    match(git_url: "git@github.com:foreseecode/mobile-fastlane-match.git", app_identifier: "com.foresee.samples.CustomInvitationSample",  git_branch: "foresee", type: "adhoc", readonly: true)
-    match(git_url: "git@github.com:foreseecode/mobile-fastlane-match.git", app_identifier: "com.foresee.samples.ComplexSample",  git_branch: "foresee", type: "adhoc", readonly: true)
-    match(git_url: "git@github.com:foreseecode/mobile-fastlane-match.git", app_identifier: "com.foresee.samples.ContactInvitationSample",  git_branch: "foresee", type: "adhoc", readonly: true)
+    match(type: "development")
+    match(type: "adhoc")
   end
 end
