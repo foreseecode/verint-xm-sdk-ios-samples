@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     ForeSee.setDebugLogEnabled(true)
+    ForeSee.setEventLogEnabled(false)
     ForeSee.start()
     ForeSeeCxMeasure.setSkipPoolingCheck(true)
     ForeSee.resetState()
