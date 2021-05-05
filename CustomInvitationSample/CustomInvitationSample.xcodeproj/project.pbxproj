@@ -449,19 +449,15 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample-frameworks.sh",
-				"${PODS_ROOT}/ForeSee/lib/ForeSeeLegacy.framework",
-				"${PODS_ROOT}/ForeSee/lib/ForeSee.framework",
-				"${PODS_ROOT}/ForeSee/lib/ForeSeeUtilities.framework",
-				"${PODS_ROOT}/ForeSee/lib/IngestionLogger.framework",
-				"${PODS_ROOT}/ForeSee/lib/ForeSeeCxMeasure.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ForeSee/ForeSee.framework/ForeSee",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ForeSeeUtilities/ForeSeeUtilities.framework/ForeSeeUtilities",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/IngestionLogger/IngestionLogger.framework/IngestionLogger",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeLegacy.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSee.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IngestionLogger.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeCxMeasure.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

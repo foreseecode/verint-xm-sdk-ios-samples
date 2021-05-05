@@ -2,7 +2,7 @@ platform :ios, '9.0'
 workspace 'ForeSeeSamples.xcworkspace'
 use_frameworks!
 
-FORESEE_VERSION = '6.0.3'
+FORESEE_VERSION = '6.0.4-alpha0'
 
 def foresee_pods(include_feedback=false, include_cxMeasure=true)
     pod 'ForeSee/Core', FORESEE_VERSION
@@ -43,4 +43,12 @@ end
 target "FeedbackSample" do
     project 'FeedbackSample/FeedbackSample.xcodeproj'
     foresee_pods true, false
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+        end
+    end
 end
