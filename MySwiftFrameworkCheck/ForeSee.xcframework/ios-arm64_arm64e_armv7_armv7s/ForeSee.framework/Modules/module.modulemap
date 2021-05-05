@@ -1,0 +1,18 @@
+framework module ForeSee {
+  
+    umbrella header "ForeSee.h"
+    
+    // explicitly public
+    header "FSUserProfile.h"
+    header "SRViewChangeDefinition.h"
+    
+    // formerly 'Internal'
+    explicit module Private {
+      // backward compat; this stuff gets exported, all the same,
+      // but it shouldn't be used by clients
+      header "ForeSeeComponent.h"
+    }
+    
+    module * { export * }
+    export *
+}

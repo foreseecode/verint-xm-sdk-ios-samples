@@ -1,0 +1,20 @@
+PODS:
+  - ForeSee (6.0.4-alpha0):
+    - ForeSee/ForeSeeCxMeasure (= 6.0.4-alpha0)
+  - ForeSee/Core (6.0.4-alpha0)
+  - ForeSee/ForeSeeCxMeasure (6.0.4-alpha0):
+    - ForeSee/Core
+
+DEPENDENCIES:
+  - ForeSee (= 6.0.4-alpha0)
+
+SPEC REPOS:
+  trunk:
+    - ForeSee
+
+SPEC CHECKSUMS:
+  ForeSee: 1986991b947e9c5b9d0f2067e2f6c7c2dba973c0
+
+PODFILE CHECKSUM: 99cd6cd68ff0f21c5f8bae742c9c9ce4336efa31
+
+COCOAPODS: 1.10.1

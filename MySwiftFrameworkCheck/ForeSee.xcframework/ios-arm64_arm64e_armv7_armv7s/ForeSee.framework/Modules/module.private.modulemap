@@ -1,0 +1,4 @@
+module ForeSee_Private {
+  header "../ForeSee.framework/PrivateHeaders/Private.h"
+  export *
+}

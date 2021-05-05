@@ -1,0 +1,11 @@
+framework module ForeSeeCxMeasure {
+  
+  umbrella header "ForeSeeCxMeasure.h"
+  
+  header "FSInviteDelegate.h"
+  header "FSInviteHandler.h"
+  header "TRMeasure.h"
+  
+  module * { export * }
+  export *
+}

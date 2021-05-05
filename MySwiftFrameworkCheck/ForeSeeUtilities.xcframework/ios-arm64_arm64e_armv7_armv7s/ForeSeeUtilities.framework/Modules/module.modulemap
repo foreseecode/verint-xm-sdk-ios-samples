@@ -1,0 +1,6 @@
+framework module ForeSeeUtilities {
+  umbrella header "ForeSeeUtilities.h"
+
+  export *
+  module * { export * }
+}

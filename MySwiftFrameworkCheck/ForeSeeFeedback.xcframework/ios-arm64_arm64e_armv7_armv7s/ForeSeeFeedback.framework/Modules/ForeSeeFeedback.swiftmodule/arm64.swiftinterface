@@ -1,0 +1,35 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ForeSeeFeedback
+import ForeSee
+@_exported import ForeSeeFeedback
+import ForeSee_Private
+import Foundation
+import Swift
+import UIKit
+@objc public protocol ForeSeeFeedbackDelegate {
+  @objc optional func feedbackPresented(_ feedbackName: Swift.String)
+  @objc optional func feedbackNotPresentedWithNetworkError(_ feedbackName: Swift.String)
+  @objc optional func feedbackNotPresentedWithDisabled(_ feedbackName: Swift.String)
+  @objc optional func feedbackSubmitted(_ feedbackName: Swift.String)
+  @objc optional func feedbackNotSubmittedWithAbort(_ feedbackName: Swift.String)
+  @objc optional func feedbackNotSubmittedWithNetworkError(_ feedbackName: Swift.String)
+  @objc optional func feedbackStatusRetrieved(_ feedbackName: Swift.String, enabled: Swift.Bool)
+}
+@_inheritsConvenienceInitializers @objc(ForeSeeFeedbackComponent) public class ForeSeeFeedbackComponent : ObjectiveC.NSObject {
+  @objc public static var delegate: ForeSeeFeedback.ForeSeeFeedbackDelegate? {
+    @objc get
+    @objc set
+  }
+  @objc public static func showFeedbackSurvey()
+  @objc public static func showFeedbackForName(_ name: Swift.String)
+  @objc public static func checkIfFeedbackEnabled()
+  @objc public static func checkIfFeedbackEnabledForName(_ name: Swift.String)
+  @objc public static func availableFeedbackNames() -> [Swift.String]
+  @objc public static func setFeedbackListener(delegate: ForeSeeFeedback.ForeSeeFeedbackDelegate)
+  public func resetState()
+  public func setup()
+  public func endSession()
+  @objc override dynamic public init()
+  @objc deinit
+}

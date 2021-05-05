@@ -1,0 +1,12 @@
+framework module IngestionLogger {
+  
+  umbrella header "IngestionLogger.h"
+  
+  header "FSLogger.h"
+  header "FSIngestionEvent.h"
+  header "FSProfileKeys.h"
+    
+  module * { export * }
+  export *
+}
+
