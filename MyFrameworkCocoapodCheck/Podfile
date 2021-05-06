@@ -5,7 +5,7 @@ target 'MyFrameworkCocoapodCheck' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'ForeSee', '6.0.4-alpha0'
+  pod 'ForeSee', '6.0.3'
 
   # Pods for MyFrameworkCocoapodCheck
 

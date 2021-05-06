@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import ForeSee
+import ForeSeeCxMeasure
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
