@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [ForeSee setDebugLogEnabled:YES];
-    [ForeSee setEventLogEnabled:NO];
+    [ForeSee setEventLogEnabled:YES];
     [ForeSee start];
     return YES;
 }
