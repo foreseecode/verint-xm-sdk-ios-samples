@@ -1,6 +1,11 @@
 cat <<static
+## Installation
+This project requires [CocoaPods](https://cocoapods.org/). After cloning, run:
+
+    pod install
+
 ## Projects
-All projects can be found in: \`ForeSeeSamples.xcworkspace\`
+All projects can be found in \`ForeSeeSamples.xcworkspace\`. Information about running each project follows.
 static
 
 for file in */
