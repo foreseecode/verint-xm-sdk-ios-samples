@@ -17,11 +17,5 @@
     ],
     "surveyCompletionPageDelay":3
   },
-  "notificationType": "IN_SESSION",
-  "measures": {},
-  "invite":
-  {
-    "logo": "ForeSee_logo",
-    "baseColor": [237, 38, 54]
-  }
+  "notificationType": "IN_SESSION"
 }

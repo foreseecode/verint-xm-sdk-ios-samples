@@ -12,5 +12,10 @@
     "invite": {
         "logo": "ForeSee_logo",
         "baseColor": [235, 43, 61]
+    },
+    "survey": {
+        "closeButtonColor": [255, 255, 255],
+        "closeButtonBackgroundColor": [65, 65, 65],
+        "headerColor": [65, 65, 65]
     }
 }
