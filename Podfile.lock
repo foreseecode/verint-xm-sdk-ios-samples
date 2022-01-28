@@ -1,22 +1,22 @@
 PODS:
-  - ForeSee/Core (6.0.5)
-  - ForeSee/ForeSeeCxMeasure (6.0.5):
+  - ForeSee/Core (6.0.7-alpha0)
+  - ForeSee/ForeSeeCxMeasure (6.0.7-alpha0):
     - ForeSee/Core
-  - ForeSee/ForeSeeFeedback (6.0.5):
+  - ForeSee/ForeSeeFeedback (6.0.7-alpha0):
     - ForeSee/Core
 
 DEPENDENCIES:
-  - ForeSee/Core (= 6.0.5)
-  - ForeSee/ForeSeeCxMeasure (= 6.0.5)
-  - ForeSee/ForeSeeFeedback (= 6.0.5)
+  - ForeSee/Core (= 6.0.7-alpha0)
+  - ForeSee/ForeSeeCxMeasure (= 6.0.7-alpha0)
+  - ForeSee/ForeSeeFeedback (= 6.0.7-alpha0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - ForeSee
 
 SPEC CHECKSUMS:
-  ForeSee: 7e82e38c2e1fdd648a4dee1218674ebff36e3837
+  ForeSee: 06cfceb4920e0281c8a9bde005c23e09550fd914
 
-PODFILE CHECKSUM: 3af41691a5535d3cce9a8a6c17e83a48528362a3
+PODFILE CHECKSUM: c974f2f92eae2c16a93a71801d3e1cd2edca7067
 
 COCOAPODS: 1.10.1
