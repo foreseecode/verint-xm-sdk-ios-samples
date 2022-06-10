@@ -3,7 +3,7 @@ platform :ios, '9.0'
 workspace 'ForeSeeSamples.xcworkspace'
 use_frameworks!
 
-FORESEE_VERSION = '6.0.8'
+FORESEE_VERSION = '6.0.9'
 
 def foresee_pods(include_feedback=false, include_cxMeasure=true)
     pod 'ForeSee/Core', FORESEE_VERSION
