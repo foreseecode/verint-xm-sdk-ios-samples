@@ -27,7 +27,7 @@ workflows:
         - project_path: "$BITRISE_PROJECT_PATH"
         - scheme: "$BITRISE_SCHEME"
         - export_method: "$BITRISE_EXPORT_METHOD"
-    - deploy-to-bitrise-io@1: {}
+    - deploy-to-bitrise-io: {}
     - cache-push@2: {}
   primary:
     steps:
@@ -43,7 +43,7 @@ workflows:
         inputs:
         - project_path: "$BITRISE_PROJECT_PATH"
         - scheme: "$BITRISE_SCHEME"
-    - deploy-to-bitrise-io@1: {}
+    - deploy-to-bitrise-io: {}
     - cache-push@2: {}
   build:
     steps:
@@ -60,7 +60,7 @@ workflows:
         - project_path: "$BITRISE_PROJECT_PATH"
         - scheme: "$BITRISE_SCHEME"
     - xcode-archive@2: {}
-    - deploy-to-bitrise-io@1: {}
+    - deploy-to-bitrise-io: {}
     - cache-push@2: {}
   Prepare:
     steps:
@@ -80,7 +80,7 @@ workflows:
         - force_code_sign_identity: ''
         - force_team_id: ''
     - cache-pull@2: {}
-    - deploy-to-bitrise-io@1: {}
+    - deploy-to-bitrise-io: {}
     envs:
     - opts:
         is_expand: false
@@ -94,7 +94,7 @@ workflows:
         - force_code_sign_identity: ''
         - force_team_id: ''
     - cache-pull@2: {}
-    - deploy-to-bitrise-io@1: {}
+    - deploy-to-bitrise-io: {}
     envs:
     - opts:
         is_expand: false
@@ -138,7 +138,7 @@ workflows:
         - force_code_sign_identity: ''
         - force_team_id: ''
     - cache-pull@2: {}
-    - deploy-to-bitrise-io@1: {}
+    - deploy-to-bitrise-io: {}
     envs:
     - opts:
         is_expand: false
@@ -152,7 +152,7 @@ workflows:
         - force_code_sign_identity: ''
         - force_team_id: ''
     - cache-pull@2: {}
-    - deploy-to-bitrise-io@1: {}
+    - deploy-to-bitrise-io: {}
     envs:
     - opts:
         is_expand: false
@@ -166,7 +166,7 @@ workflows:
         - force_code_sign_identity: ''
         - force_team_id: ''
     - cache-pull@2: {}
-    - deploy-to-bitrise-io@1: {}
+    - deploy-to-bitrise-io: {}
     envs:
     - opts:
         is_expand: false
@@ -180,7 +180,7 @@ workflows:
         - force_code_sign_identity: ''
         - force_team_id: ''
     - cache-pull@2: {}
-    - deploy-to-bitrise-io@1: {}
+    - deploy-to-bitrise-io: {}
     envs:
     - opts:
         is_expand: false
@@ -194,7 +194,7 @@ workflows:
         - force_code_sign_identity: ''
         - force_team_id: ''
     - cache-pull@2: {}
-    - deploy-to-bitrise-io@1: {}
+    - deploy-to-bitrise-io: {}
     envs:
     - opts:
         is_expand: false
