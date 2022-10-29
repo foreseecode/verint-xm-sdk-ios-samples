@@ -3,45 +3,45 @@ platform :ios, '9.0'
 workspace 'ForeSeeSamples.xcworkspace'
 use_frameworks!
 
-FORESEE_VERSION = '6.0.9'
+POD_VERSION = '7.0.0-alpha0'
 
-def foresee_pods(include_feedback=false, include_cxMeasure=true)
-    pod 'ForeSee/Core', FORESEE_VERSION
-    pod 'ForeSee/ForeSeeCxMeasure', FORESEE_VERSION if include_cxMeasure
-    pod 'ForeSee/ForeSeeFeedback', FORESEE_VERSION if include_feedback
+def pods(include_digital=false, include_predictive=true)
+    pod 'Verint-XM/Core', POD_VERSION
+    pod 'Verint-XM/Predictive', POD_VERSION if include_predictive
+    pod 'Verint-XM/Digital', POD_VERSION if include_digital
 end
 
 target "CustomInvitationSample" do
     project 'CustomInvitationSample/CustomInvitationSample.xcodeproj'
-    foresee_pods
+    pods
 end
 
 target "AdvancedSample" do
     project 'AdvancedSample/AdvancedSample.xcodeproj'
-    foresee_pods true
+    pods true
 end
 
 target "BasicSample" do
     project 'BasicSample/BasicSample.xcodeproj'
-    foresee_pods
+    pods
 end
 
 target "BasicSwiftSample" do
     project 'BasicSwiftSample/BasicSwiftSample.xcodeproj'
-    foresee_pods
+    pods
 end
 
 target "ContactInvitationSample" do
     project 'ContactInvitationSample/ContactInvitationSample.xcodeproj'
-    foresee_pods
+    pods
 end
 
 target "LocalNotificationSample" do
     project 'LocalNotificationSample/LocalNotificationSample.xcodeproj'
-    foresee_pods
+    pods
 end
 
 target "FeedbackSample" do
     project 'FeedbackSample/FeedbackSample.xcodeproj'
-    foresee_pods true, false
+    pods true, false
 end

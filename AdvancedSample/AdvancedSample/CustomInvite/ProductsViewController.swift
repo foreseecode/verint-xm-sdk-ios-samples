@@ -4,8 +4,8 @@
 //
 
 import UIKit
-import ForeSee
-import ForeSeeCxMeasure
+import EXPCore
+import EXPPredictive
 
 struct Product {
   let name: String
@@ -38,17 +38,17 @@ class ProductsViewController: UIViewController, UICollectionViewDelegate, UIColl
     self.gridView.dataSource = self
     self.gridView.delegate = self
     
-    ForeSeeCxMeasure.setInviteHandler(self)
-    ForeSeeCxMeasure.checkIfEligibleForSurvey()
+    EXPPredictive.setInviteHandler(self)
+    EXPPredictive.checkIfEligibleForSurvey()
   }
   
   override func viewDidDisappear(_ animated: Bool) {
     super.viewDidDisappear(true)
     
     if self.invited {
-      ForeSeeCxMeasure.customInviteDeclined()
+      EXPPredictive.customInviteDeclined()
     }
-    ForeSeeCxMeasure.setInviteHandler(nil)
+    EXPPredictive.setInviteHandler(nil)
   }
   
   
@@ -88,12 +88,12 @@ class ProductsViewController: UIViewController, UICollectionViewDelegate, UIColl
   }
   
   func inviteAcceptedAction() {
-    ForeSeeCxMeasure.customInviteAccepted()
+    EXPPredictive.customInviteAccepted()
     self.invited = false
   }
 }
 
-extension ProductsViewController: FSInviteHandler {
+extension ProductsViewController: EXPInviteHandler {
   func show() {
     self.invited = true
     self.gridView.reloadData()

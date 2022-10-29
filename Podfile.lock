@@ -1,22 +1,22 @@
 PODS:
-  - ForeSee/Core (6.0.8)
-  - ForeSee/ForeSeeCxMeasure (6.0.8):
-    - ForeSee/Core
-  - ForeSee/ForeSeeFeedback (6.0.8):
-    - ForeSee/Core
+  - Verint-XM/Core (7.0.0-alpha0)
+  - Verint-XM/Digital (7.0.0-alpha0):
+    - Verint-XM/Core
+  - Verint-XM/Predictive (7.0.0-alpha0):
+    - Verint-XM/Core
 
 DEPENDENCIES:
-  - ForeSee/Core (= 6.0.8)
-  - ForeSee/ForeSeeCxMeasure (= 6.0.8)
-  - ForeSee/ForeSeeFeedback (= 6.0.8)
+  - Verint-XM/Core (= 7.0.0-alpha0)
+  - Verint-XM/Digital (= 7.0.0-alpha0)
+  - Verint-XM/Predictive (= 7.0.0-alpha0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - ForeSee
+    - Verint-XM
 
 SPEC CHECKSUMS:
-  ForeSee: 149b703b43beabf2a679782eabadaf42ec2be11c
+  Verint-XM: cac7833d1a7983de3343b5b159935fd7ad1a3efb
 
-PODFILE CHECKSUM: 1629a2f495039a0980f6ef946fe56c09ac3450a1
+PODFILE CHECKSUM: ca3c5573a69755c422cb38fd10ea5912f602ae41
 
 COCOAPODS: 1.11.3
