@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <ForeSee/ForeSee.h>
-#import <ForeSeeCxMeasure/FSInviteDelegate.h>
+#import <EXPCore/EXPCore.h>
+#import <EXPPredictive/EXPInviteDelegate.h>>
 
-@interface CustomInviteDelegate : NSObject <FSInviteDelegate>
+@interface CustomInviteDelegate : NSObject <EXPInviteDelegate>
 
 @end

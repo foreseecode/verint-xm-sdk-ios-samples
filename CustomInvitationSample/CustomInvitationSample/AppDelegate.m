@@ -19,14 +19,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [ForeSee setDebugLogEnabled:YES];
-    [ForeSee setEventLogEnabled:NO];
-    [ForeSee start];
+    [EXPCore setDebugLogEnabled:YES];
+    [EXPCore setEventLogEnabled:NO];
+    [EXPCore start];
     
     // capture and log ForeSee lifecycle events;
     // active for all examples
     self.triggerDelegate = [[CustomInviteDelegate alloc] init];
-    [ForeSeeCxMeasure setInviteDelegate:self.triggerDelegate];
+    [EXPPredictive setInviteDelegate:self.triggerDelegate];
     
     return YES;
 }
