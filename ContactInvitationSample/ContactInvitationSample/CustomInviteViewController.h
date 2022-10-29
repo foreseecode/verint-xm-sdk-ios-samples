@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <ForeSee/ForeSee.h>
-#import <ForeSeeCxMeasure/FSInviteHandler.h>
+#import <EXPCore/EXPCore.h>>
+#import <EXPPredictive/EXPPredictive.h>>
 
-@interface CustomInviteViewController : UIViewController <FSInviteHandler>
+@interface CustomInviteViewController : UIViewController <EXPInviteHandler>
 
 @end

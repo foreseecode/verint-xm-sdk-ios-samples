@@ -8,8 +8,8 @@
 
 #import "ViewController.h"
 #import <QuartzCore/QuartzCore.h>
-#import <ForeSee/ForeSee.h>
-#import <ForeSeeCxMeasure/ForeSeeCxMeasure.h>
+#import <EXPCore/EXPCore.h>
+#import <EXPPredictive/EXPPredictive.h>
 
 @interface ViewController ()
 
@@ -24,12 +24,12 @@
 #pragma mark - IBActions
 
 - (IBAction)handleShowInviteTouchUpInside:(id)sender {
-    [ForeSeeCxMeasure checkIfEligibleForSurvey];
+    [EXPPredictive checkIfEligibleForSurvey];
 }
 
 - (IBAction)handleResetState:(id)sender {
-    [ForeSee resetState];
-    [ForeSeeCxMeasure setInviteHandler:nil];
+    [EXPCore resetState];
+    [EXPPredictive setInviteHandler:nil];
 }
 
 @end
