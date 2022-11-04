@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <ForeSee/ForeSee.h>
+#import <EXPCore/EXPCore.h>
 
 @interface AppDelegate ()
 
@@ -16,9 +16,9 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [ForeSee setDebugLogEnabled:YES];
-    [ForeSee setEventLogEnabled:YES];
-    [ForeSee start];
+    [EXPCore setDebugLogEnabled:YES];
+    [EXPCore setEventLogEnabled:YES];
+    [EXPCore start];
     return YES;
 }
 

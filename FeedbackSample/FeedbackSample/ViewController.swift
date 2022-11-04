@@ -7,25 +7,25 @@
 //
 
 import UIKit
-import ForeSee
-import ForeSeeFeedback
+import EXPCore
+import EXPDigital
 
 class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
-    ForeSee.setDebugLogEnabled(true)
-    ForeSee.resetState()
+    EXPCore.setDebugLogEnabled(true)
+    EXPCore.resetState()
   }
 
   @IBAction func launchFeedback1(_ sender: Any) {
-    ForeSee.resetState()
-    ForeSeeFeedbackComponent.showFeedbackSurvey()
+    EXPCore.resetState()
+    DigitalComponent.showDigitalSurvey()
   }
   
   @IBAction func launchFeedback2(_ sender: Any) {
-    ForeSeeFeedbackComponent.showFeedbackForName("Sample 2")
+    DigitalComponent.showDigitalSurveyForName("Sample 2")
   }
 
 }

@@ -7,19 +7,19 @@
 //
 
 #import "FSViewController.h"
-#import <ForeSee/ForeSee.h>
-#import <ForeSeeCxMeasure/ForeSeeCxMeasure.h>
+#import <EXPCore/EXPCore.h>
+#import <EXPPredictive/EXPPredictive.h>
 
 @implementation FSViewController
 
 # pragma mark - Actions
 
 - (void)checkEligibility:(id)sender {
-  [ForeSeeCxMeasure checkIfEligibleForSurvey];
+  [EXPPredictive checkIfEligibleForSurvey];
 }
 
 - (void)resetState:(id)sender {
-    [ForeSee resetState];
+    [EXPCore resetState];
 }
 
 @end

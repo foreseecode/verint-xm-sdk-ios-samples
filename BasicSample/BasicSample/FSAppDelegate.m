@@ -7,8 +7,8 @@
 //
 
 #import "FSAppDelegate.h"
-#import <ForeSee/ForeSee.h>
-#import <ForeSeeCxMeasure/ForeSeeCxMeasure.h>
+#import <EXPCore/EXPCore.h>
+#import <EXPPredictive/EXPPredictive.h>
 
 @implementation FSAppDelegate
 
@@ -18,10 +18,10 @@
 }
 
 - (void)initializeForeSeeTrigger {
-  [ForeSee setDebugLogEnabled:YES];
-  [ForeSee start];
-  [ForeSeeCxMeasure setSkipPoolingCheck:YES];
-  [ForeSee resetState];
+  [EXPCore setDebugLogEnabled:YES];
+  [EXPCore start];
+  [EXPPredictive setSkipPoolingCheck:YES];
+  [EXPCore resetState];
 }
 
 @end

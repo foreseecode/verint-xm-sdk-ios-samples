@@ -7,7 +7,7 @@
 //
 
 #import "CustomInviteDelegate.h"
-#import <ForeSeeCxMeasure/TRMeasure.h>
+#import <EXPPredictive/EXPMeasure.h>
 
 @implementation CustomInviteDelegate
 
@@ -17,58 +17,58 @@
  
  */
 
-- (void)willShowInviteForMeasure:(TRMeasure *)measure {
+- (void)willShowInviteForMeasure:(EXPMeasure *)measure {
     [self showStatus:NSStringFromSelector(_cmd) measure:measure];
 }
 
-- (void)willNotShowInviteWithEligibilityFailedForMeasure:(TRMeasure *)measure {
+- (void)willNotShowInviteWithEligibilityFailedForMeasure:(EXPMeasure *)measure {
     [self showStatus:NSStringFromSelector(_cmd) measure:measure];
 }
 
-- (void)willNotShowInviteWithSamplingFailedForMeasure:(TRMeasure *)measure {
+- (void)willNotShowInviteWithSamplingFailedForMeasure:(EXPMeasure *)measure {
     [self showStatus:NSStringFromSelector(_cmd) measure:measure];
 }
 
-- (void)didShowInviteForMeasure:(TRMeasure *)measure {
+- (void)didShowInviteForMeasure:(EXPMeasure *)measure {
     [self showStatus:NSStringFromSelector(_cmd) measure:measure];
 }
 
-- (void)didAcceptInviteForMeasure:(TRMeasure *)measure {
+- (void)didAcceptInviteForMeasure:(EXPMeasure *)measure {
     [self showStatus:NSStringFromSelector(_cmd) measure:measure];
 }
 
-- (void)didDeclineInviteForMeasure:(TRMeasure *)measure {
+- (void)didDeclineInviteForMeasure:(EXPMeasure *)measure {
     [self showStatus:NSStringFromSelector(_cmd) measure:measure];
 }
 
-- (void)didShowSurveyForMeasure:(TRMeasure *)measure {
+- (void)didShowSurveyForMeasure:(EXPMeasure *)measure {
     [self showStatus:NSStringFromSelector(_cmd) measure:measure];
 }
 
-- (void)didCancelSurveyForMeasure:(TRMeasure *)measure {
+- (void)didCancelSurveyForMeasure:(EXPMeasure *)measure {
     [self showStatus:NSStringFromSelector(_cmd) measure:measure];
 }
 
-- (void)didCompleteSurveyForMeasure:(TRMeasure *)measure {
+- (void)didCompleteSurveyForMeasure:(EXPMeasure *)measure {
     [self showStatus:NSStringFromSelector(_cmd) measure:measure];
 }
 
-- (void)didFailForMeasure:(TRMeasure *)measure withContactFormatError:(NSError *)error {
+- (void)didFailForMeasure:(EXPMeasure *)measure withContactFormatError:(NSError *)error {
     [self showStatus:NSStringFromSelector(_cmd) measure:measure];
 }
 
-- (void)didFailForMeasure:(TRMeasure *)measure withMissingInformationError:(NSError *)error {
+- (void)didFailForMeasure:(EXPMeasure *)measure withMissingInformationError:(NSError *)error {
     [self showStatus:NSStringFromSelector(_cmd) measure:measure];
 }
 
-- (void)didFailForMeasure:(TRMeasure *)measure withNetworkError:(NSError *)error {
+- (void)didFailForMeasure:(EXPMeasure *)measure withNetworkError:(NSError *)error {
     [self showStatus:NSStringFromSelector(_cmd) measure:measure];
 }
 
 #pragma mark - Status
 
-- (void)showStatus:(NSString *)str measure:(TRMeasure *)measure {
-    NSLog(@"FSInviteDelegate event = %@ (%@)", [self trim:str], measure.surveyID);
+- (void)showStatus:(NSString *)str measure:(EXPMeasure *)measure {
+    NSLog(@"EXPInviteDelegate event = %@ (%@)", [self trim:str], measure.surveyID);
 }
 
 - (NSString *)trim:(NSString *)str {

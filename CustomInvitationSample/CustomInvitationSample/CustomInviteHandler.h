@@ -6,11 +6,11 @@
 //  Copyright © 2016 ForeSee. All rights reserved.
 //
 
-#import <ForeSeeCxMeasure/FSInviteHandler.h>
+#import <EXPPredictive/EXPInviteHandler.h>
 #import <UIKit/UIKit.h>
-#import <ForeSee/ForeSee.h>
+#import <EXPCore/EXPCore.h>
 
-@interface CustomInviteHandler : NSObject <FSInviteHandler>
+@interface CustomInviteHandler : NSObject <EXPInviteHandler>
 
 - (id)initWithViewController:(UIViewController *)viewController;
 

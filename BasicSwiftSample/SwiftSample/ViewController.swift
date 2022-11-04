@@ -7,24 +7,24 @@
 //
 
 import UIKit
-import ForeSee
-import ForeSeeCxMeasure
+import EXPCore
+import EXPPredictive
 
 class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    ForeSee.setDebugLogEnabled(true)
-    ForeSee.resetState()
+    EXPCore.setDebugLogEnabled(true)
+    EXPCore.resetState()
   }
   
   @IBAction func checkEligibilityButtonTouchUpInside(_ sender: Any) {
-    ForeSeeCxMeasure.checkIfEligibleForSurvey()
+    EXPPredictive.checkIfEligibleForSurvey()
   }
   
   @IBAction func resetStateButtonTouchUpInside(_ sender: Any) {
-    ForeSee.resetState()
+    EXPCore.resetState()
   }
 }
 

@@ -14,12 +14,12 @@
     // reset state so that we always show the example; a
     // normal production application should not reset state
     // every time -- you *want* to track the user's state!
-    [ForeSee resetState];
+    [EXPCore resetState];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     self.inviteHandler = nil;
-    [ForeSeeCxMeasure setInviteHandler:nil];
+    [EXPPredictive setInviteHandler:nil];
 }
 
 @end
