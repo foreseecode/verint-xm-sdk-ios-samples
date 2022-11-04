@@ -13,16 +13,16 @@
 
 - (void)viewDidLoad {
     self.inviteHandler = [[CustomInviteTracker alloc] init];
-    [ForeSeeCxMeasure setInviteHandler:self.inviteHandler];
+    [EXPPredictive setInviteHandler:self.inviteHandler];
 }
 
 - (IBAction)handleShowInviteTouchUpInside:(id)sender {
     // check for eligibility (which is what triggers the invite)
-    [ForeSeeCxMeasure checkIfEligibleForSurvey];
+    [EXPPredictive checkIfEligibleForSurvey];
 }
 
 - (IBAction)resetState:(id)sender {
-    [ForeSee resetState];
+    [EXPCore resetState];
 }
 
 @end

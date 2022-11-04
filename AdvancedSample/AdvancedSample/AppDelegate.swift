@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import ForeSee
-import ForeSeeCxMeasure
+import EXPCore
+import EXPPredictive
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,11 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    ForeSee.setDebugLogEnabled(true)
-    ForeSee.setEventLogEnabled(false)
-    ForeSee.start()
-    ForeSeeCxMeasure.setSkipPoolingCheck(true)
-    ForeSee.resetState()
+    EXPCore.setDebugLogEnabled(true)
+    EXPCore.setEventLogEnabled(false)
+    EXPCore.start()
+    EXPPredictive.setSkipPoolingCheck(true)
+    EXPCore.resetState()
     return true
   }
 

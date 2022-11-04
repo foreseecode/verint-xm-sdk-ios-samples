@@ -42,11 +42,11 @@
 - (void)didAcceptInviteView:(CustomInviteView *)inviteView {
     // notify the ForeSee tracker that an invitation was accepted; this helps
     // the tracker maintain the proper state for this user
-    [ForeSeeCxMeasure customInviteAccepted];
+    [EXPPredictive customInviteAccepted];
 }
 
 - (void)didCancelInviteView:(CustomInviteView *)inviteView {
-    [ForeSeeCxMeasure customInviteDeclined];
+    [EXPPredictive customInviteDeclined];
     self.inviteView = nil;
 }
 

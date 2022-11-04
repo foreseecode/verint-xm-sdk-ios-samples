@@ -1,17 +1,12 @@
 {
-    "clientId":"FSRTESTINGCODECID12345==",
-    "notificationType": "IN_SESSION",
+    "customerId":"FSRTESTINGCODECID12345==",
+    "notificationType":"IN_SESSION",
     "measures":
     [
         {
             "surveyId": "iphone_app_QA",
             "surveyStyle": "modern",
-            "daysSinceLaunch": 0,
-            "launchCount": 0,
-            "significantEventThresholds":
-            {
-                "app_test_1": 4
-            }
+            "launchCount": 0
         }
     ],
     "invite": {

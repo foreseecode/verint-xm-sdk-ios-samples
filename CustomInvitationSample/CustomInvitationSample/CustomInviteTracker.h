@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <ForeSee/ForeSee.h>
+#import <EXPCore/EXPCore.h>
 #import "CustomInviteView.h"
-#import <ForeSeeCxMeasure/FSInviteHandler.h>
-#import <ForeSeeCxMeasure/FSInviteDelegate.h>
+#import <EXPPredictive/EXPInviteHandler.h>
+#import <EXPPredictive/EXPInviteDelegate.h>
 
-@interface CustomInviteTracker : NSObject <FSInviteHandler, CustomInviteViewDelegate>
+@interface CustomInviteTracker : NSObject <EXPInviteHandler, CustomInviteViewDelegate>
 
 @end

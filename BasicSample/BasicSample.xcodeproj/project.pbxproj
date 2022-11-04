@@ -11,7 +11,7 @@
 		966346F91FA8BE47002F322D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966346F81FA8BE47002F322D /* Main.storyboard */; };
 		966346FB1FA8BE7C002F322D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 966346FA1FA8BE7C002F322D /* Assets.xcassets */; };
 		966346FD1FA8BFDD002F322D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966346FC1FA8BFDD002F322D /* LaunchScreen.storyboard */; };
-		99F1EC79188604E6001B1A8B /* foresee_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 99F1EC78188604E6001B1A8B /* foresee_configuration.json */; };
+		99F1EC79188604E6001B1A8B /* exp_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 99F1EC78188604E6001B1A8B /* exp_configuration.json */; };
 		D544DF4B15068C0C0025FF43 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D544DF4915068C0C0025FF43 /* InfoPlist.strings */; };
 		D544DF4D15068C0C0025FF43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D544DF4C15068C0C0025FF43 /* main.m */; };
 		D544DF5115068C0C0025FF43 /* FSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D544DF5015068C0C0025FF43 /* FSAppDelegate.m */; };
@@ -24,7 +24,7 @@
 		966346F81FA8BE47002F322D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		966346FA1FA8BE7C002F322D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		966346FC1FA8BFDD002F322D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		99F1EC78188604E6001B1A8B /* foresee_configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foresee_configuration.json; sourceTree = "<group>"; };
+		99F1EC78188604E6001B1A8B /* exp_configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exp_configuration.json; sourceTree = "<group>"; };
 		A95CAAE00100055B34050F0D /* Pods_BasicSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D544DF3C15068C0C0025FF43 /* BasicSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D544DF4815068C0C0025FF43 /* BasicSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BasicSample-Info.plist"; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 				966346F81FA8BE47002F322D /* Main.storyboard */,
 				966346FC1FA8BFDD002F322D /* LaunchScreen.storyboard */,
 				966346FA1FA8BE7C002F322D /* Assets.xcassets */,
-				99F1EC78188604E6001B1A8B /* foresee_configuration.json */,
+				99F1EC78188604E6001B1A8B /* exp_configuration.json */,
 				D544DF4F15068C0C0025FF43 /* FSAppDelegate.h */,
 				D544DF5015068C0C0025FF43 /* FSAppDelegate.m */,
 				D544DF5215068C0C0025FF43 /* FSViewController.h */,
@@ -175,7 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99F1EC79188604E6001B1A8B /* foresee_configuration.json in Resources */,
+				99F1EC79188604E6001B1A8B /* exp_configuration.json in Resources */,
 				966346F91FA8BE47002F322D /* Main.storyboard in Resources */,
 				D544DF4B15068C0C0025FF43 /* InfoPlist.strings in Resources */,
 				966346FB1FA8BE7C002F322D /* Assets.xcassets in Resources */,
@@ -211,17 +211,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BasicSample/Pods-BasicSample-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ForeSee/ForeSee.framework/ForeSee",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ForeSeeUtilities/ForeSeeUtilities.framework/ForeSeeUtilities",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/IngestionLogger/IngestionLogger.framework/IngestionLogger",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ForeSeeCxMeasure/ForeSeeCxMeasure.framework/ForeSeeCxMeasure",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Verint-XM/Core/EXPCore.framework/EXPCore",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Verint-XM/Core/EXPUtilities.framework/EXPUtilities",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Verint-XM/Core/EXPIngestionLogger.framework/EXPIngestionLogger",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Verint-XM/Predictive/EXPPredictive.framework/EXPPredictive",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSee.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IngestionLogger.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeCxMeasure.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXPCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXPUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXPIngestionLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXPPredictive.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
