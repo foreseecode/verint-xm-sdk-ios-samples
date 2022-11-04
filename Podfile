@@ -11,6 +11,11 @@ def pods(include_digital=false, include_predictive=true)
     pod 'Verint-XM/Digital', POD_VERSION if include_digital
 end
 
+def dba_pods
+    pod 'Verint-XM/Core', POD_VERSION
+    pod 'Verint-XM/DBA', POD_VERSION
+end
+
 target "CustomInvitationSample" do
     project 'CustomInvitationSample/CustomInvitationSample.xcodeproj'
     pods
@@ -44,4 +49,9 @@ end
 target "FeedbackSample" do
     project 'FeedbackSample/FeedbackSample.xcodeproj'
     pods true, false
+end
+
+target "DBASample" do
+    project 'DBASample/DBASample.xcodeproj'
+    dba_pods
 end
