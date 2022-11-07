@@ -35,11 +35,11 @@ This example demonstrates the use of a custom invite handler.
 
 
 ## DBASample
-This sample project demonstrates an implementation of the Verint DBA code in an empty iPhone app.
+This sample project demonstrates an implementation of the Verint DBA module in an empty iPhone app.
 
 Features:
 
-* Start SDK using local configuration
+* Start Verint SDK using local configuration
 * Start and stop recording using DBA SDK API
 * Mask and unmask view using DBA SDK API
 * Debug masking
