@@ -13,7 +13,7 @@ end
 
 def dba_pods
     pod 'Verint-XM/Core', POD_VERSION
-    pod 'Verint-XM/DBA', POD_VERSION
+    #pod 'Verint-XM/DBA', POD_VERSION
 end
 
 target "CustomInvitationSample" do
