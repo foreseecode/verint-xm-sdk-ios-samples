@@ -34,6 +34,18 @@ This example shows how to provide a user's contact information to the SDK for us
 This example demonstrates the use of a custom invite handler.
 
 
+## DBASample
+This sample project demonstrates an implementation of the Verint DBA code in an empty iPhone app.
+
+Features:
+
+* Start SDK using local configuration
+* Start and stop recording using DBA SDK API
+* Mask and unmask view using DBA SDK API
+* Debug masking
+
+The recorded session will be available on CxSuite after some time (~1 hour) required for processing video and other session data.
+
 ## FeedbackSample
 This sample project demonstrates a Swift implementation of the ForeSee Feedback Survey code and configuration. 
 
