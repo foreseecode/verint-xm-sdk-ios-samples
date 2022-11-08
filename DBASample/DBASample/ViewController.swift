@@ -13,6 +13,7 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     EXPCore.start(withConfigurationFile: "exp_configuration.json")
+    EXPCore.setDebugLogEnabled(true)
     EXPDBA.setMaskingDebugEnabled(true)
   }
   
