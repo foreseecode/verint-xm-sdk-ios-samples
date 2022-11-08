@@ -6,21 +6,22 @@
 //
 
 import UIKit
-import EXPCore
+import EXPDBA
 
 class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
     EXPCore.start(withConfigurationFile: "exp_configuration.json")
+    EXPDBA.setMaskingDebugEnabled(true)
   }
   
   @IBAction func startRecordingAction(_ sender: Any) {
-    
+    EXPDBA.requestBeginRecording()
   }
   
   @IBAction func stopRecordingAction(_ sender: Any) {
-    
+    EXPDBA.stopRecording()
   }
 
 }
