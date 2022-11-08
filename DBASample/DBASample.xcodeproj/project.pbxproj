@@ -17,6 +17,8 @@
 		540F193729157C4B00B6EC0E /* DBASampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F193629157C4B00B6EC0E /* DBASampleTests.swift */; };
 		540F194129157C4B00B6EC0E /* DBASampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F194029157C4B00B6EC0E /* DBASampleUITests.swift */; };
 		540F194329157C4B00B6EC0E /* DBASampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F194229157C4B00B6EC0E /* DBASampleUITestsLaunchTests.swift */; };
+		54675E7B2919455E0046724A /* MasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54675E7A2919455E0046724A /* MasksViewController.swift */; };
+		54675E7D291966230046724A /* exp_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 54675E7C291966230046724A /* exp_configuration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		540F193C29157C4B00B6EC0E /* DBASampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBASampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		540F194029157C4B00B6EC0E /* DBASampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBASampleUITests.swift; sourceTree = "<group>"; };
 		540F194229157C4B00B6EC0E /* DBASampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBASampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		54675E7A2919455E0046724A /* MasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasksViewController.swift; sourceTree = "<group>"; };
+		54675E7C291966230046724A /* exp_configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exp_configuration.json; sourceTree = "<group>"; };
 		939FAC90650D5107CF2DEFF6 /* Pods-DBASample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBASample.release.xcconfig"; path = "Target Support Files/Pods-DBASample/Pods-DBASample.release.xcconfig"; sourceTree = "<group>"; };
 		962184601901E64A32BE7B44 /* Pods_DBASample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBASample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF52FD5234852CA6F3962AF5 /* Pods-DBASample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBASample.debug.xcconfig"; path = "Target Support Files/Pods-DBASample/Pods-DBASample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,10 +113,12 @@
 				540F191F29157C4A00B6EC0E /* AppDelegate.swift */,
 				540F192129157C4A00B6EC0E /* SceneDelegate.swift */,
 				540F192329157C4A00B6EC0E /* ViewController.swift */,
+				54675E7A2919455E0046724A /* MasksViewController.swift */,
 				540F192529157C4A00B6EC0E /* Main.storyboard */,
 				540F192829157C4B00B6EC0E /* Assets.xcassets */,
 				540F192A29157C4B00B6EC0E /* LaunchScreen.storyboard */,
 				540F192D29157C4B00B6EC0E /* Info.plist */,
+				54675E7C291966230046724A /* exp_configuration.json */,
 			);
 			path = DBASample;
 			sourceTree = "<group>";
@@ -260,6 +266,7 @@
 			files = (
 				540F192C29157C4B00B6EC0E /* LaunchScreen.storyboard in Resources */,
 				540F192929157C4B00B6EC0E /* Assets.xcassets in Resources */,
+				54675E7D291966230046724A /* exp_configuration.json in Resources */,
 				540F192729157C4A00B6EC0E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,6 +336,7 @@
 			files = (
 				540F192429157C4A00B6EC0E /* ViewController.swift in Sources */,
 				540F192029157C4A00B6EC0E /* AppDelegate.swift in Sources */,
+				54675E7B2919455E0046724A /* MasksViewController.swift in Sources */,
 				540F192229157C4A00B6EC0E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,7 +443,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -489,7 +497,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -505,8 +513,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7SXD2TU64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DBASample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -519,8 +530,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.DBASample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.DBASample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development com.verint.xm.samples.DBASample";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -533,8 +546,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7SXD2TU64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DBASample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -547,8 +563,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.DBASample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.DBASample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development com.verint.xm.samples.DBASample";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

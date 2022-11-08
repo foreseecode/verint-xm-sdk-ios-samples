@@ -3,7 +3,7 @@ platform :ios, '9.0'
 workspace 'ForeSeeSamples.xcworkspace'
 use_frameworks!
 
-POD_VERSION = '7.0.0'
+POD_VERSION = '7.0.1-alpha0'
 
 def pods(include_digital=false, include_predictive=true)
     pod 'Verint-XM/Core', POD_VERSION
@@ -12,7 +12,6 @@ def pods(include_digital=false, include_predictive=true)
 end
 
 def dba_pods
-    pod 'Verint-XM/Core', POD_VERSION
     pod 'Verint-XM/DBA', POD_VERSION
 end
 
