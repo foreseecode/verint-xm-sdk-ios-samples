@@ -1,0 +1,22 @@
+{
+  "customerId":"Ij6P1lfZHchO/co10lQ4BQ==",
+  "customerKey": 4453888,
+  "notificationType": "CONTACT",
+  "invite": {
+    "logo": "invite_logo.png",
+    "header": "invite_header.png",
+    "baseColor": [111, 212, 178]
+  },
+  "dba": {
+    "recordingRate": 100,
+    "enabled": true,
+    "minStoragePercent": 1,
+    "maxStorageUsage": 250,
+    "compatibility": {
+      "ios": {
+        "maxSupportedOS": "20.0"
+      }
+    },
+    "repeatDaysAfterDecline": 90
+  }
+}

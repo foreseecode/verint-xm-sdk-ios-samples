@@ -3,12 +3,16 @@ platform :ios, '9.0'
 workspace 'ForeSeeSamples.xcworkspace'
 use_frameworks!
 
-POD_VERSION = '7.0.0'
+POD_VERSION = '7.0.1-alpha0'
 
 def pods(include_digital=false, include_predictive=true)
     pod 'Verint-XM/Core', POD_VERSION
     pod 'Verint-XM/Predictive', POD_VERSION if include_predictive
     pod 'Verint-XM/Digital', POD_VERSION if include_digital
+end
+
+def dba_pods
+    pod 'Verint-XM/DBA', POD_VERSION
 end
 
 target "CustomInvitationSample" do
@@ -44,4 +48,9 @@ end
 target "FeedbackSample" do
     project 'FeedbackSample/FeedbackSample.xcodeproj'
     pods true, false
+end
+
+target "DBASample" do
+    project 'DBASample/DBASample.xcodeproj'
+    dba_pods
 end
