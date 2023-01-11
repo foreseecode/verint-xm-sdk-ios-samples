@@ -12,7 +12,8 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    EXPCore.start(withConfigurationFile: "exp_configuration.json")
+    let appId = Bundle.main.bundleIdentifier
+    EXPCore.start(withAppId: appId, version: FCPValues.version)
     EXPCore.setDebugLogEnabled(true)
     EXPDBA.setMaskingDebugEnabled(true)
   }
@@ -25,5 +26,9 @@ class ViewController: UIViewController {
     EXPDBA.stopRecording()
   }
 
+}
+
+struct FCPValues {
+    static let version = "mobsdk"
 }
 
