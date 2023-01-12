@@ -12,8 +12,7 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    let appId = Bundle.main.bundleIdentifier
-    EXPCore.start(withAppId: appId, version: FCPValues.version)
+    EXPCore.start(withAppId: ConfigValues.appId, version: ConfigValues.version)
     EXPCore.setDebugLogEnabled(true)
     EXPDBA.setMaskingDebugEnabled(true)
   }
@@ -28,7 +27,8 @@ class ViewController: UIViewController {
 
 }
 
-struct FCPValues {
-    static let version = "mobsdk"
+struct ConfigValues {
+  static let version = "mobsdk"
+	static let appId = "mobsdkSampleDBA"
 }
 
