@@ -1,25 +1,25 @@
 PODS:
-  - Verint-XM/Core (7.0.1-alpha2)
-  - Verint-XM/DBA (7.0.1-alpha2):
+  - Verint-XM/Core (7.0.1)
+  - Verint-XM/DBA (7.0.1):
     - Verint-XM/Core
-  - Verint-XM/Digital (7.0.1-alpha2):
+  - Verint-XM/Digital (7.0.1):
     - Verint-XM/Core
-  - Verint-XM/Predictive (7.0.1-alpha2):
+  - Verint-XM/Predictive (7.0.1):
     - Verint-XM/Core
 
 DEPENDENCIES:
-  - Verint-XM/Core (= 7.0.1-alpha2)
-  - Verint-XM/DBA (= 7.0.1-alpha2)
-  - Verint-XM/Digital (= 7.0.1-alpha2)
-  - Verint-XM/Predictive (= 7.0.1-alpha2)
+  - Verint-XM/Core (= 7.0.1)
+  - Verint-XM/DBA (= 7.0.1)
+  - Verint-XM/Digital (= 7.0.1)
+  - Verint-XM/Predictive (= 7.0.1)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Verint-XM
 
 SPEC CHECKSUMS:
-  Verint-XM: 92446ea6c6ab99ab33f6b41b8a23be5da45aedb3
+  Verint-XM: e349778eb1cd68220a48c739e4e6a78ddb7dda78
 
-PODFILE CHECKSUM: fb2f1b06502cdcc996c4e311becbdc7eb23a6087
+PODFILE CHECKSUM: d47484b0413c33c4f94790248bdde0b8a997e925
 
 COCOAPODS: 1.11.3
