@@ -19,6 +19,7 @@
 		540F194329157C4B00B6EC0E /* DBASampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F194229157C4B00B6EC0E /* DBASampleUITestsLaunchTests.swift */; };
 		54675E7B2919455E0046724A /* MasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54675E7A2919455E0046724A /* MasksViewController.swift */; };
 		54675E7D291966230046724A /* exp_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 54675E7C291966230046724A /* exp_configuration.json */; };
+		9675377E29B946F40011F5E0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9675377D29B946F40011F5E0 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		54675E7C291966230046724A /* exp_configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exp_configuration.json; sourceTree = "<group>"; };
 		939FAC90650D5107CF2DEFF6 /* Pods-DBASample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBASample.release.xcconfig"; path = "Target Support Files/Pods-DBASample/Pods-DBASample.release.xcconfig"; sourceTree = "<group>"; };
 		962184601901E64A32BE7B44 /* Pods_DBASample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBASample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9675377D29B946F40011F5E0 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		CF52FD5234852CA6F3962AF5 /* Pods-DBASample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBASample.debug.xcconfig"; path = "Target Support Files/Pods-DBASample/Pods-DBASample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 				540F192A29157C4B00B6EC0E /* LaunchScreen.storyboard */,
 				540F192D29157C4B00B6EC0E /* Info.plist */,
 				54675E7C291966230046724A /* exp_configuration.json */,
+				9675377D29B946F40011F5E0 /* Localizable.strings */,
 			);
 			path = DBASample;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9675377E29B946F40011F5E0 /* Localizable.strings in Resources */,
 				540F192C29157C4B00B6EC0E /* LaunchScreen.storyboard in Resources */,
 				540F192929157C4B00B6EC0E /* Assets.xcassets in Resources */,
 				54675E7D291966230046724A /* exp_configuration.json in Resources */,

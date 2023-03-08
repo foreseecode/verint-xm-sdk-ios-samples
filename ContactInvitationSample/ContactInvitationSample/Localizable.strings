@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  ContactInvitationSample
+
+  Created by Burkett, Wayne on 3/8/23.
+  Copyright © 2023 ForeSee. All rights reserved.
+*/
+
+"EXP_Invite_Contact_InvitePage_Title"="We'd like your feedback!";
+"EXP_Misc_BrandName"="ContactInvitationSample";
+"EXP_Misc_ClientPrivacyPolicyURL"="https://www.verint.com/privacy-policy";
