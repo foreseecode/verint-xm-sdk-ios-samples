@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  ContactInvitationSample
+
+  Copyright © 2023 Verint. All rights reserved.
+*/
+
+"EXP_Misc_BrandName"="Verint Contact Invitation Sample";
+"EXP_Misc_ClientPrivacyPolicyURL"="https://www.verint.com/privacy-policy";

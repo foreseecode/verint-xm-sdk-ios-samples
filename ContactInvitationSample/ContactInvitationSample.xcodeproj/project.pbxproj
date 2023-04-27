@@ -20,6 +20,7 @@
 		967270A81D04E19A00F90E54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967270A71D04E19A00F90E54 /* Main.storyboard */; };
 		967C4522213894F000C825D3 /* CustomInviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C4521213894F000C825D3 /* CustomInviteViewController.m */; };
 		96FF0F8C1D052C6C000A2176 /* exp_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 96FF0F8B1D052C6C000A2176 /* exp_configuration.json */; };
+		C47C5BC029FA962900C25C52 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C47C5BC229FA962900C25C52 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		A45BDC04B222154EB3000923 /* Pods-ContactInvitationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactInvitationSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ContactInvitationSample/Pods-ContactInvitationSample.debug.xcconfig"; sourceTree = "<group>"; };
 		AE2F44A3C1FA4D14939C57A2 /* Pods_ContactInvitationSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContactInvitationSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3D2E880F9504154D0382DA /* Pods-ContactInvitationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactInvitationSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ContactInvitationSample/Pods-ContactInvitationSample.debug.xcconfig"; sourceTree = "<group>"; };
+		C47C5BC129FA962900C25C52 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F29D4DA8BAE3233876805821 /* Pods-ContactInvitationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactInvitationSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ContactInvitationSample/Pods-ContactInvitationSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,6 +173,7 @@
 				967270851D04DF4F00F90E54 /* Info.plist */,
 				96FF0F8B1D052C6C000A2176 /* exp_configuration.json */,
 				967270741D04DF4F00F90E54 /* Supporting Files */,
+				C47C5BBD29FA955100C25C52 /* Resources */,
 			);
 			path = ContactInvitationSample;
 			sourceTree = "<group>";
@@ -210,6 +213,14 @@
 				9667BEFD21384C4900F750DD /* TextFieldTableViewCell.m */,
 			);
 			name = Settings;
+			sourceTree = "<group>";
+		};
+		C47C5BBD29FA955100C25C52 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C47C5BC229FA962900C25C52 /* Localizable.strings */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +288,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1100;
-				ORGANIZATIONNAME = ForeSee;
+				ORGANIZATIONNAME = Verint;
 				TargetAttributes = {
 					967270701D04DF4F00F90E54 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -319,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C47C5BC029FA962900C25C52 /* Localizable.strings in Resources */,
 				967270841D04DF4F00F90E54 /* LaunchScreen.storyboard in Resources */,
 				967270811D04DF4F00F90E54 /* Assets.xcassets in Resources */,
 				96FF0F8C1D052C6C000A2176 /* exp_configuration.json in Resources */,
@@ -439,6 +451,14 @@
 				967270831D04DF4F00F90E54 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C47C5BC229FA962900C25C52 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C47C5BC129FA962900C25C52 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
