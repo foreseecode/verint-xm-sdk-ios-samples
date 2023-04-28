@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verint_logo" translatesAutoresizingMaskIntoConstraints="NO" id="upD-A7-0hn">
-                                <rect key="frame" x="124" y="98" width="166.5" height="70"/>
+                                <rect key="frame" x="0.0" y="98" width="414" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="gYB-kl-1lH"/>
                                 </constraints>
@@ -46,7 +46,7 @@
                                 <rect key="frame" x="20" y="324.5" width="374" height="30"/>
                                 <color key="backgroundColor" red="0.16862745098039217" green="0.396078431372549" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Show Feedback"/>
+                                <state key="normal" title="Show Survey"/>
                                 <connections>
                                     <action selector="checkFeedbackEligibilityButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2sv-JQ-wGt"/>
                                 </connections>
@@ -83,6 +83,7 @@
                         <viewLayoutGuide key="safeArea" id="kcP-A7-Aqb"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="upD-A7-0hn" firstAttribute="leading" secondItem="kcP-A7-Aqb" secondAttribute="leading" id="33P-K8-E8F"/>
                             <constraint firstItem="kcP-A7-Aqb" firstAttribute="trailing" secondItem="efW-f0-k4I" secondAttribute="trailing" constant="20" id="4Am-3I-C46"/>
                             <constraint firstItem="upD-A7-0hn" firstAttribute="top" secondItem="kcP-A7-Aqb" secondAttribute="top" constant="50" id="4Tr-0W-A7C"/>
                             <constraint firstItem="Wu9-ac-gaW" firstAttribute="top" secondItem="wZA-DH-GmN" secondAttribute="bottom" constant="20" id="7l9-ZT-RhJ"/>
@@ -97,9 +98,9 @@
                             <constraint firstItem="xQE-Z6-62t" firstAttribute="leading" secondItem="kcP-A7-Aqb" secondAttribute="leading" constant="20" id="OqT-Xl-lfx"/>
                             <constraint firstItem="kcP-A7-Aqb" firstAttribute="trailing" secondItem="wZA-DH-GmN" secondAttribute="trailing" constant="20" id="RlV-SY-cct"/>
                             <constraint firstItem="wZA-DH-GmN" firstAttribute="leading" secondItem="kcP-A7-Aqb" secondAttribute="leading" constant="20" id="SpM-ub-xpA"/>
+                            <constraint firstItem="kcP-A7-Aqb" firstAttribute="trailing" secondItem="upD-A7-0hn" secondAttribute="trailing" id="WXU-RQ-NaL"/>
                             <constraint firstItem="Wu9-ac-gaW" firstAttribute="leading" secondItem="kcP-A7-Aqb" secondAttribute="leading" constant="20" id="hLM-6O-3xH"/>
                             <constraint firstItem="lPH-Fn-T9q" firstAttribute="leading" secondItem="kcP-A7-Aqb" secondAttribute="leading" constant="20" id="jsR-aP-GWG"/>
-                            <constraint firstItem="upD-A7-0hn" firstAttribute="centerX" secondItem="TQ8-Bi-Ld8" secondAttribute="centerX" id="mJf-cP-ACX"/>
                             <constraint firstItem="xQE-Z6-62t" firstAttribute="top" secondItem="efW-f0-k4I" secondAttribute="bottom" constant="20" id="tiO-1P-yhA"/>
                             <constraint firstItem="kcP-A7-Aqb" firstAttribute="trailing" secondItem="Wu9-ac-gaW" secondAttribute="trailing" constant="20" id="tsk-Sr-PmW"/>
                             <constraint firstItem="Bnf-0m-E5x" firstAttribute="top" secondItem="lPH-Fn-T9q" secondAttribute="bottom" constant="20" id="wUj-h5-FC4"/>
@@ -124,7 +125,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verint_logo" translatesAutoresizingMaskIntoConstraints="NO" id="PY3-gZ-yLL">
-                                <rect key="frame" x="124" y="50" width="166.5" height="70"/>
+                                <rect key="frame" x="0.0" y="50" width="414" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="jRz-vB-m3W"/>
                                 </constraints>
@@ -166,8 +167,9 @@
                         <constraints>
                             <constraint firstItem="ipQ-Tr-Abs" firstAttribute="top" secondItem="NPb-vo-lqf" secondAttribute="bottom" constant="20" id="2JH-fG-SZq"/>
                             <constraint firstItem="CS1-gV-Qi8" firstAttribute="bottom" secondItem="ipQ-Tr-Abs" secondAttribute="bottom" constant="20" id="7Xx-YU-5PU"/>
+                            <constraint firstItem="CS1-gV-Qi8" firstAttribute="trailing" secondItem="PY3-gZ-yLL" secondAttribute="trailing" id="B5i-mP-myZ"/>
                             <constraint firstItem="PY3-gZ-yLL" firstAttribute="top" secondItem="CS1-gV-Qi8" secondAttribute="top" constant="50" id="CsV-Ug-U5a"/>
-                            <constraint firstItem="PY3-gZ-yLL" firstAttribute="centerX" secondItem="CdM-mx-01q" secondAttribute="centerX" id="VDa-bs-BY7"/>
+                            <constraint firstItem="PY3-gZ-yLL" firstAttribute="leading" secondItem="CS1-gV-Qi8" secondAttribute="leading" id="KRv-ee-Kwp"/>
                             <constraint firstItem="IPF-V1-6lS" firstAttribute="top" secondItem="CS1-gV-Qi8" secondAttribute="top" constant="10" id="Yeu-A7-5dI"/>
                             <constraint firstAttribute="trailing" secondItem="NPb-vo-lqf" secondAttribute="trailing" constant="20" id="aOM-WQ-RJx"/>
                             <constraint firstItem="IPF-V1-6lS" firstAttribute="leading" secondItem="CS1-gV-Qi8" secondAttribute="leading" constant="20" id="bNs-jz-eqa"/>
