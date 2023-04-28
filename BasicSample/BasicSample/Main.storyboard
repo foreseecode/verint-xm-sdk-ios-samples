@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jeX-iI-dJz">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jeX-iI-dJz">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,21 +11,20 @@
         <!--Main View Controller-->
         <scene sceneID="Kjh-z5-3wV">
             <objects>
-                <viewController storyboardIdentifier="FSViewController" title="Main View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jeX-iI-dJz" customClass="FSViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FSViewController" title="Main View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jeX-iI-dJz" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oyg-rV-hMj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ForeSee_logo" translatesAutoresizingMaskIntoConstraints="NO" id="SXv-ME-ahT">
-                                <rect key="frame" x="152" y="70" width="70" height="70"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verint_logo" translatesAutoresizingMaskIntoConstraints="NO" id="SXv-ME-ahT">
+                                <rect key="frame" x="0.0" y="70" width="375" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="6kz-6u-CvU"/>
                                     <constraint firstAttribute="height" constant="70" id="SoB-rK-qgV"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yo-5R-QGz">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yo-5R-QGz">
                                 <rect key="frame" x="20" y="263" width="335" height="30"/>
-                                <color key="backgroundColor" red="0.92156862745098034" green="0.16862745098039217" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.16862745100000001" green="0.39607843139999999" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Check eligibility"/>
                                 <connections>
@@ -44,7 +41,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibi-hY-2DJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibi-hY-2DJ">
                                 <rect key="frame" x="20" y="313" width="335" height="30"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -64,11 +61,12 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="cUa-i2-lU8"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Ibi-hY-2DJ" firstAttribute="leading" secondItem="cUa-i2-lU8" secondAttribute="leading" constant="20" id="4J5-tO-HhS"/>
-                            <constraint firstItem="SXv-ME-ahT" firstAttribute="centerX" secondItem="cUa-i2-lU8" secondAttribute="centerX" id="4tD-W0-fDk"/>
                             <constraint firstItem="cUa-i2-lU8" firstAttribute="trailing" secondItem="SKo-Y3-dcg" secondAttribute="trailing" constant="20" id="4uT-5s-C9s"/>
+                            <constraint firstItem="cUa-i2-lU8" firstAttribute="trailing" secondItem="SXv-ME-ahT" secondAttribute="trailing" id="CdY-ew-DxX"/>
                             <constraint firstItem="4yo-5R-QGz" firstAttribute="leading" secondItem="cUa-i2-lU8" secondAttribute="leading" constant="20" id="KcV-dl-3Nc"/>
                             <constraint firstItem="zqP-dd-fc8" firstAttribute="leading" secondItem="cUa-i2-lU8" secondAttribute="leading" constant="20" id="LR4-tx-5iP"/>
                             <constraint firstItem="cUa-i2-lU8" firstAttribute="trailing" secondItem="zqP-dd-fc8" secondAttribute="trailing" constant="20" id="LfC-lE-5bB"/>
@@ -77,11 +75,11 @@
                             <constraint firstItem="SXv-ME-ahT" firstAttribute="top" secondItem="cUa-i2-lU8" secondAttribute="top" constant="50" id="e60-BZ-rdm"/>
                             <constraint firstItem="cUa-i2-lU8" firstAttribute="trailing" secondItem="4yo-5R-QGz" secondAttribute="trailing" constant="20" id="eBd-gR-0gw"/>
                             <constraint firstItem="zqP-dd-fc8" firstAttribute="top" secondItem="SXv-ME-ahT" secondAttribute="bottom" constant="20" id="emt-tT-gOp"/>
+                            <constraint firstItem="SXv-ME-ahT" firstAttribute="leading" secondItem="cUa-i2-lU8" secondAttribute="leading" id="kJX-nv-lau"/>
                             <constraint firstItem="cUa-i2-lU8" firstAttribute="trailing" secondItem="Ibi-hY-2DJ" secondAttribute="trailing" constant="20" id="q0C-LJ-yNq"/>
                             <constraint firstItem="4yo-5R-QGz" firstAttribute="top" secondItem="zqP-dd-fc8" secondAttribute="bottom" constant="20" id="rCb-d5-0xD"/>
                             <constraint firstItem="SKo-Y3-dcg" firstAttribute="leading" secondItem="cUa-i2-lU8" secondAttribute="leading" constant="20" id="y3e-gO-eMp"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="cUa-i2-lU8"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P9N-7p-AEr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -90,6 +88,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ForeSee_logo" width="200" height="200"/>
+        <image name="verint_logo" width="166.5" height="74.5"/>
     </resources>
 </document>

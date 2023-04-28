@@ -1,5 +1,5 @@
 //
-//  FSAppDelegate.h
+//  AppDelegate.h
 //  BasicSample
 //
 //  Created by Michael Han on 12-03-06.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FSAppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

@@ -1,5 +1,5 @@
 //
-//  FSViewController.h
+//  ViewController.h
 //  BasicSample
 //
 //  Created by Michael Han on 12-03-06.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FSViewController : UIViewController
+@interface ViewController : UIViewController
 
 - (IBAction)checkEligibility:(id)sender;
 - (IBAction)resetState:(id)sender;
