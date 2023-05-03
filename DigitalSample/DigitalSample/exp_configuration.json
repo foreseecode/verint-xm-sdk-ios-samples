@@ -1,7 +1,7 @@
 {
   "customerId":"FSRTESTINGCODECID12345==",
   "cppParameters": {
-    "sample_app":"Feedback Survey"
+    "sample_app":"Digital Survey"
   },
   "digital": {
     "digitalSurveys": [

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "542E7C9E219D0AFE006D4699"
-               BuildableName = "FeedbackSample.app"
-               BlueprintName = "FeedbackSample"
-               ReferencedContainer = "container:FeedbackSample.xcodeproj">
+               BuildableName = "DigitalSample.app"
+               BlueprintName = "DigitalSample"
+               ReferencedContainer = "container:DigitalSample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "542E7C9E219D0AFE006D4699"
-            BuildableName = "FeedbackSample.app"
-            BlueprintName = "FeedbackSample"
-            ReferencedContainer = "container:FeedbackSample.xcodeproj">
+            BuildableName = "DigitalSample.app"
+            BlueprintName = "DigitalSample"
+            ReferencedContainer = "container:DigitalSample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "542E7C9E219D0AFE006D4699"
-            BuildableName = "FeedbackSample.app"
-            BlueprintName = "FeedbackSample"
-            ReferencedContainer = "container:FeedbackSample.xcodeproj">
+            BuildableName = "DigitalSample.app"
+            BlueprintName = "DigitalSample"
+            ReferencedContainer = "container:DigitalSample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

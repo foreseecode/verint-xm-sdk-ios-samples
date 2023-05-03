@@ -1,15 +1,15 @@
 //
-//  FeedbackSampleTests.swift
-//  FeedbackSampleTests
+//  DigitalSampleTests.swift
+//  DigitalSampleTests
 //
 //  Created by Alan Wang on 11/14/18.
 //  Copyright © 2018 Alan Wang. All rights reserved.
 //
 
 import XCTest
-@testable import FeedbackSample
+@testable import DigitalSample
 
-class FeedbackSampleTests: XCTestCase {
+class DigitalSampleTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

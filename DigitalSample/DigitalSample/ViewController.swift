@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  FeedbackSample
+//  DigitalSample
 //
 //  Created by Alan Wang on 11/14/18.
 //  Copyright © 2018 Alan Wang. All rights reserved.
