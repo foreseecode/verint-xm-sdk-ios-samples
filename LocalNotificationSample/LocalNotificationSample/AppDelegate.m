@@ -1,26 +1,26 @@
 //
-//  FSAppDelegate.m
+//  AppDelegate.m
 //  LocalNotificationSample
 //
 //  Created by Michael Han on 12-06-08.
 //  Copyright (c) 2012 ForeSee. All rights reserved.
 //
 
-#import "FSAppDelegate.h"
-#import "FSViewController.h"
+#import "AppDelegate.h"
+#import "ViewController.h"
 #import <EXPCore/EXPCore.h>
 #import <EXPPredictive/EXPPredictive.h>
 
-@implementation FSAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   [UNUserNotificationCenter currentNotificationCenter].delegate = self;
   [self registerNotificationService];
-  [self initializeForeSeeTrigger];
+  [self initializeSDK];
   return YES;
 }
 
-- (void)initializeForeSeeTrigger {
+- (void)initializeSDK {
   [EXPCore setDebugLogEnabled:YES];
   [EXPPredictive setSkipPoolingCheck:YES];
   [EXPCore resetState];

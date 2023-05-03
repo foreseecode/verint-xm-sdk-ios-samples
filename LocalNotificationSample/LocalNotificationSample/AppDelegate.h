@@ -1,5 +1,5 @@
 //
-//  FSAppDelegate.h
+//  AppDelegate.h
 //  LocalNotificationSample
 //
 //  Created by Michael Han on 12-06-08.
@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <UserNotifications/UserNotifications.h>
 
-@class FSViewController;
+@class ViewController;
 
-@interface FSAppDelegate : NSObject <UIApplicationDelegate, UNUserNotificationCenterDelegate>
+@interface AppDelegate : NSObject <UIApplicationDelegate, UNUserNotificationCenterDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-- (void)initializeForeSeeTrigger;
+- (void)initializeSDK;
 
 @end
