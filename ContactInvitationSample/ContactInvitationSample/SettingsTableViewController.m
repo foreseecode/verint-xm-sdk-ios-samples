@@ -11,15 +11,15 @@
 #import <EXPCore/EXPCore.h>
 #import <EXPPredictive/EXPPredictive.h>
 
-typedef enum FSTableSections : NSUInteger {
+typedef enum TableSections : NSUInteger {
     EmailEntrySection = 0,
     PhoneNumberEntrySection,
     PreferredTypeSelectionSection,
     ResetStateSection,
     SectionCount
-} FSTableSections;
+} TableSections;
 
-NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
+NSString * const PreferredContactTypeKey = @"PreferredContactTypeKey";
 
 @interface SettingsTableViewController ()
 
@@ -42,7 +42,7 @@ NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
 #pragma mark - Preferred type
 
 - (EXPContactType)preferredContactType {
-    NSNumber *preferredType = [self.storage objectForKey:FSPreferredContactTypeKey];
+    NSNumber *preferredType = [self.storage objectForKey:PreferredContactTypeKey];
     if (preferredType) {
         return [preferredType unsignedIntegerValue];
     }
@@ -51,7 +51,7 @@ NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
 
 - (void)setPreferredContactType:(EXPContactType)preferredContactType {
     [EXPPredictive setPreferredContactType:preferredContactType];
-    [self.storage setInteger:preferredContactType forKey:FSPreferredContactTypeKey];
+    [self.storage setInteger:preferredContactType forKey:PreferredContactTypeKey];
     [self.storage synchronize];
 }
 
@@ -147,7 +147,7 @@ NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
 - (UITableViewCell *)createEmailEntryCellForTableView:(UITableView *)tableView {
     TextFieldTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SettingsCell"];
     cell.textField.tag = EmailEntrySection;
-    cell.textField.placeholder = @"example@foresee.com";
+    cell.textField.placeholder = @"example@verint.com";
     cell.textField.keyboardType = UIKeyboardTypeEmailAddress;
     cell.textField.text = [EXPPredictive contactDetailsForType:kEXPEmail];
     cell.textField.delegate = self;
@@ -182,7 +182,7 @@ NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
 #pragma mark - Util
 
 - (void)clearFields {
-    [self.storage removeObjectForKey:FSPreferredContactTypeKey];
+    [self.storage removeObjectForKey:PreferredContactTypeKey];
     self.dirty = YES;
 }
 

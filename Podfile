@@ -1,6 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '11.0'
-workspace 'ForeSeeSamples.xcworkspace'
+workspace 'VerintSamples.xcworkspace'
 use_frameworks!
 
 POD_VERSION = '7.0.2'

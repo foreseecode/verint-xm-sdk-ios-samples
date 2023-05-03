@@ -19,12 +19,12 @@ class ViewController: UIViewController {
     EXPCore.resetState()
   }
 
-  @IBAction func launchFeedback1(_ sender: Any) {
+  @IBAction func launchSurvey1(_ sender: Any) {
     EXPCore.resetState()
     DigitalComponent.showDigitalSurvey()
   }
   
-  @IBAction func launchFeedback2(_ sender: Any) {
+  @IBAction func launchSurvey2(_ sender: Any) {
     DigitalComponent.showDigitalSurveyForName("Sample 2")
   }
 

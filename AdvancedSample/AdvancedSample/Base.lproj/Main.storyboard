@@ -42,13 +42,13 @@
                                     <action selector="checkEligibilityButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wdt-4Y-mCo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZA-DH-GmN" userLabel="Feedback Eligibility">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZA-DH-GmN">
                                 <rect key="frame" x="20" y="324.5" width="374" height="30"/>
                                 <color key="backgroundColor" red="0.16862745098039217" green="0.396078431372549" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Show Survey"/>
                                 <connections>
-                                    <action selector="checkFeedbackEligibilityButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2sv-JQ-wGt"/>
+                                    <action selector="checkShowSurveyButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2sv-JQ-wGt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wu9-ac-gaW">

@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7pL-L6-3Xy">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -44,7 +43,7 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="Launch survey #1"/>
                                         <connections>
-                                            <action selector="launchFeedback1:" destination="efp-5F-m9A" eventType="touchUpInside" id="nv9-qz-kCs"/>
+                                            <action selector="launchSurvey1:" destination="efp-5F-m9A" eventType="touchUpInside" id="nv9-qz-kCs"/>
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="KcK-iG-v5X">
@@ -60,7 +59,7 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="Launch survey #2"/>
                                         <connections>
-                                            <action selector="launchFeedback2:" destination="efp-5F-m9A" eventType="touchUpInside" id="pG2-Y7-STm"/>
+                                            <action selector="launchSurvey2:" destination="efp-5F-m9A" eventType="touchUpInside" id="pG2-Y7-STm"/>
                                         </connections>
                                     </button>
                                 </subviews>

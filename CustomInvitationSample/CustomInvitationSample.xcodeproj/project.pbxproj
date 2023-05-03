@@ -672,7 +672,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CustomInvitationSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = foresee.CustomInvitationSampleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomInvitationSample.app/CustomInvitationSample";
 			};
@@ -684,7 +684,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CustomInvitationSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = foresee.CustomInvitationSampleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomInvitationSample.app/CustomInvitationSample";
 			};
@@ -695,7 +695,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = CustomInvitationSampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = foresee.CustomInvitationSampleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = CustomInvitationSample;
 				USES_XCTRUNNER = YES;
@@ -707,7 +707,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = CustomInvitationSampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = foresee.CustomInvitationSampleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = CustomInvitationSample;
 				USES_XCTRUNNER = YES;

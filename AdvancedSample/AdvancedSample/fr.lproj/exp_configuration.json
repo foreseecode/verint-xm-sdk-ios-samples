@@ -1,15 +1,21 @@
 {
-  "clientId": "FSRTESTINGCODECID12345==",
+  "customerId": "FSRTESTINGCODECID12345==",
   "notificationType": "IN_SESSION",
   "measures":
   [
     {
       "surveyId": "iphone_app_QA_fr",
       "surveyStyle": "modern",
-      "significantEventThresholds":
-      {
-        "app_test_1": 4
-      }
+      "combinedCriteria":
+      [
+        {
+          "pageViews": 2,
+          "significantEventThresholds":
+          {
+            "app_test_1": 4
+          }
+        }
+      ]
     }
   ],
   "invite":
@@ -17,20 +23,25 @@
     "logo": "v_logo",
     "baseColor": [43, 101, 242]
   },
+  "survey": {
+    "closeButtonColor": [255, 255, 255],
+    "closeButtonBackgroundColor": [65, 65, 65],
+    "headerColor": [65, 65, 65]
+  },
   "cppParameters":
   {
     "sample_app": "Advanced sample (French)"
   },
-  "feedback":
+  "digital":
   {
-    "feedbackSurveys":[
+    "digitalSurveys":[
       {
         "name": "Sample 1",
-        "feedbackId": "AEvfwfp1vY"
+        "surveyId": "AEvfwfp1vY"
       },
       {
         "name": "Sample 2",
-        "feedbackId": "1k9SUBSgFN",
+        "surveyId": "1k9SUBSgFN",
         "surveyCompletionPageDelay": -1
       }
     ],

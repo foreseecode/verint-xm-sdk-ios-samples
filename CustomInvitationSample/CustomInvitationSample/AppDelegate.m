@@ -11,7 +11,7 @@
 
 @interface AppDelegate ()
 
-@property (nonatomic) CustomInviteDelegate *triggerDelegate;
+@property (nonatomic) CustomInviteDelegate *inviteDelegate;
 
 @end
 
@@ -23,10 +23,10 @@
     [EXPCore setEventLogEnabled:NO];
     [EXPCore start];
     
-    // capture and log ForeSee lifecycle events;
+    // capture and log SDK lifecycle events;
     // active for all examples
-    self.triggerDelegate = [[CustomInviteDelegate alloc] init];
-    [EXPPredictive setInviteDelegate:self.triggerDelegate];
+    self.inviteDelegate = [[CustomInviteDelegate alloc] init];
+    [EXPPredictive setInviteDelegate:self.inviteDelegate];
     
     return YES;
 }

@@ -13,11 +13,11 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  [self initializeForeSeeTrigger];
+  [self initializeSDK];
   return YES;
 }
 
-- (void)initializeForeSeeTrigger {
+- (void)initializeSDK {
   [EXPCore setDebugLogEnabled:YES];
   [EXPCore start];
   [EXPPredictive setSkipPoolingCheck:YES];
