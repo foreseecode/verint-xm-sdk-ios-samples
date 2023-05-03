@@ -8,11 +8,12 @@ username("mobile-team@foresee.com") # Apple Developer Portal username
 git_url("git@github.com:foreseecode/mobile-fastlane-match.git")
 git_branch("foresee")
 app_identifier([
-    "com.foresee.samples.FeedbackSample",
-    "com.foresee.samples.LocalNotificationSample",
-    "com.foresee.samples.BasicSample",
-    "com.foresee.samples.BasicSwiftSample",
-    "com.foresee.samples.CustomInvitationSample",
-    "com.foresee.samples.ComplexSample",
-    "com.foresee.samples.ContactInvitationSample"
+    "com.verint.xm.samples.DigitalSample",
+    "com.verint.xm.samples.LocalNotificationSample",
+    "com.verint.xm.samples.BasicSample",
+    "com.verint.xm.samples.BasicSwiftSample",
+    "com.verint.xm.samples.CustomInvitationSample",
+    "com.verint.xm.samples.ComplexSample",
+    "com.verint.xm.samples.ContactInvitationSample",
+    "com.verint.xm.samples.DBASample"
 ])

@@ -147,7 +147,7 @@ workflows:
         - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
     - trigger-bitrise-workflow@0:
         inputs:
-        - workflow_id: Build-FeedbackSample
+        - workflow_id: Build-DigitalSample
         - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
     - trigger-bitrise-workflow@0:
         inputs:
@@ -165,7 +165,11 @@ workflows:
         inputs:
         - workflow_id: Build-ContactInvitationSample
         - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
-  Build-FeedbackSample:
+    - trigger-bitrise-workflow@0:
+        inputs:
+        - workflow_id: Build-DBASample
+        - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
+  Build-DigitalSample:
     before_run:
     - Prepare
     steps:
@@ -181,7 +185,7 @@ workflows:
     envs:
     - opts:
         is_expand: false
-      BITRISE_SCHEME: FeedbackSample
+      BITRISE_SCHEME: DigitalSample
   Build-LocalNotificationSample:
     before_run:
     - Prepare
@@ -249,15 +253,32 @@ workflows:
     envs:
     - opts:
         is_expand: false
-      BITRISE_SCHEME: FeedbackSample
+      BITRISE_SCHEME: BasicSwiftSample
+  Build-DBASample:
+    before_run:
+    - Prepare
+    steps:
+    - xcode-archive@2:
+        title: Archive the Xcode project
+        inputs:
+        - force_code_sign_identity: ''
+        - force_team_id: ''
+    - cache-pull@2:
+        title: Downloading the build cache from bitrise.io, and moving the files back to their original place
+    - deploy-to-bitrise-io:
+        title: Deploy to bitrise
+    envs:
+    - opts:
+        is_expand: false
+      BITRISE_SCHEME: DBASample
 app:
   envs:
   - opts:
       is_expand: false
-    BITRISE_PROJECT_PATH: ForeSeeSamples.xcworkspace
+    BITRISE_PROJECT_PATH: VerintSamples.xcworkspace
   - opts:
       is_expand: false
-    BITRISE_SCHEME: FeedbackSample
+    BITRISE_SCHEME: DigitalSample
   - opts:
       is_expand: false
     BITRISE_EXPORT_METHOD: development
