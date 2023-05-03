@@ -14,8 +14,8 @@
   ],
   "invite":
   {
-    "logo": "foresee_logo",
-    "baseColor": [237, 38, 54]
+    "logo": "v_logo",
+    "baseColor": [43, 101, 242]
   },
   "cppParameters":
   {
