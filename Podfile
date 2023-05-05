@@ -1,6 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '9.0'
-workspace 'ForeSeeSamples.xcworkspace'
+platform :ios, '11.0'
+workspace 'VerintSamples.xcworkspace'
 use_frameworks!
 
 POD_VERSION = '7.0.2'
@@ -45,8 +45,8 @@ target "LocalNotificationSample" do
     pods
 end
 
-target "FeedbackSample" do
-    project 'FeedbackSample/FeedbackSample.xcodeproj'
+target "DigitalSample" do
+    project 'DigitalSample/DigitalSample.xcodeproj'
     pods true, false
 end
 

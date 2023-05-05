@@ -1,0 +1,1 @@
+This sample project demonstrates a basic Swift implementation of the Verint Predictive code. It uses a bridging header to include the SDK.

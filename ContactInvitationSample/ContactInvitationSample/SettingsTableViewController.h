@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-extern NSString * const FSPreferredContactTypeKey;
+extern NSString * const PreferredContactTypeKey;
 
 @interface SettingsTableViewController : UITableViewController <UITextFieldDelegate>
 

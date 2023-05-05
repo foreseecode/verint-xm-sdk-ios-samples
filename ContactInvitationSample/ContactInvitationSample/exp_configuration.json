@@ -10,8 +10,8 @@
 	],
     "appName": "Custom Invite Sample",
     "invite": {
-        "logo": "ForeSee_logo",
-        "baseColor": [235, 43, 61]
+        "logo": "v_logo",
+        "baseColor": [43, 101, 242]
     },
     "survey": {
         "closeButtonColor": [255, 255, 255],
