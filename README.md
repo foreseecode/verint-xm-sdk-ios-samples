@@ -10,7 +10,7 @@ This sample project demonstrates a more advanced implementation of the Verint Pr
 
 Features:
 
-* A Verint predictive survey triggered by a "significant event" count, which can be incremented using a button in the app. The user will 
+* A Verint Predictive survey triggered by a "significant event" count, which can be incremented using a button in the app. The user will 
 become eligible to receive and invitation once a configured threshold is met.
 * A Verint Digital survey 
 * Localisation of invites/survey. This app supports invite text overrides for Spanish, French, German, and Portuguese and can show surveys in English, French, and Spanish. 
@@ -39,47 +39,9 @@ Features:
 ## DigitalSample
 This sample project demonstrates a Swift implementation of the Verint Digital Survey code and configuration. 
 
-
 ## LocalNotificationSample
 This sample project demonstrates a local notification invite. Accept the invite and then close the application. 
 You will receive a local notification linking the survey.
-
-
-## fastlane
-fastlane documentation
-================
-# Installation
-
-Make sure you have the latest version of the Xcode command line tools installed:
-
-```
-xcode-select --install
-```
-
-Install _fastlane_ using
-```
-[sudo] gem install fastlane -NV
-```
-or alternatively using `brew install fastlane`
-
-# Available Actions
-## iOS
-### ios custom_lane
-```
-fastlane ios custom_lane
-```
-Description of what the lane does
-### ios certificates
-```
-fastlane ios certificates
-```
-
-
-----
-
-This README.md is auto-generated and will be re-generated every time [fastlane](https://fastlane.tools) is run.
-More information about fastlane can be found on [fastlane.tools](https://fastlane.tools).
-The documentation of fastlane can be found on [docs.fastlane.tools](https://docs.fastlane.tools).
 
 ---
 ### A note about this README
