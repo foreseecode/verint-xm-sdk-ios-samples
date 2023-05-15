@@ -213,3 +213,6 @@ app:
   - git_url: https://github.com/foreseecode/mobile-fastlane-match
     opts:
       is_expand: false
+meta:
+  bitrise.io:
+    stack: osx-xcode-14.2.x-ventura
