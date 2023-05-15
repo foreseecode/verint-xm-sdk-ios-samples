@@ -10,76 +10,76 @@ trigger_map:
 workflows:
   deploy:
     steps:
-    - activate-ssh-key@4:
+    - activate-ssh-key:
         run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
-    - git-clone@4: {}
-    - cache-pull@2: {}
-    - script@1:
+    - git-clone: {}
+    - cache-pull: {}
+    - script:
         title: Do anything with Script step
-    - certificate-and-profile-installer@1: {}
-    - cocoapods-install@1: {}
-    - xcode-test@2:
+    - certificate-and-profile-installer: {}
+    - cocoapods-install: {}
+    - xcode-test:
         inputs:
         - project_path: "$BITRISE_PROJECT_PATH"
         - scheme: "$BITRISE_SCHEME"
-    - xcode-archive@2:
+    - xcode-archive:
         inputs:
         - project_path: "$BITRISE_PROJECT_PATH"
         - scheme: "$BITRISE_SCHEME"
         - export_method: "$BITRISE_EXPORT_METHOD"
     - deploy-to-bitrise-io: {}
-    - cache-push@2: {}
+    - cache-push: {}
   primary:
     steps:
-    - activate-ssh-key@4:
+    - activate-ssh-key:
         run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
-    - git-clone@4: {}
-    - cache-pull@2: {}
-    - script@1:
+    - git-clone: {}
+    - cache-pull: {}
+    - script:
         title: Do anything with Script step
-    - certificate-and-profile-installer@1: {}
-    - cocoapods-install@1: {}
-    - xcode-test@2:
+    - certificate-and-profile-installer: {}
+    - cocoapods-install: {}
+    - xcode-test:
         inputs:
         - project_path: "$BITRISE_PROJECT_PATH"
         - scheme: "$BITRISE_SCHEME"
     - deploy-to-bitrise-io: {}
-    - cache-push@2: {}
+    - cache-push: {}
   build:
     steps:
-    - activate-ssh-key@4:
+    - activate-ssh-key:
         run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
-    - git-clone@4: {}
-    - cache-pull@2: {}
-    - script@1:
+    - git-clone: {}
+    - cache-pull: {}
+    - script:
         title: Do anything with Script step
-    - certificate-and-profile-installer@1: {}
-    - cocoapods-install@1: {}
-    - xcode-test@2:
+    - certificate-and-profile-installer: {}
+    - cocoapods-install: {}
+    - xcode-test:
         inputs:
         - project_path: "$BITRISE_PROJECT_PATH"
         - scheme: "$BITRISE_SCHEME"
-    - xcode-archive@2: {}
+    - xcode-archive: {}
     - deploy-to-bitrise-io: {}
-    - cache-push@2: {}
+    - cache-push: {}
   Prepare:
     steps:
-    - activate-ssh-key@4:
+    - activate-ssh-key:
         run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
-    - git-clone@4: {}
-    - fastlane@2:
+    - git-clone: {}
+    - fastlane:
         inputs:
         - lane: certificates
-    - cocoapods-install@1: {}
+    - cocoapods-install: {}
   Build-BasicSample:
     before_run:
     - Prepare
     steps:
-    - xcode-archive@2:
+    - xcode-archive:
         inputs:
         - force_code_sign_identity: ''
         - force_team_id: ''
-    - cache-pull@2: {}
+    - cache-pull: {}
     - deploy-to-bitrise-io: {}
     envs:
     - opts:
@@ -89,11 +89,11 @@ workflows:
     before_run:
     - Prepare
     steps:
-    - xcode-archive@2:
+    - xcode-archive:
         inputs:
         - force_code_sign_identity: ''
         - force_team_id: ''
-    - cache-pull@2: {}
+    - cache-pull: {}
     - deploy-to-bitrise-io: {}
     envs:
     - opts:
@@ -101,31 +101,31 @@ workflows:
       BITRISE_SCHEME: AdvancedSample
   Build-All:
     steps:
-    - trigger-bitrise-workflow@0:
+    - trigger-bitrise-workflow:
         inputs:
         - workflow_id: Build-BasicSample
         - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
-    - trigger-bitrise-workflow@0:
+    - trigger-bitrise-workflow:
         inputs:
         - workflow_id: Build-AdvancedSample
         - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
-    - trigger-bitrise-workflow@0:
+    - trigger-bitrise-workflow:
         inputs:
         - workflow_id: Build-FeedbackSample
         - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
-    - trigger-bitrise-workflow@0:
+    - trigger-bitrise-workflow:
         inputs:
         - workflow_id: Build-LocalNotificationSample
         - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
-    - trigger-bitrise-workflow@0:
+    - trigger-bitrise-workflow:
         inputs:
         - workflow_id: Build-BasicSwiftSample
         - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
-    - trigger-bitrise-workflow@0:
+    - trigger-bitrise-workflow:
         inputs:
         - workflow_id: Build-CustomInvitationSample
         - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
-    - trigger-bitrise-workflow@0:
+    - trigger-bitrise-workflow:
         inputs:
         - workflow_id: Build-ContactInvitationSample
         - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
@@ -133,11 +133,11 @@ workflows:
     before_run:
     - Prepare
     steps:
-    - xcode-archive@2:
+    - xcode-archive:
         inputs:
         - force_code_sign_identity: ''
         - force_team_id: ''
-    - cache-pull@2: {}
+    - cache-pull: {}
     - deploy-to-bitrise-io: {}
     envs:
     - opts:
@@ -147,11 +147,11 @@ workflows:
     before_run:
     - Prepare
     steps:
-    - xcode-archive@2:
+    - xcode-archive:
         inputs:
         - force_code_sign_identity: ''
         - force_team_id: ''
-    - cache-pull@2: {}
+    - cache-pull: {}
     - deploy-to-bitrise-io: {}
     envs:
     - opts:
@@ -161,11 +161,11 @@ workflows:
     before_run:
     - Prepare
     steps:
-    - xcode-archive@2:
+    - xcode-archive:
         inputs:
         - force_code_sign_identity: ''
         - force_team_id: ''
-    - cache-pull@2: {}
+    - cache-pull: {}
     - deploy-to-bitrise-io: {}
     envs:
     - opts:
@@ -175,11 +175,11 @@ workflows:
     before_run:
     - Prepare
     steps:
-    - xcode-archive@2:
+    - xcode-archive:
         inputs:
         - force_code_sign_identity: ''
         - force_team_id: ''
-    - cache-pull@2: {}
+    - cache-pull: {}
     - deploy-to-bitrise-io: {}
     envs:
     - opts:
@@ -189,11 +189,11 @@ workflows:
     before_run:
     - Prepare
     steps:
-    - xcode-archive@2:
+    - xcode-archive:
         inputs:
         - force_code_sign_identity: ''
         - force_team_id: ''
-    - cache-pull@2: {}
+    - cache-pull: {}
     - deploy-to-bitrise-io: {}
     envs:
     - opts:
