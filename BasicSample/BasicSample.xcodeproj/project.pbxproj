@@ -305,8 +305,10 @@
 			baseConfigurationReference = FBF5BFAD88F19395B72B786C /* Pods-BasicSample.release w- symbols.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Q7SXD2TU64;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7SXD2TU64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BasicSample",
@@ -321,6 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.BasicSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.BasicSample";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.BasicSample";
 				WRAPPER_EXTENSION = app;
 			};
 			name = "Release w/ symbols";
@@ -423,8 +426,10 @@
 			baseConfigurationReference = 43DBC987345A4FFC87867579 /* Pods-BasicSample.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Q7SXD2TU64;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7SXD2TU64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BasicSample",
@@ -439,6 +444,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.BasicSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.BasicSample";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.BasicSample";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -448,8 +454,10 @@
 			baseConfigurationReference = 11B7DF9598731FA9E9228FE7 /* Pods-BasicSample.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Q7SXD2TU64;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7SXD2TU64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BasicSample",
@@ -464,6 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.BasicSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.BasicSample";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.BasicSample";
 				STRIP_INSTALLED_PRODUCT = NO;
 				WRAPPER_EXTENSION = app;
 			};
