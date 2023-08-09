@@ -3,7 +3,7 @@
 
 readonly(true)
 type("development") # options: "appstore", "adhoc", "enterprise", "development"
-username("mobile-team@foresee.com") # Apple Developer Portal username
+username("xm-mobile-team@verint.com") # Apple Developer Portal username
 
 git_url("git@github.com:foreseecode/mobile-fastlane-match.git")
 git_branch("foresee")

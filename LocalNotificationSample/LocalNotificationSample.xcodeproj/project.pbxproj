@@ -379,8 +379,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E7FD1C4F1E6D2A2B6EC906D1 /* Pods-LocalNotificationSample.debug.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Q7SXD2TU64;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7SXD2TU64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LocalNotificationSample",
@@ -392,6 +394,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.LocalNotificationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.LocalNotificationSample";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.LocalNotificationSample";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -400,8 +403,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 32B82C9388C4774316B5FA69 /* Pods-LocalNotificationSample.release.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Q7SXD2TU64;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7SXD2TU64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LocalNotificationSample",
@@ -413,6 +418,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.LocalNotificationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.LocalNotificationSample";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.LocalNotificationSample";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
