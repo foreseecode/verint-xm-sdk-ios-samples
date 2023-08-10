@@ -11,9 +11,9 @@
 
 @implementation CustomInviteDelegate
 
-#pragma mark - FSInviteDelegate
+#pragma mark - EXPInviteDelegate
 
-/* These delegate methods capture ForeSee SDK lifecycle events.
+/* These delegate methods capture SDK lifecycle events.
  
  */
 

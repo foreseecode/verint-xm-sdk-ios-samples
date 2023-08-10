@@ -54,7 +54,6 @@
 		540F194029157C4B00B6EC0E /* DBASampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBASampleUITests.swift; sourceTree = "<group>"; };
 		540F194229157C4B00B6EC0E /* DBASampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBASampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		54675E7A2919455E0046724A /* MasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasksViewController.swift; sourceTree = "<group>"; };
-		54675E7C291966230046724A /* exp_configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exp_configuration.json; sourceTree = "<group>"; };
 		939FAC90650D5107CF2DEFF6 /* Pods-DBASample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBASample.release.xcconfig"; path = "Target Support Files/Pods-DBASample/Pods-DBASample.release.xcconfig"; sourceTree = "<group>"; };
 		962184601901E64A32BE7B44 /* Pods_DBASample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBASample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9675377D29B946F40011F5E0 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -228,6 +227,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
+				ORGANIZATIONNAME = Verint;
 				TargetAttributes = {
 					540F191B29157C4A00B6EC0E = {
 						CreatedOnToolsVersion = 14.1;
@@ -270,7 +270,6 @@
 				9675377E29B946F40011F5E0 /* Localizable.strings in Resources */,
 				540F192C29157C4B00B6EC0E /* LaunchScreen.storyboard in Resources */,
 				540F192929157C4B00B6EC0E /* Assets.xcassets in Resources */,
-				54675E7D291966230046724A /* exp_configuration.json in Resources */,
 				540F192729157C4A00B6EC0E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,7 +533,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.DBASample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.MobileDBASample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.verint.xm.samples.DBASample";
@@ -567,7 +566,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.DBASample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.MobileDBASample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.verint.xm.samples.DBASample";

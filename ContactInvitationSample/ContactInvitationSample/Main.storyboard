@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZPz-z4-ztB">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZPz-z4-ztB">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -44,25 +42,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ForeSee_logo" translatesAutoresizingMaskIntoConstraints="NO" id="9Rj-En-s6N">
-                                <rect key="frame" x="152.5" y="84" width="70" height="70"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verint_logo" translatesAutoresizingMaskIntoConstraints="NO" id="9Rj-En-s6N">
+                                <rect key="frame" x="0.0" y="84" width="375" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="01u-MQ-wbl"/>
-                                    <constraint firstAttribute="width" constant="70" id="knK-Nl-OQ2"/>
                                 </constraints>
                             </imageView>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dx-FN-ad4">
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dx-FN-ad4">
                                 <rect key="frame" x="20" y="300.5" width="335" height="30"/>
-                                <color key="backgroundColor" red="0.92156862745098034" green="0.16862745098039217" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.16862745100000001" green="0.39607843139999999" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Show Contact Invite"/>
                                 <connections>
                                     <action selector="handleShowInviteTouchUpInside:" destination="rAw-pr-b3e" eventType="touchUpInside" id="F4E-69-44U"/>
                                 </connections>
                             </button>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBW-S8-4in">
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBW-S8-4in">
                                 <rect key="frame" x="20" y="400.5" width="335" height="30"/>
-                                <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.16862745100000001" green="0.39607843139999999" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Set Contact Details"/>
@@ -70,16 +67,16 @@
                                     <segue destination="CGF-1m-Qak" kind="show" id="g5c-ru-28c"/>
                                 </connections>
                             </button>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AId-Pr-2RX">
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AId-Pr-2RX">
                                 <rect key="frame" x="20" y="350.5" width="335" height="30"/>
-                                <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.16862745100000001" green="0.39607843139999999" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Show &quot;Custom&quot; Invite"/>
                                 <connections>
                                     <segue destination="1cA-qD-uyG" kind="show" id="4Gg-Jp-2EB"/>
                                 </connections>
                             </button>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbc-Fq-XHk">
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbc-Fq-XHk">
                                 <rect key="frame" x="20" y="450.5" width="335" height="30"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -100,6 +97,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="ty6-Ys-bdw"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Mbc-Fq-XHk" firstAttribute="leading" secondItem="ty6-Ys-bdw" secondAttribute="leading" constant="20" id="1UY-pq-63h"/>
@@ -109,6 +107,7 @@
                             <constraint firstItem="9Rj-En-s6N" firstAttribute="top" secondItem="ty6-Ys-bdw" secondAttribute="top" constant="20" id="MHd-X9-muB"/>
                             <constraint firstItem="1dx-FN-ad4" firstAttribute="top" secondItem="wT9-Gy-wPv" secondAttribute="bottom" constant="10" id="MJM-B7-9Ic"/>
                             <constraint firstItem="AId-Pr-2RX" firstAttribute="leading" secondItem="ty6-Ys-bdw" secondAttribute="leading" constant="20" id="S53-8p-Qtf"/>
+                            <constraint firstItem="ty6-Ys-bdw" firstAttribute="trailing" secondItem="9Rj-En-s6N" secondAttribute="trailing" id="X07-9G-rBU"/>
                             <constraint firstItem="n4f-a7-2Mv" firstAttribute="leading" secondItem="ty6-Ys-bdw" secondAttribute="leading" constant="20" id="Y3P-yK-fgw"/>
                             <constraint firstItem="1dx-FN-ad4" firstAttribute="centerX" secondItem="ty6-Ys-bdw" secondAttribute="centerX" id="hka-Fr-YR7"/>
                             <constraint firstItem="9Rj-En-s6N" firstAttribute="centerX" secondItem="ty6-Ys-bdw" secondAttribute="centerX" id="ix4-Ly-v9L"/>
@@ -120,10 +119,10 @@
                             <constraint firstItem="nBW-S8-4in" firstAttribute="top" secondItem="AId-Pr-2RX" secondAttribute="bottom" constant="20" id="nck-8l-5sr"/>
                             <constraint firstItem="nBW-S8-4in" firstAttribute="centerX" secondItem="ty6-Ys-bdw" secondAttribute="centerX" id="tmo-ID-FMX"/>
                             <constraint firstItem="wT9-Gy-wPv" firstAttribute="top" secondItem="9Rj-En-s6N" secondAttribute="bottom" constant="20" id="uqZ-bg-83d"/>
+                            <constraint firstItem="9Rj-En-s6N" firstAttribute="leading" secondItem="ty6-Ys-bdw" secondAttribute="leading" id="vfx-LD-mh4"/>
                             <constraint firstItem="Mbc-Fq-XHk" firstAttribute="top" secondItem="nBW-S8-4in" secondAttribute="bottom" constant="20" id="wt8-IG-WIT"/>
                             <constraint firstItem="Mbc-Fq-XHk" firstAttribute="centerX" secondItem="ty6-Ys-bdw" secondAttribute="centerX" id="yIN-Dg-gA1"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ty6-Ys-bdw"/>
                     </view>
                     <navigationItem key="navigationItem" title="Contact Details Example" id="ht9-mw-la9"/>
                 </viewController>
@@ -139,9 +138,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pg4-Pf-Rhg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pg4-Pf-Rhg">
                                 <rect key="frame" x="20" y="132" width="335" height="30"/>
-                                <color key="backgroundColor" red="0.92156862745098034" green="0.16862745098039217" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.16862745100000001" green="0.39607843139999999" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Accept">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -149,7 +148,7 @@
                                     <action selector="handleAcceptButtonTouchUpInside:" destination="1cA-qD-uyG" eventType="touchUpInside" id="drz-gI-eCc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cug-U4-ysJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cug-U4-ysJ">
                                 <rect key="frame" x="20" y="182" width="335" height="30"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Decline">
@@ -160,6 +159,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="9a8-aC-Far"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cug-U4-ysJ" firstAttribute="top" secondItem="Pg4-Pf-Rhg" secondAttribute="bottom" constant="20" id="7yA-2e-8iZ"/>
@@ -169,7 +169,6 @@
                             <constraint firstItem="Pg4-Pf-Rhg" firstAttribute="leading" secondItem="9a8-aC-Far" secondAttribute="leading" constant="20" id="tdE-zr-lcH"/>
                             <constraint firstItem="Pg4-Pf-Rhg" firstAttribute="centerX" secondItem="9a8-aC-Far" secondAttribute="centerX" id="uOM-qh-5J0"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="9a8-aC-Far"/>
                     </view>
                     <connections>
                         <outlet property="inviteAcceptButton" destination="Pg4-Pf-Rhg" id="e84-Vc-BrE"/>
@@ -187,10 +186,10 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="iHk-i9-y3c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsCell" id="yD0-e5-Rka" customClass="TextFieldTableViewCell">
-                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yD0-e5-Rka" id="aE4-hE-Vqp">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -198,7 +197,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GenericCell" id="Bmw-al-QT7" userLabel="GenericCell">
-                                <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="99" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bmw-al-QT7" id="Knc-td-X2h">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -218,6 +217,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ForeSee_logo" width="200" height="200"/>
+        <image name="verint_logo" width="166.5" height="74.5"/>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

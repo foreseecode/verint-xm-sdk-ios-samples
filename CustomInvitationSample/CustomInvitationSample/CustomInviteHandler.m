@@ -22,7 +22,7 @@
     return [super init];
 }
 
-#pragma mark - FSInviteHandler
+#pragma mark - EXPInviteHandler
 
 - (void)show {
     UIAlertController* inviteAlert = [UIAlertController alertControllerWithTitle:@"Survey invitation"

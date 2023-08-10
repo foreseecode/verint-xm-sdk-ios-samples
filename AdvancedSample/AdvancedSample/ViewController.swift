@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     EXPPredictive.checkIfEligibleForSurvey()
   }
   
-  @IBAction func checkFeedbackEligibilityButtonTouchUpInside(_ sender: Any) {
+  @IBAction func checkShowSurveyButtonTouchUpInside(_ sender: Any) {
     DigitalComponent.showDigitalSurvey()
   }
   
@@ -61,11 +61,11 @@ class ViewController: UIViewController {
   
   static func makeCounter() -> () -> Int {
     var counter = 0
-    // when we create the counter, we also reset the ForeSee state back to zero
+    // when we create the counter, we also reset the SDK state back to zero
     EXPCore.resetState()
     return {
       // now we incremenet the significant event count every time we update our
-      // counter, so that our local value is always in sync with the ForeSee SDK (as
+      // counter, so that our local value is always in sync with the SDK (as
       // long as we don't increment this count anywhere else)
       EXPPredictive.incrementSignificantEventCount(withKey: significantEventKey)
       counter += 1

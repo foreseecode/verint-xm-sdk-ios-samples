@@ -21,6 +21,7 @@
 		9675377C29B945C20011F5E0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9675377B29B945C20011F5E0 /* Localizable.strings */; };
 		967C4522213894F000C825D3 /* CustomInviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C4521213894F000C825D3 /* CustomInviteViewController.m */; };
 		96FF0F8C1D052C6C000A2176 /* exp_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 96FF0F8B1D052C6C000A2176 /* exp_configuration.json */; };
+		C47C5BC029FA962900C25C52 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C47C5BC229FA962900C25C52 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		A45BDC04B222154EB3000923 /* Pods-ContactInvitationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactInvitationSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ContactInvitationSample/Pods-ContactInvitationSample.debug.xcconfig"; sourceTree = "<group>"; };
 		AE2F44A3C1FA4D14939C57A2 /* Pods_ContactInvitationSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContactInvitationSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3D2E880F9504154D0382DA /* Pods-ContactInvitationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactInvitationSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ContactInvitationSample/Pods-ContactInvitationSample.debug.xcconfig"; sourceTree = "<group>"; };
+		C47C5BC129FA962900C25C52 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F29D4DA8BAE3233876805821 /* Pods-ContactInvitationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactInvitationSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ContactInvitationSample/Pods-ContactInvitationSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,6 +176,7 @@
 				96FF0F8B1D052C6C000A2176 /* exp_configuration.json */,
 				9675377B29B945C20011F5E0 /* Localizable.strings */,
 				967270741D04DF4F00F90E54 /* Supporting Files */,
+				C47C5BBD29FA955100C25C52 /* Resources */,
 			);
 			path = ContactInvitationSample;
 			sourceTree = "<group>";
@@ -213,6 +216,14 @@
 				9667BEFD21384C4900F750DD /* TextFieldTableViewCell.m */,
 			);
 			name = Settings;
+			sourceTree = "<group>";
+		};
+		C47C5BBD29FA955100C25C52 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C47C5BC229FA962900C25C52 /* Localizable.strings */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,7 +291,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1100;
-				ORGANIZATIONNAME = ForeSee;
+				ORGANIZATIONNAME = Verint;
 				TargetAttributes = {
 					967270701D04DF4F00F90E54 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -445,6 +456,14 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		C47C5BC229FA962900C25C52 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C47C5BC129FA962900C25C52 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -569,7 +588,7 @@
 				);
 				INFOPLIST_FILE = ContactInvitationSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.ContactInvitationSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.ContactInvitationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.ContactInvitationSample";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.ContactInvitationSample";
@@ -591,7 +610,7 @@
 				);
 				INFOPLIST_FILE = ContactInvitationSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.ContactInvitationSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.ContactInvitationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.ContactInvitationSample";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.ContactInvitationSample";
@@ -604,7 +623,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ContactInvitationSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = foresee.ContactInvitationSampleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.ContactInvitationSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContactInvitationSample.app/ContactInvitationSample";
 			};
@@ -616,7 +635,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ContactInvitationSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = foresee.ContactInvitationSampleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.ContactInvitationSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContactInvitationSample.app/ContactInvitationSample";
 			};
@@ -627,7 +646,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = ContactInvitationSampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = foresee.ContactInvitationSampleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.ContactInvitationSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = ContactInvitationSample;
 				USES_XCTRUNNER = YES;
@@ -639,7 +658,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = ContactInvitationSampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = foresee.ContactInvitationSampleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.ContactInvitationSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = ContactInvitationSample;
 				USES_XCTRUNNER = YES;

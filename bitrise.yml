@@ -11,76 +11,109 @@ workflows:
   deploy:
     steps:
     - activate-ssh-key:
+        title: Activate the SSH Key
         run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
-    - git-clone: {}
-    - cache-pull: {}
+    - git-clone:
+        title: Clone the repo
+    - cache-pull:
+        title: Downloading the build cache from bitrise.io, and moving the files back to their original place
     - script:
         title: Do anything with Script step
-    - certificate-and-profile-installer: {}
-    - cocoapods-install: {}
+    - certificate-and-profile-installer:
+        title: Download and install the Apple code signing certificates and provisioning profile
+    - cocoapods-install:
+        title: Install cocoapods dependicies
     - xcode-test:
+        title: Run xcode tests
         inputs:
         - project_path: "$BITRISE_PROJECT_PATH"
         - scheme: "$BITRISE_SCHEME"
     - xcode-archive:
+        title: Archive the Xcode project
         inputs:
         - project_path: "$BITRISE_PROJECT_PATH"
         - scheme: "$BITRISE_SCHEME"
         - export_method: "$BITRISE_EXPORT_METHOD"
-    - deploy-to-bitrise-io: {}
-    - cache-push: {}
+    - deploy-to-bitrise-io:
+        title: Deploy to bitrise
+    - cache-push:
+        title: Check whether cache has to be updated based on the Cache Paths and Ignore Paths inputs
   primary:
     steps:
     - activate-ssh-key:
+        title: Activate the SSH Key
         run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
-    - git-clone: {}
-    - cache-pull: {}
+    - git-clone:
+        title: Clone the repo
+    - cache-pull:
+        title: Downloading the build cache from bitrise.io, and moving the files back to their original place
     - script:
         title: Do anything with Script step
-    - certificate-and-profile-installer: {}
-    - cocoapods-install: {}
+    - certificate-and-profile-installer:
+        title: Download and install the Apple code signing certificates and provisioning profile
+    - cocoapods-install:
+        title: Install cocoapods dependicies
     - xcode-test:
+        title: Run xcode tests
         inputs:
         - project_path: "$BITRISE_PROJECT_PATH"
         - scheme: "$BITRISE_SCHEME"
-    - deploy-to-bitrise-io: {}
-    - cache-push: {}
+    - deploy-to-bitrise-io:
+        title: Deploy to bitrise
+    - cache-push:
+        title: Check whether cache has to be updated based on the Cache Paths and Ignore Paths inputs
   build:
     steps:
     - activate-ssh-key:
+        title: Activate the SSH Key
         run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
-    - git-clone: {}
-    - cache-pull: {}
+    - git-clone:
+        title: Clone the repo
+    - cache-pull:
+        title: Downloading the build cache from bitrise.io, and moving the files back to their original place
     - script:
         title: Do anything with Script step
-    - certificate-and-profile-installer: {}
-    - cocoapods-install: {}
+    - certificate-and-profile-installer:
+        title: Download and install the Apple code signing certificates and provisioning profile
+    - cocoapods-install:
+        title: Install cocoapods dependicies
     - xcode-test:
+        title: Run xcode tests
         inputs:
         - project_path: "$BITRISE_PROJECT_PATH"
         - scheme: "$BITRISE_SCHEME"
-    - xcode-archive: {}
-    - deploy-to-bitrise-io: {}
-    - cache-push: {}
+    - xcode-archive:
+        title: Archive the Xcode project
+    - deploy-to-bitrise-io:
+        title: Deploy to bitrise
+    - cache-push:
+        title: Check whether cache has to be updated based on the Cache Paths and Ignore Paths inputs
   Prepare:
     steps:
     - activate-ssh-key:
+        title: Activate the SSH Key
         run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
-    - git-clone: {}
+    - git-clone:
+        title: Clone the repo
     - fastlane:
+        title: Run fastlane certificates
         inputs:
         - lane: certificates
-    - cocoapods-install: {}
+    - cocoapods-install:
+        title: Install cocoapods dependicies
   Build-BasicSample:
     before_run:
     - Prepare
     steps:
     - xcode-archive:
+        title: Archive the Xcode project
         inputs:
         - force_code_sign_identity: ''
         - force_team_id: ''
-    - cache-pull: {}
-    - deploy-to-bitrise-io: {}
+    - cache-pull:
+        title: Downloading the build cache from bitrise.io, and moving the files back to their original place
+    - deploy-to-bitrise-io:
+        title: Deploy to bitrise
     envs:
     - opts:
         is_expand: false
@@ -90,11 +123,14 @@ workflows:
     - Prepare
     steps:
     - xcode-archive:
+        title: Archive the Xcode project
         inputs:
         - force_code_sign_identity: ''
         - force_team_id: ''
-    - cache-pull: {}
-    - deploy-to-bitrise-io: {}
+    - cache-pull:
+        title: Downloading the build cache from bitrise.io, and moving the files back to their original place
+    - deploy-to-bitrise-io:
+        title: Deploy to bitrise
     envs:
     - opts:
         is_expand: false
@@ -111,7 +147,7 @@ workflows:
         - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
     - trigger-bitrise-workflow:
         inputs:
-        - workflow_id: Build-FeedbackSample
+        - workflow_id: Build-DigitalSample
         - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
     - trigger-bitrise-workflow:
         inputs:
@@ -129,30 +165,40 @@ workflows:
         inputs:
         - workflow_id: Build-ContactInvitationSample
         - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
-  Build-FeedbackSample:
+    - trigger-bitrise-workflow:
+        inputs:
+        - workflow_id: Build-DBASample
+        - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
+  Build-DigitalSample:
     before_run:
     - Prepare
     steps:
     - xcode-archive:
+        title: Archive the Xcode project
         inputs:
         - force_code_sign_identity: ''
         - force_team_id: ''
-    - cache-pull: {}
-    - deploy-to-bitrise-io: {}
+    - cache-pull:
+        title: Downloading the build cache from bitrise.io, and moving the files back to their original place
+    - deploy-to-bitrise-io:
+        title: Deploy to bitrise
     envs:
     - opts:
         is_expand: false
-      BITRISE_SCHEME: FeedbackSample
+      BITRISE_SCHEME: DigitalSample
   Build-LocalNotificationSample:
     before_run:
     - Prepare
     steps:
     - xcode-archive:
+        title: Archive the Xcode project
         inputs:
         - force_code_sign_identity: ''
         - force_team_id: ''
-    - cache-pull: {}
-    - deploy-to-bitrise-io: {}
+    - cache-pull:
+        title: Downloading the build cache from bitrise.io, and moving the files back to their original place
+    - deploy-to-bitrise-io:
+        title: Deploy to bitrise
     envs:
     - opts:
         is_expand: false
@@ -162,11 +208,14 @@ workflows:
     - Prepare
     steps:
     - xcode-archive:
+        title: Archive the Xcode project
         inputs:
         - force_code_sign_identity: ''
         - force_team_id: ''
-    - cache-pull: {}
-    - deploy-to-bitrise-io: {}
+    - cache-pull:
+        title: Downloading the build cache from bitrise.io, and moving the files back to their original place
+    - deploy-to-bitrise-io:
+        title: Deploy to bitrise
     envs:
     - opts:
         is_expand: false
@@ -176,11 +225,14 @@ workflows:
     - Prepare
     steps:
     - xcode-archive:
+        title: Archive the Xcode project
         inputs:
         - force_code_sign_identity: ''
         - force_team_id: ''
-    - cache-pull: {}
-    - deploy-to-bitrise-io: {}
+    - cache-pull:
+        title: Downloading the build cache from bitrise.io, and moving the files back to their original place
+    - deploy-to-bitrise-io:
+        title: Deploy to bitrise
     envs:
     - opts:
         is_expand: false
@@ -190,23 +242,43 @@ workflows:
     - Prepare
     steps:
     - xcode-archive:
+        title: Archive the Xcode project
         inputs:
         - force_code_sign_identity: ''
         - force_team_id: ''
-    - cache-pull: {}
-    - deploy-to-bitrise-io: {}
+    - cache-pull:
+        title: Downloading the build cache from bitrise.io, and moving the files back to their original place
+    - deploy-to-bitrise-io:
+        title: Deploy to bitrise
     envs:
     - opts:
         is_expand: false
-      BITRISE_SCHEME: FeedbackSample
+      BITRISE_SCHEME: BasicSwiftSample
+  Build-DBASample:
+    before_run:
+    - Prepare
+    steps:
+    - xcode-archive:
+        title: Archive the Xcode project
+        inputs:
+        - force_code_sign_identity: ''
+        - force_team_id: ''
+    - cache-pull:
+        title: Downloading the build cache from bitrise.io, and moving the files back to their original place
+    - deploy-to-bitrise-io:
+        title: Deploy to bitrise
+    envs:
+    - opts:
+        is_expand: false
+      BITRISE_SCHEME: DBASample
 app:
   envs:
   - opts:
       is_expand: false
-    BITRISE_PROJECT_PATH: ForeSeeSamples.xcworkspace
+    BITRISE_PROJECT_PATH: VerintSamples.xcworkspace
   - opts:
       is_expand: false
-    BITRISE_SCHEME: FeedbackSample
+    BITRISE_SCHEME: DigitalSample
   - opts:
       is_expand: false
     BITRISE_EXPORT_METHOD: development

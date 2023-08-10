@@ -13,8 +13,6 @@
 		968D2F911CFE430700C6066B /* CustomInviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F901CFE430700C6066B /* CustomInviteViewController.m */; };
 		968D2F981CFE453000C6066B /* AlertInviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F971CFE453000C6066B /* AlertInviteViewController.m */; };
 		968D2FA31CFF4C1800C6066B /* InviteExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2FA21CFF4C1800C6066B /* InviteExampleViewController.m */; };
-		968D2FAB1CFF627800C6066B /* ForeSee_logo_1-color.png in Resources */ = {isa = PBXBuildFile; fileRef = 968D2FA91CFF627800C6066B /* ForeSee_logo_1-color.png */; };
-		968D2FAC1CFF627800C6066B /* ForeSee_logo_RGB.png in Resources */ = {isa = PBXBuildFile; fileRef = 968D2FAA1CFF627800C6066B /* ForeSee_logo_RGB.png */; };
 		96C3D5ED1CDB284A005040C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C3D5EC1CDB284A005040C8 /* main.m */; };
 		96C3D5F01CDB284A005040C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C3D5EF1CDB284A005040C8 /* AppDelegate.m */; };
 		96C3D5F31CDB284A005040C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C3D5F21CDB284A005040C8 /* ViewController.m */; };
@@ -61,8 +59,6 @@
 		968D2F971CFE453000C6066B /* AlertInviteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertInviteViewController.m; sourceTree = "<group>"; };
 		968D2FA11CFF4C1800C6066B /* InviteExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InviteExampleViewController.h; sourceTree = "<group>"; };
 		968D2FA21CFF4C1800C6066B /* InviteExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InviteExampleViewController.m; sourceTree = "<group>"; };
-		968D2FA91CFF627800C6066B /* ForeSee_logo_1-color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ForeSee_logo_1-color.png"; sourceTree = "<group>"; };
-		968D2FAA1CFF627800C6066B /* ForeSee_logo_RGB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForeSee_logo_RGB.png; sourceTree = "<group>"; };
 		96C3D5E81CDB284A005040C8 /* CustomInvitationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomInvitationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C3D5EC1CDB284A005040C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		96C3D5EE1CDB284A005040C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -247,7 +243,6 @@
 				96C3D61E1CDB9958005040C8 /* exp_configuration.json */,
 				96C3D5F91CDB284A005040C8 /* LaunchScreen.storyboard */,
 				96C3D5FC1CDB284A005040C8 /* Info.plist */,
-				96C3D65D1CDCFA5E005040C8 /* Assets */,
 				96C3D5EB1CDB284A005040C8 /* Supporting Files */,
 			);
 			path = CustomInvitationSample;
@@ -277,15 +272,6 @@
 				96C3D6121CDB284A005040C8 /* Info.plist */,
 			);
 			path = CustomInvitationSampleUITests;
-			sourceTree = "<group>";
-		};
-		96C3D65D1CDCFA5E005040C8 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				968D2FA91CFF627800C6066B /* ForeSee_logo_1-color.png */,
-				968D2FAA1CFF627800C6066B /* ForeSee_logo_RGB.png */,
-			);
-			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,7 +339,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1100;
-				ORGANIZATIONNAME = ForeSee;
+				ORGANIZATIONNAME = Verint;
 				TargetAttributes = {
 					96C3D5E71CDB284A005040C8 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -395,9 +381,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				968D2FAB1CFF627800C6066B /* ForeSee_logo_1-color.png in Resources */,
 				96C3D6651CDCFB19005040C8 /* header3.png in Resources */,
-				968D2FAC1CFF627800C6066B /* ForeSee_logo_RGB.png in Resources */,
 				96C3D5FB1CDB284A005040C8 /* LaunchScreen.storyboard in Resources */,
 				96C3D5F81CDB284A005040C8 /* Assets.xcassets in Resources */,
 				96C3D61F1CDB9958005040C8 /* exp_configuration.json in Resources */,
@@ -659,7 +643,7 @@
 				);
 				INFOPLIST_FILE = CustomInvitationSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.CustomInvitationSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.CustomInvitationSample";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.CustomInvitationSample";
@@ -681,7 +665,7 @@
 				);
 				INFOPLIST_FILE = CustomInvitationSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.CustomInvitationSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.CustomInvitationSample";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.CustomInvitationSample";
@@ -694,7 +678,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CustomInvitationSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = foresee.CustomInvitationSampleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomInvitationSample.app/CustomInvitationSample";
 			};
@@ -706,7 +690,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CustomInvitationSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = foresee.CustomInvitationSampleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomInvitationSample.app/CustomInvitationSample";
 			};
@@ -717,7 +701,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = CustomInvitationSampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = foresee.CustomInvitationSampleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = CustomInvitationSample;
 				USES_XCTRUNNER = YES;
@@ -729,7 +713,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = CustomInvitationSampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = foresee.CustomInvitationSampleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = CustomInvitationSample;
 				USES_XCTRUNNER = YES;

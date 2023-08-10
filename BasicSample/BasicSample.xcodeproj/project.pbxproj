@@ -14,8 +14,8 @@
 		99F1EC79188604E6001B1A8B /* exp_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 99F1EC78188604E6001B1A8B /* exp_configuration.json */; };
 		D544DF4B15068C0C0025FF43 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D544DF4915068C0C0025FF43 /* InfoPlist.strings */; };
 		D544DF4D15068C0C0025FF43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D544DF4C15068C0C0025FF43 /* main.m */; };
-		D544DF5115068C0C0025FF43 /* FSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D544DF5015068C0C0025FF43 /* FSAppDelegate.m */; };
-		D544DF5415068C0C0025FF43 /* FSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D544DF5315068C0C0025FF43 /* FSViewController.m */; };
+		D544DF5115068C0C0025FF43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D544DF5015068C0C0025FF43 /* AppDelegate.m */; };
+		D544DF5415068C0C0025FF43 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D544DF5315068C0C0025FF43 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,10 +31,10 @@
 		D544DF4A15068C0C0025FF43 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D544DF4C15068C0C0025FF43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D544DF4E15068C0C0025FF43 /* BasicSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BasicSample-Prefix.pch"; sourceTree = "<group>"; };
-		D544DF4F15068C0C0025FF43 /* FSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSAppDelegate.h; sourceTree = "<group>"; };
-		D544DF5015068C0C0025FF43 /* FSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSAppDelegate.m; sourceTree = "<group>"; };
-		D544DF5215068C0C0025FF43 /* FSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSViewController.h; sourceTree = "<group>"; };
-		D544DF5315068C0C0025FF43 /* FSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSViewController.m; sourceTree = "<group>"; };
+		D544DF4F15068C0C0025FF43 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D544DF5015068C0C0025FF43 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D544DF5215068C0C0025FF43 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D544DF5315068C0C0025FF43 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FBF5BFAD88F19395B72B786C /* Pods-BasicSample.release w- symbols.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicSample.release w- symbols.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicSample/Pods-BasicSample.release w- symbols.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,10 +95,10 @@
 				966346FC1FA8BFDD002F322D /* LaunchScreen.storyboard */,
 				966346FA1FA8BE7C002F322D /* Assets.xcassets */,
 				99F1EC78188604E6001B1A8B /* exp_configuration.json */,
-				D544DF4F15068C0C0025FF43 /* FSAppDelegate.h */,
-				D544DF5015068C0C0025FF43 /* FSAppDelegate.m */,
-				D544DF5215068C0C0025FF43 /* FSViewController.h */,
-				D544DF5315068C0C0025FF43 /* FSViewController.m */,
+				D544DF4F15068C0C0025FF43 /* AppDelegate.h */,
+				D544DF5015068C0C0025FF43 /* AppDelegate.m */,
+				D544DF5215068C0C0025FF43 /* ViewController.h */,
+				D544DF5315068C0C0025FF43 /* ViewController.m */,
 				D544DF4715068C0C0025FF43 /* Supporting Files */,
 			);
 			path = BasicSample;
@@ -144,7 +144,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1100;
-				ORGANIZATIONNAME = ForeSee;
+				ORGANIZATIONNAME = Verint;
 				TargetAttributes = {
 					D544DF3B15068C0C0025FF43 = {
 						DevelopmentTeam = Q7SXD2TU64;
@@ -236,8 +236,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D544DF4D15068C0C0025FF43 /* main.m in Sources */,
-				D544DF5115068C0C0025FF43 /* FSAppDelegate.m in Sources */,
-				D544DF5415068C0C0025FF43 /* FSViewController.m in Sources */,
+				D544DF5115068C0C0025FF43 /* AppDelegate.m in Sources */,
+				D544DF5415068C0C0025FF43 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +320,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/BasicSample\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.BasicSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.BasicSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.BasicSample";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.BasicSample";
@@ -441,7 +441,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/BasicSample\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.BasicSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.BasicSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.BasicSample";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.BasicSample";
@@ -469,7 +469,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/BasicSample\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.BasicSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.BasicSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.BasicSample";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.BasicSample";

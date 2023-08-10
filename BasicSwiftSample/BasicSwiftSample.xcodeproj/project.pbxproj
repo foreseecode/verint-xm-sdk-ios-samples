@@ -127,7 +127,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
-				ORGANIZATIONNAME = ForeSee;
+				ORGANIZATIONNAME = Verint;
 				TargetAttributes = {
 					96B1EDA123746AE700CB911B = {
 						CreatedOnToolsVersion = 11.0;
@@ -377,7 +377,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.BasicSwiftSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.BasicSwiftSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.BasicSwiftSample";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.BasicSwiftSample";
@@ -406,7 +406,7 @@
 				INFOPLIST_FILE = SwiftSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.BasicSwiftSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.BasicSwiftSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.BasicSwiftSample";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.BasicSwiftSample";

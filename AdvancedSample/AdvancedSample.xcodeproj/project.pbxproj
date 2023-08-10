@@ -34,21 +34,14 @@
 		961ACEFE237B07B6002C3426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/exp_configuration.json; sourceTree = "<group>"; };
 		961ACF03237B07EE002C3426 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		961ACF05237B081E002C3426 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
-		961ACF06237B081E002C3426 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		961ACF07237B081E002C3426 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = fr; path = fr.lproj/exp_configuration.json; sourceTree = "<group>"; };
 		961ACF08237B081E002C3426 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		961ACF09237B0823002C3426 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
-		961ACF0A237B0823002C3426 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		961ACF0B237B0823002C3426 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/exp_configuration.json; sourceTree = "<group>"; };
 		961ACF0C237B0823002C3426 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		961ACF0D237B0829002C3426 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
-		961ACF0E237B0829002C3426 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		961ACF10237B0829002C3426 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		961ACF11237B0862002C3426 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
-		961ACF12237B0862002C3426 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		961ACF14237B0862002C3426 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		961ACF15237B0868002C3426 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Main.strings"; sourceTree = "<group>"; };
-		961ACF16237B0868002C3426 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		961ACF18237B0869002C3426 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		966A6AA0237F066600D4A2BF /* HOWTO_trigger_an_invite.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = HOWTO_trigger_an_invite.md; sourceTree = "<group>"; };
 		96F16D4B237AFFCA00735B49 /* AdvancedSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvancedSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +50,13 @@
 		96F16D55237AFFCA00735B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96F16D57237AFFCB00735B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96F16D5C237AFFCB00735B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C46B90D02A02D78D00AE7429 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		C46B90D22A02D7AF00AE7429 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		C46B90D42A02D7B200AE7429 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		C46B90D62A02D7B400AE7429 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		C46B90D82A02D7B700AE7429 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		C46B90D92A02DDB500AE7429 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = fr; path = fr.lproj/exp_configuration.json; sourceTree = "<group>"; };
+		C46B90DA2A02DDB800AE7429 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/exp_configuration.json; sourceTree = "<group>"; };
 		F50CD1EB270BC9B781BE1A34 /* Pods-AdvancedSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvancedSample.release.xcconfig"; path = "Target Support Files/Pods-AdvancedSample/Pods-AdvancedSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,7 +167,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
-				ORGANIZATIONNAME = ForeSee;
+				ORGANIZATIONNAME = Verint;
 				TargetAttributes = {
 					96F16D4A237AFFCA00735B49 = {
 						CreatedOnToolsVersion = 11.0;
@@ -276,11 +276,11 @@
 			isa = PBXVariantGroup;
 			children = (
 				961ACEF9237B072B002C3426 /* Base */,
-				961ACF06237B081E002C3426 /* fr */,
-				961ACF0A237B0823002C3426 /* es */,
-				961ACF0E237B0829002C3426 /* de */,
-				961ACF12237B0862002C3426 /* pt-BR */,
-				961ACF16237B0868002C3426 /* pt-PT */,
+				C46B90D02A02D78D00AE7429 /* fr */,
+				C46B90D22A02D7AF00AE7429 /* de */,
+				C46B90D42A02D7B200AE7429 /* pt-BR */,
+				C46B90D62A02D7B400AE7429 /* pt-PT */,
+				C46B90D82A02D7B700AE7429 /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -289,8 +289,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				961ACEFE237B07B6002C3426 /* Base */,
-				961ACF07237B081E002C3426 /* fr */,
-				961ACF0B237B0823002C3426 /* es */,
+				C46B90D92A02DDB500AE7429 /* fr */,
+				C46B90DA2A02DDB800AE7429 /* es */,
 			);
 			name = exp_configuration.json;
 			sourceTree = "<group>";
@@ -460,7 +460,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.ComplexSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.ComplexSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.ComplexSample";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.ComplexSample";
@@ -484,7 +484,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.ComplexSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.ComplexSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.ComplexSample";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.ComplexSample";
