@@ -1,0 +1,129 @@
+{
+  "customerId":"Ij6P1lfZHchO/co10lQ4BQ==",
+  "repeatDaysAfterDecline": 4,
+  "repeatDaysAfterComplete": 3,
+  "repeatDaysAfterAccept": 3,
+  "supportsReinvitation":true,
+  "supportLandscape":true,
+  "notificationType": "IN_SESSION",
+  "localNotificationDelay": 9,
+  "measures":
+  [
+    {
+      "surveyId":"app_test_1",
+      "surveyStyle":"modern",
+      "paginationType":"single",
+      "localization" : {
+        "surveyId_fr" : "app_test_1-fc",
+        "surveyId_es" : "app_test_1-sp"
+      },
+      "daysSinceFirstLaunch": 2,
+      "daysSinceLastLaunch": 4,
+      "launchCount":1,
+      "pageViews":5,
+      "combinedCriteria": [
+        {
+          "launchCount":3,
+          "pageViews":12
+        }
+      ],
+      "significantEventThresholds":
+      {
+        "app_test_1": 3
+      }
+    },
+    {
+      "launchCount":2,
+      "surveyId":"app_test_2",
+      "daysSinceFirstLaunch":3
+    },
+    {
+      "launchCount":3,
+      "surveyId": "client_test_1",
+      "significantEventThresholds": {
+        "client_test_1": 3
+      }
+    }
+  ],
+  "cppParameters":
+  {
+    "foo":"bar",
+    "AnotherCPP":"iOS"
+  },
+  "invite": {
+    "logo": "invite_logo.png",
+    "header": "invite_header.png",
+    "baseColor": [111, 212, 178]
+  },
+  "survey": {
+    "closeButtonColor": [71, 221, 22],
+    "closeButtonBackgroundColor": [16, 71, 198],
+    "headerColor": [187, 87, 251]
+  },
+  "digital": {
+    "digitalSurveys": [
+      {
+        "name": "prod 1",
+        "surveyId": "40egY2o9Jt",
+        "surveyCompletionPageDelay": 3
+      },
+      {
+          "name": "staging",
+          "surveyId": "e6deLRFNU0"
+      },
+      {
+        "name": "qa",
+        "surveyId": "Ztdw0vGdQ9",
+        "surveyCompletionPageDelay": 3.5
+      },
+      {
+        "name": "dev 1",
+        "surveyId": "oXKigz3PR1"
+      },
+      {
+        "name": "dev 2",
+        "surveyId": "JGkmKP1q6Z",
+        "surveyCompletionPageDelay": 3
+      },
+      {
+        "name": "prod 2",
+        "surveyId": "bzHMJHqtLw",
+        "surveyCompletionPageDelay": -1
+      },
+      {
+        "name": "prod 3",
+        "surveyId": "E3NmQyIQS7"
+      },
+    ],
+    "surveyCompletionPageDelay": 10
+  },
+  "surveyManagement": {
+    "surveys":[
+      {
+        "notificationType": "CONTACT",
+        "samplingRate": 99,
+        "campaignId": "0",
+        "groupId": "2076970722",
+        "projectId": "1579598746",
+        "url": "https://featurevoc42642invit.qpro-mssql.verintxmlab.com",
+        "name": "Contact",
+        "launchCount": 5,
+        "pageViews": 10,
+        "significantEventThresholds": {
+          "Contact": 4
+        }
+      },
+      {
+        "notificationType": "IN_SESSION",
+        "samplingRate": 80,
+        "url": "https://survey.vovici.com/se/705E3F054A78CE3C01",
+        "name": "In-session",
+        "launchCount": 80,
+        "pageViews": 5,
+        "significantEventThresholds": {
+          "In-session": 4
+        }
+      }
+    ]
+  }
+}

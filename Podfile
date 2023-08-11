@@ -16,6 +16,10 @@ def dba_pods
     pod 'Verint-XM/DBA', POD_VERSION
 end
 
+def sm_pods
+    pod 'Verint-XM/SurveyManagement', POD_VERSION
+end
+
 target "CustomInvitationSample" do
     project 'CustomInvitationSample/CustomInvitationSample.xcodeproj'
     pods
@@ -54,4 +58,9 @@ end
 target "DBASample" do
     project 'DBASample/DBASample.xcodeproj'
     dba_pods
+end
+
+target "SurveyManagementSample" do
+    project 'SurveyManagementSample/SurveyManagementSample.xcodeproj'
+    sm_pods
 end
