@@ -513,8 +513,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Q7SXD2TU64;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7SXD2TU64;
 				ENABLE_ONLY_ACTIVE_RESOURCES = NO;
 				INFOPLIST_FILE = DigitalSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -524,6 +526,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.DigitalSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.FeedbackSample";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.FeedbackSample";
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -536,8 +539,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Q7SXD2TU64;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7SXD2TU64;
 				ENABLE_ONLY_ACTIVE_RESOURCES = NO;
 				INFOPLIST_FILE = DigitalSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -547,6 +552,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.DigitalSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.FeedbackSample";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.FeedbackSample";
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
