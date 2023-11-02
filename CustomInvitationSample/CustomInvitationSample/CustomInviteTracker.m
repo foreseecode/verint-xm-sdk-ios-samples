@@ -18,7 +18,7 @@
 
 @implementation CustomInviteTracker
 
-#pragma mark - FSInviteHandler
+#pragma mark - EXPInviteHandler
 
 - (void)show {
     if (!self.inviteView) {
@@ -40,13 +40,13 @@
 #pragma mark - CustomInviteViewDelegate
 
 - (void)didAcceptInviteView:(CustomInviteView *)inviteView {
-    // notify the ForeSee tracker that an invitation was accepted; this helps
+    // notify the SDK tracker that an invitation was accepted; this helps
     // the tracker maintain the proper state for this user
-    [ForeSeeCxMeasure customInviteAccepted];
+    [EXPPredictive customInviteAccepted];
 }
 
 - (void)didCancelInviteView:(CustomInviteView *)inviteView {
-    [ForeSeeCxMeasure customInviteDeclined];
+    [EXPPredictive customInviteDeclined];
     self.inviteView = nil;
 }
 

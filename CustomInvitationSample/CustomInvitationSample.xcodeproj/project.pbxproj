@@ -13,8 +13,6 @@
 		968D2F911CFE430700C6066B /* CustomInviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F901CFE430700C6066B /* CustomInviteViewController.m */; };
 		968D2F981CFE453000C6066B /* AlertInviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F971CFE453000C6066B /* AlertInviteViewController.m */; };
 		968D2FA31CFF4C1800C6066B /* InviteExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2FA21CFF4C1800C6066B /* InviteExampleViewController.m */; };
-		968D2FAB1CFF627800C6066B /* ForeSee_logo_1-color.png in Resources */ = {isa = PBXBuildFile; fileRef = 968D2FA91CFF627800C6066B /* ForeSee_logo_1-color.png */; };
-		968D2FAC1CFF627800C6066B /* ForeSee_logo_RGB.png in Resources */ = {isa = PBXBuildFile; fileRef = 968D2FAA1CFF627800C6066B /* ForeSee_logo_RGB.png */; };
 		96C3D5ED1CDB284A005040C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C3D5EC1CDB284A005040C8 /* main.m */; };
 		96C3D5F01CDB284A005040C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C3D5EF1CDB284A005040C8 /* AppDelegate.m */; };
 		96C3D5F31CDB284A005040C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C3D5F21CDB284A005040C8 /* ViewController.m */; };
@@ -23,7 +21,7 @@
 		96C3D5FB1CDB284A005040C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96C3D5F91CDB284A005040C8 /* LaunchScreen.storyboard */; };
 		96C3D6061CDB284A005040C8 /* CustomInvitationSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C3D6051CDB284A005040C8 /* CustomInvitationSampleTests.m */; };
 		96C3D6111CDB284A005040C8 /* CustomInvitationSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C3D6101CDB284A005040C8 /* CustomInvitationSampleUITests.m */; };
-		96C3D61F1CDB9958005040C8 /* foresee_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 96C3D61E1CDB9958005040C8 /* foresee_configuration.json */; };
+		96C3D61F1CDB9958005040C8 /* exp_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 96C3D61E1CDB9958005040C8 /* exp_configuration.json */; };
 		96C3D6571CDBA240005040C8 /* CustomInviteTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C3D6561CDBA240005040C8 /* CustomInviteTracker.m */; };
 		96C3D65A1CDBA26A005040C8 /* CustomInviteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C3D6591CDBA26A005040C8 /* CustomInviteView.m */; };
 		96C3D65F1CDCFA6B005040C8 /* header1.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C3D65E1CDCFA6B005040C8 /* header1.png */; };
@@ -61,8 +59,6 @@
 		968D2F971CFE453000C6066B /* AlertInviteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertInviteViewController.m; sourceTree = "<group>"; };
 		968D2FA11CFF4C1800C6066B /* InviteExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InviteExampleViewController.h; sourceTree = "<group>"; };
 		968D2FA21CFF4C1800C6066B /* InviteExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InviteExampleViewController.m; sourceTree = "<group>"; };
-		968D2FA91CFF627800C6066B /* ForeSee_logo_1-color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ForeSee_logo_1-color.png"; sourceTree = "<group>"; };
-		968D2FAA1CFF627800C6066B /* ForeSee_logo_RGB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForeSee_logo_RGB.png; sourceTree = "<group>"; };
 		96C3D5E81CDB284A005040C8 /* CustomInvitationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomInvitationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C3D5EC1CDB284A005040C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		96C3D5EE1CDB284A005040C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -79,7 +75,7 @@
 		96C3D60C1CDB284A005040C8 /* CustomInvitationSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomInvitationSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C3D6101CDB284A005040C8 /* CustomInvitationSampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomInvitationSampleUITests.m; sourceTree = "<group>"; };
 		96C3D6121CDB284A005040C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96C3D61E1CDB9958005040C8 /* foresee_configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foresee_configuration.json; sourceTree = "<group>"; };
+		96C3D61E1CDB9958005040C8 /* exp_configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exp_configuration.json; sourceTree = "<group>"; };
 		96C3D6411CDB9F4F005040C8 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		96C3D6421CDB9F4F005040C8 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		96C3D6431CDB9F4F005040C8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -244,10 +240,9 @@
 				96C3D5F11CDB284A005040C8 /* ViewController.h */,
 				96C3D5F21CDB284A005040C8 /* ViewController.m */,
 				96C3D5F71CDB284A005040C8 /* Assets.xcassets */,
-				96C3D61E1CDB9958005040C8 /* foresee_configuration.json */,
+				96C3D61E1CDB9958005040C8 /* exp_configuration.json */,
 				96C3D5F91CDB284A005040C8 /* LaunchScreen.storyboard */,
 				96C3D5FC1CDB284A005040C8 /* Info.plist */,
-				96C3D65D1CDCFA5E005040C8 /* Assets */,
 				96C3D5EB1CDB284A005040C8 /* Supporting Files */,
 			);
 			path = CustomInvitationSample;
@@ -277,15 +272,6 @@
 				96C3D6121CDB284A005040C8 /* Info.plist */,
 			);
 			path = CustomInvitationSampleUITests;
-			sourceTree = "<group>";
-		};
-		96C3D65D1CDCFA5E005040C8 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				968D2FA91CFF627800C6066B /* ForeSee_logo_1-color.png */,
-				968D2FAA1CFF627800C6066B /* ForeSee_logo_RGB.png */,
-			);
-			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,7 +339,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1100;
-				ORGANIZATIONNAME = ForeSee;
+				ORGANIZATIONNAME = Verint;
 				TargetAttributes = {
 					96C3D5E71CDB284A005040C8 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -395,12 +381,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				968D2FAB1CFF627800C6066B /* ForeSee_logo_1-color.png in Resources */,
 				96C3D6651CDCFB19005040C8 /* header3.png in Resources */,
-				968D2FAC1CFF627800C6066B /* ForeSee_logo_RGB.png in Resources */,
 				96C3D5FB1CDB284A005040C8 /* LaunchScreen.storyboard in Resources */,
 				96C3D5F81CDB284A005040C8 /* Assets.xcassets in Resources */,
-				96C3D61F1CDB9958005040C8 /* foresee_configuration.json in Resources */,
+				96C3D61F1CDB9958005040C8 /* exp_configuration.json in Resources */,
 				96C3D5F61CDB284A005040C8 /* Main.storyboard in Resources */,
 				96C3D65F1CDCFA6B005040C8 /* header1.png in Resources */,
 				96C3D6631CDCFB12005040C8 /* header2.png in Resources */,
@@ -449,17 +433,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ForeSee/ForeSee.framework/ForeSee",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ForeSeeUtilities/ForeSeeUtilities.framework/ForeSeeUtilities",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/IngestionLogger/IngestionLogger.framework/IngestionLogger",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ForeSeeCxMeasure/ForeSeeCxMeasure.framework/ForeSeeCxMeasure",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Verint-XM/Core/EXPCore.framework/EXPCore",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Verint-XM/Core/EXPUtilities.framework/EXPUtilities",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Verint-XM/Core/EXPIngestionLogger.framework/EXPIngestionLogger",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Verint-XM/Predictive/EXPPredictive.framework/EXPPredictive",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSee.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IngestionLogger.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForeSeeCxMeasure.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXPCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXPUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXPIngestionLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXPPredictive.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -649,17 +633,20 @@
 			baseConfigurationReference = 5858EF61849E87D448A2698A /* Pods-CustomInvitationSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Q7SXD2TU64;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7SXD2TU64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CustomInvitationSample",
 				);
 				INFOPLIST_FILE = CustomInvitationSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.CustomInvitationSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.CustomInvitationSample";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.CustomInvitationSample";
 			};
 			name = Debug;
 		};
@@ -668,17 +655,20 @@
 			baseConfigurationReference = 9C5F51C4E3606A54BA60B910 /* Pods-CustomInvitationSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Q7SXD2TU64;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7SXD2TU64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CustomInvitationSample",
 				);
 				INFOPLIST_FILE = CustomInvitationSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.foresee.samples.CustomInvitationSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.CustomInvitationSample";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.CustomInvitationSample";
 			};
 			name = Release;
 		};
@@ -688,7 +678,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CustomInvitationSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = foresee.CustomInvitationSampleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomInvitationSample.app/CustomInvitationSample";
 			};
@@ -700,7 +690,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CustomInvitationSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = foresee.CustomInvitationSampleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomInvitationSample.app/CustomInvitationSample";
 			};
@@ -711,7 +701,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = CustomInvitationSampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = foresee.CustomInvitationSampleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = CustomInvitationSample;
 				USES_XCTRUNNER = YES;
@@ -723,7 +713,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = CustomInvitationSampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = foresee.CustomInvitationSampleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = CustomInvitationSample;
 				USES_XCTRUNNER = YES;

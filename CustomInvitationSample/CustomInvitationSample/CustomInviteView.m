@@ -69,7 +69,7 @@ typedef enum StyleTypes : NSUInteger {
 }
 
 - (void)createLogo {
-    UIImage *img = [UIImage imageNamed:@"ForeSee_logo_RGB.png"];
+    UIImage *img = [UIImage imageNamed:@"verint_logo"];
     self.logoImageView = [[UIImageView alloc] initWithFrame:CGRectMake(15, 15, 134, 60)];
     self.logoImageView.image = img;
     [self.inviteView addSubview:self.logoImageView];

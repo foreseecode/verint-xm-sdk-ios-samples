@@ -17,7 +17,7 @@
 
 @end
 
-/** This class acts as the custom invitation handler. Any class that conforms to <FSInviteHandler> can manage
+/** This class acts as the custom invitation handler. Any class that conforms to <EXPInviteHandler> can manage
  this task. The invite's lifecycle is numerically documented below.
  
  **/
@@ -37,19 +37,19 @@
     [self resetAndRestoreContactDetails];
     
     // #2 Set this class as the custom invite handler
-    [ForeSeeCxMeasure setInviteHandler:self];
+    [EXPPredictive setInviteHandler:self];
     
-    // #3 Check eligibility. If eligible (and we should be), the ForeSee SDK will call the invite handler's `show` method
-    [ForeSeeCxMeasure checkIfEligibleForSurvey];
+    // #3 Check eligibility. If eligible (and we should be), the SDK will call the invite handler's `show` method
+    [EXPPredictive checkIfEligibleForSurvey];
 }
 
 - (void)dealloc {
     if (self.isShowing) {
-        [ForeSeeCxMeasure customInviteDeclined];
+        [EXPPredictive customInviteDeclined];
     }
 }
 
-#pragma mark - FSInviteHandler
+#pragma mark - EXPInviteHandler
 
 // #4 The `show` method is triggered by the eligibility check. We'll show the invite's accept/decline buttons at this point.
 - (void)show {
@@ -77,23 +77,23 @@
 // #6a The SDK couldn't find contact details for the preferred contact type. The invite is neither accepted or declined.
 - (void)setInvalidInput:(BOOL)isInvalid {
     NSLog(@"Invalid input");
-    NSLog(@"Current stored email = %@", [ForeSeeCxMeasure contactDetailsForType:kFSEmail]);
-    NSLog(@"Current stored phone number = %@", [ForeSeeCxMeasure contactDetailsForType:kFSPhoneNumber]);
+    NSLog(@"Current stored email = %@", [EXPPredictive contactDetailsForType:kEXPEmail]);
+    NSLog(@"Current stored phone number = %@", [EXPPredictive contactDetailsForType:kEXPPhoneNumber]);
 }
 
 #pragma mark - Invite actions
 
 - (IBAction)handleAcceptButtonTouchUpInside:(id)sender {
-    // #5a When the accept button is tapped we'll notify the ForeSee SDK that the invite was accepted. If the
+    // #5a When the accept button is tapped we'll notify the SDK that the invite was accepted. If the
     // input is good (i.e. if there is a value stored for the preferred contact type), then the invite's lifecycle is
     // complete and the SDK will invoke `hideWithAnimation:`. If the input is bad (i.e. there are no valid contact
     // details stored), then the SDK will notify us by calling `setInvalidInput:`.
-    [ForeSeeCxMeasure customInviteAccepted];
+    [EXPPredictive customInviteAccepted];
 }
 
 - (IBAction)handleDeclineButtonTouchUpInside:(id)sender {
-    // #5b If the decline button is tapped, then we'll notify the ForeSee SDK that the invite was declined.
-    [ForeSeeCxMeasure customInviteDeclined];
+    // #5b If the decline button is tapped, then we'll notify the SDK that the invite was declined.
+    [EXPPredictive customInviteDeclined];
 }
 
 #pragma mark - Reset
@@ -102,24 +102,24 @@
     // A full state-reset also removes the stored contact details. We want to reset the tracker state
     // while keeping those details. This workaround achieves that. (None if this is necessary in real
     // implementations. You usually want to maintain state.)
-    NSString *email = [ForeSeeCxMeasure contactDetailsForType:kFSEmail];
-    NSString *phoneNumber = [ForeSeeCxMeasure contactDetailsForType:kFSPhoneNumber];
+    NSString *email = [EXPPredictive contactDetailsForType:kEXPEmail];
+    NSString *phoneNumber = [EXPPredictive contactDetailsForType:kEXPPhoneNumber];
     if (self.isShowing) {
         // already showing from a previous load; let's reset and start over
-        [ForeSeeCxMeasure customInviteDeclined];
+        [EXPPredictive customInviteDeclined];
     }
-    [ForeSee resetState];
-    [ForeSeeCxMeasure setPreferredContactType:[self preferredContactType]];
-    [ForeSeeCxMeasure setContactDetails:email forType:kFSEmail];
-    [ForeSeeCxMeasure setContactDetails:phoneNumber forType:kFSPhoneNumber];
+    [EXPCore resetState];
+    [EXPPredictive setPreferredContactType:[self preferredContactType]];
+    [EXPPredictive setContactDetails:email forType:kEXPEmail];
+    [EXPPredictive setContactDetails:phoneNumber forType:kEXPPhoneNumber];
 }
 
-- (FSContactType)preferredContactType {
-    NSNumber *preferredType = [[NSUserDefaults standardUserDefaults] objectForKey:FSPreferredContactTypeKey];
+- (EXPContactType)preferredContactType {
+    NSNumber *preferredType = [[NSUserDefaults standardUserDefaults] objectForKey:PreferredContactTypeKey];
     if (preferredType) {
         return [preferredType unsignedIntegerValue];
     }
-    return kFSPhoneNumber;
+    return kEXPPhoneNumber;
 }
 
 @end

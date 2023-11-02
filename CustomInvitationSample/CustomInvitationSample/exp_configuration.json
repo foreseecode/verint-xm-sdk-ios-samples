@@ -1,0 +1,21 @@
+{
+    "customerId":"FSRTESTINGCODECID12345==",
+    "notificationType":"IN_SESSION",
+    "measures":
+    [
+        {
+            "surveyId": "iphone_app_QA",
+            "surveyStyle": "modern",
+            "launchCount": 0
+        }
+    ],
+    "invite": {
+        "logo": "v_logo",
+        "baseColor": [43, 101, 242]
+    },
+    "survey": {
+        "closeButtonColor": [255, 255, 255],
+        "closeButtonBackgroundColor": [65, 65, 65],
+        "headerColor": [65, 65, 65]
+    }
+}

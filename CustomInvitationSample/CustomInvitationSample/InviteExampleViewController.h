@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <ForeSee/ForeSee.h>
-#import <ForeSeeCxMeasure/FSInviteHandler.h>
+#import <EXPCore/EXPCore.h>
+#import <EXPPredictive/EXPInviteHandler.h>
 
 @interface InviteExampleViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UITextView *textView;
-@property (nonatomic) id<FSInviteHandler> inviteHandler;
+@property (nonatomic) id<EXPInviteHandler> inviteHandler;
 
 @end

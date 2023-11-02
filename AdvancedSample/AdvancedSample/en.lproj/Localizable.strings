@@ -1,11 +1,11 @@
 /* 
-  ForeSeeInvite.strings
+  Localizable.strings
   AdvancedSample
 
   Created by Wayne Burkett on 11/12/19.
   Copyright © 2019 ForeSee. All rights reserved.
 */
 
-"FORESEE_Invite_InSession_DeclineButton"="No, thanks";
-"FORESEE_Invite_InSession_AcceptButton"="Yes, I'll help";
-"FORESEE_Invite_InSession_InvitePage_Title"="We want your feedback!";
+"EXP_Invite_InSession_DeclineButton"="No, thanks";
+"EXP_Invite_InSession_AcceptButton"="Yes, I'll help";
+"EXP_Invite_InSession_InvitePage_Title"="We want your feedback!";

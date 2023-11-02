@@ -7,12 +7,12 @@
 //
 
 #import "ViewController.h"
-#import <ForeSee/ForeSee.h>
+#import <EXPCore/EXPCore.h>>
 
 @implementation ViewController
 
 - (void)resetState:(id)sender {
-    [ForeSee resetState];
+    [EXPCore resetState];
 }
 
 @end

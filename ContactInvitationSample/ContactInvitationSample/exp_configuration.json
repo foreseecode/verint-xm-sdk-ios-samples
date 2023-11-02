@@ -1,0 +1,21 @@
+{
+    "customerId":"FSRTESTINGCODECID12345==",
+    "notificationType":"CONTACT",
+    "measures":
+	[
+		{
+			"surveyId": "iphone_app_QA",
+			"launchCount": 0
+		}
+	],
+    "appName": "Custom Invite Sample",
+    "invite": {
+        "logo": "v_logo",
+        "baseColor": [43, 101, 242]
+    },
+    "survey": {
+        "closeButtonColor": [255, 255, 255],
+        "closeButtonBackgroundColor": [65, 65, 65],
+        "headerColor": [65, 65, 65]
+    }
+}

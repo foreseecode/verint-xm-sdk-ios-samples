@@ -11,7 +11,7 @@
 
 @interface AppDelegate ()
 
-@property (nonatomic) CustomInviteDelegate *triggerDelegate;
+@property (nonatomic) CustomInviteDelegate *inviteDelegate;
 
 @end
 
@@ -19,14 +19,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [ForeSee setDebugLogEnabled:YES];
-    [ForeSee setEventLogEnabled:NO];
-    [ForeSee start];
+    [EXPCore setDebugLogEnabled:YES];
+    [EXPCore setEventLogEnabled:NO];
+    [EXPCore start];
     
-    // capture and log ForeSee lifecycle events;
+    // capture and log SDK lifecycle events;
     // active for all examples
-    self.triggerDelegate = [[CustomInviteDelegate alloc] init];
-    [ForeSeeCxMeasure setInviteDelegate:self.triggerDelegate];
+    self.inviteDelegate = [[CustomInviteDelegate alloc] init];
+    [EXPPredictive setInviteDelegate:self.inviteDelegate];
     
     return YES;
 }

@@ -22,7 +22,7 @@
     return [super init];
 }
 
-#pragma mark - FSInviteHandler
+#pragma mark - EXPInviteHandler
 
 - (void)show {
     UIAlertController* inviteAlert = [UIAlertController alertControllerWithTitle:@"Survey invitation"
@@ -32,12 +32,12 @@
     UIAlertAction* yayAction = [UIAlertAction actionWithTitle:@"Yay!"
                                                         style:UIAlertActionStyleDefault
                                                       handler:^(UIAlertAction * action) {
-                                                          [ForeSeeCxMeasure customInviteAccepted];
+                                                          [EXPPredictive customInviteAccepted];
                                                       }];
     UIAlertAction* nayAction = [UIAlertAction actionWithTitle:@"Nay"
                                                         style:UIAlertActionStyleCancel
                                                       handler:^(UIAlertAction * action) {
-                                                          [ForeSeeCxMeasure customInviteDeclined];
+                                                          [EXPPredictive customInviteDeclined];
                                                       }];
     
     [inviteAlert addAction:yayAction];
@@ -51,7 +51,7 @@
 
 
 - (void)dealloc {
-    [ForeSeeCxMeasure customInviteDeclined];
+    [EXPPredictive customInviteDeclined];
 }
 
 @end

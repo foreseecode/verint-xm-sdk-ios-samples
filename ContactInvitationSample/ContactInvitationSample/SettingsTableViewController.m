@@ -8,18 +8,18 @@
 
 #import "SettingsTableViewController.h"
 #import "TextFieldTableViewCell.h"
-#import <ForeSee/ForeSee.h>
-#import <ForeSeeCxMeasure/ForeSeeCxMeasure.h>
+#import <EXPCore/EXPCore.h>
+#import <EXPPredictive/EXPPredictive.h>
 
-typedef enum FSTableSections : NSUInteger {
+typedef enum TableSections : NSUInteger {
     EmailEntrySection = 0,
     PhoneNumberEntrySection,
     PreferredTypeSelectionSection,
     ResetStateSection,
     SectionCount
-} FSTableSections;
+} TableSections;
 
-NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
+NSString * const PreferredContactTypeKey = @"PreferredContactTypeKey";
 
 @interface SettingsTableViewController ()
 
@@ -41,17 +41,17 @@ NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
 
 #pragma mark - Preferred type
 
-- (FSContactType)preferredContactType {
-    NSNumber *preferredType = [self.storage objectForKey:FSPreferredContactTypeKey];
+- (EXPContactType)preferredContactType {
+    NSNumber *preferredType = [self.storage objectForKey:PreferredContactTypeKey];
     if (preferredType) {
         return [preferredType unsignedIntegerValue];
     }
-    return kFSPhoneNumber;
+    return kEXPPhoneNumber;
 }
 
-- (void)setPreferredContactType:(FSContactType)preferredContactType {
-    [ForeSeeCxMeasure setPreferredContactType:preferredContactType];
-    [self.storage setInteger:preferredContactType forKey:FSPreferredContactTypeKey];
+- (void)setPreferredContactType:(EXPContactType)preferredContactType {
+    [EXPPredictive setPreferredContactType:preferredContactType];
+    [self.storage setInteger:preferredContactType forKey:PreferredContactTypeKey];
     [self.storage synchronize];
 }
 
@@ -101,10 +101,10 @@ NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
             return [self createPhoneNumberEntryCellForTableView:tableView];
         case PreferredTypeSelectionSection:
             switch (indexPath.row) {
-                case kFSEmail:
+                case kEXPEmail:
                     str = @"E-mail";
                     break;
-                case kFSPhoneNumber:
+                case kEXPPhoneNumber:
                     str = @"Phone Number";
                     break;
                 default:
@@ -135,8 +135,8 @@ NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
     if (indexPath.section == PreferredTypeSelectionSection) {
         [self setPreferredContactType:indexPath.row];
     } else if (indexPath.section == ResetStateSection) {
-        [ForeSee resetState];
-        [ForeSeeCxMeasure setInviteHandler:nil];
+        [EXPCore resetState];
+        [EXPPredictive setInviteHandler:nil];
         [self clearFields];
     }
     [tableView reloadData];
@@ -147,9 +147,9 @@ NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
 - (UITableViewCell *)createEmailEntryCellForTableView:(UITableView *)tableView {
     TextFieldTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SettingsCell"];
     cell.textField.tag = EmailEntrySection;
-    cell.textField.placeholder = @"example@foresee.com";
+    cell.textField.placeholder = @"example@verint.com";
     cell.textField.keyboardType = UIKeyboardTypeEmailAddress;
-    cell.textField.text = [ForeSeeCxMeasure contactDetailsForType:kFSEmail];
+    cell.textField.text = [EXPPredictive contactDetailsForType:kEXPEmail];
     cell.textField.delegate = self;
     return cell;
 }
@@ -159,7 +159,7 @@ NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
     cell.textField.tag = PhoneNumberEntrySection;
     cell.textField.placeholder = @"555-555-5555";
     cell.textField.keyboardType = UIKeyboardTypePhonePad;
-    cell.textField.text = [ForeSeeCxMeasure contactDetailsForType:kFSPhoneNumber];
+    cell.textField.text = [EXPPredictive contactDetailsForType:kEXPPhoneNumber];
     cell.textField.delegate = self;
     return cell;
 }
@@ -175,14 +175,14 @@ NSString * const FSPreferredContactTypeKey = @"FSPreferredContactTypeKey";
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {
     if (!self.isDirty) {
-        [ForeSeeCxMeasure setContactDetails:[self trim:textField.text] forType:(textField.tag == EmailEntrySection) ? kFSEmail : kFSPhoneNumber];
+        [EXPPredictive setContactDetails:[self trim:textField.text] forType:(textField.tag == EmailEntrySection) ? kEXPEmail : kEXPPhoneNumber];
     }
 }
 
 #pragma mark - Util
 
 - (void)clearFields {
-    [self.storage removeObjectForKey:FSPreferredContactTypeKey];
+    [self.storage removeObjectForKey:PreferredContactTypeKey];
     self.dirty = YES;
 }
 
