@@ -46,11 +46,6 @@ target "LocalNotificationSample" do
     pods
 end
 
-target "DigitalSample" do
-    project 'DigitalSample/DigitalSample.xcodeproj'
-    pods true, false
-end
-
 target "DBASample" do
     project 'DBASample/DBASample.xcodeproj'
     dba_pods
