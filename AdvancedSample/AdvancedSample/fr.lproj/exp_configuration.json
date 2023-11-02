@@ -1,23 +1,5 @@
 {
-  "customerId": "FSRTESTINGCODECID12345==",
   "notificationType": "IN_SESSION",
-  "measures":
-  [
-    {
-      "surveyId": "iphone_app_QA_fr",
-      "surveyStyle": "modern",
-      "combinedCriteria":
-      [
-        {
-          "pageViews": 2,
-          "significantEventThresholds":
-          {
-            "app_test_1": 4
-          }
-        }
-      ]
-    }
-  ],
   "invite":
   {
     "logo": "v_logo",
@@ -32,19 +14,22 @@
   {
     "sample_app": "Advanced sample (French)"
   },
-  "digital":
-  {
-    "digitalSurveys":[
+  "surveyManagement": {
+    "surveys": [
       {
-        "name": "Sample 1",
-        "surveyId": "AEvfwfp1vY"
-      },
-      {
-        "name": "Sample 2",
-        "surveyId": "1k9SUBSgFN",
-        "surveyCompletionPageDelay": -1
+        "url": "https://survey.vovici.com/se/705E3F05757AA3AA",
+        "name": "SampleSurveyFr",
+        "combinedCriteria":
+        [
+          {
+            "pageViews": 1,
+            "significantEventThresholds":
+            {
+              "custom_event": 4
+            }
+          }
+        ]
       }
-    ],
-    "surveyCompletionPageDelay": 3
+    ]
   }
 }

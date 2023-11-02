@@ -6,10 +6,11 @@ use_frameworks!
 
 POD_VERSION = '7.1.0'
 
-def pods(include_digital=false, include_predictive=true)
+def pods(include_digital=false, include_predictive=true, include_sm=false)
     pod 'Verint-XM/Core', POD_VERSION
     pod 'Verint-XM/Predictive', POD_VERSION if include_predictive
     pod 'Verint-XM/Digital', POD_VERSION if include_digital
+    pod 'Verint-XM/SurveyManagement', POD_VERSION if include_sm
 end
 
 def dba_pods
@@ -23,7 +24,7 @@ end
 
 target "AdvancedSample" do
     project 'AdvancedSample/AdvancedSample.xcodeproj'
-    pods true
+    pods false, false, true
 end
 
 target "BasicSample" do
