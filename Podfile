@@ -29,7 +29,7 @@ end
 
 target "BasicSwiftSample" do
     project 'BasicSwiftSample/BasicSwiftSample.xcodeproj'
-    pods
+    pods false, false, true
 end
 
 target "ContactInvitationSample" do

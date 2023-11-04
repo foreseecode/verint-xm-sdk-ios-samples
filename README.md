@@ -23,7 +23,9 @@ It uses the provided EXPInviteView to show a modal dialog to the user inviting t
 they have met the configured thresholds. See configuration file to check the thresholds.  
 
 ## BasicSwiftSample
-This sample project demonstrates a basic Swift implementation of the Verint Predictive code. It uses a bridging header to include the SDK.
+This sample project demonstrates a basic Swift implementation of the Verint's Survey Managment features.
+It uses the provided EXPInviteView to show a modal dialog to the user inviting them to take a survey when
+they have met the configured thresholds. See configuration file to check the thresholds.
 
 ## ContactInvitationSample
 This example shows how to provide a user's contact information to the SDK for use in a CONTACT mode survey.
