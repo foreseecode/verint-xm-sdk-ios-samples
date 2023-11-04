@@ -49,5 +49,5 @@ end
 
 target "LocalNotificationSample" do
     project 'LocalNotificationSample/LocalNotificationSample.xcodeproj'
-    pods
+    pods false, false, true
 end

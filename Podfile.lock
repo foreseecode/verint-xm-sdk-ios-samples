@@ -10,7 +10,6 @@ PODS:
 DEPENDENCIES:
   - Verint-XM/Core (= 7.1.0)
   - Verint-XM/DBA (= 7.1.0)
-  - Verint-XM/Predictive (= 7.1.0)
   - Verint-XM/SurveyManagement (= 7.1.0)
 
 SPEC REPOS:
@@ -20,6 +19,6 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Verint-XM: 0bf7d93797b4978fc8ca985ce6e137f7b59bfa3e
 
-PODFILE CHECKSUM: feebcc5372b25b99af9e07ed17e17af86e992abb
+PODFILE CHECKSUM: e5e9433f5b38b3b2b8e1050c84752795fb490288
 
 COCOAPODS: 1.12.1
