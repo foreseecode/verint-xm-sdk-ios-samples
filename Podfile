@@ -42,12 +42,12 @@ target "CustomInvitationSample" do
     pods false, false, true
 end
 
-target "LocalNotificationSample" do
-    project 'LocalNotificationSample/LocalNotificationSample.xcodeproj'
-    pods
-end
-
 target "DBASample" do
     project 'DBASample/DBASample.xcodeproj'
     dba_pods
+end
+
+target "LocalNotificationSample" do
+    project 'LocalNotificationSample/LocalNotificationSample.xcodeproj'
+    pods
 end
