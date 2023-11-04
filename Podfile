@@ -34,7 +34,7 @@ end
 
 target "ContactInvitationSample" do
     project 'ContactInvitationSample/ContactInvitationSample.xcodeproj'
-    pods
+    pods false, false, true
 end
 
 target "CustomInvitationSample" do
