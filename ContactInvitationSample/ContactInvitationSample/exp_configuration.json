@@ -4,7 +4,7 @@
     {
       "sample_app":"Contact Invitation Sample"
     },
-    "appName": "Custom Invite Sample",
+    "appName": "Contact Invitation Sample",
     "invite": {
         "logo": "v_logo",
         "baseColor": [43, 101, 242]
