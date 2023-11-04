@@ -39,7 +39,7 @@ end
 
 target "CustomInvitationSample" do
     project 'CustomInvitationSample/CustomInvitationSample.xcodeproj'
-    pods
+    pods false, false, true
 end
 
 target "LocalNotificationSample" do

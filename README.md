@@ -31,7 +31,7 @@ they have met the configured thresholds. See configuration file to check the thr
 This sample project demonstrates how to provide a user's contact information to the SDK for use in a CONTACT mode survey.
 
 ## CustomInvitationSample
-This example demonstrates the use of a custom invite handler.
+This sample project demonstrates an implementation of custom invite handler with the Verint's Survey Managment survey.
 
 ## DBASample
 This sample project demonstrates an implementation of the Verint DBA module in an empty iPhone app.

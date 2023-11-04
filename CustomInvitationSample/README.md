@@ -1,1 +1,1 @@
-This example demonstrates the use of a custom invite handler.
+This sample project demonstrates an implementation of custom invite handler with the Verint's Survey Managment survey.
