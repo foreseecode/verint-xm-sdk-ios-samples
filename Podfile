@@ -17,11 +17,6 @@ def dba_pods
     pod 'Verint-XM/DBA', POD_VERSION
 end
 
-target "CustomInvitationSample" do
-    project 'CustomInvitationSample/CustomInvitationSample.xcodeproj'
-    pods
-end
-
 target "AdvancedSample" do
     project 'AdvancedSample/AdvancedSample.xcodeproj'
     pods false, false, true
@@ -29,7 +24,7 @@ end
 
 target "BasicSample" do
     project 'BasicSample/BasicSample.xcodeproj'
-    pods
+    pods false, false, true
 end
 
 target "BasicSwiftSample" do
@@ -39,6 +34,11 @@ end
 
 target "ContactInvitationSample" do
     project 'ContactInvitationSample/ContactInvitationSample.xcodeproj'
+    pods
+end
+
+target "CustomInvitationSample" do
+    project 'CustomInvitationSample/CustomInvitationSample.xcodeproj'
     pods
 end
 
