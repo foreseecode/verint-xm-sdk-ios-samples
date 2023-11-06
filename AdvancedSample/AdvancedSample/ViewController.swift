@@ -9,13 +9,13 @@
 import UIKit
 import EXPCore
 import EXPPredictive
-import EXPDigital
+import EXPSurveyManagement
 
 class ViewController: UIViewController {
 
-  static let surveyId = "mobile_app-en"
-  static let significantEventKey = "app_test_1"
-  
+  static let significantEventKey = "custom_event"
+  static let surveyNameStringKey = "survey_name"
+
   var counter: (() -> Int)? = nil
   
   // MARK: Outlets
@@ -37,7 +37,8 @@ class ViewController: UIViewController {
   }
   
   @IBAction func checkShowSurveyButtonTouchUpInside(_ sender: Any) {
-    DigitalComponent.showDigitalSurvey()
+    let surveyName = NSLocalizedString(Self.surveyNameStringKey, comment: "")
+    SurveyManagement.showSurveyForName(surveyName)
   }
   
   @IBAction func incrementEventButtonTouchUpInside(_ sender: Any) {
@@ -51,7 +52,7 @@ class ViewController: UIViewController {
   // MARK: Helpers
   
   func updateIncrementEventButtonLabel(_ count: Int) {
-    incrementEventButton.setTitle("Increment Count (\(count))", for: .normal)
+    incrementEventButton.setTitle("Increment Event Count (\(count))", for: .normal)
   }
   
   func resetState() {

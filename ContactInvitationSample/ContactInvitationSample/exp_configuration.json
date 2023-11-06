@@ -1,14 +1,10 @@
 {
-    "customerId":"FSRTESTINGCODECID12345==",
     "notificationType":"CONTACT",
-    "measures":
-	[
-		{
-			"surveyId": "iphone_app_QA",
-			"launchCount": 0
-		}
-	],
-    "appName": "Custom Invite Sample",
+    "cppParameters":
+    {
+      "sample_app":"Contact Invitation Sample"
+    },
+    "appName": "Contact Invitation Sample",
     "invite": {
         "logo": "v_logo",
         "baseColor": [43, 101, 242]
@@ -17,5 +13,17 @@
         "closeButtonColor": [255, 255, 255],
         "closeButtonBackgroundColor": [65, 65, 65],
         "headerColor": [65, 65, 65]
+    },
+    "surveyManagement": {
+        "surveys": [
+            {
+                "campaignId": "0",
+                "groupId": "1885224709",
+                "projectId": "1069037906",
+                "url": "https://survey.vovici.com",
+                "name": "SampleSurvey",
+                "launchCount": 0
+            }
+        ]
     }
 }

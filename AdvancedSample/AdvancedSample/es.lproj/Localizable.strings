@@ -9,3 +9,5 @@
 "EXP_Invite_InSession_DeclineButton"="No, gracias";
 "EXP_Invite_InSession_AcceptButton"="Sí, voy a ayudar";
 "EXP_Invite_InSession_InvitePage_Title"="Nos gustaría recibir sus comentarios!";
+
+"survey_name" = "SampleSurveyEs";
