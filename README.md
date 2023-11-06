@@ -11,11 +11,11 @@ This sample project demonstrates a more advanced implementation of the Verint's 
 
 Features:
 
-* A Survey Management survey triggered by a "significant event" count and a "page views". The user will become eligible to receive an invitation once a configured thresholds are met. See configuration file to check the thresholds.
-* A Survey Management survey triggered by a "name". Survey will be presented each time, ignoring the configured criteria thresholds (viz. without checking the eligibility).
-* The "significant event" count can be incremented using a button in the app.
+* A Survey Management survey triggered by a "significant event" count and a "page views" count. The user will become eligible to receive an invitation once the configured thresholds are met. See configuration file to check the thresholds.
+* A Survey Management survey triggered by a "name". Survey will be presented each time, ignoring the configured criteria thresholds (i.e. without checking the eligibility).
 * An in-line custom invite. Custom invite triggered by a "significant event" count and a "page views". See configuration file to check the thresholds.
-* Localisation of invites/survey. This app supports invite text overrides for Spanish, French, German, and Portuguese and can show surveys in English, French, and Spanish. Change your device's language setting to view invites/surveys in another language.
+* The "significant event" count can be incremented using a button in the app.
+* Localization of invites/survey. This app supports invite text overrides for Spanish, French, German, and Portuguese and can show surveys in English, French, and Spanish. Change your device's language setting to view invites/surveys in another language.
 
 ## BasicSample
 This sample project demonstrates a basic implementation of the Verint's Survey Managment features.
@@ -31,7 +31,7 @@ they have met the configured thresholds. See configuration file to check the thr
 This sample project demonstrates how to provide a user's contact information to the SDK for use in a CONTACT mode survey.
 
 ## CustomInvitationSample
-This sample project demonstrates an implementation of custom invite handler with the Verint's Survey Managment survey.
+This sample project demonstrates how to use a custom invite to launch a Survey Management survey using the custom invite handler.
 
 ## DBASample
 This sample project demonstrates an implementation of the Verint's DBA features.

@@ -1,1 +1,1 @@
-This sample project demonstrates an implementation of custom invite handler with the Verint's Survey Managment survey.
+This sample project demonstrates how to use a custom invite to launch a Survey Management survey using the custom invite handler.

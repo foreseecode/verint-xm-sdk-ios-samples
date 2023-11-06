@@ -15,4 +15,4 @@ How to trigger the survey:
 
 5. Tap "Reset State" to reset the counters. The state is also reset each time the main ViewController is loaded. (This is done to simplify this example; in a production app you would track state across user launches of your application.)
 
-If you want just to trigger survey immediatelly, without checking the thresholds, tap "Show Survey".
+If you want just to trigger survey immediately, without checking the thresholds, tap "Show Survey".
