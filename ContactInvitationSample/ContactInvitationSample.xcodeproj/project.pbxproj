@@ -21,7 +21,6 @@
 		9675377C29B945C20011F5E0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9675377B29B945C20011F5E0 /* Localizable.strings */; };
 		967C4522213894F000C825D3 /* CustomInviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C4521213894F000C825D3 /* CustomInviteViewController.m */; };
 		96FF0F8C1D052C6C000A2176 /* exp_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 96FF0F8B1D052C6C000A2176 /* exp_configuration.json */; };
-		C47C5BC029FA962900C25C52 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C47C5BC229FA962900C25C52 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -369,6 +368,7 @@
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Verint-XM/Core/EXPUtilities.framework/EXPUtilities",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Verint-XM/Core/EXPIngestionLogger.framework/EXPIngestionLogger",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Verint-XM/Predictive/EXPPredictive.framework/EXPPredictive",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Verint-XM/SurveyManagement/EXPSurveyManagement.framework/EXPSurveyManagement",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -376,6 +376,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXPUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXPIngestionLogger.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXPPredictive.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXPSurveyManagement.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

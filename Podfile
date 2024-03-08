@@ -6,24 +6,18 @@ use_frameworks!
 
 POD_VERSION = '7.1.2'
 
-def pods(include_digital=false, include_predictive=true)
+def pods
     pod 'Verint-XM/Core', POD_VERSION
-    pod 'Verint-XM/Predictive', POD_VERSION if include_predictive
-    pod 'Verint-XM/Digital', POD_VERSION if include_digital
+    pod 'Verint-XM/SurveyManagement', POD_VERSION
 end
 
 def dba_pods
     pod 'Verint-XM/DBA', POD_VERSION
 end
 
-target "CustomInvitationSample" do
-    project 'CustomInvitationSample/CustomInvitationSample.xcodeproj'
-    pods
-end
-
 target "AdvancedSample" do
     project 'AdvancedSample/AdvancedSample.xcodeproj'
-    pods true
+    pods
 end
 
 target "BasicSample" do
@@ -41,17 +35,17 @@ target "ContactInvitationSample" do
     pods
 end
 
-target "LocalNotificationSample" do
-    project 'LocalNotificationSample/LocalNotificationSample.xcodeproj'
+target "CustomInvitationSample" do
+    project 'CustomInvitationSample/CustomInvitationSample.xcodeproj'
     pods
-end
-
-target "DigitalSample" do
-    project 'DigitalSample/DigitalSample.xcodeproj'
-    pods true, false
 end
 
 target "DBASample" do
     project 'DBASample/DBASample.xcodeproj'
     dba_pods
+end
+
+target "LocalNotificationSample" do
+    project 'LocalNotificationSample/LocalNotificationSample.xcodeproj'
+    pods
 end
