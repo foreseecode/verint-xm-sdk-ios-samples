@@ -1,24 +1,24 @@
 PODS:
-  - Verint-XM/Core (7.1.0)
-  - Verint-XM/DBA (7.1.0):
+  - Verint-XM/Core (7.1.2)
+  - Verint-XM/DBA (7.1.2):
     - Verint-XM/Core
-  - Verint-XM/Predictive (7.1.0):
+  - Verint-XM/Predictive (7.1.2):
     - Verint-XM/Core
-  - Verint-XM/SurveyManagement (7.1.0):
+  - Verint-XM/SurveyManagement (7.1.2):
     - Verint-XM/Predictive
 
 DEPENDENCIES:
-  - Verint-XM/Core (= 7.1.0)
-  - Verint-XM/DBA (= 7.1.0)
-  - Verint-XM/SurveyManagement (= 7.1.0)
+  - Verint-XM/Core (= 7.1.2)
+  - Verint-XM/DBA (= 7.1.2)
+  - Verint-XM/SurveyManagement (= 7.1.2)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Verint-XM
 
 SPEC CHECKSUMS:
-  Verint-XM: 0bf7d93797b4978fc8ca985ce6e137f7b59bfa3e
+  Verint-XM: 5c3bad8c03668278ca2b15f5eb2ddc4fc680569c
 
-PODFILE CHECKSUM: 49e4c43963e05a9b86665b0b2001ba9dbb7000f1
+PODFILE CHECKSUM: c717e0f9b64c154a836da6977b2f7b435d9fe4db
 
 COCOAPODS: 1.12.1

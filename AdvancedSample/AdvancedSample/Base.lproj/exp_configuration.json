@@ -22,7 +22,6 @@
         "combinedCriteria":
         [
           {
-            "pageViews": 1,
             "significantEventThresholds":
             {
               "custom_event": 4
