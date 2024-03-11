@@ -215,6 +215,7 @@
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Verint-XM/Core/EXPUtilities.framework/EXPUtilities",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Verint-XM/Core/EXPIngestionLogger.framework/EXPIngestionLogger",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Verint-XM/Predictive/EXPPredictive.framework/EXPPredictive",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Verint-XM/SurveyManagement/EXPSurveyManagement.framework/EXPSurveyManagement",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -222,6 +223,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXPUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXPIngestionLogger.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXPPredictive.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXPSurveyManagement.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
