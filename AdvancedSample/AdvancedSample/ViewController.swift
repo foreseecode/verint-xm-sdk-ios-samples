@@ -39,6 +39,7 @@ class ViewController: UIViewController {
   @IBAction func checkShowSurveyButtonTouchUpInside(_ sender: Any) {
     let surveyName = NSLocalizedString(Self.surveyNameStringKey, comment: "")
     SurveyManagement.showSurvey(forName: surveyName)
+    SurveyManagement.checkIfEligibleForSurvey()
   }
   
   @IBAction func incrementEventButtonTouchUpInside(_ sender: Any) {

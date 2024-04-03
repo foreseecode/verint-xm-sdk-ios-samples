@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		68E38B3000DB35966A79663A /* Pods_CustomInvitationSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EB598839F7B1D964FECC17 /* Pods_CustomInvitationSample.framework */; };
+		968838742BBDD981004D08E5 /* InvitelessExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968838732BBDD981004D08E5 /* InvitelessExampleViewController.swift */; };
 		968D2F581CFD6A6800C6066B /* CustomInviteHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F571CFD6A6800C6066B /* CustomInviteHandler.m */; };
 		968D2F5B1CFD6DCC00C6066B /* CustomInviteDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F5A1CFD6DCC00C6066B /* CustomInviteDelegate.m */; };
 		968D2F911CFE430700C6066B /* CustomInviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F901CFE430700C6066B /* CustomInviteViewController.m */; };
@@ -49,6 +50,8 @@
 
 /* Begin PBXFileReference section */
 		5858EF61849E87D448A2698A /* Pods-CustomInvitationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomInvitationSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample.debug.xcconfig"; sourceTree = "<group>"; };
+		968838722BBDD981004D08E5 /* CustomInvitationSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomInvitationSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		968838732BBDD981004D08E5 /* InvitelessExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitelessExampleViewController.swift; sourceTree = "<group>"; };
 		968D2F561CFD6A6800C6066B /* CustomInviteHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInviteHandler.h; sourceTree = "<group>"; };
 		968D2F571CFD6A6800C6066B /* CustomInviteHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInviteHandler.m; sourceTree = "<group>"; };
 		968D2F591CFD6DCC00C6066B /* CustomInviteDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInviteDelegate.h; sourceTree = "<group>"; };
@@ -193,11 +196,21 @@
 			name = images;
 			sourceTree = "<group>";
 		};
+		968838712BBDD949004D08E5 /* Example #3 */ = {
+			isa = PBXGroup;
+			children = (
+				968838732BBDD981004D08E5 /* InvitelessExampleViewController.swift */,
+				968838722BBDD981004D08E5 /* CustomInvitationSample-Bridging-Header.h */,
+			);
+			path = "Example #3";
+			sourceTree = "<group>";
+		};
 		968D2FA81CFF4DEF00C6066B /* Examples */ = {
 			isa = PBXGroup;
 			children = (
 				9667BEF621377E0300F750DD /* Example #1 */,
 				9667BEF721377E3600F750DD /* Example #2 */,
+				968838712BBDD949004D08E5 /* Example #3 */,
 				968D2FA11CFF4C1800C6066B /* InviteExampleViewController.h */,
 				968D2FA21CFF4C1800C6066B /* InviteExampleViewController.m */,
 				968D2F591CFD6DCC00C6066B /* CustomInviteDelegate.h */,
@@ -344,6 +357,7 @@
 					96C3D5E71CDB284A005040C8 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = Q7SXD2TU64;
+						LastSwiftMigration = 1530;
 						ProvisioningStyle = Manual;
 					};
 					96C3D6001CDB284A005040C8 = {
@@ -464,6 +478,7 @@
 				96C3D5F01CDB284A005040C8 /* AppDelegate.m in Sources */,
 				968D2F581CFD6A6800C6066B /* CustomInviteHandler.m in Sources */,
 				96CA07591CE23490000F766C /* CustomInviteViewBox.m in Sources */,
+				968838742BBDD981004D08E5 /* InvitelessExampleViewController.swift in Sources */,
 				968D2F911CFE430700C6066B /* CustomInviteViewController.m in Sources */,
 				96C3D6571CDBA240005040C8 /* CustomInviteTracker.m in Sources */,
 				968D2FA31CFF4C1800C6066B /* InviteExampleViewController.m in Sources */,
@@ -635,6 +650,7 @@
 			baseConfigurationReference = 5858EF61849E87D448A2698A /* Pods-CustomInvitationSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Q7SXD2TU64;
@@ -649,6 +665,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.CustomInvitationSample";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.CustomInvitationSample";
+				SWIFT_OBJC_BRIDGING_HEADER = "CustomInvitationSample/Example #3/CustomInvitationSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -657,6 +676,7 @@
 			baseConfigurationReference = 9C5F51C4E3606A54BA60B910 /* Pods-CustomInvitationSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Q7SXD2TU64;
@@ -671,12 +691,15 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.CustomInvitationSample";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.CustomInvitationSample";
+				SWIFT_OBJC_BRIDGING_HEADER = "CustomInvitationSample/Example #3/CustomInvitationSample-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		96C3D6191CDB284A005040C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CustomInvitationSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -689,6 +712,7 @@
 		96C3D61A1CDB284A005040C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CustomInvitationSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -701,6 +725,7 @@
 		96C3D61C1CDB284A005040C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CustomInvitationSampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSampleUITests;
@@ -713,6 +738,7 @@
 		96C3D61D1CDB284A005040C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CustomInvitationSampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSampleUITests;

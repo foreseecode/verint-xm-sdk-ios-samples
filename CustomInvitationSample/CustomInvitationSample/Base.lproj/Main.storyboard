@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aNq-xe-4de">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aNq-xe-4de">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -70,7 +70,7 @@
                                         </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Go4-hU-EHc" userLabel="Reset state">
-                                        <rect key="frame" x="20" y="380" width="335" height="30"/>
+                                        <rect key="frame" x="20" y="440" width="335" height="30"/>
                                         <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="Reset state"/>
@@ -79,7 +79,7 @@
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PxN-Eo-yR1">
-                                        <rect key="frame" x="20" y="430" width="335" height="80"/>
+                                        <rect key="frame" x="20" y="490" width="335" height="80"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="i9n-lg-PFb"/>
@@ -88,6 +88,15 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9GC-fB-st1" userLabel="Show Inviteless Example">
+                                        <rect key="frame" x="20" y="380" width="335" height="30"/>
+                                        <color key="backgroundColor" red="0.16862745100000001" green="0.39607843139999999" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Inviteless Survey Example"/>
+                                        <connections>
+                                            <segue destination="qU3-uQ-iij" kind="show" id="dRJ-7J-KK3"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="PxN-Eo-yR1" firstAttribute="top" secondItem="Go4-hU-EHc" secondAttribute="bottom" constant="20" id="0ne-Zo-yMt"/>
@@ -95,9 +104,10 @@
                                     <constraint firstItem="gb3-8G-MaM" firstAttribute="leading" secondItem="b3G-kA-xwC" secondAttribute="leading" id="2yv-Ug-yUi"/>
                                     <constraint firstAttribute="trailing" secondItem="ubK-vn-88u" secondAttribute="trailing" id="6J4-EH-UXA"/>
                                     <constraint firstItem="pSE-L7-day" firstAttribute="leading" secondItem="b3G-kA-xwC" secondAttribute="leading" id="7nC-uN-93J"/>
+                                    <constraint firstItem="9GC-fB-st1" firstAttribute="centerX" secondItem="t1c-dx-00P" secondAttribute="centerX" id="90d-ko-0yb"/>
                                     <constraint firstItem="gb3-8G-MaM" firstAttribute="top" secondItem="pSE-L7-day" secondAttribute="bottom" constant="20" id="ALl-oH-ilQ"/>
                                     <constraint firstItem="ubK-vn-88u" firstAttribute="leading" secondItem="t1c-dx-00P" secondAttribute="leading" id="DYi-wD-YMB"/>
-                                    <constraint firstItem="Go4-hU-EHc" firstAttribute="top" secondItem="gb3-8G-MaM" secondAttribute="bottom" constant="20" id="Je8-CU-dGq"/>
+                                    <constraint firstItem="9GC-fB-st1" firstAttribute="leading" secondItem="PxN-Eo-yR1" secondAttribute="leading" id="LGm-ya-bG7"/>
                                     <constraint firstItem="ubK-vn-88u" firstAttribute="top" secondItem="t1c-dx-00P" secondAttribute="top" constant="20" id="LUC-Oe-VvG"/>
                                     <constraint firstItem="b3G-kA-xwC" firstAttribute="centerX" secondItem="t1c-dx-00P" secondAttribute="centerX" id="Pq1-ri-yaC"/>
                                     <constraint firstAttribute="trailing" secondItem="pSE-L7-day" secondAttribute="trailing" constant="20" id="Uyx-vU-Qu7"/>
@@ -105,7 +115,9 @@
                                     <constraint firstAttribute="trailing" secondItem="b3G-kA-xwC" secondAttribute="trailing" constant="20" id="XWh-rO-eH7"/>
                                     <constraint firstItem="PxN-Eo-yR1" firstAttribute="centerX" secondItem="t1c-dx-00P" secondAttribute="centerX" id="ZNM-10-g6i"/>
                                     <constraint firstItem="gb3-8G-MaM" firstAttribute="centerX" secondItem="t1c-dx-00P" secondAttribute="centerX" id="eF0-S6-rvL"/>
+                                    <constraint firstItem="9GC-fB-st1" firstAttribute="top" secondItem="gb3-8G-MaM" secondAttribute="bottom" constant="20" id="fWN-b5-CzX"/>
                                     <constraint firstItem="pSE-L7-day" firstAttribute="top" secondItem="b3G-kA-xwC" secondAttribute="bottom" constant="20" id="ifU-xN-xnC"/>
+                                    <constraint firstItem="Go4-hU-EHc" firstAttribute="top" secondItem="9GC-fB-st1" secondAttribute="bottom" constant="30" id="nhT-W6-O82"/>
                                     <constraint firstItem="b3G-kA-xwC" firstAttribute="leading" secondItem="PxN-Eo-yR1" secondAttribute="leading" id="qdU-2S-1hs"/>
                                     <constraint firstItem="b3G-kA-xwC" firstAttribute="top" secondItem="ubK-vn-88u" secondAttribute="bottom" constant="20" id="si6-zP-1rt"/>
                                     <constraint firstItem="Go4-hU-EHc" firstAttribute="leading" secondItem="b3G-kA-xwC" secondAttribute="leading" id="xps-k2-5qz"/>
@@ -162,6 +174,7 @@
                                 <state key="normal" title="Reset state"/>
                                 <connections>
                                     <action selector="resetState:" destination="bSi-nl-Gvc" eventType="touchUpInside" id="GVU-KZ-zQ7"/>
+                                    <action selector="resetState:" destination="Mi7-nK-FVr" eventType="touchUpInside" id="PnB-IK-6jG"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0z0-2G-ZV2">
@@ -197,6 +210,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tel-CZ-MhB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Mi7-nK-FVr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="360" y="-60"/>
         </scene>
@@ -272,6 +286,81 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W6b-3i-pm1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="360" y="600"/>
+        </scene>
+        <!--Inviteless Survey Example-->
+        <scene sceneID="suD-nJ-4at">
+            <objects>
+                <viewController title="Alert Controller Invite Example" id="qU3-uQ-iij" userLabel="Inviteless Survey Example" customClass="InvitelessExampleViewController" customModule="CustomInvitationSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YO9-AV-Hay">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaC-ED-62L" userLabel="Show custom invite">
+                                <rect key="frame" x="20" y="220.5" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.16862745100000001" green="0.39607843139999999" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Show Custom Invite"/>
+                                <connections>
+                                    <action selector="showInvitelessSurvey:" destination="qU3-uQ-iij" eventType="touchUpInside" id="o5d-n3-4mb"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="VFA-hP-F22">
+                                <rect key="frame" x="20" y="84" width="335" height="116.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="180" id="Bgc-lR-dka"/>
+                                </constraints>
+                                <string key="text">This example shows a fully custom IN_SESSION invite that shows no invitation UI to the user. Instead, the invitation is implicitly accepted and the user is taken directly to the survey.
+ Press the button below to display the invite.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HeC-0V-hFl" userLabel="Reset state">
+                                <rect key="frame" x="20" y="270.5" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.16862745100000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Reset state"/>
+                                <connections>
+                                    <action selector="resetState:" destination="qU3-uQ-iij" eventType="touchUpInside" id="mmb-9C-vRP"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEo-A5-H0B">
+                                <rect key="frame" x="20" y="320.5" width="335" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="a44-rY-XNF"/>
+                                </constraints>
+                                <string key="text">Once the invite is shown, the SDK drops into an idle state until the repeat days have elapsed. Tap "Reset State" to reset the state of the SDK.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Bw-s8-cZ5"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IEo-A5-H0B" firstAttribute="centerX" secondItem="YO9-AV-Hay" secondAttribute="centerX" id="714-oP-s1f"/>
+                            <constraint firstItem="VFA-hP-F22" firstAttribute="left" secondItem="5Bw-s8-cZ5" secondAttribute="left" constant="20" id="Hax-Yy-ua2"/>
+                            <constraint firstItem="AaC-ED-62L" firstAttribute="top" secondItem="VFA-hP-F22" secondAttribute="bottom" constant="20" id="LzR-xJ-FH2"/>
+                            <constraint firstItem="IEo-A5-H0B" firstAttribute="top" secondItem="HeC-0V-hFl" secondAttribute="bottom" constant="20" id="N8u-nD-upA"/>
+                            <constraint firstItem="AaC-ED-62L" firstAttribute="left" secondItem="5Bw-s8-cZ5" secondAttribute="left" constant="20" id="Qvg-OP-XSt"/>
+                            <constraint firstItem="IEo-A5-H0B" firstAttribute="leading" secondItem="5Bw-s8-cZ5" secondAttribute="leading" constant="20" id="VFe-gJ-vKB"/>
+                            <constraint firstItem="VFA-hP-F22" firstAttribute="top" secondItem="5Bw-s8-cZ5" secondAttribute="top" constant="20" id="Wt4-IM-UPj"/>
+                            <constraint firstItem="IEo-A5-H0B" firstAttribute="top" secondItem="HeC-0V-hFl" secondAttribute="bottom" constant="20" id="eMN-3M-I4G"/>
+                            <constraint firstItem="VFA-hP-F22" firstAttribute="centerX" secondItem="5Bw-s8-cZ5" secondAttribute="centerX" id="hg4-xk-hXX"/>
+                            <constraint firstItem="HeC-0V-hFl" firstAttribute="top" secondItem="AaC-ED-62L" secondAttribute="bottom" constant="20" id="oHS-iy-qbY"/>
+                            <constraint firstItem="AaC-ED-62L" firstAttribute="centerX" secondItem="5Bw-s8-cZ5" secondAttribute="centerX" id="tVB-Tf-flX"/>
+                            <constraint firstItem="HeC-0V-hFl" firstAttribute="leading" secondItem="5Bw-s8-cZ5" secondAttribute="leading" constant="20" id="viO-oV-Q5B"/>
+                            <constraint firstItem="HeC-0V-hFl" firstAttribute="centerX" secondItem="YO9-AV-Hay" secondAttribute="centerX" id="wXf-Zt-fjX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zRd-Bp-x45"/>
+                    <connections>
+                        <outlet property="textView" destination="VFA-hP-F22" id="vbh-H1-tOJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RfK-EB-GI2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="359" y="1265"/>
         </scene>
     </scenes>
     <resources>
