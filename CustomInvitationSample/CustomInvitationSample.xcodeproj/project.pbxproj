@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		68E38B3000DB35966A79663A /* Pods_CustomInvitationSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EB598839F7B1D964FECC17 /* Pods_CustomInvitationSample.framework */; };
-		968838742BBDD981004D08E5 /* InvitelessExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968838732BBDD981004D08E5 /* InvitelessExampleViewController.swift */; };
+		968838742BBDD981004D08E5 /* NoInviteExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968838732BBDD981004D08E5 /* NoInviteExampleViewController.swift */; };
 		968D2F581CFD6A6800C6066B /* CustomInviteHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F571CFD6A6800C6066B /* CustomInviteHandler.m */; };
 		968D2F5B1CFD6DCC00C6066B /* CustomInviteDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F5A1CFD6DCC00C6066B /* CustomInviteDelegate.m */; };
 		968D2F911CFE430700C6066B /* CustomInviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F901CFE430700C6066B /* CustomInviteViewController.m */; };
@@ -51,7 +51,7 @@
 /* Begin PBXFileReference section */
 		5858EF61849E87D448A2698A /* Pods-CustomInvitationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomInvitationSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample.debug.xcconfig"; sourceTree = "<group>"; };
 		968838722BBDD981004D08E5 /* CustomInvitationSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomInvitationSample-Bridging-Header.h"; sourceTree = "<group>"; };
-		968838732BBDD981004D08E5 /* InvitelessExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitelessExampleViewController.swift; sourceTree = "<group>"; };
+		968838732BBDD981004D08E5 /* NoInviteExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInviteExampleViewController.swift; sourceTree = "<group>"; };
 		968D2F561CFD6A6800C6066B /* CustomInviteHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInviteHandler.h; sourceTree = "<group>"; };
 		968D2F571CFD6A6800C6066B /* CustomInviteHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInviteHandler.m; sourceTree = "<group>"; };
 		968D2F591CFD6DCC00C6066B /* CustomInviteDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInviteDelegate.h; sourceTree = "<group>"; };
@@ -199,7 +199,7 @@
 		968838712BBDD949004D08E5 /* Example #3 */ = {
 			isa = PBXGroup;
 			children = (
-				968838732BBDD981004D08E5 /* InvitelessExampleViewController.swift */,
+				968838732BBDD981004D08E5 /* NoInviteExampleViewController.swift */,
 				968838722BBDD981004D08E5 /* CustomInvitationSample-Bridging-Header.h */,
 			);
 			path = "Example #3";
@@ -478,7 +478,7 @@
 				96C3D5F01CDB284A005040C8 /* AppDelegate.m in Sources */,
 				968D2F581CFD6A6800C6066B /* CustomInviteHandler.m in Sources */,
 				96CA07591CE23490000F766C /* CustomInviteViewBox.m in Sources */,
-				968838742BBDD981004D08E5 /* InvitelessExampleViewController.swift in Sources */,
+				968838742BBDD981004D08E5 /* NoInviteExampleViewController.swift in Sources */,
 				968D2F911CFE430700C6066B /* CustomInviteViewController.m in Sources */,
 				96C3D6571CDBA240005040C8 /* CustomInviteTracker.m in Sources */,
 				968D2FA31CFF4C1800C6066B /* InviteExampleViewController.m in Sources */,

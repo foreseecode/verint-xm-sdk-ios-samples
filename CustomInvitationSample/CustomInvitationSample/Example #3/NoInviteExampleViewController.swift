@@ -8,7 +8,7 @@
 
 import Foundation
 
-class InvitelessExampleViewController : InviteExampleViewController, EXPInviteHandler  {
+class NoInviteExampleViewController : InviteExampleViewController, EXPInviteHandler  {
 
     // MARK: UIViewController
 

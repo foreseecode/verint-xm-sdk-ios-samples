@@ -92,7 +92,7 @@
                                         <rect key="frame" x="20" y="380" width="335" height="30"/>
                                         <color key="backgroundColor" red="0.16862745100000001" green="0.39607843139999999" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="Inviteless Survey Example"/>
+                                        <state key="normal" title="No Invite Survey Example"/>
                                         <connections>
                                             <segue destination="qU3-uQ-iij" kind="show" id="dRJ-7J-KK3"/>
                                         </connections>
@@ -287,10 +287,10 @@
             </objects>
             <point key="canvasLocation" x="360" y="600"/>
         </scene>
-        <!--Inviteless Survey Example-->
+        <!--No Invite Survey Example-->
         <scene sceneID="suD-nJ-4at">
             <objects>
-                <viewController title="Alert Controller Invite Example" id="qU3-uQ-iij" userLabel="Inviteless Survey Example" customClass="InvitelessExampleViewController" customModule="CustomInvitationSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Alert Controller Invite Example" id="qU3-uQ-iij" userLabel="No Invite Survey Example" customClass="NoInviteExampleViewController" customModule="CustomInvitationSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YO9-AV-Hay">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -299,7 +299,7 @@
                                 <rect key="frame" x="20" y="220.5" width="335" height="30"/>
                                 <color key="backgroundColor" red="0.16862745100000001" green="0.39607843139999999" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Show Custom Invite"/>
+                                <state key="normal" title="Show survey without invite"/>
                                 <connections>
                                     <action selector="showInvitelessSurvey:" destination="qU3-uQ-iij" eventType="touchUpInside" id="o5d-n3-4mb"/>
                                 </connections>
