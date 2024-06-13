@@ -21,7 +21,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [EXPCore setDebugLogEnabled:YES];
     [EXPCore setEventLogEnabled:NO];
-    [EXPCore start];
     
     // capture and log SDK lifecycle events;
     // active for all examples

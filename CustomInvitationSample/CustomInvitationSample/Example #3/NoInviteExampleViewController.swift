@@ -7,24 +7,39 @@
 //
 
 import Foundation
+import EXPCore
+import EXPSurveyManagement
 
-class NoInviteExampleViewController : InviteExampleViewController, EXPInviteHandler  {
+class NoInviteExampleViewController : InviteExampleViewController, EXPInviteHandler, VerintDelegate  {
+
+    @IBOutlet weak var showSurveyButton: UIButton!
 
     // MARK: UIViewController
 
     override func viewDidLoad() {
         self.inviteHandler = self
-        EXPPredictive.setInviteHandler(self.inviteHandler)
+        self.showSurveyButton.isUserInteractionEnabled = false
+        EXPCore.setDelegate(self)
+        EXPCore.start(withAppId: "telekomcfmkeymeinmagentaapp9test")
+        
     }
 
     // MARK: Outlets
 
     @IBAction func showInvitelessSurvey(_ sender: Any) {
-        EXPPredictive.checkIfEligibleForSurvey()
+        SurveyManagement.incrementSignificantEventCount(withKey: "mma-nps")
+        SurveyManagement.checkIfEligibleForSurvey()
     }
 
     @IBAction func resetState(_ sender: Any) {
         EXPCore.resetState()
+    }
+    
+    // MARK: VerintDelegate
+    
+    func didStartSDK() {
+        self.showSurveyButton.isUserInteractionEnabled = true
+        EXPPredictive.setInviteHandler(self.inviteHandler)
     }
 
     // MARK: EXPInviteHandler
