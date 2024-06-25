@@ -14,7 +14,7 @@
     // reset state so that we always show the example; a
     // normal production application should not reset state
     // every time -- you *want* to track the user's state!
-    [EXPCore resetState];
+    //[EXPCore resetState]; // Disable for testing
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
