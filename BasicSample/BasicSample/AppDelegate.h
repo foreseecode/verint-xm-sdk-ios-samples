@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <EXPCore/EXPCore.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, VerintDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-- (void)initializeSDK;
 
 @end
