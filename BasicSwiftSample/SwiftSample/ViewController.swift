@@ -8,22 +8,19 @@
 
 import UIKit
 import EXPCore
-import EXPPredictive
+import EXPSurveyManagement
 
 class ViewController: UIViewController {
   
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    EXPCore.setDebugLogEnabled(true)
-    EXPCore.resetState()
-  }
-  
   @IBAction func checkEligibilityButtonTouchUpInside(_ sender: Any) {
-    EXPPredictive.checkIfEligibleForSurvey()
+    // Show a survey invitation to eligible users
+    SurveyManagement.checkIfEligibleForSurvey()
   }
   
   @IBAction func resetStateButtonTouchUpInside(_ sender: Any) {
+    // Reset the state of the SDK (for example after showing an invite, so that
+    // the user is eligible to see another one). You wouldn't typically do this
+    // in a production app, but it's useful when testing.
     EXPCore.resetState()
   }
 }
