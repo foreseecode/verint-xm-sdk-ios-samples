@@ -144,7 +144,7 @@
 				ORGANIZATIONNAME = Verint;
 				TargetAttributes = {
 					D544DF3B15068C0C0025FF43 = {
-						DevelopmentTeam = Q7SXD2TU64;
+						DevelopmentTeam = 5QRQZ3BQNM;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -305,8 +305,8 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = Q7SXD2TU64;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7SXD2TU64;
+				DEVELOPMENT_TEAM = 5QRQZ3BQNM;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5QRQZ3BQNM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BasicSample",
@@ -426,8 +426,8 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = Q7SXD2TU64;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7SXD2TU64;
+				DEVELOPMENT_TEAM = 5QRQZ3BQNM;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5QRQZ3BQNM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BasicSample",
@@ -454,8 +454,8 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = Q7SXD2TU64;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7SXD2TU64;
+				DEVELOPMENT_TEAM = 5QRQZ3BQNM;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5QRQZ3BQNM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BasicSample",

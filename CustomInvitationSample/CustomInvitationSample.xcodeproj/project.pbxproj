@@ -356,7 +356,7 @@
 				TargetAttributes = {
 					96C3D5E71CDB284A005040C8 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = Q7SXD2TU64;
+						DevelopmentTeam = 5QRQZ3BQNM;
 						LastSwiftMigration = 1530;
 						ProvisioningStyle = Manual;
 					};
@@ -653,8 +653,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = Q7SXD2TU64;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7SXD2TU64;
+				DEVELOPMENT_TEAM = 5QRQZ3BQNM;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5QRQZ3BQNM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CustomInvitationSample",
@@ -679,8 +679,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = Q7SXD2TU64;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7SXD2TU64;
+				DEVELOPMENT_TEAM = 5QRQZ3BQNM;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5QRQZ3BQNM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CustomInvitationSample",

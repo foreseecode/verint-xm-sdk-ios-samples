@@ -294,7 +294,7 @@
 				TargetAttributes = {
 					967270701D04DF4F00F90E54 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = Q7SXD2TU64;
+						DevelopmentTeam = 5QRQZ3BQNM;
 						ProvisioningStyle = Manual;
 					};
 					967270891D04DF4F00F90E54 = {
@@ -581,8 +581,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = Q7SXD2TU64;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7SXD2TU64;
+				DEVELOPMENT_TEAM = 5QRQZ3BQNM;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5QRQZ3BQNM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ContactInvitationSample",
@@ -603,8 +603,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = Q7SXD2TU64;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7SXD2TU64;
+				DEVELOPMENT_TEAM = 5QRQZ3BQNM;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5QRQZ3BQNM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ContactInvitationSample",
