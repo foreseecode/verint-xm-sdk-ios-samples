@@ -147,10 +147,6 @@ workflows:
         - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
     - trigger-bitrise-workflow:
         inputs:
-        - workflow_id: Build-DigitalSample
-        - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
-    - trigger-bitrise-workflow:
-        inputs:
         - workflow_id: Build-LocalNotificationSample
         - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
     - trigger-bitrise-workflow:
