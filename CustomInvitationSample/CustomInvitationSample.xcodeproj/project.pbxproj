@@ -356,7 +356,7 @@
 				TargetAttributes = {
 					96C3D5E71CDB284A005040C8 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = Q7SXD2TU64;
+						DevelopmentTeam = 5QRQZ3BQNM;
 						LastSwiftMigration = 1530;
 						ProvisioningStyle = Manual;
 					};
@@ -653,8 +653,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = Q7SXD2TU64;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7SXD2TU64;
+				DEVELOPMENT_TEAM = 5QRQZ3BQNM;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5QRQZ3BQNM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CustomInvitationSample",
@@ -663,8 +663,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.CustomInvitationSample";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.CustomInvitationSample";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.verint.xm.samples.CustomInvitationSample";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.verint.xm.samples.CustomInvitationSample";
 				SWIFT_OBJC_BRIDGING_HEADER = "CustomInvitationSample/Example #3/CustomInvitationSample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -679,8 +679,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = Q7SXD2TU64;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7SXD2TU64;
+				DEVELOPMENT_TEAM = 5QRQZ3BQNM;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5QRQZ3BQNM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CustomInvitationSample",
@@ -689,8 +689,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.CustomInvitationSample";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.CustomInvitationSample";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.verint.xm.samples.CustomInvitationSample";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.verint.xm.samples.CustomInvitationSample";
 				SWIFT_OBJC_BRIDGING_HEADER = "CustomInvitationSample/Example #3/CustomInvitationSample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};

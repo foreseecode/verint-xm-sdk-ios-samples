@@ -9,7 +9,6 @@ team_id("5QRQZ3BQNM")
 git_url("git@github.com:foreseecode/mobile-fastlane-match.git")
 git_branch("verint")
 app_identifier([
-    "com.verint.xm.samples.DigitalSample",
     "com.verint.xm.samples.LocalNotificationSample",
     "com.verint.xm.samples.BasicSample",
     "com.verint.xm.samples.BasicSwiftSample",
