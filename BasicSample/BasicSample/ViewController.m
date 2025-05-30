@@ -15,11 +15,15 @@
 # pragma mark - Actions
 
 - (void)checkEligibility:(id)sender {
+  // Show a survey invitation to eligible users
   [EXPPredictive checkIfEligibleForSurvey];
 }
 
 - (void)resetState:(id)sender {
-    [EXPCore resetState];
+  // Reset the state of the SDK (for example after showing an invite, so that
+  // the user is eligible to see another one). You wouldn't typically do this
+  // in a production app, but it's useful when testing.
+  [EXPCore resetState];
 }
 
 @end

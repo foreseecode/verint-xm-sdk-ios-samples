@@ -167,7 +167,7 @@
 				ORGANIZATIONNAME = Verint;
 				TargetAttributes = {
 					D5D68AE81582A63D00730160 = {
-						DevelopmentTeam = Q7SXD2TU64;
+						DevelopmentTeam = 5QRQZ3BQNM;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -383,8 +383,8 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = Q7SXD2TU64;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7SXD2TU64;
+				DEVELOPMENT_TEAM = 5QRQZ3BQNM;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5QRQZ3BQNM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LocalNotificationSample",
@@ -395,8 +395,8 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.LocalNotificationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.LocalNotificationSample";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.LocalNotificationSample";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.verint.xm.samples.LocalNotificationSample";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.verint.xm.samples.LocalNotificationSample";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -407,8 +407,8 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = Q7SXD2TU64;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7SXD2TU64;
+				DEVELOPMENT_TEAM = 5QRQZ3BQNM;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5QRQZ3BQNM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LocalNotificationSample",
@@ -419,8 +419,8 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.LocalNotificationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development com.foresee.samples.LocalNotificationSample";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.foresee.samples.LocalNotificationSample";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.verint.xm.samples.LocalNotificationSample";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.verint.xm.samples.LocalNotificationSample";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
