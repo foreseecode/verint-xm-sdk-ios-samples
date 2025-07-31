@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 #import <EXPCore/EXPCore.h>
-#import <EXPPredictive/EXPPredictive.h>
+
+// must enable modules in your project settings
+@import EXPSurveyManagement;
 
 @implementation ViewController
 
@@ -16,7 +18,7 @@
 
 - (void)checkEligibility:(id)sender {
   // Show a survey invitation to eligible users
-  [EXPPredictive checkIfEligibleForSurvey];
+  [EXPSurveyManagement checkIfEligibleForSurvey];
 }
 
 - (void)resetState:(id)sender {
