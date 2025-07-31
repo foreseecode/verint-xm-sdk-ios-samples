@@ -8,7 +8,6 @@
 
 import UIKit
 import EXPCore
-import EXPPredictive
 import EXPSurveyManagement
 
 class ViewController: UIViewController {
@@ -33,7 +32,7 @@ class ViewController: UIViewController {
   // MARK: Actions
   
   @IBAction func checkEligibilityButtonTouchUpInside(_ sender: Any) {
-    EXPPredictive.checkIfEligibleForSurvey()
+    SurveyManagement.checkIfEligibleForSurvey()
   }
   
   @IBAction func checkShowSurveyButtonTouchUpInside(_ sender: Any) {
@@ -68,7 +67,7 @@ class ViewController: UIViewController {
       // now we incremenet the significant event count every time we update our
       // counter, so that our local value is always in sync with the SDK (as
       // long as we don't increment this count anywhere else)
-      EXPPredictive.incrementSignificantEventCount(withKey: significantEventKey)
+      SurveyManagement.incrementSignificantEventCount(withKey: significantEventKey)
       counter += 1
       return counter
     }
