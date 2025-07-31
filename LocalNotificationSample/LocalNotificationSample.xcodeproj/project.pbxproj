@@ -381,6 +381,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E7FD1C4F1E6D2A2B6EC906D1 /* Pods-LocalNotificationSample.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5QRQZ3BQNM;
@@ -405,6 +406,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 32B82C9388C4774316B5FA69 /* Pods-LocalNotificationSample.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5QRQZ3BQNM;

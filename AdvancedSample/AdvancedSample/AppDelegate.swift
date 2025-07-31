@@ -8,7 +8,7 @@
 
 import UIKit
 import EXPCore
-import EXPPredictive
+import EXPSurveyManagement
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     EXPCore.setDebugLogEnabled(true)
     EXPCore.setEventLogEnabled(false)
     EXPCore.start()
-    EXPPredictive.setSkipPoolingCheck(true)
+    SurveyManagement.setSkipPoolingCheck(true)
     EXPCore.resetState()
     return true
   }
