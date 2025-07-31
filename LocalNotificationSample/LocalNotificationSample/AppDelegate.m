@@ -9,7 +9,9 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import <EXPCore/EXPCore.h>
-#import <EXPPredictive/EXPPredictive.h>
+
+// must enable modules in your project settings
+@import EXPSurveyManagement;
 
 @implementation AppDelegate
 
@@ -22,11 +24,11 @@
 
 - (void)initializeSDK {
   [EXPCore setDebugLogEnabled:YES];
-  [EXPPredictive setSkipPoolingCheck:YES];
+  [EXPSurveyManagement setSkipPoolingCheck:YES];
   [EXPCore resetState];
 
   [EXPCore start];
-  [EXPPredictive checkIfEligibleForSurvey];
+  [EXPSurveyManagement checkIfEligibleForSurvey];
 }
 
 #pragma mark - UNUserNotificationCenterDelegate
@@ -45,7 +47,7 @@
 didReceiveNotificationResponse:(UNNotificationResponse *)response
          withCompletionHandler:(nonnull void (^)(void))completionHandler
 {
-    [EXPPredictive showSurveyForNotificationResponse:response];
+    [EXPSurveyManagement showSurveyForNotificationResponse:response];
     NSLog(@"User Info : %@",response.notification.request.content.userInfo);
     completionHandler();
 }

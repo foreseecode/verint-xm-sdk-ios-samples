@@ -8,16 +8,17 @@
 
 #import "ViewController.h"
 #import <EXPCore/EXPCore.h>
-#import <EXPPredictive/EXPPredictive.h>
 #import <UserNotifications/UserNotifications.h>
 
+// must enable modules in your project settings
+@import EXPSurveyManagement;
 
 @implementation ViewController
 
 # pragma mark - Actions
 
 - (IBAction)checkEligibility:(id)sender {
-    [EXPPredictive checkIfEligibleForSurvey];
+    [EXPSurveyManagement checkIfEligibleForSurvey];
 }
 
 - (IBAction)resetState:(id)sender {
