@@ -74,11 +74,14 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-// #6a The SDK couldn't find contact details for the preferred contact type. The invite is neither accepted or declined.
-- (void)setInvalidInput:(BOOL)isInvalid {
-    NSLog(@"Invalid input");
-    NSLog(@"Current stored email = %@", [EXPPredictive contactDetailsForType:kEXPEmail]);
-    NSLog(@"Current stored phone number = %@", [EXPPredictive contactDetailsForType:kEXPPhoneNumber]);
+// #6a The SDK will call this methid when the contact invite submission has failed. An `EXPContactInviteError` enum value indicating the specific reason for the failure. The invite is neither accepted or declined.
+- (void)handleContactInviteError:(EXPContactInviteError)error {
+    NSLog(@"Contact invite error %lu", error);
+    if (error == EXPContactInviteErrorInvalidArgumentSupplied) {
+        NSLog(@"Invalid input");
+        NSLog(@"Current stored email = %@", [EXPPredictive contactDetailsForType:kEXPEmail]);
+        NSLog(@"Current stored phone number = %@", [EXPPredictive contactDetailsForType:kEXPPhoneNumber]);
+    }
 }
 
 #pragma mark - Invite actions
