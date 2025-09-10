@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import <EXPPredictive/EXPPredictive.h>
 
 @implementation AppDelegate
 

@@ -40,12 +40,12 @@
     [EXPPredictive setInviteHandler:self];
     
     // #3 Check eligibility. If eligible (and we should be), the SDK will call the invite handler's `show` method
-    [EXPPredictive checkIfEligibleForSurvey];
+    [EXPSurveyManagement checkIfEligibleForSurvey];
 }
 
 - (void)dealloc {
     if (self.isShowing) {
-        [EXPPredictive customInviteDeclined];
+        [EXPSurveyManagement customInviteDeclined];
     }
 }
 
@@ -79,8 +79,8 @@
     NSLog(@"Contact invite error %lu", error);
     if (error == EXPContactInviteErrorInvalidArgumentSupplied) {
         NSLog(@"Invalid input");
-        NSLog(@"Current stored email = %@", [EXPPredictive contactDetailsForType:kEXPEmail]);
-        NSLog(@"Current stored phone number = %@", [EXPPredictive contactDetailsForType:kEXPPhoneNumber]);
+        NSLog(@"Current stored email = %@", [EXPSurveyManagement contactDetailsForType:kEXPEmail]);
+        NSLog(@"Current stored phone number = %@", [EXPSurveyManagement contactDetailsForType:kEXPPhoneNumber]);
     }
 }
 
@@ -91,12 +91,12 @@
     // input is good (i.e. if there is a value stored for the preferred contact type), then the invite's lifecycle is
     // complete and the SDK will invoke `hideWithAnimation:`. If the input is bad (i.e. there are no valid contact
     // details stored), then the SDK will notify us by calling `setInvalidInput:`.
-    [EXPPredictive customInviteAccepted];
+    [EXPSurveyManagement customInviteAccepted];
 }
 
 - (IBAction)handleDeclineButtonTouchUpInside:(id)sender {
     // #5b If the decline button is tapped, then we'll notify the SDK that the invite was declined.
-    [EXPPredictive customInviteDeclined];
+    [EXPSurveyManagement customInviteDeclined];
 }
 
 #pragma mark - Reset
@@ -105,16 +105,16 @@
     // A full state-reset also removes the stored contact details. We want to reset the tracker state
     // while keeping those details. This workaround achieves that. (None if this is necessary in real
     // implementations. You usually want to maintain state.)
-    NSString *email = [EXPPredictive contactDetailsForType:kEXPEmail];
-    NSString *phoneNumber = [EXPPredictive contactDetailsForType:kEXPPhoneNumber];
+    NSString *email = [EXPSurveyManagement contactDetailsForType:kEXPEmail];
+    NSString *phoneNumber = [EXPSurveyManagement contactDetailsForType:kEXPPhoneNumber];
     if (self.isShowing) {
         // already showing from a previous load; let's reset and start over
-        [EXPPredictive customInviteDeclined];
+        [EXPSurveyManagement customInviteDeclined];
     }
     [EXPCore resetState];
-    [EXPPredictive setPreferredContactType:[self preferredContactType]];
-    [EXPPredictive setContactDetails:email forType:kEXPEmail];
-    [EXPPredictive setContactDetails:phoneNumber forType:kEXPPhoneNumber];
+    [EXPSurveyManagement setPreferredContactType:[self preferredContactType]];
+    [EXPSurveyManagement setContactDetails:email forType:kEXPEmail];
+    [EXPSurveyManagement setContactDetails:phoneNumber forType:kEXPPhoneNumber];
 }
 
 - (EXPContactType)preferredContactType {

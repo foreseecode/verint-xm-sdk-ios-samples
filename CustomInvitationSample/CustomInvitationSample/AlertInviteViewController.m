@@ -17,7 +17,7 @@
 }
 
 - (IBAction)handleShowInviteTouchUpInside:(id)sender {
-    [EXPPredictive checkIfEligibleForSurvey];
+    [EXPSurveyManagement checkIfEligibleForSurvey];
 }
 
 - (IBAction)resetState:(id)sender {

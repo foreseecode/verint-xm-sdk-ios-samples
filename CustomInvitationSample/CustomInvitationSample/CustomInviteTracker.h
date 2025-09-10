@@ -11,6 +11,7 @@
 #import "CustomInviteView.h"
 #import <EXPPredictive/EXPInviteHandler.h>
 #import <EXPPredictive/EXPInviteDelegate.h>
+#import <EXPSurveyManagement/EXPSurveyManagement.h>
 
 @interface CustomInviteTracker : NSObject <EXPInviteHandler, CustomInviteViewDelegate>
 

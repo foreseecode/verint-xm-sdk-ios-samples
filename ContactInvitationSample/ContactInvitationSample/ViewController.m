@@ -10,6 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import <EXPCore/EXPCore.h>
 #import <EXPPredictive/EXPPredictive.h>
+#import <EXPSurveyManagement/EXPSurveyManagement.h>
 
 @interface ViewController ()
 
@@ -24,7 +25,7 @@
 #pragma mark - IBActions
 
 - (IBAction)handleShowInviteTouchUpInside:(id)sender {
-    [EXPPredictive checkIfEligibleForSurvey];
+    [EXPSurveyManagement checkIfEligibleForSurvey];
 }
 
 - (IBAction)handleResetState:(id)sender {

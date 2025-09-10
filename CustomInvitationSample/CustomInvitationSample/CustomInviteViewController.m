@@ -18,7 +18,7 @@
 
 - (IBAction)handleShowInviteTouchUpInside:(id)sender {
     // check for eligibility (which is what triggers the invite)
-    [EXPPredictive checkIfEligibleForSurvey];
+    [EXPSurveyManagement checkIfEligibleForSurvey];
 }
 
 - (IBAction)resetState:(id)sender {
