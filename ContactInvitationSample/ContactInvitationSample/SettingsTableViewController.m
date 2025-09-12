@@ -10,6 +10,7 @@
 #import "TextFieldTableViewCell.h"
 #import <EXPCore/EXPCore.h>
 #import <EXPPredictive/EXPPredictive.h>
+#import <EXPSurveyManagement/EXPSurveyManagement.h>
 
 typedef enum TableSections : NSUInteger {
     EmailEntrySection = 0,
@@ -50,7 +51,7 @@ NSString * const PreferredContactTypeKey = @"PreferredContactTypeKey";
 }
 
 - (void)setPreferredContactType:(EXPContactType)preferredContactType {
-    [EXPPredictive setPreferredContactType:preferredContactType];
+    [EXPSurveyManagement setPreferredContactType:preferredContactType];
     [self.storage setInteger:preferredContactType forKey:PreferredContactTypeKey];
     [self.storage synchronize];
 }
@@ -149,7 +150,7 @@ NSString * const PreferredContactTypeKey = @"PreferredContactTypeKey";
     cell.textField.tag = EmailEntrySection;
     cell.textField.placeholder = @"example@verint.com";
     cell.textField.keyboardType = UIKeyboardTypeEmailAddress;
-    cell.textField.text = [EXPPredictive contactDetailsForType:kEXPEmail];
+    cell.textField.text = [EXPSurveyManagement contactDetailsForType:kEXPEmail];
     cell.textField.delegate = self;
     return cell;
 }
@@ -159,7 +160,7 @@ NSString * const PreferredContactTypeKey = @"PreferredContactTypeKey";
     cell.textField.tag = PhoneNumberEntrySection;
     cell.textField.placeholder = @"555-555-5555";
     cell.textField.keyboardType = UIKeyboardTypePhonePad;
-    cell.textField.text = [EXPPredictive contactDetailsForType:kEXPPhoneNumber];
+    cell.textField.text = [EXPSurveyManagement contactDetailsForType:kEXPPhoneNumber];
     cell.textField.delegate = self;
     return cell;
 }
@@ -175,7 +176,7 @@ NSString * const PreferredContactTypeKey = @"PreferredContactTypeKey";
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {
     if (!self.isDirty) {
-        [EXPPredictive setContactDetails:[self trim:textField.text] forType:(textField.tag == EmailEntrySection) ? kEXPEmail : kEXPPhoneNumber];
+        [EXPSurveyManagement setContactDetails:[self trim:textField.text] forType:(textField.tag == EmailEntrySection) ? kEXPEmail : kEXPPhoneNumber];
     }
 }
 

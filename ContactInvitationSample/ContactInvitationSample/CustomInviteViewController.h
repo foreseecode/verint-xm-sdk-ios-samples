@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <EXPCore/EXPCore.h>>
-#import <EXPPredictive/EXPPredictive.h>>
+#import <EXPPredictive/EXPPredictive.h>
+#import <EXPSurveyManagement/EXPSurveyManagement.h>
 
 @interface CustomInviteViewController : UIViewController <EXPInviteHandler>
 

@@ -6,9 +6,10 @@
 //  Copyright © 2016 ForeSee. All rights reserved.
 //
 
-#import <EXPPredictive/EXPInviteHandler.h>
 #import <UIKit/UIKit.h>
 #import <EXPCore/EXPCore.h>
+#import <EXPPredictive/EXPInviteHandler.h>
+#import <EXPSurveyManagement/EXPSurveyManagement.h>
 
 @interface CustomInviteHandler : NSObject <EXPInviteHandler>
 

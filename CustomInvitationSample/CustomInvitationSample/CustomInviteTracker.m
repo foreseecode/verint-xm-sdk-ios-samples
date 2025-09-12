@@ -42,11 +42,11 @@
 - (void)didAcceptInviteView:(CustomInviteView *)inviteView {
     // notify the SDK tracker that an invitation was accepted; this helps
     // the tracker maintain the proper state for this user
-    [EXPPredictive customInviteAccepted];
+    [EXPSurveyManagement customInviteAccepted];
 }
 
 - (void)didCancelInviteView:(CustomInviteView *)inviteView {
-    [EXPPredictive customInviteDeclined];
+    [EXPSurveyManagement customInviteDeclined];
     self.inviteView = nil;
 }
 

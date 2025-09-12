@@ -32,12 +32,12 @@
     UIAlertAction* yayAction = [UIAlertAction actionWithTitle:@"Yay!"
                                                         style:UIAlertActionStyleDefault
                                                       handler:^(UIAlertAction * action) {
-                                                          [EXPPredictive customInviteAccepted];
+                                                          [EXPSurveyManagement customInviteAccepted];
                                                       }];
     UIAlertAction* nayAction = [UIAlertAction actionWithTitle:@"Nay"
                                                         style:UIAlertActionStyleCancel
                                                       handler:^(UIAlertAction * action) {
-                                                          [EXPPredictive customInviteDeclined];
+                                                          [EXPSurveyManagement customInviteDeclined];
                                                       }];
     
     [inviteAlert addAction:yayAction];
@@ -51,7 +51,7 @@
 
 
 - (void)dealloc {
-    [EXPPredictive customInviteDeclined];
+    [EXPSurveyManagement customInviteDeclined];
 }
 
 @end

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import EXPSurveyManagement
 
 class NoInviteExampleViewController : InviteExampleViewController, EXPInviteHandler  {
 
@@ -20,7 +21,7 @@ class NoInviteExampleViewController : InviteExampleViewController, EXPInviteHand
     // MARK: Outlets
 
     @IBAction func showInvitelessSurvey(_ sender: Any) {
-        EXPPredictive.checkIfEligibleForSurvey()
+        SurveyManagement.checkIfEligibleForSurvey()
     }
 
     @IBAction func resetState(_ sender: Any) {
@@ -31,7 +32,7 @@ class NoInviteExampleViewController : InviteExampleViewController, EXPInviteHand
 
     func show() {
         // In this example we're going to skip the invite and implicitly accept it
-        EXPPredictive.customInviteAccepted()
+        SurveyManagement.customInviteAccepted()
     }
 
     func hide(withAnimation animate: Bool) {

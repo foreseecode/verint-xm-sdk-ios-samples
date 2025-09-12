@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <EXPCore/EXPCore.h>
-#import <EXPPredictive/EXPInviteDelegate.h>>
+#import <EXPPredictive/EXPInviteDelegate.h>
 
 @interface CustomInviteDelegate : NSObject <EXPInviteDelegate>
 

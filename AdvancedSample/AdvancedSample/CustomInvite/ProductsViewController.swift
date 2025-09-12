@@ -6,6 +6,7 @@
 import UIKit
 import EXPCore
 import EXPPredictive
+import EXPSurveyManagement
 
 struct Product {
   let name: String
@@ -39,14 +40,14 @@ class ProductsViewController: UIViewController, UICollectionViewDelegate, UIColl
     self.gridView.delegate = self
     
     EXPPredictive.setInviteHandler(self)
-    EXPPredictive.checkIfEligibleForSurvey()
+    SurveyManagement.checkIfEligibleForSurvey()
   }
   
   override func viewDidDisappear(_ animated: Bool) {
     super.viewDidDisappear(true)
     
     if self.invited {
-      EXPPredictive.customInviteDeclined()
+      SurveyManagement.customInviteDeclined()
     }
     EXPPredictive.setInviteHandler(nil)
   }
@@ -88,7 +89,7 @@ class ProductsViewController: UIViewController, UICollectionViewDelegate, UIColl
   }
   
   func inviteAcceptedAction() {
-    EXPPredictive.customInviteAccepted()
+    SurveyManagement.customInviteAccepted()
     self.invited = false
   }
 }
