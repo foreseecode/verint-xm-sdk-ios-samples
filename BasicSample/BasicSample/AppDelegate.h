@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <EXPCore/EXPCore.h>
+#import "BasicSample-Swift.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, VerintDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, VerintDelegate, EXPInviteDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property(strong, nonatomic) SurveyInviteManager* inviteDelegate;
 
 @end
