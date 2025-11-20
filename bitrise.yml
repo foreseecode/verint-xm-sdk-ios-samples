@@ -134,6 +134,8 @@ workflows:
         title: Downloading the build cache from bitrise.io, and moving the files back to their original place
     - deploy-to-bitrise-io:
         title: Deploy to bitrise
+        inputs:
+        - deploy_path: "$BITRISE_DEPLOY_DIR/AdvancedSample.ipa"
     envs:
     - opts:
         is_expand: false
@@ -160,6 +162,8 @@ workflows:
         title: Downloading the build cache from bitrise.io, and moving the files back to their original place
     - deploy-to-bitrise-io:
         title: Deploy to bitrise
+        inputs:
+        - deploy_path: "$BITRISE_DEPLOY_DIR/DigitalSample.ipa"
     envs:
     - opts:
         is_expand: false
@@ -177,6 +181,8 @@ workflows:
         title: Downloading the build cache from bitrise.io, and moving the files back to their original place
     - deploy-to-bitrise-io:
         title: Deploy to bitrise
+        inputs:
+        - deploy_path: "$BITRISE_DEPLOY_DIR/LocalNotificationSample.ipa"
     envs:
     - opts:
         is_expand: false
@@ -211,6 +217,8 @@ workflows:
         title: Downloading the build cache from bitrise.io, and moving the files back to their original place
     - deploy-to-bitrise-io:
         title: Deploy to bitrise
+        inputs:
+        - deploy_path: "$BITRISE_DEPLOY_DIR/ContactInvitationSample.ipa"
     envs:
     - opts:
         is_expand: false
@@ -228,6 +236,8 @@ workflows:
         title: Downloading the build cache from bitrise.io, and moving the files back to their original place
     - deploy-to-bitrise-io:
         title: Deploy to bitrise
+        inputs:
+        - deploy_path: "$BITRISE_DEPLOY_DIR/BasicSwiftSample.ipa"
     envs:
     - opts:
         is_expand: false
@@ -245,6 +255,8 @@ workflows:
         title: Downloading the build cache from bitrise.io, and moving the files back to their original place
     - deploy-to-bitrise-io:
         title: Deploy to bitrise
+        inputs:
+        - deploy_path: "$BITRISE_DEPLOY_DIR/DBASample.ipa"
     envs:
     - opts:
         is_expand: false
