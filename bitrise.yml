@@ -114,6 +114,9 @@ workflows:
         title: Downloading the build cache from bitrise.io, and moving the files back to their original place
     - deploy-to-bitrise-io:
         title: Deploy to bitrise
+        inputs:
+        - deploy_path: "$BITRISE_DEPLOY_DIR/BasicSample.ipa"
+
     envs:
     - opts:
         is_expand: false
