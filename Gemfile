@@ -1,6 +1,11 @@
 source "https://rubygems.org"
 
 gem 'abbrev'
+gem "mutex_m"
+gem "csv"
+gem "ostruct"
+gem "nkf"
+
 gem 'cocoapods'
 gem 'fastlane', '>= 2.228.0'
 
