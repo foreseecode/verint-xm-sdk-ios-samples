@@ -114,6 +114,8 @@ workflows:
         title: Downloading the build cache from bitrise.io, and moving the files back to their original place
     - deploy-to-bitrise-io:
         title: Deploy to bitrise
+        inputs:
+        - deploy_path: "$BITRISE_DEPLOY_DIR/BasicSample.ipa"
     envs:
     - opts:
         is_expand: false
@@ -131,57 +133,21 @@ workflows:
         title: Downloading the build cache from bitrise.io, and moving the files back to their original place
     - deploy-to-bitrise-io:
         title: Deploy to bitrise
+        inputs:
+        - deploy_path: "$BITRISE_DEPLOY_DIR/AdvancedSample.ipa"
     envs:
     - opts:
         is_expand: false
       BITRISE_SCHEME: AdvancedSample
   Build-All:
-    steps:
-    - trigger-bitrise-workflow:
-        inputs:
-        - workflow_id: Build-BasicSample
-        - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
-    - trigger-bitrise-workflow:
-        inputs:
-        - workflow_id: Build-AdvancedSample
-        - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
-    - trigger-bitrise-workflow:
-        inputs:
-        - workflow_id: Build-LocalNotificationSample
-        - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
-    - trigger-bitrise-workflow:
-        inputs:
-        - workflow_id: Build-BasicSwiftSample
-        - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
-    - trigger-bitrise-workflow:
-        inputs:
-        - workflow_id: Build-CustomInvitationSample
-        - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
-    - trigger-bitrise-workflow:
-        inputs:
-        - workflow_id: Build-ContactInvitationSample
-        - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
-    - trigger-bitrise-workflow:
-        inputs:
-        - workflow_id: Build-DBASample
-        - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
-  Build-DigitalSample:
-    before_run:
-    - Prepare
-    steps:
-    - xcode-archive:
-        title: Archive the Xcode project
-        inputs:
-        - force_code_sign_identity: ''
-        - force_team_id: ''
-    - cache-pull:
-        title: Downloading the build cache from bitrise.io, and moving the files back to their original place
-    - deploy-to-bitrise-io:
-        title: Deploy to bitrise
-    envs:
-    - opts:
-        is_expand: false
-      BITRISE_SCHEME: DigitalSample
+    after_run:
+    - Build-BasicSample
+    - Build-AdvancedSample
+    - Build-LocalNotificationSample
+    - Build-BasicSwiftSample
+    - Build-CustomInvitationSample
+    - Build-ContactInvitationSample
+    - Build-DBASample
   Build-LocalNotificationSample:
     before_run:
     - Prepare
@@ -195,6 +161,8 @@ workflows:
         title: Downloading the build cache from bitrise.io, and moving the files back to their original place
     - deploy-to-bitrise-io:
         title: Deploy to bitrise
+        inputs:
+        - deploy_path: "$BITRISE_DEPLOY_DIR/LocalNotificationSample.ipa"
     envs:
     - opts:
         is_expand: false
@@ -212,6 +180,8 @@ workflows:
         title: Downloading the build cache from bitrise.io, and moving the files back to their original place
     - deploy-to-bitrise-io:
         title: Deploy to bitrise
+        inputs:
+        - deploy_path: "$BITRISE_DEPLOY_DIR/CustomInvitationSample.ipa"
     envs:
     - opts:
         is_expand: false
@@ -229,6 +199,8 @@ workflows:
         title: Downloading the build cache from bitrise.io, and moving the files back to their original place
     - deploy-to-bitrise-io:
         title: Deploy to bitrise
+        inputs:
+        - deploy_path: "$BITRISE_DEPLOY_DIR/ContactInvitationSample.ipa"
     envs:
     - opts:
         is_expand: false
@@ -246,6 +218,8 @@ workflows:
         title: Downloading the build cache from bitrise.io, and moving the files back to their original place
     - deploy-to-bitrise-io:
         title: Deploy to bitrise
+        inputs:
+        - deploy_path: "$BITRISE_DEPLOY_DIR/BasicSwiftSample.ipa"
     envs:
     - opts:
         is_expand: false
@@ -263,6 +237,8 @@ workflows:
         title: Downloading the build cache from bitrise.io, and moving the files back to their original place
     - deploy-to-bitrise-io:
         title: Deploy to bitrise
+        inputs:
+        - deploy_path: "$BITRISE_DEPLOY_DIR/DBASample.ipa"
     envs:
     - opts:
         is_expand: false
@@ -274,7 +250,7 @@ app:
     BITRISE_PROJECT_PATH: VerintSamples.xcworkspace
   - opts:
       is_expand: false
-    BITRISE_SCHEME: DigitalSample
+    BITRISE_SCHEME: BasicSample
   - opts:
       is_expand: false
     BITRISE_EXPORT_METHOD: development
@@ -283,4 +259,5 @@ app:
       is_expand: false
 meta:
   bitrise.io:
-    stack: osx-xcode-14.2.x-ventura
+    stack: osx-xcode-26.0.x
+    machine_type_id: g2.mac.large

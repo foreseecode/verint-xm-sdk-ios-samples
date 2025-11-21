@@ -1,10 +1,10 @@
-source 'https://github.com/CocoaPods/Specs.git'
+source 'https://cdn.cocoapods.org/'
 platform :ios, '12.0'
 
 workspace 'VerintSamples.xcworkspace'
 use_frameworks!
 
-POD_VERSION = '7.5.4'
+POD_VERSION = '7.6.0'
 
 def pods
     pod 'Verint-XM/Core', POD_VERSION
