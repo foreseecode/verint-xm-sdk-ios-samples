@@ -136,35 +136,14 @@ workflows:
         is_expand: false
       BITRISE_SCHEME: AdvancedSample
   Build-All:
-    steps:
-    - trigger-bitrise-workflow:
-        inputs:
-        - workflow_id: Build-BasicSample
-        - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
-    - trigger-bitrise-workflow:
-        inputs:
-        - workflow_id: Build-AdvancedSample
-        - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
-    - trigger-bitrise-workflow:
-        inputs:
-        - workflow_id: Build-LocalNotificationSample
-        - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
-    - trigger-bitrise-workflow:
-        inputs:
-        - workflow_id: Build-BasicSwiftSample
-        - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
-    - trigger-bitrise-workflow:
-        inputs:
-        - workflow_id: Build-CustomInvitationSample
-        - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
-    - trigger-bitrise-workflow:
-        inputs:
-        - workflow_id: Build-ContactInvitationSample
-        - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
-    - trigger-bitrise-workflow:
-        inputs:
-        - workflow_id: Build-DBASample
-        - api_token: "$BITRISE_APP_TRIGGER_TOKEN"
+    after_run:
+    - Build-BasicSample
+    - Build-AdvancedSample
+    - Build-LocalNotificationSample
+    - Build-BasicSwiftSample
+    - Build-CustomInvitationSample
+    - Build-ContactInvitationSample
+    - Build-DBASample
   Build-DigitalSample:
     before_run:
     - Prepare
