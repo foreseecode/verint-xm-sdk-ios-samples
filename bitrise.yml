@@ -116,7 +116,6 @@ workflows:
         title: Deploy to bitrise
         inputs:
         - deploy_path: "$BITRISE_DEPLOY_DIR/BasicSample.ipa"
-
     envs:
     - opts:
         is_expand: false
@@ -149,25 +148,6 @@ workflows:
     - Build-CustomInvitationSample
     - Build-ContactInvitationSample
     - Build-DBASample
-  Build-DigitalSample:
-    before_run:
-    - Prepare
-    steps:
-    - xcode-archive:
-        title: Archive the Xcode project
-        inputs:
-        - force_code_sign_identity: ''
-        - force_team_id: ''
-    - cache-pull:
-        title: Downloading the build cache from bitrise.io, and moving the files back to their original place
-    - deploy-to-bitrise-io:
-        title: Deploy to bitrise
-        inputs:
-        - deploy_path: "$BITRISE_DEPLOY_DIR/DigitalSample.ipa"
-    envs:
-    - opts:
-        is_expand: false
-      BITRISE_SCHEME: DigitalSample
   Build-LocalNotificationSample:
     before_run:
     - Prepare
@@ -270,7 +250,7 @@ app:
     BITRISE_PROJECT_PATH: VerintSamples.xcworkspace
   - opts:
       is_expand: false
-    BITRISE_SCHEME: DigitalSample
+    BITRISE_SCHEME: BasicSample
   - opts:
       is_expand: false
     BITRISE_EXPORT_METHOD: development
