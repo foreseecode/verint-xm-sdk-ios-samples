@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <EXPCore/EXPCore.h>>
+#import <EXPCore/EXPCore.h>
 
 @implementation ViewController
 
