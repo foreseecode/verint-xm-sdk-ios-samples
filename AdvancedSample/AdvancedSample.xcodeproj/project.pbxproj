@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		961ACEFA237B072B002C3426 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961ACEF8237B072B002C3426 /* LaunchScreen.storyboard */; };
 		961ACEFD237B07B6002C3426 /* exp_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 961ACEFF237B07B6002C3426 /* exp_configuration.json */; };
 		961ACF02237B07EE002C3426 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 961ACF04237B07EE002C3426 /* Localizable.strings */; };
+		96C1DFD52F69B3BF0089E820 /* VerintXM in Frameworks */ = {isa = PBXBuildFile; productRef = 96C1DFD42F69B3BF0089E820 /* VerintXM */; };
 		96F16D4F237AFFCA00735B49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F16D4E237AFFCA00735B49 /* AppDelegate.swift */; };
 		96F16D53237AFFCA00735B49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F16D52237AFFCA00735B49 /* ViewController.swift */; };
 		96F16D56237AFFCA00735B49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96F16D54237AFFCA00735B49 /* Main.storyboard */; };
@@ -61,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C1DFD52F69B3BF0089E820 /* VerintXM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +163,9 @@
 				"pt-PT",
 			);
 			mainGroup = 96F16D42237AFFCA00735B49;
+			packageReferences = (
+				96C1DFD32F69B3BF0089E820 /* XCRemoteSwiftPackageReference "VerintXM-SP" */,
+			);
 			productRefGroup = 96F16D4C237AFFCA00735B49 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -444,6 +449,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		96C1DFD32F69B3BF0089E820 /* XCRemoteSwiftPackageReference "VerintXM-SP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/foreseecode/VerintXM-SP/";
+			requirement = {
+				kind = exactVersion;
+				version = 7.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		96C1DFD42F69B3BF0089E820 /* VerintXM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96C1DFD32F69B3BF0089E820 /* XCRemoteSwiftPackageReference "VerintXM-SP" */;
+			productName = VerintXM;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 96F16D43237AFFCA00735B49 /* Project object */;
 }

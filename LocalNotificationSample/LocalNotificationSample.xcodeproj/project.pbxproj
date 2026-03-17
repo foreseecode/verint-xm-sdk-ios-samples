@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1FB2C649214AD9E60002E96A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB2C648214AD9E60002E96A /* Assets.xcassets */; };
 		547BA53A21FFCE630087BDE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 547BA53921FFCE630087BDE1 /* Main.storyboard */; };
+		96C1DFE12F69B4770089E820 /* VerintXM in Frameworks */ = {isa = PBXBuildFile; productRef = 96C1DFE02F69B4770089E820 /* VerintXM */; };
 		96E5355F23747576008983C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E5355E23747576008983C7 /* LaunchScreen.storyboard */; };
 		990EABCD18610D5D005BB53E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 990EABCB18610D5D005BB53E /* Localizable.strings */; };
 		99F1ECA0188606A7001B1A8B /* exp_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 99F1EC9F188606A7001B1A8B /* exp_configuration.json */; };
@@ -49,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C1DFE12F69B4770089E820 /* VerintXM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +165,9 @@
 				Base,
 			);
 			mainGroup = D5D68ADE1582A63D00730160;
+			packageReferences = (
+				96C1DFDF2F69B4770089E820 /* XCRemoteSwiftPackageReference "VerintXM-SP" */,
+			);
 			productRefGroup = D5D68AEA1582A63D00730160 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -382,6 +387,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		96C1DFDF2F69B4770089E820 /* XCRemoteSwiftPackageReference "VerintXM-SP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/foreseecode/VerintXM-SP/";
+			requirement = {
+				kind = exactVersion;
+				version = 7.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		96C1DFE02F69B4770089E820 /* VerintXM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96C1DFDF2F69B4770089E820 /* XCRemoteSwiftPackageReference "VerintXM-SP" */;
+			productName = VerintXM;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D5D68AE01582A63D00730160 /* Project object */;
 }

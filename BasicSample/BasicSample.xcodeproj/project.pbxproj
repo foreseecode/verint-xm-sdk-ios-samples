@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		966346F91FA8BE47002F322D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966346F81FA8BE47002F322D /* Main.storyboard */; };
 		966346FB1FA8BE7C002F322D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 966346FA1FA8BE7C002F322D /* Assets.xcassets */; };
 		966346FD1FA8BFDD002F322D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966346FC1FA8BFDD002F322D /* LaunchScreen.storyboard */; };
+		96C1DFD22F69B3640089E820 /* VerintXM in Frameworks */ = {isa = PBXBuildFile; productRef = 96C1DFD12F69B3640089E820 /* VerintXM */; };
 		D544DF4B15068C0C0025FF43 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D544DF4915068C0C0025FF43 /* InfoPlist.strings */; };
 		D544DF4D15068C0C0025FF43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D544DF4C15068C0C0025FF43 /* main.m */; };
 		D544DF5115068C0C0025FF43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D544DF5015068C0C0025FF43 /* AppDelegate.m */; };
@@ -36,16 +37,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C1DFD22F69B3640089E820 /* VerintXM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96C1DFD02F69B3640089E820 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D544DF3115068C0C0025FF43 = {
 			isa = PBXGroup;
 			children = (
 				D544DF4615068C0C0025FF43 /* BasicSample */,
+				96C1DFD02F69B3640089E820 /* Frameworks */,
 				D544DF3D15068C0C0025FF43 /* Products */,
 			);
 			indentWidth = 4;
@@ -130,6 +140,9 @@
 				Base,
 			);
 			mainGroup = D544DF3115068C0C0025FF43;
+			packageReferences = (
+				967DBD3E2F69B1F300B8A483 /* XCRemoteSwiftPackageReference "VerintXM-SP" */,
+			);
 			productRefGroup = D544DF3D15068C0C0025FF43 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -425,6 +438,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		967DBD3E2F69B1F300B8A483 /* XCRemoteSwiftPackageReference "VerintXM-SP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/foreseecode/VerintXM-SP/";
+			requirement = {
+				kind = exactVersion;
+				version = 7.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		96C1DFD12F69B3640089E820 /* VerintXM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 967DBD3E2F69B1F300B8A483 /* XCRemoteSwiftPackageReference "VerintXM-SP" */;
+			productName = VerintXM;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D544DF3315068C0C0025FF43 /* Project object */;
 }
