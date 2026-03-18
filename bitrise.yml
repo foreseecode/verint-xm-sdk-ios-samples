@@ -21,8 +21,6 @@ workflows:
         title: Do anything with Script step
     - certificate-and-profile-installer:
         title: Download and install the Apple code signing certificates and provisioning profile
-    - cocoapods-install:
-        title: Install cocoapods dependicies
     - xcode-test:
         title: Run xcode tests
         inputs:
@@ -51,8 +49,6 @@ workflows:
         title: Do anything with Script step
     - certificate-and-profile-installer:
         title: Download and install the Apple code signing certificates and provisioning profile
-    - cocoapods-install:
-        title: Install cocoapods dependicies
     - xcode-test:
         title: Run xcode tests
         inputs:
@@ -75,8 +71,6 @@ workflows:
         title: Do anything with Script step
     - certificate-and-profile-installer:
         title: Download and install the Apple code signing certificates and provisioning profile
-    - cocoapods-install:
-        title: Install cocoapods dependicies
     - xcode-test:
         title: Run xcode tests
         inputs:
@@ -99,8 +93,6 @@ workflows:
         title: Run fastlane certificates
         inputs:
         - lane: certificates
-    - cocoapods-install:
-        title: Install cocoapods dependicies
   Build-BasicSample:
     before_run:
     - Prepare
@@ -147,7 +139,6 @@ workflows:
     - Build-BasicSwiftSample
     - Build-CustomInvitationSample
     - Build-ContactInvitationSample
-    - Build-DBASample
   Build-LocalNotificationSample:
     before_run:
     - Prepare
@@ -224,25 +215,6 @@ workflows:
     - opts:
         is_expand: false
       BITRISE_SCHEME: BasicSwiftSample
-  Build-DBASample:
-    before_run:
-    - Prepare
-    steps:
-    - xcode-archive:
-        title: Archive the Xcode project
-        inputs:
-        - force_code_sign_identity: ''
-        - force_team_id: ''
-    - cache-pull:
-        title: Downloading the build cache from bitrise.io, and moving the files back to their original place
-    - deploy-to-bitrise-io:
-        title: Deploy to bitrise
-        inputs:
-        - deploy_path: "$BITRISE_DEPLOY_DIR/DBASample.ipa"
-    envs:
-    - opts:
-        is_expand: false
-      BITRISE_SCHEME: DBASample
 app:
   envs:
   - opts:

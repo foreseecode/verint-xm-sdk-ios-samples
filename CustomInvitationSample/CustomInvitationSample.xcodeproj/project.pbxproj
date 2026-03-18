@@ -3,17 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		68E38B3000DB35966A79663A /* Pods_CustomInvitationSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EB598839F7B1D964FECC17 /* Pods_CustomInvitationSample.framework */; };
 		968838742BBDD981004D08E5 /* NoInviteExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968838732BBDD981004D08E5 /* NoInviteExampleViewController.swift */; };
 		968D2F581CFD6A6800C6066B /* CustomInviteHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F571CFD6A6800C6066B /* CustomInviteHandler.m */; };
 		968D2F5B1CFD6DCC00C6066B /* CustomInviteDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F5A1CFD6DCC00C6066B /* CustomInviteDelegate.m */; };
 		968D2F911CFE430700C6066B /* CustomInviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F901CFE430700C6066B /* CustomInviteViewController.m */; };
 		968D2F981CFE453000C6066B /* AlertInviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2F971CFE453000C6066B /* AlertInviteViewController.m */; };
 		968D2FA31CFF4C1800C6066B /* InviteExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D2FA21CFF4C1800C6066B /* InviteExampleViewController.m */; };
+		96C1DFDE2F69B44C0089E820 /* VerintXM in Frameworks */ = {isa = PBXBuildFile; productRef = 96C1DFDD2F69B44C0089E820 /* VerintXM */; };
 		96C3D5ED1CDB284A005040C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C3D5EC1CDB284A005040C8 /* main.m */; };
 		96C3D5F01CDB284A005040C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C3D5EF1CDB284A005040C8 /* AppDelegate.m */; };
 		96C3D5F31CDB284A005040C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C3D5F21CDB284A005040C8 /* ViewController.m */; };
@@ -49,7 +49,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5858EF61849E87D448A2698A /* Pods-CustomInvitationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomInvitationSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample.debug.xcconfig"; sourceTree = "<group>"; };
 		968838722BBDD981004D08E5 /* CustomInvitationSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomInvitationSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		968838732BBDD981004D08E5 /* NoInviteExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInviteExampleViewController.swift; sourceTree = "<group>"; };
 		968D2F561CFD6A6800C6066B /* CustomInviteHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInviteHandler.h; sourceTree = "<group>"; };
@@ -98,10 +97,6 @@
 		96C3D6641CDCFB19005040C8 /* header3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header3.png; sourceTree = "<group>"; };
 		96CA07571CE23490000F766C /* CustomInviteViewBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInviteViewBox.h; sourceTree = "<group>"; };
 		96CA07581CE23490000F766C /* CustomInviteViewBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInviteViewBox.m; sourceTree = "<group>"; };
-		9C5F51C4E3606A54BA60B910 /* Pods-CustomInvitationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomInvitationSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample.release.xcconfig"; sourceTree = "<group>"; };
-		AE3B6D560153132F0657E975 /* Pods-CustomInvitationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomInvitationSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample.release.xcconfig"; sourceTree = "<group>"; };
-		B6EB598839F7B1D964FECC17 /* Pods_CustomInvitationSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomInvitationSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEBBF9E174BBEC6FACEFC70E /* Pods-CustomInvitationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomInvitationSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68E38B3000DB35966A79663A /* Pods_CustomInvitationSample.framework in Frameworks */,
+				96C1DFDE2F69B44C0089E820 /* VerintXM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,17 +125,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3725BDE4E3C9F63073E6C388 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DEBBF9E174BBEC6FACEFC70E /* Pods-CustomInvitationSample.debug.xcconfig */,
-				AE3B6D560153132F0657E975 /* Pods-CustomInvitationSample.release.xcconfig */,
-				5858EF61849E87D448A2698A /* Pods-CustomInvitationSample.debug.xcconfig */,
-				9C5F51C4E3606A54BA60B910 /* Pods-CustomInvitationSample.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		64B4086BE7EB6372E9594240 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +138,6 @@
 				96C3D6441CDB9F4F005040C8 /* CoreMedia.framework */,
 				96C3D6451CDB9F4F005040C8 /* CoreMotion.framework */,
 				96C3D6461CDB9F4F005040C8 /* QuartzCore.framework */,
-				B6EB598839F7B1D964FECC17 /* Pods_CustomInvitationSample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -226,7 +209,6 @@
 				96C3D6041CDB284A005040C8 /* CustomInvitationSampleTests */,
 				96C3D60F1CDB284A005040C8 /* CustomInvitationSampleUITests */,
 				96C3D5E91CDB284A005040C8 /* Products */,
-				3725BDE4E3C9F63073E6C388 /* Pods */,
 				64B4086BE7EB6372E9594240 /* Frameworks */,
 			);
 			indentWidth = 4;
@@ -294,11 +276,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96C3D6151CDB284A005040C8 /* Build configuration list for PBXNativeTarget "CustomInvitationSample" */;
 			buildPhases = (
-				7835E4AFD4D4BD7677A9C9DF /* [CP] Check Pods Manifest.lock */,
 				96C3D5E41CDB284A005040C8 /* Sources */,
 				96C3D5E51CDB284A005040C8 /* Frameworks */,
 				96C3D5E61CDB284A005040C8 /* Resources */,
-				A112AC75B258605E8368F40C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -379,6 +359,9 @@
 				Base,
 			);
 			mainGroup = 96C3D5DF1CDB284A005040C8;
+			packageReferences = (
+				96C1DFDC2F69B44C0089E820 /* XCRemoteSwiftPackageReference "VerintXM-SP" */,
+			);
 			productRefGroup = 96C3D5E91CDB284A005040C8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -420,53 +403,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7835E4AFD4D4BD7677A9C9DF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CustomInvitationSample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A112AC75B258605E8368F40C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Verint-XM/Core/EXPCore.framework/EXPCore",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Verint-XM/Core/EXPUtilities.framework/EXPUtilities",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Verint-XM/Core/EXPIngestionLogger.framework/EXPIngestionLogger",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Verint-XM/Predictive/EXPPredictive.framework/EXPPredictive",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Verint-XM/SurveyManagement/EXPSurveyManagement.framework/EXPSurveyManagement",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXPCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXPUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXPIngestionLogger.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXPPredictive.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EXPSurveyManagement.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomInvitationSample/Pods-CustomInvitationSample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		96C3D5E41CDB284A005040C8 /* Sources */ = {
@@ -647,7 +583,6 @@
 		};
 		96C3D6161CDB284A005040C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5858EF61849E87D448A2698A /* Pods-CustomInvitationSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -660,7 +595,10 @@
 					"$(PROJECT_DIR)/CustomInvitationSample",
 				);
 				INFOPLIST_FILE = CustomInvitationSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.verint.xm.samples.CustomInvitationSample";
@@ -673,7 +611,6 @@
 		};
 		96C3D6171CDB284A005040C8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C5F51C4E3606A54BA60B910 /* Pods-CustomInvitationSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -686,7 +623,10 @@
 					"$(PROJECT_DIR)/CustomInvitationSample",
 				);
 				INFOPLIST_FILE = CustomInvitationSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.verint.xm.samples.CustomInvitationSample";
@@ -702,7 +642,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CustomInvitationSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomInvitationSample.app/CustomInvitationSample";
@@ -715,7 +659,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CustomInvitationSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomInvitationSample.app/CustomInvitationSample";
@@ -727,7 +675,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CustomInvitationSampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = CustomInvitationSample;
@@ -740,7 +692,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CustomInvitationSampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.CustomInvitationSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = CustomInvitationSample;
@@ -788,6 +744,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		96C1DFDC2F69B44C0089E820 /* XCRemoteSwiftPackageReference "VerintXM-SP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/foreseecode/VerintXM-SP/";
+			requirement = {
+				kind = exactVersion;
+				version = 7.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		96C1DFDD2F69B44C0089E820 /* VerintXM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96C1DFDC2F69B44C0089E820 /* XCRemoteSwiftPackageReference "VerintXM-SP" */;
+			productName = VerintXM;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 96C3D5E01CDB284A005040C8 /* Project object */;
 }
