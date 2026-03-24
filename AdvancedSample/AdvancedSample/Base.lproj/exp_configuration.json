@@ -1,34 +1,32 @@
 {
+  "customerId": "iJRdWzEqNatz7F3INKB7qg==",
   "notificationType": "IN_SESSION",
-  "invite":
-  {
-    "logo": "v_logo",
-    "baseColor": [43, 101, 242]
+  "cppParameters": {
+    "sample_app": "DT Events Sample CPP"
+  },
+  "invite": {
+    "logo": "exp_logo",
+    "baseColor": [
+      0,
+      122,
+      255
+    ]
   },
   "survey": {
     "closeButtonColor": [255, 255, 255],
-    "closeButtonBackgroundColor": [65, 65, 65],
-    "headerColor": [65, 65, 65]
-  },
-  "cppParameters":
-  {
-    "sample_app": "Advanced sample"
+    "closeButtonBackgroundColor": [0, 122, 255],
+    "headerColor": [0, 122, 255]
   },
   "surveyManagement": {
     "surveys": [
       {
         "url": "https://survey.vovici.com/se/705E3F053FB8395201",
         "name": "SampleSurvey",
-        "combinedCriteria":
-        [
-          {
-            "pageViews": 1,
-            "significantEventThresholds":
-            {
-              "custom_event": 4
-            }
-          }
-        ]
+        "significantEventThresholds": {
+          "custom_event": 3
+        },
+        "launchCount": 5,
+        "pageViews": 3
       }
     ]
   }
