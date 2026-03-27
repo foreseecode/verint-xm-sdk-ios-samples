@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     EXPCore.setDebugLogEnabled(true)
-    EXPCore.setEventLogEnabled(false)
+    EXPCore.setEventLogEnabled(true)
     EXPCore.setUserId("SJL - DT Event test")
     EXPCore.start()
     SurveyManagement.setSkipPoolingCheck(true)
