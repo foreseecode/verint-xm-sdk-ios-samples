@@ -19,9 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     EXPCore.setDebugLogEnabled(true)
     EXPCore.setEventLogEnabled(true)
     EXPCore.start()
-    EXPCore.setUserId("SJL - DT Event test")
     SurveyManagement.setSkipPoolingCheck(true)
     EXPCore.resetState()
+    // Critical note: userId will be cleared after resetState().
+    EXPCore.setUserId("SJL - DT Event test")
     return true
   }
 

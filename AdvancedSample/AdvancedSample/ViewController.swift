@@ -63,6 +63,8 @@ class ViewController: UIViewController {
     var counter = 0
     // when we create the counter, we also reset the SDK state back to zero
     EXPCore.resetState()
+    // Critical note: userId will be cleared after resetState().
+    EXPCore.setUserId("SJL - DT Event test")
     return {
       // now we incremenet the significant event count every time we update our
       // counter, so that our local value is always in sync with the SDK (as
