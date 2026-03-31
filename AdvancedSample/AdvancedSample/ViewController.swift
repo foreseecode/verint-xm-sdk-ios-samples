@@ -12,8 +12,8 @@ import EXPSurveyManagement
 
 class ViewController: UIViewController {
 
-  static let significantEventKey = "custom_event"
-  static let surveyNameStringKey = "survey_name"
+  static let mmamoments = "mma-moments"
+  static let surveyNameStringKey = "MMA-NPS"
 
   var counter: (() -> Int)? = nil
   
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
   }
   
   @IBAction func checkShowSurveyButtonTouchUpInside(_ sender: Any) {
-    let surveyName = NSLocalizedString(Self.surveyNameStringKey, comment: "")
+    let surveyName = Self.surveyNameStringKey
     SurveyManagement.showSurvey(forName: surveyName)
   }
   
@@ -64,12 +64,12 @@ class ViewController: UIViewController {
     // when we create the counter, we also reset the SDK state back to zero
     EXPCore.resetState()
     // Critical note: userId will be cleared after resetState().
-    EXPCore.setUserId("SJL - DT Event test")
+    EXPCore.setUserId(AppDelegate.userId)
     return {
       // now we incremenet the significant event count every time we update our
       // counter, so that our local value is always in sync with the SDK (as
       // long as we don't increment this count anywhere else)
-      SurveyManagement.incrementSignificantEventCount(withKey: significantEventKey)
+      SurveyManagement.incrementSignificantEventCount(withKey: mmamoments)
       counter += 1
       return counter
     }
