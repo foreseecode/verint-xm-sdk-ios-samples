@@ -1,13 +1,13 @@
 {
-  "originHash" : "8c40307044dda6e13e73c543f6a4910bf8553bbecb9a14caace95a49609cc0be",
+  "originHash" : "e1e61a8678699f6dad3c86c01f169d79210db0f7a3851372c4b4d02540745091",
   "pins" : [
     {
       "identity" : "verintxm-sp",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/foreseecode/VerintXM-SP/",
       "state" : {
-        "revision" : "dbe67a95ee52a00525fb3a056e05193a7b71bb74",
-        "version" : "7.7.0"
+        "revision" : "63802299b948431cbd726783ad6dcd797fdaa19b",
+        "version" : "7.7.1"
       }
     }
   ],
