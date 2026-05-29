@@ -7,6 +7,7 @@
 //
 
 #import "CustomInviteHandler.h"
+#import <EXPSurveyManagement/EXPSurveyManagement.h>
 
 @interface CustomInviteHandler ()
 

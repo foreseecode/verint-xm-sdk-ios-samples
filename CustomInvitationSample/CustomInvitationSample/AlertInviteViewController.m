@@ -8,12 +8,13 @@
 
 #import "AlertInviteViewController.h"
 #import "CustomInviteHandler.h"
+#import <EXPSurveyManagement/EXPSurveyManagement.h>
 
 @implementation AlertInviteViewController
 
 - (void)viewDidLoad {
     self.inviteHandler = [[CustomInviteHandler alloc] initWithViewController:self];
-    [EXPPredictive setInviteHandler:self.inviteHandler];
+    [EXPSurveyManagement setInviteHandler:self.inviteHandler];
 }
 
 - (IBAction)handleShowInviteTouchUpInside:(id)sender {

@@ -8,6 +8,8 @@
 
 #import "CustomInviteViewController.h"
 #import "SettingsTableViewController.h"
+#import <EXPSurveyManagement/EXPSurveyManagement.h>
+#import <EXPCore/EXPCore.h>
 
 @interface CustomInviteViewController ()
 
@@ -37,7 +39,7 @@
     [self resetAndRestoreContactDetails];
     
     // #2 Set this class as the custom invite handler
-    [EXPPredictive setInviteHandler:self];
+    [EXPSurveyManagement setInviteHandler:self];
     
     // #3 Check eligibility. If eligible (and we should be), the SDK will call the invite handler's `show` method
     [EXPSurveyManagement checkIfEligibleForSurvey];

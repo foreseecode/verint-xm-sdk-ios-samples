@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import <EXPCore/EXPCore.h>
-#import <EXPPredictive/EXPPredictive.h>
 #import <EXPSurveyManagement/EXPSurveyManagement.h>
 
 @interface ViewController ()
@@ -30,7 +29,7 @@
 
 - (IBAction)handleResetState:(id)sender {
     [EXPCore resetState];
-    [EXPPredictive setInviteHandler:nil];
+    [EXPSurveyManagement setInviteHandler:nil];
 }
 
 @end

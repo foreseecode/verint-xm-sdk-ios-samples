@@ -39,7 +39,7 @@ class ProductsViewController: UIViewController, UICollectionViewDelegate, UIColl
     self.gridView.dataSource = self
     self.gridView.delegate = self
     
-    EXPPredictive.setInviteHandler(self)
+    SurveyManagement.setInviteHandler(self)
     SurveyManagement.checkIfEligibleForSurvey()
   }
   
@@ -49,7 +49,7 @@ class ProductsViewController: UIViewController, UICollectionViewDelegate, UIColl
     if self.invited {
       SurveyManagement.customInviteDeclined()
     }
-    EXPPredictive.setInviteHandler(nil)
+    SurveyManagement.setInviteHandler(nil)
   }
   
   
@@ -92,9 +92,11 @@ class ProductsViewController: UIViewController, UICollectionViewDelegate, UIColl
     SurveyManagement.customInviteAccepted()
     self.invited = false
   }
+
 }
 
 extension ProductsViewController: EXPInviteHandler {
+
   func show() {
     self.invited = true
     self.gridView.reloadData()
@@ -103,4 +105,5 @@ extension ProductsViewController: EXPInviteHandler {
   func hide(withAnimation animate: Bool) {
     
   }
+
 }
