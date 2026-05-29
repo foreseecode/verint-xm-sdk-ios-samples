@@ -9,13 +9,13 @@
 import Foundation
 import EXPSurveyManagement
 
-class NoInviteExampleViewController : InviteExampleViewController, EXPInviteHandler  {
+class NoInviteExampleViewController : InviteExampleViewController, EXPInviteHandler {
 
     // MARK: UIViewController
 
     override func viewDidLoad() {
         self.inviteHandler = self
-        EXPPredictive.setInviteHandler(self.inviteHandler)
+        SurveyManagement.setInviteHandler(self.inviteHandler)
     }
 
     // MARK: Outlets

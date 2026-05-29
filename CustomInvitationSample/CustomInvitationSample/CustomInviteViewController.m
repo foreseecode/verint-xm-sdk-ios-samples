@@ -8,12 +8,13 @@
 
 #import "CustomInviteViewController.h"
 #import "CustomInviteTracker.h"
+#import <EXPSurveyManagement/EXPSurveyManagement.h>
 
 @implementation CustomInviteViewController
 
 - (void)viewDidLoad {
     self.inviteHandler = [[CustomInviteTracker alloc] init];
-    [EXPPredictive setInviteHandler:self.inviteHandler];
+    [EXPSurveyManagement setInviteHandler:self.inviteHandler];
 }
 
 - (IBAction)handleShowInviteTouchUpInside:(id)sender {

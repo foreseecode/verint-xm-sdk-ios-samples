@@ -137,7 +137,7 @@ NSString * const PreferredContactTypeKey = @"PreferredContactTypeKey";
         [self setPreferredContactType:indexPath.row];
     } else if (indexPath.section == ResetStateSection) {
         [EXPCore resetState];
-        [EXPPredictive setInviteHandler:nil];
+        [EXPSurveyManagement setInviteHandler:nil];
         [self clearFields];
     }
     [tableView reloadData];

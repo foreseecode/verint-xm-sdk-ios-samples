@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "CustomInviteDelegate.h"
+#import <EXPSurveyManagement/EXPSurveyManagement.h>
 
 @interface AppDelegate ()
 
@@ -26,8 +27,8 @@
     // capture and log SDK lifecycle events;
     // active for all examples
     self.inviteDelegate = [[CustomInviteDelegate alloc] init];
-    [EXPPredictive setInviteDelegate:self.inviteDelegate];
-    
+    [EXPSurveyManagement setInviteDelegate:self.inviteDelegate];
+
     return YES;
 }
 

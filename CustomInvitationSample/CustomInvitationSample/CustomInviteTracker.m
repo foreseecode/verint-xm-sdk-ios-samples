@@ -7,7 +7,7 @@
 //
 
 #import "CustomInviteTracker.h"
-#import "CustomInviteView.h"
+#import <EXPSurveyManagement/EXPSurveyManagement.h>
 
 @interface CustomInviteTracker ()
 

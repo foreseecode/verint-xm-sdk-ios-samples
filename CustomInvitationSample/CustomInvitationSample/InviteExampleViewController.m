@@ -7,6 +7,7 @@
 //
 
 #import "InviteExampleViewController.h"
+#import <EXPSurveyManagement/EXPSurveyManagement.h>
 
 @implementation InviteExampleViewController
 
@@ -19,7 +20,7 @@
 
 - (void)viewWillDisappear:(BOOL)animated {
     self.inviteHandler = nil;
-    [EXPPredictive setInviteHandler:nil];
+    [EXPSurveyManagement setInviteHandler:nil];
 }
 
 @end
