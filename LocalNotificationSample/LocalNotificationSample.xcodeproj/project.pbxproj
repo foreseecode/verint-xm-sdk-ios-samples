@@ -332,6 +332,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocalNotificationSample/LocalNotificationSample-Prefix.pch";
 				INFOPLIST_FILE = "LocalNotificationSample/LocalNotificationSample-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.LocalNotificationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -356,6 +360,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocalNotificationSample/LocalNotificationSample-Prefix.pch";
 				INFOPLIST_FILE = "LocalNotificationSample/LocalNotificationSample-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.LocalNotificationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
