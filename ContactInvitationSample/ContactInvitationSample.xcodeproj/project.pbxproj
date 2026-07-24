@@ -669,7 +669,7 @@
 			repositoryURL = "https://github.com/foreseecode/VerintXM-SP/";
 			requirement = {
 				kind = exactVersion;
-				version = 7.7.2;
+				version = 8.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
