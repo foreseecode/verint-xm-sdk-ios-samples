@@ -1,4 +1,4 @@
-## Installation
+## Installation 
 The projects in this repo use the [Verint-XM iOS SDK](https://github.com/foreseecode/VerintXM-SP/), which is loaded using SPM. (For examples using Cocoapods to load the SDK, checkout the `deprecated/cocoapods` branch.)
 
 ## Projects
