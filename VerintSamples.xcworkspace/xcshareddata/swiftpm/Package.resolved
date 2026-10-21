@@ -6,7 +6,7 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/foreseecode/VerintXM-SP/",
       "state" : {
-        "revision" : "07eef1a627f881c0ce09977bc46f3cddc00e1913",
+        "revision" : "0c8cc48e5947fab95d33478c8d1dc87df1f3ed37",
         "version" : "8.0.1"
       }
     }
