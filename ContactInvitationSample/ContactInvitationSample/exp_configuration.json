@@ -11,7 +11,7 @@
     },
     "survey": {
         "closeButtonColor": [255, 255, 255],
-        "closeButtonBackgroundColor": [65, 65, 65],
+        "closeButtonBackgroundColor": [80, 80, 80],
         "headerColor": [65, 65, 65]
     },
     "surveyManagement": {

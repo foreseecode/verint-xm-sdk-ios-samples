@@ -25,7 +25,7 @@ class NoInviteExampleViewController : InviteExampleViewController, EXPInviteHand
     }
 
     @IBAction func resetState(_ sender: Any) {
-        EXPCore.resetState()
+        Core.resetState()
     }
 
     // MARK: EXPInviteHandler

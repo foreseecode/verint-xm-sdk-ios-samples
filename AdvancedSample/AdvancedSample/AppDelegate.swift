@@ -16,11 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    EXPCore.setDebugLogEnabled(true)
-    EXPCore.setEventLogEnabled(false)
-    EXPCore.start()
+    Core.setDebugLogEnabled(true)
+    Core.setEventLogEnabled(false)
+    Core.start()
     SurveyManagement.setSkipPoolingCheck(true)
-    EXPCore.resetState()
+    Core.resetState()
     return true
   }
 

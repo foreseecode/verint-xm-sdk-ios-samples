@@ -62,7 +62,7 @@ class ViewController: UIViewController {
   static func makeCounter() -> () -> Int {
     var counter = 0
     // when we create the counter, we also reset the SDK state back to zero
-    EXPCore.resetState()
+    Core.resetState()
     return {
       // now we incremenet the significant event count every time we update our
       // counter, so that our local value is always in sync with the SDK (as
