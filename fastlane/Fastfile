@@ -22,7 +22,7 @@ platform :ios do
   end
 
   lane :certificates do
-    match(type: "development")
-    match(type: "adhoc")
+    # match(type: "development")
+    # match(type: "adhoc")
   end
 end
