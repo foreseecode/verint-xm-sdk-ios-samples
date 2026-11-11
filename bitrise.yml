@@ -144,6 +144,11 @@ workflows:
     - opts:
         is_expand: false
       BITRISE_SCHEME: BasicSwiftSample
+app:
+  envs:
+  - opts:
+      is_expand: false
+    BITRISE_PROJECT_PATH: VerintSamples.xcworkspace
 meta:
   bitrise.io:
     stack: osx-xcode-26.0.x
