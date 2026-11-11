@@ -384,7 +384,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5QRQZ3BQNM;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5QRQZ3BQNM;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7SXD2TU64;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -395,10 +395,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.ComplexSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.sample.advanced;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.verint.xm.samples.ComplexSample";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.verint.xm.samples.ComplexSample";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.verint.xm.sample.advanced";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -412,16 +412,16 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5QRQZ3BQNM;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5QRQZ3BQNM;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7SXD2TU64;
 				INFOPLIST_FILE = AdvancedSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.samples.ComplexSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verint.xm.sample.advanced;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.verint.xm.samples.ComplexSample";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.verint.xm.samples.ComplexSample";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.verint.xm.sample.advanced";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
