@@ -6,7 +6,7 @@ type("development") # options: "appstore", "adhoc", "enterprise", "development"
 username("xm-mobile-team@verint.com") # Apple Developer Portal username
 team_id("Q7SXD2TU64")
 
-git_url("git@github.com:foreseecode/mobile-fastlane-match.git")
+git_url("git@github.com:verint-xm/mobile-fastlane-match.git")
 git_branch("foresee")
 app_identifier([
     "com.verint.xm.sample.advanced", 
