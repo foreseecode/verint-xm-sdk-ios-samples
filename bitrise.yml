@@ -2,6 +2,9 @@
 format_version: '8'
 default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
 project_type: ios
+trigger_map:
+- push_branch: "*"
+  workflow: Build-All
 workflows:
   Prepare:
     steps:
@@ -136,20 +139,6 @@ workflows:
     - opts:
         is_expand: false
       BITRISE_SCHEME: BasicSwiftSample
-app:
-  envs:
-  - opts:
-      is_expand: false
-    BITRISE_PROJECT_PATH: VerintSamples.xcworkspace
-  - opts:
-      is_expand: false
-    BITRISE_SCHEME: BasicSample
-  - opts:
-      is_expand: false
-    BITRISE_EXPORT_METHOD: development
-  - git_url: https://github.com/foreseecode/mobile-fastlane-match
-    opts:
-      is_expand: false
 meta:
   bitrise.io:
     stack: osx-xcode-26.0.x
